@@ -24,8 +24,14 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
           setIsAuthenticated(true);
           setLoading(false);
         } else {
+          // Detect if we're on localhost to avoid redirecting to production auth
+          const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+          
           const loginDomain = "https://captainapp.co.uk";
-          const redirectUri = "https://plan.captainapp.co.uk/auth/callback";
+          const redirectUri = isLocalhost 
+            ? `${window.location.origin}/auth/callback`
+            : "https://plan.captainapp.co.uk/auth/callback";
+          
           const loginUrl = `${loginDomain}/auth?redirect=${encodeURIComponent(redirectUri)}`;
           window.location.href = loginUrl;
         }
