@@ -8,24 +8,28 @@ const cookieStorage = {
   getItem: (key: string) => {
     if (typeof document === 'undefined') return null;
     const name = key + "=";
-    const decodedCookie = document.cookie;
-    const ca = decodedCookie.split(';');
+    const ca = document.cookie.split(';');
     for(let i = 0; i < ca.length; i++) {
       let c = ca[i].trim();
       if (c.indexOf(name) == 0) {
-        return decodeURIComponent(c.substring(name.length, c.length));
+        const value = decodeURIComponent(c.substring(name.length, c.length));
+        console.log(`CookieStorage: getItem(${key}) found value starting with: ${value.substring(0, 20)}...`);
+        return value;
       }
     }
+    console.log(`CookieStorage: getItem(${key}) not found`);
     return null;
   },
   setItem: (key: string, value: string) => {
     if (typeof document === 'undefined') return;
     const encodedValue = encodeURIComponent(value);
+    console.log(`CookieStorage: setItem(${key}) value length: ${value.length}`);
     // Set cookie on the root domain so it's shared across all subdomains
     document.cookie = `${key}=${encodedValue}; domain=.captainapp.co.uk; path=/; max-age=31536000; SameSite=Lax; Secure`;
   },
   removeItem: (key: string) => {
     if (typeof document === 'undefined') return;
+    console.log(`CookieStorage: removeItem(${key})`);
     document.cookie = `${key}=; domain=.captainapp.co.uk; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC; SameSite=Lax; Secure`;
   }
 };
@@ -33,7 +37,8 @@ const cookieStorage = {
 export const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
   auth: {
     storage: cookieStorage,
-    storageKey: 'captainapp-shared-auth', // Consistent key for all subdomains
+    // Use the exact key that the main app is using to ensure they share the same cookie
+    storageKey: 'sb-kjbcjkihxskuwwfdqklt-auth-token',
     persistSession: true,
     autoRefreshToken: true,
     detectSessionInUrl: true
