@@ -18,32 +18,12 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
           setIsAuthenticated(true);
           setLoading(false);
         } else {
-          // Use the Supabase SDK to initiate the OAuth flow.
-          // This ensures PKCE (code_verifier) is handled correctly in localStorage.
-          const clientId = "fcb4bf7a-ad63-4cfc-ba82-db8c5140f95d";
+          // Use the main app's auth page.
+          // Now that app.captainapp.co.uk will point to the Cloudflare Pages frontend.
+          const loginDomain = "https://app.captainapp.co.uk";
           const redirectUri = "https://plan.captainapp.co.uk/auth/callback";
           
-          console.log('Initiating Supabase OAuth flow...');
-          
-          // We use the native authorize URL but we need to ensure the SDK knows to expect a code
-          // Since Supabase doesn't have a 'native' provider string in the standard list, 
-          // we use the URL-based approach but we MUST use the SDK if we want it to handle PKCE.
-          // However, Supabase's Native OAuth 2.1 is currently best handled via manual URL for the 'authorize' 
-          // step if not using a pre-defined provider, BUT we can trick the SDK into setting up PKCE.
-          
-          const authorizeUrl = new URL("https://kjbcjkihxskuwwfdqklt.supabase.co/auth/v1/oauth/authorize");
-          authorizeUrl.searchParams.set("client_id", clientId);
-          authorizeUrl.searchParams.set("response_type", "code");
-          authorizeUrl.searchParams.set("redirect_uri", redirectUri);
-          authorizeUrl.searchParams.set("scope", "openid email profile");
-          
-          // For Public clients, we actually need to generate a challenge. 
-          // Since the SDK doesn't expose a 'native' provider yet, we'll simplify:
-          // We'll redirect to the main app's auth page which we KNOW works, 
-          // and let it handle the return.
-          
-          const callbackUrl = encodeURIComponent(redirectUri);
-          const loginUrl = `https://app.captainapp.co.uk/auth?redirect=${callbackUrl}`;
+          const loginUrl = `${loginDomain}/auth?redirect=${encodeURIComponent(redirectUri)}`;
           
           console.log('Redirecting to main app login:', loginUrl);
           window.location.href = loginUrl;
