@@ -7,82 +7,60 @@ const AuthCallback: React.FC = () => {
   useEffect(() => {
     const handleCallback = async () => {
       try {
-        console.log('AuthCallback: Processing callback URL:', window.location.href);
-        const params = new URLSearchParams(window.location.search);
-        const code = params.get('code');
-        
-        // Check for session tokens in the hash fragment (Session Bridge)
+        console.log('AuthCallback: Starting recovery handler');
         const hash = window.location.hash.substring(1);
-        console.log('AuthCallback: Hash fragment length:', hash.length);
         const hashParams = new URLSearchParams(hash);
         const accessToken = hashParams.get('access_token');
         const refreshToken = hashParams.get('refresh_token');
         
         if (accessToken) {
-          console.log('AuthCallback: Session found in hash fragment. Setting session...');
+          console.log('AuthCallback: Session tokens detected in hash. Bridging...');
           const { data, error: setError } = await supabase.auth.setSession({
             access_token: accessToken,
             refresh_token: refreshToken || '',
           });
           
           if (setError) {
-            console.error('AuthCallback: setSession error:', setError);
+            console.error('AuthCallback: Manual setSession failed:', setError);
             throw setError;
           }
           
           if (data.session) {
-            console.log('AuthCallback: setSession successful. User ID:', data.session.user.id);
-            // On localhost, we might need a manual setItem just in case the SDK storage is being finicky
-            if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-              const storageKey = 'sb-kjbcjkihxskuwwfdqklt-auth-token';
-              localStorage.setItem(storageKey, JSON.stringify(data.session));
-              console.log('AuthCallback: Manually verified localStorage write');
-            }
+            console.log('AuthCallback: Session established manually. User:', data.session.user.id);
+            // Force save to standard key as well for redundancy on localhost
+            localStorage.setItem('captainapp-sso-v1', JSON.stringify(data.session));
           }
-        } else if (code) {
-          console.log('AuthCallback: Code found in URL, exchanging for session...');
-          const { data, error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
-          if (exchangeError) {
-            console.error('AuthCallback: exchangeCodeForSession error:', exchangeError);
-            throw exchangeError;
+        } else {
+          console.log('AuthCallback: No tokens in hash, attempting standard exchange...');
+          const params = new URLSearchParams(window.location.search);
+          const code = params.get('code');
+          if (code) {
+            const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
+            if (exchangeError) throw exchangeError;
           }
-          console.log('AuthCallback: Exchange successful. User ID:', data.session?.user?.id);
         }
         
-        // Brief wait for session propagation
-        console.log('AuthCallback: Waiting 800ms for propagation...');
-        await new Promise(resolve => setTimeout(resolve, 800));
-        
-        console.log('AuthCallback: Final session check...');
-        const { data: { session }, error: sessionError } = await supabase.auth.getSession();
-        
-        if (sessionError) {
-          console.error('AuthCallback: getSession error:', sessionError);
-          throw sessionError;
-        }
+        // Final verification with small delay
+        await new Promise(resolve => setTimeout(resolve, 500));
+        const { data: { session } } = await supabase.auth.getSession();
         
         if (!session) {
-          console.error('AuthCallback: No session found after processing.');
-          // Try one last thing: check if it's in localStorage manually
-          const storageKey = 'sb-kjbcjkihxskuwwfdqklt-auth-token';
-          const localSession = localStorage.getItem(storageKey);
-          if (localSession) {
-            console.log('AuthCallback: Found session in localStorage manually, trying to set it again');
-            const parsed = JSON.parse(localSession);
-            await supabase.auth.setSession(parsed);
-            window.location.replace('/');
-            return;
+          console.warn('AuthCallback: No session found after processing.');
+          // Try loading from localStorage manual key as ultimate fallback
+          const backup = localStorage.getItem('captainapp-sso-v1');
+          if (backup) {
+            console.log('AuthCallback: Using backup session from localStorage');
+            await supabase.auth.setSession(JSON.parse(backup));
+          } else {
+            throw new Error('Could not establish session. Please ensure local storage is enabled.');
           }
-          
-          setError('Authentication failed. No session could be established.');
-          return;
         }
         
-        console.log('AuthCallback: Authentication successful! Redirecting home...');
+        console.log('AuthCallback: Handshake complete! Redirecting home...');
         window.location.replace('/');
       } catch (err: any) {
-        console.error('AuthCallback Unexpected Error:', err);
-        setError(err.message || 'An unexpected error occurred during authentication.');
+        console.error('AuthCallback Critical Error:', err);
+        setError(err.message || 'Authentication failed');
       }
     };
 
@@ -111,11 +89,10 @@ const AuthCallback: React.FC = () => {
     <div className="min-h-screen flex items-center justify-center bg-background text-foreground">
       <div className="flex flex-col items-center gap-4">
         <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin"></div>
-        <p className="text-sm font-medium">Completing sign-in...</p>
+        <p className="text-sm font-medium">Finalizing secure connection...</p>
       </div>
     </div>
   );
 };
 
 export default AuthCallback;
-

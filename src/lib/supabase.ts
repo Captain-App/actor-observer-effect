@@ -1,6 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
 
-// USING THE EXACT SAME CREDENTIALS AS THE MAIN APP
+// EXACT SAME CREDENTIALS AS MAIN APP - DO NOT CHANGE
 const SUPABASE_URL = "https://kjbcjkihxskuwwfdqklt.supabase.co";
 const SUPABASE_PUBLISHABLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtqYmNqa2loeHNrdXd3ZmRxa2x0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA3MDU2OTAsImV4cCI6MjA2NjI4MTY5MH0.V9e7XsuTlTOLqefOIedTqlBiTxUSn4O5FZSPWwAxiSI";
 
@@ -11,8 +11,7 @@ const cookieStorage = {
     
     // On localhost, fallback to standard localStorage for easier development
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      const val = localStorage.getItem(key);
-      return val;
+      return localStorage.getItem(key);
     }
 
     const name = key + "=";
@@ -20,8 +19,7 @@ const cookieStorage = {
     for(let i = 0; i < ca.length; i++) {
       let c = ca[i].trim();
       if (c.indexOf(name) == 0) {
-        const value = decodeURIComponent(c.substring(name.length, c.length));
-        return value;
+        return decodeURIComponent(c.substring(name.length, c.length));
       }
     }
     return null;
@@ -53,7 +51,7 @@ const cookieStorage = {
 export const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
   auth: {
     storage: cookieStorage,
-    storageKey: 'sb-kjbcjkihxskuwwfdqklt-auth-token',
+    storageKey: 'captainapp-sso-v1', // Standardized key for all apps
     persistSession: true,
     autoRefreshToken: true,
     detectSessionInUrl: true
