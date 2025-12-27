@@ -7,35 +7,47 @@ const AuthCallback: React.FC = () => {
   useEffect(() => {
     const handleCallback = async () => {
       try {
-        console.log('AuthCallback: Processing callback...');
+        console.log('AuthCallback: Processing callback...', window.location.href);
         const params = new URLSearchParams(window.location.search);
         const code = params.get('code');
         
         if (code) {
-          console.log('AuthCallback: Exchanging code for session...');
+          console.log('AuthCallback: Code found, exchanging for session...');
           const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
-          if (exchangeError) throw exchangeError;
+          if (exchangeError) {
+            console.error('AuthCallback: Exchange error:', exchangeError);
+            throw exchangeError;
+          }
+          console.log('AuthCallback: Exchange successful');
+        } else {
+          console.log('AuthCallback: No code in URL, checking for existing session...');
         }
         
         // Wait a small moment for the shared cookie to be recognized by the SDK
-        await new Promise(resolve => setTimeout(resolve, 500));
+        console.log('AuthCallback: Cooling down for 1s...');
+        await new Promise(resolve => setTimeout(resolve, 1000));
         
-        console.log('AuthCallback: Verifying session...');
+        console.log('AuthCallback: Final session check...');
         const { data: { session }, error: sessionError } = await supabase.auth.getSession();
         
-        if (sessionError) throw sessionError;
+        if (sessionError) {
+          console.error('AuthCallback: Session error:', sessionError);
+          throw sessionError;
+        }
         
         if (!session) {
-          console.log('AuthCallback: No session found, redirecting back to login');
-          const redirectUri = "https://plan.captainapp.co.uk/auth/callback";
-          window.location.replace(`https://captainapp.co.uk/auth?redirect=${encodeURIComponent(redirectUri)}`);
+          console.log('AuthCallback: No session found after exchange/check. Shared cookies might be blocked or missing.');
+          const cookies = document.cookie;
+          console.log('AuthCallback: Current document.cookie:', cookies.substring(0, 50) + '...');
+          
+          setError('No session found. Please ensure cookies are enabled.');
           return;
         }
         
-        console.log('AuthCallback: Success! Redirecting to home...');
+        console.log('AuthCallback: Success! User:', session.user.id, 'Redirecting to home...');
         window.location.replace('/');
       } catch (err: any) {
-        console.error('Error during auth callback:', err);
+        console.error('AuthCallback: Unexpected error:', err);
         setError(err.message || 'An unexpected error occurred.');
       }
     };

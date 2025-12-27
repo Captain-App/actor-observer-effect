@@ -19,17 +19,22 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
 
       try {
         console.log('AuthGuard: Checking session...');
-        const { data: { session } } = await supabase.auth.getSession();
+        const { data: { session }, error: sessionError } = await supabase.auth.getSession();
         
+        if (sessionError) {
+          console.error('AuthGuard: Session error:', sessionError);
+        }
+
         if (session) {
-          console.log('AuthGuard: Session found');
+          console.log('AuthGuard: Session found for user:', session.user.id);
           setIsAuthenticated(true);
           setLoading(false);
         } else {
-          console.log('AuthGuard: No session found, redirecting to login');
+          console.log('AuthGuard: No session found, redirecting to login. Current path:', window.location.pathname);
           const loginDomain = "https://captainapp.co.uk";
           const redirectUri = "https://plan.captainapp.co.uk/auth/callback";
           const loginUrl = `${loginDomain}/auth?redirect=${encodeURIComponent(redirectUri)}`;
+          console.log('AuthGuard: Redirecting to:', loginUrl);
           window.location.href = loginUrl;
         }
       } catch (error) {
