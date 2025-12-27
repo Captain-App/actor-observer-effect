@@ -11,6 +11,12 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
 
   useEffect(() => {
     const checkAuth = async () => {
+      // Don't check auth if we're on the callback page
+      if (window.location.pathname === '/auth/callback') {
+        setLoading(false);
+        return;
+      }
+
       try {
         console.log('AuthGuard: Checking session...');
         const { data: { session } } = await supabase.auth.getSession();
