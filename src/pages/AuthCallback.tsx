@@ -9,31 +9,27 @@ const AuthCallback: React.FC = () => {
       try {
         console.log('AuthCallback: Processing callback...');
         const params = new URLSearchParams(window.location.search);
-        
-        // Look for 'access_token' in hash or 'code' in query
         const code = params.get('code');
-        const hashParams = new URLSearchParams(window.location.hash.substring(1));
-        const accessToken = hashParams.get('access_token');
         
         if (code) {
           console.log('AuthCallback: Exchanging code for session...');
           const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
           if (exchangeError) throw exchangeError;
-        } else if (accessToken) {
-          console.log('AuthCallback: Session found in hash fragment. Setting session...');
-          const refreshToken = hashParams.get('refresh_token');
-          if (accessToken && refreshToken) {
-            const { error: setError } = await supabase.auth.setSession({
-              access_token: accessToken,
-              refresh_token: refreshToken,
-            });
-            if (setError) throw setError;
-          }
-        } else {
-          console.log('AuthCallback: Checking for existing session...');
-          const { data: { session }, error: sessionError } = await supabase.auth.getSession();
-          if (sessionError) throw sessionError;
-          if (!session) throw new Error('No session found. Please try logging in again.');
+        }
+        
+        // Wait a small moment for the shared cookie to be recognized by the SDK
+        await new Promise(resolve => setTimeout(resolve, 500));
+        
+        console.log('AuthCallback: Verifying session...');
+        const { data: { session }, error: sessionError } = await supabase.auth.getSession();
+        
+        if (sessionError) throw sessionError;
+        
+        if (!session) {
+          console.log('AuthCallback: No session found, redirecting back to login');
+          const redirectUri = "https://plan.captainapp.co.uk/auth/callback";
+          window.location.replace(`https://captainapp.co.uk/auth?redirect=${encodeURIComponent(redirectUri)}`);
+          return;
         }
         
         console.log('AuthCallback: Success! Redirecting to home...');

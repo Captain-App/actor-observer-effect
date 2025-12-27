@@ -12,24 +12,22 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
+        console.log('AuthGuard: Checking session...');
         const { data: { session } } = await supabase.auth.getSession();
         
         if (session) {
+          console.log('AuthGuard: Session found');
           setIsAuthenticated(true);
           setLoading(false);
         } else {
-          // Use the main app's root domain for the login page.
-          // captainapp.co.uk is the frontend UI.
+          console.log('AuthGuard: No session found, redirecting to login');
           const loginDomain = "https://captainapp.co.uk";
           const redirectUri = "https://plan.captainapp.co.uk/auth/callback";
-          
           const loginUrl = `${loginDomain}/auth?redirect=${encodeURIComponent(redirectUri)}`;
-          
-          console.log('Redirecting to main frontend login:', loginUrl);
           window.location.href = loginUrl;
         }
       } catch (error) {
-        console.error('Error checking auth:', error);
+        console.error('AuthGuard: Error checking auth:', error);
         setLoading(false);
       }
     };
@@ -37,6 +35,7 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
     checkAuth();
 
     const { data: { subscription } } = supabase.auth.onAuthStateChange((event, session) => {
+      console.log('AuthGuard: Auth state changed:', event, session ? 'Session active' : 'No session');
       if (session) {
         setIsAuthenticated(true);
       } else {
