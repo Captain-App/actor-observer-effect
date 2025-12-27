@@ -19,6 +19,7 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
 
       try {
         console.log('AuthGuard: Checking session...');
+        console.log('AuthGuard: All visible cookies:', document.cookie.substring(0, 100) + '...');
         const { data: { session }, error: sessionError } = await supabase.auth.getSession();
         
         if (sessionError) {
@@ -30,12 +31,22 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
           setIsAuthenticated(true);
           setLoading(false);
         } else {
-          console.log('AuthGuard: No session found, redirecting to login. Current path:', window.location.pathname);
+          console.log('AuthGuard: No session found. Current path:', window.location.pathname);
           const loginDomain = "https://captainapp.co.uk";
           const redirectUri = "https://plan.captainapp.co.uk/auth/callback";
           const loginUrl = `${loginDomain}/auth?redirect=${encodeURIComponent(redirectUri)}`;
           console.log('AuthGuard: Redirecting to:', loginUrl);
-          window.location.href = loginUrl;
+          
+          // Before redirecting, check if we're in a potential loop
+          const params = new URLSearchParams(window.location.search);
+          const loopCount = parseInt(params.get('loop') || '0');
+          if (loopCount > 3) {
+            console.error('AuthGuard: Potential redirect loop detected. Stopping.');
+            setLoading(false);
+            return;
+          }
+          
+          window.location.href = `${loginUrl}${loginUrl.includes('?') ? '&' : '?'}loop=${loopCount + 1}`;
         }
       } catch (error) {
         console.error('AuthGuard: Error checking auth:', error);
