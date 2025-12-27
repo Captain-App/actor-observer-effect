@@ -7,47 +7,29 @@ const AuthCallback: React.FC = () => {
   useEffect(() => {
     const handleCallback = async () => {
       try {
-        console.log('AuthCallback: Processing callback...', window.location.href);
         const params = new URLSearchParams(window.location.search);
         const code = params.get('code');
         
         if (code) {
-          console.log('AuthCallback: Code found, exchanging for session...');
           const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
-          if (exchangeError) {
-            console.error('AuthCallback: Exchange error:', exchangeError);
-            throw exchangeError;
-          }
-          console.log('AuthCallback: Exchange successful');
-        } else {
-          console.log('AuthCallback: No code in URL, checking for existing session...');
+          if (exchangeError) throw exchangeError;
         }
         
-        // Wait a small moment for the shared cookie to be recognized by the SDK
-        console.log('AuthCallback: Cooling down for 1s...');
-        await new Promise(resolve => setTimeout(resolve, 1000));
+        // Brief wait for session propagation
+        await new Promise(resolve => setTimeout(resolve, 500));
         
-        console.log('AuthCallback: Final session check...');
         const { data: { session }, error: sessionError } = await supabase.auth.getSession();
         
-        if (sessionError) {
-          console.error('AuthCallback: Session error:', sessionError);
-          throw sessionError;
-        }
+        if (sessionError) throw sessionError;
         
         if (!session) {
-          console.log('AuthCallback: No session found after exchange/check. Shared cookies might be blocked or missing.');
-          const cookies = document.cookie;
-          console.log('AuthCallback: Current document.cookie:', cookies.substring(0, 50) + '...');
-          
-          setError('No session found. Please ensure cookies are enabled.');
+          setError('Authentication failed. Please ensure cookies are enabled.');
           return;
         }
         
-        console.log('AuthCallback: Success! User:', session.user.id, 'Redirecting to home...');
         window.location.replace('/');
       } catch (err: any) {
-        console.error('AuthCallback: Unexpected error:', err);
+        console.error('AuthCallback Error:', err);
         setError(err.message || 'An unexpected error occurred.');
       }
     };
