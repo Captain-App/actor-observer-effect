@@ -18,14 +18,14 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
           setIsAuthenticated(true);
           setLoading(false);
         } else {
-          // Use the main app's auth page.
-          // Now that app.captainapp.co.uk will point to the Cloudflare Pages frontend.
-          const loginDomain = "https://app.captainapp.co.uk";
+          // Use the main app's root domain for the login page.
+          // captainapp.co.uk is the frontend UI.
+          const loginDomain = "https://captainapp.co.uk";
           const redirectUri = "https://plan.captainapp.co.uk/auth/callback";
           
           const loginUrl = `${loginDomain}/auth?redirect=${encodeURIComponent(redirectUri)}`;
           
-          console.log('Redirecting to main app login:', loginUrl);
+          console.log('Redirecting to main frontend login:', loginUrl);
           window.location.href = loginUrl;
         }
       } catch (error) {
