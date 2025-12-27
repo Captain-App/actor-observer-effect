@@ -151,13 +151,28 @@ function App() {
     setCurrentWordIndex(null);
   };
 
+  const handleProgressChange = (newProgress: number) => {
+    const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+    const newScrollY = (newProgress / 100) * scrollHeight;
+    
+    // If reader mode is on, we should also update audio time
+    if (isReaderMode && audioRef.current && timingData.length) {
+      const totalDuration = audioRef.current.duration;
+      if (!isNaN(totalDuration)) {
+        audioRef.current.currentTime = (newProgress / 100) * totalDuration;
+      }
+    }
+    
+    window.scrollTo({ top: newScrollY, behavior: 'auto' });
+  };
+
   if (isAuthCallback) {
     return <AuthCallback />;
   }
 
   return (
     <AuthGuard>
-      <div className="min-h-screen bg-background text-foreground transition-colors duration-500">
+      <div className="min-h-screen bg-background text-foreground transition-colors duration-500 pb-24">
         <audio ref={audioRef} src="/audio/article.wav" preload="auto" />
         <Article currentWordIndex={currentWordIndex} />
         <PlayerBar 
@@ -167,6 +182,7 @@ function App() {
           onTogglePlay={() => setIsPlaying(!isPlaying)}
           onReset={handleReset}
           onToggleReaderMode={() => setIsReaderMode(!isReaderMode)}
+          onProgressChange={handleProgressChange}
         />
       </div>
     </AuthGuard>
