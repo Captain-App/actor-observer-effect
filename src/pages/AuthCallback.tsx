@@ -7,19 +7,28 @@ const AuthCallback: React.FC = () => {
   useEffect(() => {
     const handleCallback = async () => {
       try {
+        console.log('AuthCallback: Processing callback...');
         const params = new URLSearchParams(window.location.search);
+        
+        // Look for 'access_token' in hash or 'code' in query
         const code = params.get('code');
+        const hashParams = new URLSearchParams(window.location.hash.substring(1));
+        const accessToken = hashParams.get('access_token');
         
         if (code) {
+          console.log('AuthCallback: Exchanging code for session...');
           const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
           if (exchangeError) throw exchangeError;
+        } else if (accessToken) {
+          console.log('AuthCallback: Session found in hash fragment.');
         } else {
-          // Fallback to getSession in case it was a hash fragment or already handled
-          const { error: sessionError } = await supabase.auth.getSession();
+          console.log('AuthCallback: Checking for existing session...');
+          const { data: { session }, error: sessionError } = await supabase.auth.getSession();
           if (sessionError) throw sessionError;
+          if (!session) throw new Error('No session found. Please try logging in again.');
         }
         
-        // Success, redirect to home
+        console.log('AuthCallback: Success! Redirecting to home...');
         window.location.replace('/');
       } catch (err: any) {
         console.error('Error during auth callback:', err);
