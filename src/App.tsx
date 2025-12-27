@@ -1,8 +1,10 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import Article from './components/Article';
 import PlayerBar from './components/PlayerBar';
+import Sidebar from './components/Sidebar';
 import AuthGuard from './components/AuthGuard';
 import AuthCallback from './pages/AuthCallback';
+import { sections } from './data/sections';
 
 const SCROLL_SPEED = 1;
 
@@ -17,12 +19,41 @@ function App() {
   const [isReaderMode, setIsReaderMode] = useState(false);
   const [currentWordIndex, setCurrentWordIndex] = useState<number | null>(null);
   const [timingData, setTimingData] = useState<TimingWord[]>([]);
+  const [activeSectionId, setActiveSectionId] = useState<string | null>(null);
   
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const requestRef = useRef<number>();
 
   // Simple routing for AuthCallback
   const isAuthCallback = window.location.pathname === '/auth/callback';
+
+  // Intersection Observer for Sidebar highlighting
+  useEffect(() => {
+    if (isAuthCallback) return;
+
+    const observerOptions = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0
+    };
+
+    const handleIntersection = (entries: IntersectionObserverEntry[]) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveSectionId(entry.target.id);
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(handleIntersection, observerOptions);
+
+    sections.forEach(section => {
+      const element = document.getElementById(section.id);
+      if (element) observer.observe(element);
+    });
+
+    return () => observer.disconnect();
+  }, [isAuthCallback]);
 
   // Load timing data
   useEffect(() => {
@@ -172,9 +203,16 @@ function App() {
 
   return (
     <AuthGuard>
-      <div className="min-h-screen bg-background text-foreground transition-colors duration-500 pb-24">
+      <div className="min-h-screen bg-background text-foreground transition-colors duration-500 pb-24 relative">
         <audio ref={audioRef} src="/audio/article.wav" preload="auto" />
-        <Article currentWordIndex={currentWordIndex} />
+        
+        <div className="flex justify-center max-w-[1400px] mx-auto px-4">
+          <Sidebar currentSectionId={activeSectionId} />
+          <main className="flex-1 w-full lg:ml-64">
+            <Article currentWordIndex={currentWordIndex} />
+          </main>
+        </div>
+
         <PlayerBar 
           progress={progress} 
           isPlaying={isPlaying} 
