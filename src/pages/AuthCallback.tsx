@@ -7,42 +7,62 @@ const AuthCallback: React.FC = () => {
   useEffect(() => {
     const handleCallback = async () => {
       try {
+        console.log('AuthCallback: Processing callback URL:', window.location.href);
         const params = new URLSearchParams(window.location.search);
         const code = params.get('code');
         
         // Check for session tokens in the hash fragment (Session Bridge)
-        const hashParams = new URLSearchParams(window.location.hash.substring(1));
+        const hash = window.location.hash.substring(1);
+        console.log('AuthCallback: Hash fragment length:', hash.length);
+        const hashParams = new URLSearchParams(hash);
         const accessToken = hashParams.get('access_token');
         const refreshToken = hashParams.get('refresh_token');
         
         if (accessToken && refreshToken) {
           console.log('AuthCallback: Session found in hash fragment. Setting session...');
-          const { error: setError } = await supabase.auth.setSession({
+          const { data, error: setError } = await supabase.auth.setSession({
             access_token: accessToken,
             refresh_token: refreshToken,
           });
-          if (setError) throw setError;
+          if (setError) {
+            console.error('AuthCallback: setSession error:', setError);
+            throw setError;
+          }
+          console.log('AuthCallback: setSession successful. User ID:', data.session?.user?.id);
         } else if (code) {
-          console.log('AuthCallback: Code found, exchanging for session...');
-          const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
-          if (exchangeError) throw exchangeError;
+          console.log('AuthCallback: Code found in URL, exchanging for session...');
+          const { data, error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
+          if (exchangeError) {
+            console.error('AuthCallback: exchangeCodeForSession error:', exchangeError);
+            throw exchangeError;
+          }
+          console.log('AuthCallback: Exchange successful. User ID:', data.session?.user?.id);
+        } else {
+          console.log('AuthCallback: No code or hash tokens found.');
         }
         
         // Brief wait for session propagation
+        console.log('AuthCallback: Waiting 500ms for propagation...');
         await new Promise(resolve => setTimeout(resolve, 500));
         
+        console.log('AuthCallback: Calling getSession()...');
         const { data: { session }, error: sessionError } = await supabase.auth.getSession();
         
-        if (sessionError) throw sessionError;
+        if (sessionError) {
+          console.error('AuthCallback: getSession error:', sessionError);
+          throw sessionError;
+        }
         
         if (!session) {
-          setError('Authentication failed. Please ensure cookies are enabled.');
+          console.error('AuthCallback: No session found after processing. LocalStorage may not be working.');
+          setError('Authentication failed. Please ensure your browser allows local storage.');
           return;
         }
         
+        console.log('AuthCallback: Authentication successful! Redirecting home...');
         window.location.replace('/');
       } catch (err: any) {
-        console.error('AuthCallback Error:', err);
+        console.error('AuthCallback Unexpected Error:', err);
         setError(err.message || 'An unexpected error occurred.');
       }
     };
