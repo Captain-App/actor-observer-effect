@@ -8,23 +8,21 @@ const cookieStorage = {
   getItem: (key: string) => {
     if (typeof document === 'undefined') return null;
     const name = key + "=";
-    const decodedCookie = decodeURIComponent(document.cookie);
+    const decodedCookie = document.cookie;
     const ca = decodedCookie.split(';');
-    for(let i = 0; i <ca.length; i++) {
-      let c = ca[i];
-      while (c.charAt(0) == ' ') {
-        c = c.substring(1);
-      }
+    for(let i = 0; i < ca.length; i++) {
+      let c = ca[i].trim();
       if (c.indexOf(name) == 0) {
-        return c.substring(name.length, c.length);
+        return decodeURIComponent(c.substring(name.length, c.length));
       }
     }
     return null;
   },
   setItem: (key: string, value: string) => {
     if (typeof document === 'undefined') return;
+    const encodedValue = encodeURIComponent(value);
     // Set cookie on the root domain so it's shared across all subdomains
-    document.cookie = `${key}=${value}; domain=.captainapp.co.uk; path=/; max-age=31536000; SameSite=Lax; Secure`;
+    document.cookie = `${key}=${encodedValue}; domain=.captainapp.co.uk; path=/; max-age=31536000; SameSite=Lax; Secure`;
   },
   removeItem: (key: string) => {
     if (typeof document === 'undefined') return;
@@ -35,6 +33,7 @@ const cookieStorage = {
 export const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
   auth: {
     storage: cookieStorage,
+    storageKey: 'captainapp-shared-auth', // Consistent key for all subdomains
     persistSession: true,
     autoRefreshToken: true,
     detectSessionInUrl: true
