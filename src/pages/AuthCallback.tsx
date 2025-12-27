@@ -18,17 +18,27 @@ const AuthCallback: React.FC = () => {
         const accessToken = hashParams.get('access_token');
         const refreshToken = hashParams.get('refresh_token');
         
-        if (accessToken && refreshToken) {
+        if (accessToken) {
           console.log('AuthCallback: Session found in hash fragment. Setting session...');
           const { data, error: setError } = await supabase.auth.setSession({
             access_token: accessToken,
-            refresh_token: refreshToken,
+            refresh_token: refreshToken || '',
           });
+          
           if (setError) {
             console.error('AuthCallback: setSession error:', setError);
             throw setError;
           }
-          console.log('AuthCallback: setSession successful. User ID:', data.session?.user?.id);
+          
+          if (data.session) {
+            console.log('AuthCallback: setSession successful. User ID:', data.session.user.id);
+            // On localhost, we might need a manual setItem just in case the SDK storage is being finicky
+            if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+              const storageKey = 'sb-kjbcjkihxskuwwfdqklt-auth-token';
+              localStorage.setItem(storageKey, JSON.stringify(data.session));
+              console.log('AuthCallback: Manually verified localStorage write');
+            }
+          }
         } else if (code) {
           console.log('AuthCallback: Code found in URL, exchanging for session...');
           const { data, error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
@@ -37,15 +47,13 @@ const AuthCallback: React.FC = () => {
             throw exchangeError;
           }
           console.log('AuthCallback: Exchange successful. User ID:', data.session?.user?.id);
-        } else {
-          console.log('AuthCallback: No code or hash tokens found.');
         }
         
         // Brief wait for session propagation
-        console.log('AuthCallback: Waiting 500ms for propagation...');
-        await new Promise(resolve => setTimeout(resolve, 500));
+        console.log('AuthCallback: Waiting 800ms for propagation...');
+        await new Promise(resolve => setTimeout(resolve, 800));
         
-        console.log('AuthCallback: Calling getSession()...');
+        console.log('AuthCallback: Final session check...');
         const { data: { session }, error: sessionError } = await supabase.auth.getSession();
         
         if (sessionError) {
@@ -54,8 +62,19 @@ const AuthCallback: React.FC = () => {
         }
         
         if (!session) {
-          console.error('AuthCallback: No session found after processing. LocalStorage may not be working.');
-          setError('Authentication failed. Please ensure your browser allows local storage.');
+          console.error('AuthCallback: No session found after processing.');
+          // Try one last thing: check if it's in localStorage manually
+          const storageKey = 'sb-kjbcjkihxskuwwfdqklt-auth-token';
+          const localSession = localStorage.getItem(storageKey);
+          if (localSession) {
+            console.log('AuthCallback: Found session in localStorage manually, trying to set it again');
+            const parsed = JSON.parse(localSession);
+            await supabase.auth.setSession(parsed);
+            window.location.replace('/');
+            return;
+          }
+          
+          setError('Authentication failed. No session could be established.');
           return;
         }
         
@@ -63,7 +82,7 @@ const AuthCallback: React.FC = () => {
         window.location.replace('/');
       } catch (err: any) {
         console.error('AuthCallback Unexpected Error:', err);
-        setError(err.message || 'An unexpected error occurred.');
+        setError(err.message || 'An unexpected error occurred during authentication.');
       }
     };
 

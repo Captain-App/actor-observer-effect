@@ -17,15 +17,28 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
         return;
       }
 
+      // Small delay on localhost to allow potential redirect from callback to settle
+      const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      if (isLocalhost) {
+        console.log('AuthGuard: Localhost detected, waiting for session...');
+        await new Promise(resolve => setTimeout(resolve, 500));
+      }
+
       try {
-        const { data: { session } } = await supabase.auth.getSession();
+        console.log('AuthGuard: Checking session...');
+        const { data: { session }, error: sessionError } = await supabase.auth.getSession();
         
+        if (sessionError) {
+          console.error('AuthGuard: Session error:', sessionError);
+        }
+
         if (session) {
+          console.log('AuthGuard: Session found for user:', session.user.id);
           setIsAuthenticated(true);
           setLoading(false);
         } else {
           // Detect if we're on localhost to avoid redirecting to production auth
-          const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+          console.log('AuthGuard: No session found. Current path:', window.location.pathname);
           
           const loginDomain = "https://captainapp.co.uk";
           const redirectUri = isLocalhost 
@@ -33,6 +46,7 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
             : "https://plan.captainapp.co.uk/auth/callback";
           
           const loginUrl = `${loginDomain}/auth?redirect=${encodeURIComponent(redirectUri)}`;
+          console.log('AuthGuard: Redirecting to:', loginUrl);
           window.location.href = loginUrl;
         }
       } catch (error) {
