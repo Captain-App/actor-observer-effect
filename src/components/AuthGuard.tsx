@@ -18,8 +18,8 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
           setIsAuthenticated(true);
           setLoading(false);
         } else {
-          // Use the new native Supabase OAuth flow
-          const clientId = "f10d3103-70f4-420c-9c31-b5097b131366";
+          // Use the new native Supabase OAuth flow (Public Client with PKCE)
+          const clientId = "fcb4bf7a-ad63-4cfc-ba82-db8c5140f95d";
           const redirectUri = "https://plan.captainapp.co.uk/auth/callback";
           const scope = "openid email profile";
           
@@ -30,7 +30,7 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
           authorizeUrl.searchParams.set("redirect_uri", redirectUri);
           authorizeUrl.searchParams.set("scope", scope);
           
-          console.log('Redirecting to Supabase OAuth:', authorizeUrl.toString());
+          console.log('Redirecting to Supabase OAuth (Public Client):', authorizeUrl.toString());
           window.location.href = authorizeUrl.toString();
         }
       } catch (error) {
