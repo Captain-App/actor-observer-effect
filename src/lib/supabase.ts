@@ -10,7 +10,9 @@ const cookieStorage = {
     
     // On localhost, fallback to standard localStorage for easier development
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      return localStorage.getItem(key);
+      const val = localStorage.getItem(key);
+      console.log(`Supabase LocalStorage: getItem(${key}) found:`, !!val);
+      return val;
     }
 
     const name = key + "=";
@@ -18,7 +20,8 @@ const cookieStorage = {
     for(let i = 0; i < ca.length; i++) {
       let c = ca[i].trim();
       if (c.indexOf(name) == 0) {
-        return decodeURIComponent(c.substring(name.length, c.length));
+        const value = decodeURIComponent(c.substring(name.length, c.length));
+        return value;
       }
     }
     return null;
@@ -27,6 +30,7 @@ const cookieStorage = {
     if (typeof document === 'undefined') return;
 
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      console.log(`Supabase LocalStorage: setItem(${key})`);
       localStorage.setItem(key, value);
       return;
     }
@@ -39,6 +43,7 @@ const cookieStorage = {
     if (typeof document === 'undefined') return;
 
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      console.log(`Supabase LocalStorage: removeItem(${key})`);
       localStorage.removeItem(key);
       return;
     }
