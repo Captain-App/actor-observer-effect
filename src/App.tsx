@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import Article from './components/Article';
 import PlayerBar from './components/PlayerBar';
+import AuthGuard from './components/AuthGuard';
+import AuthCallback from './pages/AuthCallback';
 
 const SCROLL_SPEED = 1;
 
@@ -19,16 +21,23 @@ function App() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const requestRef = useRef<number>();
 
+  // Simple routing for AuthCallback
+  const isAuthCallback = window.location.pathname === '/auth/callback';
+
   // Load timing data
   useEffect(() => {
+    if (isAuthCallback) return;
+    
     fetch('/audio/timing.json')
       .then(res => res.json())
       .then(data => setTimingData(data))
       .catch(() => console.log('Static timing data not found. Run scripts/generate_tts.py to generate it.'));
-  }, []);
+  }, [isAuthCallback]);
 
   // Handle progress & scroll logic
   useEffect(() => {
+    if (isAuthCallback) return;
+
     const handleScroll = () => {
       const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
       const currentScroll = window.scrollY;
@@ -38,14 +47,13 @@ function App() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [isAuthCallback]);
 
   const handleStop = useCallback(() => {
     setIsPlaying(false);
     if (audioRef.current) {
       audioRef.current.pause();
     }
-    // Fallback for window.speechSynthesis
     window.speechSynthesis.cancel();
     setCurrentWordIndex(null);
   }, []);
@@ -53,13 +61,12 @@ function App() {
   // Audio Sync Logic
   useEffect(() => {
     const audio = audioRef.current;
-    if (!audio || !isReaderMode) return;
+    if (!audio || !isReaderMode || isAuthCallback) return;
 
     const handleTimeUpdate = () => {
       if (!timingData.length) return;
       
       const currentTime = audio.currentTime;
-      // Find the word that corresponds to the current time
       const wordIdx = timingData.findIndex((t, i) => {
         const nextStart = timingData[i + 1]?.start ?? Infinity;
         return currentTime >= t.start && currentTime < nextStart;
@@ -68,7 +75,6 @@ function App() {
       if (wordIdx !== -1 && wordIdx !== currentWordIndex) {
         setCurrentWordIndex(wordIdx);
         
-        // Scroll into view
         const element = document.getElementById('current-reading-word');
         if (element) {
           element.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -78,23 +84,24 @@ function App() {
 
     audio.addEventListener('timeupdate', handleTimeUpdate);
     return () => audio.removeEventListener('timeupdate', handleTimeUpdate);
-  }, [isReaderMode, timingData, currentWordIndex]);
+  }, [isReaderMode, timingData, currentWordIndex, isAuthCallback]);
 
   // Play/Pause Control
   useEffect(() => {
+    if (isAuthCallback) return;
+
     if (isPlaying) {
       if (isReaderMode) {
         if (audioRef.current) {
           audioRef.current.play().catch(() => {
-            console.log('Audio file not found or playback failed. Falling back to browser TTS.');
-            // Fallback logic could go here
+            console.log('Audio file not found or playback failed.');
           });
         }
       }
     } else {
       if (audioRef.current) audioRef.current.pause();
     }
-  }, [isPlaying, isReaderMode]);
+  }, [isPlaying, isReaderMode, isAuthCallback]);
 
   // Constant scroll logic (when reader mode is off)
   const animate = useCallback(() => {
@@ -105,7 +112,7 @@ function App() {
   }, [isPlaying, isReaderMode]);
 
   useEffect(() => {
-    if (isPlaying && !isReaderMode) {
+    if (isPlaying && !isReaderMode && !isAuthCallback) {
       requestRef.current = requestAnimationFrame(animate);
     } else if (requestRef.current) {
       cancelAnimationFrame(requestRef.current);
@@ -113,10 +120,12 @@ function App() {
     return () => {
       if (requestRef.current) cancelAnimationFrame(requestRef.current);
     };
-  }, [isPlaying, isReaderMode, animate]);
+  }, [isPlaying, isReaderMode, animate, isAuthCallback]);
 
   // Keyboard controls
   useEffect(() => {
+    if (isAuthCallback) return;
+
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.code === 'Space') {
         e.preventDefault();
@@ -130,7 +139,7 @@ function App() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [isPlaying]);
+  }, [isPlaying, isAuthCallback]);
 
   const handleReset = () => {
     if (audioRef.current) {
@@ -142,19 +151,25 @@ function App() {
     setCurrentWordIndex(null);
   };
 
+  if (isAuthCallback) {
+    return <AuthCallback />;
+  }
+
   return (
-    <div className="min-h-screen bg-background text-foreground transition-colors duration-500">
-      <audio ref={audioRef} src="/audio/article.wav" preload="auto" />
-      <Article currentWordIndex={currentWordIndex} />
-      <PlayerBar 
-        progress={progress} 
-        isPlaying={isPlaying} 
-        isReaderMode={isReaderMode}
-        onTogglePlay={() => setIsPlaying(!isPlaying)}
-        onReset={handleReset}
-        onToggleReaderMode={() => setIsReaderMode(!isReaderMode)}
-      />
-    </div>
+    <AuthGuard>
+      <div className="min-h-screen bg-background text-foreground transition-colors duration-500">
+        <audio ref={audioRef} src="/audio/article.wav" preload="auto" />
+        <Article currentWordIndex={currentWordIndex} />
+        <PlayerBar 
+          progress={progress} 
+          isPlaying={isPlaying} 
+          isReaderMode={isReaderMode}
+          onTogglePlay={() => setIsPlaying(!isPlaying)}
+          onReset={handleReset}
+          onToggleReaderMode={() => setIsReaderMode(!isReaderMode)}
+        />
+      </div>
+    </AuthGuard>
   );
 }
 
