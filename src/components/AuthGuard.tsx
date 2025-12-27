@@ -18,14 +18,20 @@ const AuthGuard: React.FC<AuthGuardProps> = ({ children }) => {
           setIsAuthenticated(true);
           setLoading(false);
         } else {
-          // No session, redirect to main app auth
-          // Include the current origin to ensure we redirect back to the correct deployment (e.g. preview URL)
-          const currentOrigin = window.location.origin;
-          const callbackUrl = `${currentOrigin}/auth/callback`;
-          const redirectUrl = `https://app.captainapp.co.uk/auth?redirect=${encodeURIComponent(callbackUrl)}`;
+          // Use the new native Supabase OAuth flow
+          const clientId = "f10d3103-70f4-420c-9c31-b5097b131366";
+          const redirectUri = "https://plan.captainapp.co.uk/auth/callback";
+          const scope = "openid email profile";
           
-          console.log('Redirecting to:', redirectUrl);
-          window.location.href = redirectUrl;
+          // Construct the Supabase OAuth authorize URL
+          const authorizeUrl = new URL("https://kjbcjkihxskuwwfdqklt.supabase.co/auth/v1/oauth/authorize");
+          authorizeUrl.searchParams.set("client_id", clientId);
+          authorizeUrl.searchParams.set("response_type", "code");
+          authorizeUrl.searchParams.set("redirect_uri", redirectUri);
+          authorizeUrl.searchParams.set("scope", scope);
+          
+          console.log('Redirecting to Supabase OAuth:', authorizeUrl.toString());
+          window.location.href = authorizeUrl.toString();
         }
       } catch (error) {
         console.error('Error checking auth:', error);
