@@ -20,7 +20,15 @@ const AuthCallback: React.FC = () => {
           const { error: exchangeError } = await supabase.auth.exchangeCodeForSession(code);
           if (exchangeError) throw exchangeError;
         } else if (accessToken) {
-          console.log('AuthCallback: Session found in hash fragment.');
+          console.log('AuthCallback: Session found in hash fragment. Setting session...');
+          const refreshToken = hashParams.get('refresh_token');
+          if (accessToken && refreshToken) {
+            const { error: setError } = await supabase.auth.setSession({
+              access_token: accessToken,
+              refresh_token: refreshToken,
+            });
+            if (setError) throw setError;
+          }
         } else {
           console.log('AuthCallback: Checking for existing session...');
           const { data: { session }, error: sessionError } = await supabase.auth.getSession();
