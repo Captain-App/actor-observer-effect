@@ -1,0 +1,3938 @@
+[
+  {
+    "word": "CaptainApp:",
+    "start": 0
+  },
+  {
+    "word": "The",
+    "start": 0.395
+  },
+  {
+    "word": "Truth",
+    "start": 0.789
+  },
+  {
+    "word": "in",
+    "start": 1.184
+  },
+  {
+    "word": "the",
+    "start": 1.579
+  },
+  {
+    "word": "Data.",
+    "start": 1.973
+  },
+  {
+    "word": "Removing",
+    "start": 2.668
+  },
+  {
+    "word": "decision",
+    "start": 3.151
+  },
+  {
+    "word": "latency",
+    "start": 3.633
+  },
+  {
+    "word": "for",
+    "start": 4.116
+  },
+  {
+    "word": "the",
+    "start": 4.599
+  },
+  {
+    "word": "modern",
+    "start": 5.081
+  },
+  {
+    "word": "UK",
+    "start": 5.564
+  },
+  {
+    "word": "SME.",
+    "start": 6.047
+  },
+  {
+    "word": "Picture",
+    "start": 6.829
+  },
+  {
+    "word": "a",
+    "start": 7.223
+  },
+  {
+    "word": "typical",
+    "start": 7.616
+  },
+  {
+    "word": "UK",
+    "start": 8.01
+  },
+  {
+    "word": "SME",
+    "start": 8.403
+  },
+  {
+    "word": "on",
+    "start": 8.797
+  },
+  {
+    "word": "a",
+    "start": 9.19
+  },
+  {
+    "word": "Tuesday",
+    "start": 9.584
+  },
+  {
+    "word": "morning.",
+    "start": 9.977
+  },
+  {
+    "word": "The",
+    "start": 10.671
+  },
+  {
+    "word": "Managing",
+    "start": 11.053
+  },
+  {
+    "word": "Director",
+    "start": 11.436
+  },
+  {
+    "word": "has",
+    "start": 11.818
+  },
+  {
+    "word": "one",
+    "start": 12.201
+  },
+  {
+    "word": "question",
+    "start": 12.583
+  },
+  {
+    "word": "in",
+    "start": 12.966
+  },
+  {
+    "word": "their",
+    "start": 13.348
+  },
+  {
+    "word": "head:",
+    "start": 13.73
+  },
+  {
+    "word": "Are",
+    "start": 14.113
+  },
+  {
+    "word": "we",
+    "start": 14.495
+  },
+  {
+    "word": "actually",
+    "start": 14.878
+  },
+  {
+    "word": "doing",
+    "start": 15.26
+  },
+  {
+    "word": "alright?",
+    "start": 15.643
+  },
+  {
+    "word": "Not",
+    "start": 16.325
+  },
+  {
+    "word": "vibes.",
+    "start": 16.805
+  },
+  {
+    "word": "Not",
+    "start": 17.585
+  },
+  {
+    "word": "'it",
+    "start": 17.927
+  },
+  {
+    "word": "feels",
+    "start": 18.268
+  },
+  {
+    "word": "busy'.",
+    "start": 18.609
+  },
+  {
+    "word": "The",
+    "start": 19.251
+  },
+  {
+    "word": "real",
+    "start": 19.635
+  },
+  {
+    "word": "version.",
+    "start": 20.019
+  },
+  {
+    "word": "What\u2019s",
+    "start": 20.703
+  },
+  {
+    "word": "cash",
+    "start": 21.065
+  },
+  {
+    "word": "looking",
+    "start": 21.428
+  },
+  {
+    "word": "like,",
+    "start": 21.791
+  },
+  {
+    "word": "right",
+    "start": 22.153
+  },
+  {
+    "word": "now?",
+    "start": 22.516
+  },
+  {
+    "word": "Which",
+    "start": 23.179
+  },
+  {
+    "word": "invoices",
+    "start": 23.669
+  },
+  {
+    "word": "are",
+    "start": 24.16
+  },
+  {
+    "word": "drifting?",
+    "start": 24.651
+  },
+  {
+    "word": "Who",
+    "start": 25.441
+  },
+  {
+    "word": "owes",
+    "start": 25.719
+  },
+  {
+    "word": "us",
+    "start": 25.996
+  },
+  {
+    "word": "money,",
+    "start": 26.273
+  },
+  {
+    "word": "and",
+    "start": 26.551
+  },
+  {
+    "word": "how",
+    "start": 26.828
+  },
+  {
+    "word": "late",
+    "start": 27.105
+  },
+  {
+    "word": "are",
+    "start": 27.383
+  },
+  {
+    "word": "they?",
+    "start": 27.66
+  },
+  {
+    "word": "Which",
+    "start": 28.237
+  },
+  {
+    "word": "subscriptions",
+    "start": 28.678
+  },
+  {
+    "word": "are",
+    "start": 29.119
+  },
+  {
+    "word": "creeping",
+    "start": 29.56
+  },
+  {
+    "word": "up",
+    "start": 30.001
+  },
+  {
+    "word": "month-on-month?",
+    "start": 30.442
+  },
+  {
+    "word": "If",
+    "start": 31.183
+  },
+  {
+    "word": "we",
+    "start": 31.497
+  },
+  {
+    "word": "push",
+    "start": 31.812
+  },
+  {
+    "word": "on",
+    "start": 32.127
+  },
+  {
+    "word": "hiring,",
+    "start": 32.441
+  },
+  {
+    "word": "do",
+    "start": 32.756
+  },
+  {
+    "word": "we",
+    "start": 33.071
+  },
+  {
+    "word": "stay",
+    "start": 33.385
+  },
+  {
+    "word": "safe\u2014or",
+    "start": 33.7
+  },
+  {
+    "word": "do",
+    "start": 34.015
+  },
+  {
+    "word": "we",
+    "start": 34.329
+  },
+  {
+    "word": "wobble?",
+    "start": 34.644
+  },
+  {
+    "word": "And",
+    "start": 35.259
+  },
+  {
+    "word": "the",
+    "start": 35.62
+  },
+  {
+    "word": "uncomfortable",
+    "start": 35.98
+  },
+  {
+    "word": "truth",
+    "start": 36.341
+  },
+  {
+    "word": "is:",
+    "start": 36.702
+  },
+  {
+    "word": "the",
+    "start": 37.063
+  },
+  {
+    "word": "answers",
+    "start": 37.424
+  },
+  {
+    "word": "are",
+    "start": 37.785
+  },
+  {
+    "word": "in",
+    "start": 38.146
+  },
+  {
+    "word": "the",
+    "start": 38.507
+  },
+  {
+    "word": "business",
+    "start": 38.868
+  },
+  {
+    "word": "already...",
+    "start": 39.228
+  },
+  {
+    "word": "just",
+    "start": 39.889
+  },
+  {
+    "word": "scattered",
+    "start": 40.364
+  },
+  {
+    "word": "across",
+    "start": 40.839
+  },
+  {
+    "word": "systems.",
+    "start": 41.313
+  },
+  {
+    "word": "Fragmentation",
+    "start": 42.088
+  },
+  {
+    "word": "and",
+    "start": 42.76
+  },
+  {
+    "word": "decision",
+    "start": 43.432
+  },
+  {
+    "word": "latency.",
+    "start": 44.104
+  },
+  {
+    "word": "Xero",
+    "start": 45.076
+  },
+  {
+    "word": "knows",
+    "start": 45.505
+  },
+  {
+    "word": "the",
+    "start": 45.935
+  },
+  {
+    "word": "truth",
+    "start": 46.364
+  },
+  {
+    "word": "about",
+    "start": 46.793
+  },
+  {
+    "word": "invoices",
+    "start": 47.223
+  },
+  {
+    "word": "and",
+    "start": 47.652
+  },
+  {
+    "word": "debtors.",
+    "start": 48.081
+  },
+  {
+    "word": "Stripe",
+    "start": 48.811
+  },
+  {
+    "word": "knows",
+    "start": 49.263
+  },
+  {
+    "word": "revenue",
+    "start": 49.715
+  },
+  {
+    "word": "and",
+    "start": 50.167
+  },
+  {
+    "word": "churn.",
+    "start": 50.62
+  },
+  {
+    "word": "WhatsApp",
+    "start": 51.372
+  },
+  {
+    "word": "is",
+    "start": 51.809
+  },
+  {
+    "word": "where",
+    "start": 52.247
+  },
+  {
+    "word": "people",
+    "start": 52.684
+  },
+  {
+    "word": "actually",
+    "start": 53.121
+  },
+  {
+    "word": "respond.",
+    "start": 53.559
+  },
+  {
+    "word": "And",
+    "start": 54.296
+  },
+  {
+    "word": "the",
+    "start": 54.616
+  },
+  {
+    "word": "problem",
+    "start": 54.936
+  },
+  {
+    "word": "isn\u2019t",
+    "start": 55.256
+  },
+  {
+    "word": "a",
+    "start": 55.576
+  },
+  {
+    "word": "lack",
+    "start": 55.896
+  },
+  {
+    "word": "of",
+    "start": 56.216
+  },
+  {
+    "word": "data.",
+    "start": 56.536
+  },
+  {
+    "word": "It\u2019s",
+    "start": 57.156
+  },
+  {
+    "word": "friction.",
+    "start": 57.593
+  },
+  {
+    "word": "It\u2019s",
+    "start": 58.331
+  },
+  {
+    "word": "fragmentation.",
+    "start": 59.024
+  },
+  {
+    "word": "It\u2019s",
+    "start": 60.017
+  },
+  {
+    "word": "decision",
+    "start": 60.572
+  },
+  {
+    "word": "latency.",
+    "start": 61.127
+  },
+  {
+    "word": "CaptainApp\u2019s",
+    "start": 61.981
+  },
+  {
+    "word": "agent",
+    "start": 62.438
+  },
+  {
+    "word": "platform",
+    "start": 62.894
+  },
+  {
+    "word": "is",
+    "start": 63.351
+  },
+  {
+    "word": "being",
+    "start": 63.807
+  },
+  {
+    "word": "built",
+    "start": 64.264
+  },
+  {
+    "word": "to",
+    "start": 64.721
+  },
+  {
+    "word": "remove",
+    "start": 65.177
+  },
+  {
+    "word": "that",
+    "start": 65.634
+  },
+  {
+    "word": "latency.",
+    "start": 66.09
+  },
+  {
+    "word": "Not",
+    "start": 66.847
+  },
+  {
+    "word": "by",
+    "start": 67.309
+  },
+  {
+    "word": "adding",
+    "start": 67.772
+  },
+  {
+    "word": "another",
+    "start": 68.234
+  },
+  {
+    "word": "dashboard,",
+    "start": 68.697
+  },
+  {
+    "word": "but",
+    "start": 69.159
+  },
+  {
+    "word": "by",
+    "start": 69.622
+  },
+  {
+    "word": "giving",
+    "start": 70.084
+  },
+  {
+    "word": "decision",
+    "start": 70.546
+  },
+  {
+    "word": "makers",
+    "start": 71.009
+  },
+  {
+    "word": "a",
+    "start": 71.471
+  },
+  {
+    "word": "simple",
+    "start": 71.934
+  },
+  {
+    "word": "interface",
+    "start": 72.396
+  },
+  {
+    "word": "they",
+    "start": 72.859
+  },
+  {
+    "word": "already",
+    "start": 73.321
+  },
+  {
+    "word": "use\u2014WhatsApp\u2014and",
+    "start": 73.784
+  },
+  {
+    "word": "letting",
+    "start": 74.246
+  },
+  {
+    "word": "them",
+    "start": 74.709
+  },
+  {
+    "word": "ask",
+    "start": 75.171
+  },
+  {
+    "word": "plain-English",
+    "start": 75.634
+  },
+  {
+    "word": "questions",
+    "start": 76.096
+  },
+  {
+    "word": "that",
+    "start": 76.559
+  },
+  {
+    "word": "get",
+    "start": 77.021
+  },
+  {
+    "word": "answered",
+    "start": 77.484
+  },
+  {
+    "word": "with",
+    "start": 77.946
+  },
+  {
+    "word": "grounded,",
+    "start": 78.409
+  },
+  {
+    "word": "auditable",
+    "start": 78.871
+  },
+  {
+    "word": "summaries.",
+    "start": 79.334
+  },
+  {
+    "word": "Approaching",
+    "start": 80.096
+  },
+  {
+    "word": "agents",
+    "start": 80.757
+  },
+  {
+    "word": "differently.",
+    "start": 81.419
+  },
+  {
+    "word": "We\u2019re",
+    "start": 82.38
+  },
+  {
+    "word": "not",
+    "start": 82.721
+  },
+  {
+    "word": "building",
+    "start": 83.063
+  },
+  {
+    "word": "a",
+    "start": 83.404
+  },
+  {
+    "word": "chatbot",
+    "start": 83.745
+  },
+  {
+    "word": "that",
+    "start": 84.087
+  },
+  {
+    "word": "guesses.",
+    "start": 84.428
+  },
+  {
+    "word": "We\u2019re",
+    "start": 85.069
+  },
+  {
+    "word": "building",
+    "start": 85.458
+  },
+  {
+    "word": "an",
+    "start": 85.847
+  },
+  {
+    "word": "accountable",
+    "start": 86.236
+  },
+  {
+    "word": "decision",
+    "start": 86.625
+  },
+  {
+    "word": "layer\u2014an",
+    "start": 87.014
+  },
+  {
+    "word": "agent",
+    "start": 87.403
+  },
+  {
+    "word": "that",
+    "start": 87.792
+  },
+  {
+    "word": "can",
+    "start": 88.181
+  },
+  {
+    "word": "show",
+    "start": 88.571
+  },
+  {
+    "word": "its",
+    "start": 88.96
+  },
+  {
+    "word": "working,",
+    "start": 89.349
+  },
+  {
+    "word": "and",
+    "start": 89.738
+  },
+  {
+    "word": "rewind",
+    "start": 90.127
+  },
+  {
+    "word": "its",
+    "start": 90.516
+  },
+  {
+    "word": "own",
+    "start": 90.905
+  },
+  {
+    "word": "history.",
+    "start": 91.294
+  },
+  {
+    "word": "We\u2019ve",
+    "start": 91.983
+  },
+  {
+    "word": "been",
+    "start": 92.359
+  },
+  {
+    "word": "leaning",
+    "start": 92.734
+  },
+  {
+    "word": "hard",
+    "start": 93.11
+  },
+  {
+    "word": "into",
+    "start": 93.486
+  },
+  {
+    "word": "event-sourced",
+    "start": 93.862
+  },
+  {
+    "word": "thinking\u2014especially",
+    "start": 94.238
+  },
+  {
+    "word": "the",
+    "start": 94.614
+  },
+  {
+    "word": "idea",
+    "start": 94.99
+  },
+  {
+    "word": "that",
+    "start": 95.366
+  },
+  {
+    "word": "the",
+    "start": 95.741
+  },
+  {
+    "word": "most",
+    "start": 96.117
+  },
+  {
+    "word": "valuable",
+    "start": 96.493
+  },
+  {
+    "word": "thing",
+    "start": 96.869
+  },
+  {
+    "word": "you",
+    "start": 97.245
+  },
+  {
+    "word": "can",
+    "start": 97.621
+  },
+  {
+    "word": "store",
+    "start": 97.997
+  },
+  {
+    "word": "isn\u2019t",
+    "start": 98.373
+  },
+  {
+    "word": "the",
+    "start": 98.748
+  },
+  {
+    "word": "current",
+    "start": 99.124
+  },
+  {
+    "word": "state...",
+    "start": 99.5
+  },
+  {
+    "word": "it\u2019s",
+    "start": 100.176
+  },
+  {
+    "word": "how",
+    "start": 100.441
+  },
+  {
+    "word": "you",
+    "start": 100.705
+  },
+  {
+    "word": "got",
+    "start": 100.97
+  },
+  {
+    "word": "there.",
+    "start": 101.234
+  },
+  {
+    "word": "Internally,",
+    "start": 101.799
+  },
+  {
+    "word": "we\u2019ve",
+    "start": 102.202
+  },
+  {
+    "word": "discussed",
+    "start": 102.604
+  },
+  {
+    "word": "building",
+    "start": 103.007
+  },
+  {
+    "word": "systems",
+    "start": 103.41
+  },
+  {
+    "word": "around",
+    "start": 103.813
+  },
+  {
+    "word": "a",
+    "start": 104.216
+  },
+  {
+    "word": "ledger",
+    "start": 104.619
+  },
+  {
+    "word": "of",
+    "start": 105.022
+  },
+  {
+    "word": "intents\u2014a",
+    "start": 105.425
+  },
+  {
+    "word": "record",
+    "start": 105.828
+  },
+  {
+    "word": "of",
+    "start": 106.231
+  },
+  {
+    "word": "'what",
+    "start": 106.633
+  },
+  {
+    "word": "the",
+    "start": 107.036
+  },
+  {
+    "word": "user",
+    "start": 107.439
+  },
+  {
+    "word": "meant",
+    "start": 107.842
+  },
+  {
+    "word": "to",
+    "start": 108.245
+  },
+  {
+    "word": "do'\u2014and",
+    "start": 108.648
+  },
+  {
+    "word": "the",
+    "start": 109.051
+  },
+  {
+    "word": "resulting",
+    "start": 109.454
+  },
+  {
+    "word": "directives",
+    "start": 109.857
+  },
+  {
+    "word": "and",
+    "start": 110.259
+  },
+  {
+    "word": "events,",
+    "start": 110.662
+  },
+  {
+    "word": "so",
+    "start": 111.065
+  },
+  {
+    "word": "you",
+    "start": 111.468
+  },
+  {
+    "word": "can",
+    "start": 111.871
+  },
+  {
+    "word": "audit,",
+    "start": 112.274
+  },
+  {
+    "word": "replay,",
+    "start": 112.677
+  },
+  {
+    "word": "and",
+    "start": 113.08
+  },
+  {
+    "word": "even",
+    "start": 113.483
+  },
+  {
+    "word": "fast-forward",
+    "start": 113.886
+  },
+  {
+    "word": "a",
+    "start": 114.288
+  },
+  {
+    "word": "system",
+    "start": 114.691
+  },
+  {
+    "word": "through",
+    "start": 115.094
+  },
+  {
+    "word": "time.",
+    "start": 115.497
+  },
+  {
+    "word": "Traceability,",
+    "start": 116.2
+  },
+  {
+    "word": "Governance,",
+    "start": 117.117
+  },
+  {
+    "word": "Reversibility.",
+    "start": 118.035
+  },
+  {
+    "word": "This",
+    "start": 119.252
+  },
+  {
+    "word": "matters",
+    "start": 119.643
+  },
+  {
+    "word": "because",
+    "start": 120.033
+  },
+  {
+    "word": "agents",
+    "start": 120.424
+  },
+  {
+    "word": "are",
+    "start": 120.814
+  },
+  {
+    "word": "just",
+    "start": 121.205
+  },
+  {
+    "word": "software",
+    "start": 121.595
+  },
+  {
+    "word": "that",
+    "start": 121.986
+  },
+  {
+    "word": "takes",
+    "start": 122.377
+  },
+  {
+    "word": "actions",
+    "start": 122.767
+  },
+  {
+    "word": "on",
+    "start": 123.158
+  },
+  {
+    "word": "your",
+    "start": 123.548
+  },
+  {
+    "word": "behalf.",
+    "start": 123.939
+  },
+  {
+    "word": "And",
+    "start": 124.629
+  },
+  {
+    "word": "if",
+    "start": 124.982
+  },
+  {
+    "word": "software",
+    "start": 125.335
+  },
+  {
+    "word": "takes",
+    "start": 125.687
+  },
+  {
+    "word": "actions",
+    "start": 126.04
+  },
+  {
+    "word": "on",
+    "start": 126.392
+  },
+  {
+    "word": "your",
+    "start": 126.745
+  },
+  {
+    "word": "behalf,",
+    "start": 127.098
+  },
+  {
+    "word": "you",
+    "start": 127.45
+  },
+  {
+    "word": "need",
+    "start": 127.803
+  },
+  {
+    "word": "Traceability:",
+    "start": 128.156
+  },
+  {
+    "word": "what",
+    "start": 128.508
+  },
+  {
+    "word": "did",
+    "start": 128.861
+  },
+  {
+    "word": "it",
+    "start": 129.213
+  },
+  {
+    "word": "do,",
+    "start": 129.566
+  },
+  {
+    "word": "and",
+    "start": 129.919
+  },
+  {
+    "word": "why?",
+    "start": 130.271
+  },
+  {
+    "word": "Governance:",
+    "start": 130.924
+  },
+  {
+    "word": "who",
+    "start": 131.313
+  },
+  {
+    "word": "approved",
+    "start": 131.703
+  },
+  {
+    "word": "it,",
+    "start": 132.092
+  },
+  {
+    "word": "and",
+    "start": 132.481
+  },
+  {
+    "word": "under",
+    "start": 132.871
+  },
+  {
+    "word": "what",
+    "start": 133.26
+  },
+  {
+    "word": "policy?",
+    "start": 133.649
+  },
+  {
+    "word": "And",
+    "start": 134.339
+  },
+  {
+    "word": "Reversibility:",
+    "start": 134.794
+  },
+  {
+    "word": "can",
+    "start": 135.249
+  },
+  {
+    "word": "you",
+    "start": 135.704
+  },
+  {
+    "word": "undo,",
+    "start": 136.159
+  },
+  {
+    "word": "compensate,",
+    "start": 136.614
+  },
+  {
+    "word": "or",
+    "start": 137.069
+  },
+  {
+    "word": "correct",
+    "start": 137.524
+  },
+  {
+    "word": "it?",
+    "start": 137.98
+  },
+  {
+    "word": "In",
+    "start": 138.735
+  },
+  {
+    "word": "other",
+    "start": 139.119
+  },
+  {
+    "word": "words:",
+    "start": 139.503
+  },
+  {
+    "word": "audit",
+    "start": 139.887
+  },
+  {
+    "word": "logs",
+    "start": 140.271
+  },
+  {
+    "word": "shouldn\u2019t",
+    "start": 140.655
+  },
+  {
+    "word": "be",
+    "start": 141.039
+  },
+  {
+    "word": "a",
+    "start": 141.423
+  },
+  {
+    "word": "compliance",
+    "start": 141.807
+  },
+  {
+    "word": "afterthought.",
+    "start": 142.191
+  },
+  {
+    "word": "They",
+    "start": 142.875
+  },
+  {
+    "word": "should",
+    "start": 143.165
+  },
+  {
+    "word": "be",
+    "start": 143.455
+  },
+  {
+    "word": "the",
+    "start": 143.745
+  },
+  {
+    "word": "product.",
+    "start": 144.035
+  },
+  {
+    "word": "What",
+    "start": 144.625
+  },
+  {
+    "word": "the",
+    "start": 144.928
+  },
+  {
+    "word": "platform",
+    "start": 145.231
+  },
+  {
+    "word": "will",
+    "start": 145.534
+  },
+  {
+    "word": "do.",
+    "start": 145.837
+  },
+  {
+    "word": "The",
+    "start": 146.44
+  },
+  {
+    "word": "inward-facing",
+    "start": 146.83
+  },
+  {
+    "word": "agent",
+    "start": 147.22
+  },
+  {
+    "word": "gives",
+    "start": 147.61
+  },
+  {
+    "word": "you",
+    "start": 148.0
+  },
+  {
+    "word": "the",
+    "start": 148.39
+  },
+  {
+    "word": "truth.",
+    "start": 148.781
+  },
+  {
+    "word": "A",
+    "start": 149.471
+  },
+  {
+    "word": "director",
+    "start": 149.862
+  },
+  {
+    "word": "messages:",
+    "start": 150.253
+  },
+  {
+    "word": "'Who",
+    "start": 150.645
+  },
+  {
+    "word": "owes",
+    "start": 151.036
+  },
+  {
+    "word": "us",
+    "start": 151.427
+  },
+  {
+    "word": "money",
+    "start": 151.819
+  },
+  {
+    "word": "right",
+    "start": 152.21
+  },
+  {
+    "word": "now?'",
+    "start": 152.601
+  },
+  {
+    "word": "The",
+    "start": 152.992
+  },
+  {
+    "word": "agent",
+    "start": 153.384
+  },
+  {
+    "word": "pulls",
+    "start": 153.775
+  },
+  {
+    "word": "from",
+    "start": 154.166
+  },
+  {
+    "word": "connected",
+    "start": 154.558
+  },
+  {
+    "word": "systems",
+    "start": 154.949
+  },
+  {
+    "word": "like",
+    "start": 155.34
+  },
+  {
+    "word": "Xero",
+    "start": 155.732
+  },
+  {
+    "word": "and",
+    "start": 156.123
+  },
+  {
+    "word": "Stripe,",
+    "start": 156.514
+  },
+  {
+    "word": "aggregates,",
+    "start": 156.906
+  },
+  {
+    "word": "and",
+    "start": 157.297
+  },
+  {
+    "word": "replies",
+    "start": 157.688
+  },
+  {
+    "word": "with",
+    "start": 158.08
+  },
+  {
+    "word": "a",
+    "start": 158.471
+  },
+  {
+    "word": "short",
+    "start": 158.862
+  },
+  {
+    "word": "answer,",
+    "start": 159.254
+  },
+  {
+    "word": "a",
+    "start": 159.645
+  },
+  {
+    "word": "breakdown,",
+    "start": 160.036
+  },
+  {
+    "word": "and",
+    "start": 160.427
+  },
+  {
+    "word": "a",
+    "start": 160.819
+  },
+  {
+    "word": "link",
+    "start": 161.21
+  },
+  {
+    "word": "to",
+    "start": 161.601
+  },
+  {
+    "word": "a",
+    "start": 161.993
+  },
+  {
+    "word": "visual",
+    "start": 162.384
+  },
+  {
+    "word": "timeline.",
+    "start": 162.775
+  },
+  {
+    "word": "The",
+    "start": 163.467
+  },
+  {
+    "word": "outward-facing",
+    "start": 163.86
+  },
+  {
+    "word": "agent",
+    "start": 164.253
+  },
+  {
+    "word": "gets",
+    "start": 164.646
+  },
+  {
+    "word": "the",
+    "start": 165.039
+  },
+  {
+    "word": "money",
+    "start": 165.432
+  },
+  {
+    "word": "in.",
+    "start": 165.826
+  },
+  {
+    "word": "SMEs",
+    "start": 166.519
+  },
+  {
+    "word": "often",
+    "start": 166.988
+  },
+  {
+    "word": "don't",
+    "start": 167.457
+  },
+  {
+    "word": "have",
+    "start": 167.927
+  },
+  {
+    "word": "time",
+    "start": 168.396
+  },
+  {
+    "word": "to",
+    "start": 168.865
+  },
+  {
+    "word": "chase",
+    "start": 169.335
+  },
+  {
+    "word": "debtors",
+    "start": 169.804
+  },
+  {
+    "word": "consistently.",
+    "start": 170.273
+  },
+  {
+    "word": "We\u2019ll",
+    "start": 171.043
+  },
+  {
+    "word": "offer",
+    "start": 171.515
+  },
+  {
+    "word": "outward-reaching",
+    "start": 171.988
+  },
+  {
+    "word": "agents",
+    "start": 172.461
+  },
+  {
+    "word": "that",
+    "start": 172.933
+  },
+  {
+    "word": "can",
+    "start": 173.406
+  },
+  {
+    "word": "send",
+    "start": 173.879
+  },
+  {
+    "word": "debtor",
+    "start": 174.352
+  },
+  {
+    "word": "reminders",
+    "start": 174.824
+  },
+  {
+    "word": "carefully",
+    "start": 175.297
+  },
+  {
+    "word": "and",
+    "start": 175.77
+  },
+  {
+    "word": "compliantly:",
+    "start": 176.242
+  },
+  {
+    "word": "'Invoice",
+    "start": 176.715
+  },
+  {
+    "word": "#1042",
+    "start": 177.188
+  },
+  {
+    "word": "is",
+    "start": 177.66
+  },
+  {
+    "word": "now",
+    "start": 178.133
+  },
+  {
+    "word": "overdue\u2014would",
+    "start": 178.606
+  },
+  {
+    "word": "you",
+    "start": 179.079
+  },
+  {
+    "word": "like",
+    "start": 179.551
+  },
+  {
+    "word": "to",
+    "start": 180.024
+  },
+  {
+    "word": "pay",
+    "start": 180.497
+  },
+  {
+    "word": "by",
+    "start": 180.969
+  },
+  {
+    "word": "card",
+    "start": 181.442
+  },
+  {
+    "word": "or",
+    "start": 181.915
+  },
+  {
+    "word": "bank",
+    "start": 182.388
+  },
+  {
+    "word": "transfer?'",
+    "start": 182.86
+  },
+  {
+    "word": "This",
+    "start": 183.333
+  },
+  {
+    "word": "is",
+    "start": 183.806
+  },
+  {
+    "word": "controlled,",
+    "start": 184.278
+  },
+  {
+    "word": "reputable",
+    "start": 184.751
+  },
+  {
+    "word": "comms\u2014more",
+    "start": 185.224
+  },
+  {
+    "word": "like",
+    "start": 185.696
+  },
+  {
+    "word": "an",
+    "start": 186.169
+  },
+  {
+    "word": "assistant",
+    "start": 186.642
+  },
+  {
+    "word": "than",
+    "start": 187.115
+  },
+  {
+    "word": "a",
+    "start": 187.587
+  },
+  {
+    "word": "debt",
+    "start": 188.06
+  },
+  {
+    "word": "collector.",
+    "start": 188.533
+  },
+  {
+    "word": "WhatsApp",
+    "start": 189.305
+  },
+  {
+    "word": "first,",
+    "start": 189.8
+  },
+  {
+    "word": "but",
+    "start": 190.295
+  },
+  {
+    "word": "not",
+    "start": 190.79
+  },
+  {
+    "word": "WhatsApp-only.",
+    "start": 191.285
+  },
+  {
+    "word": "WhatsApp",
+    "start": 192.08
+  },
+  {
+    "word": "is",
+    "start": 192.435
+  },
+  {
+    "word": "our",
+    "start": 192.79
+  },
+  {
+    "word": "primary",
+    "start": 193.145
+  },
+  {
+    "word": "front",
+    "start": 193.5
+  },
+  {
+    "word": "door,",
+    "start": 193.855
+  },
+  {
+    "word": "but",
+    "start": 194.209
+  },
+  {
+    "word": "the",
+    "start": 194.564
+  },
+  {
+    "word": "rules",
+    "start": 194.919
+  },
+  {
+    "word": "can",
+    "start": 195.274
+  },
+  {
+    "word": "change.",
+    "start": 195.629
+  },
+  {
+    "word": "Meta's",
+    "start": 196.284
+  },
+  {
+    "word": "updated",
+    "start": 196.972
+  },
+  {
+    "word": "terms",
+    "start": 197.661
+  },
+  {
+    "word": "effective",
+    "start": 198.349
+  },
+  {
+    "word": "January",
+    "start": 199.038
+  },
+  {
+    "word": "2026",
+    "start": 199.726
+  },
+  {
+    "word": "require",
+    "start": 200.415
+  },
+  {
+    "word": "specific",
+    "start": 201.103
+  },
+  {
+    "word": "customer",
+    "start": 201.792
+  },
+  {
+    "word": "service",
+    "start": 202.48
+  },
+  {
+    "word": "automation.",
+    "start": 203.169
+  },
+  {
+    "word": "Our",
+    "start": 204.157
+  },
+  {
+    "word": "strategy",
+    "start": 204.528
+  },
+  {
+    "word": "is",
+    "start": 204.898
+  },
+  {
+    "word": "WhatsApp",
+    "start": 205.268
+  },
+  {
+    "word": "for",
+    "start": 205.638
+  },
+  {
+    "word": "adoption,",
+    "start": 206.009
+  },
+  {
+    "word": "but",
+    "start": 206.379
+  },
+  {
+    "word": "a",
+    "start": 206.749
+  },
+  {
+    "word": "CaptainApp",
+    "start": 207.12
+  },
+  {
+    "word": "portal",
+    "start": 207.49
+  },
+  {
+    "word": "as",
+    "start": 207.86
+  },
+  {
+    "word": "the",
+    "start": 208.23
+  },
+  {
+    "word": "control",
+    "start": 208.601
+  },
+  {
+    "word": "plane.",
+    "start": 208.971
+  },
+  {
+    "word": "The",
+    "start": 209.641
+  },
+  {
+    "word": "portal",
+    "start": 210.082
+  },
+  {
+    "word": "is",
+    "start": 210.522
+  },
+  {
+    "word": "where",
+    "start": 210.963
+  },
+  {
+    "word": "you",
+    "start": 211.403
+  },
+  {
+    "word": "connect",
+    "start": 211.844
+  },
+  {
+    "word": "integrations,",
+    "start": 212.284
+  },
+  {
+    "word": "control",
+    "start": 212.725
+  },
+  {
+    "word": "permissions,",
+    "start": 213.165
+  },
+  {
+    "word": "manage",
+    "start": 213.606
+  },
+  {
+    "word": "billing,",
+    "start": 214.046
+  },
+  {
+    "word": "and",
+    "start": 214.487
+  },
+  {
+    "word": "review",
+    "start": 214.927
+  },
+  {
+    "word": "the",
+    "start": 215.367
+  },
+  {
+    "word": "agent's",
+    "start": 215.808
+  },
+  {
+    "word": "story-like",
+    "start": 216.248
+  },
+  {
+    "word": "history.",
+    "start": 216.689
+  },
+  {
+    "word": "A",
+    "start": 217.429
+  },
+  {
+    "word": "normal",
+    "start": 217.788
+  },
+  {
+    "word": "audit",
+    "start": 218.148
+  },
+  {
+    "word": "log",
+    "start": 218.507
+  },
+  {
+    "word": "is",
+    "start": 218.866
+  },
+  {
+    "word": "a",
+    "start": 219.225
+  },
+  {
+    "word": "crime",
+    "start": 219.584
+  },
+  {
+    "word": "against",
+    "start": 219.943
+  },
+  {
+    "word": "the",
+    "start": 220.302
+  },
+  {
+    "word": "human",
+    "start": 220.661
+  },
+  {
+    "word": "attention",
+    "start": 221.02
+  },
+  {
+    "word": "span.",
+    "start": 221.38
+  },
+  {
+    "word": "Ours",
+    "start": 222.039
+  },
+  {
+    "word": "reads",
+    "start": 222.463
+  },
+  {
+    "word": "like",
+    "start": 222.887
+  },
+  {
+    "word": "a",
+    "start": 223.312
+  },
+  {
+    "word": "story:",
+    "start": 223.736
+  },
+  {
+    "word": "'Jack",
+    "start": 224.16
+  },
+  {
+    "word": "asked:",
+    "start": 224.584
+  },
+  {
+    "word": "What\u2019s",
+    "start": 225.009
+  },
+  {
+    "word": "overdue?",
+    "start": 225.433
+  },
+  {
+    "word": "Agent",
+    "start": 226.157
+  },
+  {
+    "word": "pulled",
+    "start": 226.605
+  },
+  {
+    "word": "invoices",
+    "start": 227.053
+  },
+  {
+    "word": "from",
+    "start": 227.501
+  },
+  {
+    "word": "Xero.",
+    "start": 227.949
+  },
+  {
+    "word": "Agent",
+    "start": 228.697
+  },
+  {
+    "word": "drafted",
+    "start": 229.38
+  },
+  {
+    "word": "reminders.",
+    "start": 230.063
+  },
+  {
+    "word": "Admin",
+    "start": 231.045
+  },
+  {
+    "word": "approved.",
+    "start": 231.632
+  },
+  {
+    "word": "Messages",
+    "start": 232.519
+  },
+  {
+    "word": "sent.'",
+    "start": 233.201
+  },
+  {
+    "word": "Execution:",
+    "start": 233.884
+  },
+  {
+    "word": "OpenCode",
+    "start": 234.567
+  },
+  {
+    "word": "and",
+    "start": 235.249
+  },
+  {
+    "word": "Cloudflare.",
+    "start": 235.932
+  },
+  {
+    "word": "If",
+    "start": 236.915
+  },
+  {
+    "word": "you",
+    "start": 237.235
+  },
+  {
+    "word": "want",
+    "start": 237.555
+  },
+  {
+    "word": "agents",
+    "start": 237.875
+  },
+  {
+    "word": "that",
+    "start": 238.195
+  },
+  {
+    "word": "are",
+    "start": 238.515
+  },
+  {
+    "word": "safe",
+    "start": 238.835
+  },
+  {
+    "word": "and",
+    "start": 239.155
+  },
+  {
+    "word": "scalable,",
+    "start": 239.475
+  },
+  {
+    "word": "you",
+    "start": 239.795
+  },
+  {
+    "word": "need",
+    "start": 240.115
+  },
+  {
+    "word": "a",
+    "start": 240.435
+  },
+  {
+    "word": "strong",
+    "start": 240.755
+  },
+  {
+    "word": "execution",
+    "start": 241.075
+  },
+  {
+    "word": "model.",
+    "start": 241.395
+  },
+  {
+    "word": "Cloudflare",
+    "start": 242.015
+  },
+  {
+    "word": "Workers",
+    "start": 242.732
+  },
+  {
+    "word": "give",
+    "start": 243.449
+  },
+  {
+    "word": "us",
+    "start": 244.167
+  },
+  {
+    "word": "isolates\u2014lightweight,",
+    "start": 244.884
+  },
+  {
+    "word": "fast-starting",
+    "start": 245.601
+  },
+  {
+    "word": "sandboxed",
+    "start": 246.319
+  },
+  {
+    "word": "environments.",
+    "start": 247.036
+  },
+  {
+    "word": "Every",
+    "start": 248.053
+  },
+  {
+    "word": "SME",
+    "start": 248.579
+  },
+  {
+    "word": "gets",
+    "start": 249.104
+  },
+  {
+    "word": "a",
+    "start": 249.629
+  },
+  {
+    "word": "logically",
+    "start": 250.155
+  },
+  {
+    "word": "isolated",
+    "start": 250.68
+  },
+  {
+    "word": "agent",
+    "start": 251.205
+  },
+  {
+    "word": "runtime.",
+    "start": 251.731
+  },
+  {
+    "word": "OpenCode",
+    "start": 252.556
+  },
+  {
+    "word": "becomes",
+    "start": 253.061
+  },
+  {
+    "word": "the",
+    "start": 253.565
+  },
+  {
+    "word": "agent",
+    "start": 254.07
+  },
+  {
+    "word": "framework",
+    "start": 254.574
+  },
+  {
+    "word": "we",
+    "start": 255.079
+  },
+  {
+    "word": "build",
+    "start": 255.583
+  },
+  {
+    "word": "on",
+    "start": 256.088
+  },
+  {
+    "word": "top\u2014our",
+    "start": 256.592
+  },
+  {
+    "word": "orchestration",
+    "start": 257.097
+  },
+  {
+    "word": "layer",
+    "start": 257.601
+  },
+  {
+    "word": "and",
+    "start": 258.106
+  },
+  {
+    "word": "tool",
+    "start": 258.61
+  },
+  {
+    "word": "system\u2014while",
+    "start": 259.115
+  },
+  {
+    "word": "Cloudflare",
+    "start": 259.619
+  },
+  {
+    "word": "provides",
+    "start": 260.124
+  },
+  {
+    "word": "the",
+    "start": 260.629
+  },
+  {
+    "word": "sandbox",
+    "start": 261.133
+  },
+  {
+    "word": "and",
+    "start": 261.638
+  },
+  {
+    "word": "distribution.",
+    "start": 262.142
+  },
+  {
+    "word": "Compute",
+    "start": 262.947
+  },
+  {
+    "word": "scales",
+    "start": 263.6
+  },
+  {
+    "word": "elastically\u2014without",
+    "start": 264.253
+  },
+  {
+    "word": "forcing",
+    "start": 264.907
+  },
+  {
+    "word": "customers",
+    "start": 265.56
+  },
+  {
+    "word": "into",
+    "start": 266.213
+  },
+  {
+    "word": "'Kubernetes",
+    "start": 266.867
+  },
+  {
+    "word": "brain'.",
+    "start": 267.52
+  },
+  {
+    "word": "The",
+    "start": 268.473
+  },
+  {
+    "word": "Roadmap.",
+    "start": 268.943
+  },
+  {
+    "word": "Stage",
+    "start": 269.712
+  },
+  {
+    "word": "1",
+    "start": 270.177
+  },
+  {
+    "word": "is",
+    "start": 270.642
+  },
+  {
+    "word": "the",
+    "start": 271.107
+  },
+  {
+    "word": "Foundation:",
+    "start": 271.572
+  },
+  {
+    "word": "defining",
+    "start": 272.037
+  },
+  {
+    "word": "the",
+    "start": 272.502
+  },
+  {
+    "word": "intent",
+    "start": 272.967
+  },
+  {
+    "word": "protocol",
+    "start": 273.433
+  },
+  {
+    "word": "and",
+    "start": 273.898
+  },
+  {
+    "word": "implementing",
+    "start": 274.363
+  },
+  {
+    "word": "the",
+    "start": 274.828
+  },
+  {
+    "word": "audit",
+    "start": 275.293
+  },
+  {
+    "word": "timeline",
+    "start": 275.758
+  },
+  {
+    "word": "early.",
+    "start": 276.223
+  },
+  {
+    "word": "Stage",
+    "start": 276.988
+  },
+  {
+    "word": "2",
+    "start": 277.479
+  },
+  {
+    "word": "is",
+    "start": 277.969
+  },
+  {
+    "word": "Integrations:",
+    "start": 278.46
+  },
+  {
+    "word": "starting",
+    "start": 278.951
+  },
+  {
+    "word": "with",
+    "start": 279.441
+  },
+  {
+    "word": "Xero",
+    "start": 279.932
+  },
+  {
+    "word": "and",
+    "start": 280.423
+  },
+  {
+    "word": "Stripe",
+    "start": 280.913
+  },
+  {
+    "word": "OAuth",
+    "start": 281.404
+  },
+  {
+    "word": "workflows.",
+    "start": 281.895
+  },
+  {
+    "word": "Stage",
+    "start": 282.685
+  },
+  {
+    "word": "3",
+    "start": 283.184
+  },
+  {
+    "word": "is",
+    "start": 283.682
+  },
+  {
+    "word": "the",
+    "start": 284.181
+  },
+  {
+    "word": "Channel:",
+    "start": 284.679
+  },
+  {
+    "word": "WhatsApp",
+    "start": 285.177
+  },
+  {
+    "word": "via",
+    "start": 285.676
+  },
+  {
+    "word": "Twilio",
+    "start": 286.174
+  },
+  {
+    "word": "with",
+    "start": 286.673
+  },
+  {
+    "word": "human-in-the-loop",
+    "start": 287.171
+  },
+  {
+    "word": "approvals.",
+    "start": 287.67
+  },
+  {
+    "word": "Stage",
+    "start": 288.468
+  },
+  {
+    "word": "4",
+    "start": 288.933
+  },
+  {
+    "word": "is",
+    "start": 289.398
+  },
+  {
+    "word": "the",
+    "start": 289.863
+  },
+  {
+    "word": "Portal:",
+    "start": 290.328
+  },
+  {
+    "word": "onboarding,",
+    "start": 290.793
+  },
+  {
+    "word": "roles,",
+    "start": 291.258
+  },
+  {
+    "word": "and",
+    "start": 291.723
+  },
+  {
+    "word": "Stripe-based",
+    "start": 292.189
+  },
+  {
+    "word": "billing.",
+    "start": 292.654
+  },
+  {
+    "word": "Stage",
+    "start": 293.419
+  },
+  {
+    "word": "5",
+    "start": 293.973
+  },
+  {
+    "word": "is",
+    "start": 294.528
+  },
+  {
+    "word": "Hosted",
+    "start": 295.083
+  },
+  {
+    "word": "Execution:",
+    "start": 295.637
+  },
+  {
+    "word": "deploying",
+    "start": 296.192
+  },
+  {
+    "word": "tenant",
+    "start": 296.747
+  },
+  {
+    "word": "agents",
+    "start": 297.301
+  },
+  {
+    "word": "onto",
+    "start": 297.856
+  },
+  {
+    "word": "Cloudflare",
+    "start": 298.411
+  },
+  {
+    "word": "isolates.",
+    "start": 298.965
+  },
+  {
+    "word": "Finally,",
+    "start": 299.82
+  },
+  {
+    "word": "Stage",
+    "start": 300.348
+  },
+  {
+    "word": "6",
+    "start": 300.875
+  },
+  {
+    "word": "is",
+    "start": 301.403
+  },
+  {
+    "word": "Solutions:",
+    "start": 301.931
+  },
+  {
+    "word": "providing",
+    "start": 302.458
+  },
+  {
+    "word": "packaged",
+    "start": 302.986
+  },
+  {
+    "word": "outcomes",
+    "start": 303.514
+  },
+  {
+    "word": "like",
+    "start": 304.041
+  },
+  {
+    "word": "reduced",
+    "start": 304.569
+  },
+  {
+    "word": "aged",
+    "start": 305.096
+  },
+  {
+    "word": "receivables",
+    "start": 305.624
+  },
+  {
+    "word": "and",
+    "start": 306.152
+  },
+  {
+    "word": "faster",
+    "start": 306.679
+  },
+  {
+    "word": "reporting.",
+    "start": 307.207
+  },
+  {
+    "word": "Packaged",
+    "start": 308.035
+  },
+  {
+    "word": "outcomes,",
+    "start": 308.568
+  },
+  {
+    "word": "not",
+    "start": 309.101
+  },
+  {
+    "word": "AI.",
+    "start": 309.635
+  },
+  {
+    "word": "We're",
+    "start": 310.468
+  },
+  {
+    "word": "not",
+    "start": 310.907
+  },
+  {
+    "word": "just",
+    "start": 311.347
+  },
+  {
+    "word": "'integrating",
+    "start": 311.786
+  },
+  {
+    "word": "Xero'.",
+    "start": 312.226
+  },
+  {
+    "word": "We're",
+    "start": 312.965
+  },
+  {
+    "word": "reducing",
+    "start": 313.454
+  },
+  {
+    "word": "your",
+    "start": 313.942
+  },
+  {
+    "word": "aged",
+    "start": 314.431
+  },
+  {
+    "word": "receivables",
+    "start": 314.919
+  },
+  {
+    "word": "by",
+    "start": 315.408
+  },
+  {
+    "word": "18%",
+    "start": 315.897
+  },
+  {
+    "word": "in",
+    "start": 316.385
+  },
+  {
+    "word": "60",
+    "start": 316.874
+  },
+  {
+    "word": "days.",
+    "start": 317.362
+  },
+  {
+    "word": "We're",
+    "start": 318.151
+  },
+  {
+    "word": "cutting",
+    "start": 318.548
+  },
+  {
+    "word": "month-end",
+    "start": 318.946
+  },
+  {
+    "word": "reporting",
+    "start": 319.343
+  },
+  {
+    "word": "time",
+    "start": 319.741
+  },
+  {
+    "word": "from",
+    "start": 320.139
+  },
+  {
+    "word": "2",
+    "start": 320.536
+  },
+  {
+    "word": "days",
+    "start": 320.934
+  },
+  {
+    "word": "to",
+    "start": 321.331
+  },
+  {
+    "word": "30",
+    "start": 321.729
+  },
+  {
+    "word": "minutes.",
+    "start": 322.126
+  },
+  {
+    "word": "We're",
+    "start": 322.824
+  },
+  {
+    "word": "stopping",
+    "start": 323.31
+  },
+  {
+    "word": "surprise",
+    "start": 323.797
+  },
+  {
+    "word": "subscription",
+    "start": 324.283
+  },
+  {
+    "word": "creep.",
+    "start": 324.77
+  },
+  {
+    "word": "The",
+    "start": 325.556
+  },
+  {
+    "word": "agent",
+    "start": 325.974
+  },
+  {
+    "word": "becomes",
+    "start": 326.393
+  },
+  {
+    "word": "a",
+    "start": 326.811
+  },
+  {
+    "word": "productised",
+    "start": 327.23
+  },
+  {
+    "word": "workflow,",
+    "start": 327.648
+  },
+  {
+    "word": "sold",
+    "start": 328.067
+  },
+  {
+    "word": "as",
+    "start": 328.485
+  },
+  {
+    "word": "an",
+    "start": 328.904
+  },
+  {
+    "word": "outcome",
+    "start": 329.322
+  },
+  {
+    "word": "to",
+    "start": 329.741
+  },
+  {
+    "word": "UK",
+    "start": 330.159
+  },
+  {
+    "word": "SMEs.",
+    "start": 330.578
+  },
+  {
+    "word": "This",
+    "start": 331.296
+  },
+  {
+    "word": "is",
+    "start": 331.691
+  },
+  {
+    "word": "the",
+    "start": 332.085
+  },
+  {
+    "word": "future",
+    "start": 332.48
+  },
+  {
+    "word": "of",
+    "start": 332.875
+  },
+  {
+    "word": "CaptainApp.",
+    "start": 333.269
+  },
+  {
+    "word": "Appendix",
+    "start": 333.964
+  },
+  {
+    "word": "1:",
+    "start": 334.391
+  },
+  {
+    "word": "The",
+    "start": 334.817
+  },
+  {
+    "word": "Ghostly",
+    "start": 335.244
+  },
+  {
+    "word": "Tech",
+    "start": 335.671
+  },
+  {
+    "word": "Stack.",
+    "start": 336.097
+  },
+  {
+    "word": "Case",
+    "start": 336.824
+  },
+  {
+    "word": "Study:",
+    "start": 337.556
+  },
+  {
+    "word": "captainapp.co.uk.",
+    "start": 338.289
+  },
+  {
+    "word": "To",
+    "start": 339.321
+  },
+  {
+    "word": "understand",
+    "start": 339.791
+  },
+  {
+    "word": "the",
+    "start": 340.26
+  },
+  {
+    "word": "foundation",
+    "start": 340.729
+  },
+  {
+    "word": "of",
+    "start": 341.199
+  },
+  {
+    "word": "CaptainApp,",
+    "start": 341.668
+  },
+  {
+    "word": "we",
+    "start": 342.137
+  },
+  {
+    "word": "look",
+    "start": 342.607
+  },
+  {
+    "word": "at",
+    "start": 343.076
+  },
+  {
+    "word": "the",
+    "start": 343.545
+  },
+  {
+    "word": "existing",
+    "start": 344.015
+  },
+  {
+    "word": "'Ghostly'",
+    "start": 344.484
+  },
+  {
+    "word": "architecture",
+    "start": 344.953
+  },
+  {
+    "word": "that",
+    "start": 345.423
+  },
+  {
+    "word": "powers",
+    "start": 345.892
+  },
+  {
+    "word": "captainapp.co.uk.",
+    "start": 346.361
+  },
+  {
+    "word": "This",
+    "start": 347.131
+  },
+  {
+    "word": "is",
+    "start": 347.666
+  },
+  {
+    "word": "a",
+    "start": 348.202
+  },
+  {
+    "word": "battle-tested",
+    "start": 348.737
+  },
+  {
+    "word": "production",
+    "start": 349.273
+  },
+  {
+    "word": "environment",
+    "start": 349.809
+  },
+  {
+    "word": "comprising",
+    "start": 350.344
+  },
+  {
+    "word": "over",
+    "start": 350.88
+  },
+  {
+    "word": "1,200",
+    "start": 351.415
+  },
+  {
+    "word": "files",
+    "start": 351.951
+  },
+  {
+    "word": "and",
+    "start": 352.486
+  },
+  {
+    "word": "200",
+    "start": 353.022
+  },
+  {
+    "word": "edge",
+    "start": 353.558
+  },
+  {
+    "word": "functions,",
+    "start": 354.093
+  },
+  {
+    "word": "designed",
+    "start": 354.629
+  },
+  {
+    "word": "for",
+    "start": 355.164
+  },
+  {
+    "word": "high-stakes",
+    "start": 355.7
+  },
+  {
+    "word": "agent",
+    "start": 356.236
+  },
+  {
+    "word": "orchestration.",
+    "start": 356.771
+  },
+  {
+    "word": "Domain:",
+    "start": 357.607
+  },
+  {
+    "word": "Frontend",
+    "start": 358.236
+  },
+  {
+    "word": "and",
+    "start": 358.865
+  },
+  {
+    "word": "Presentation.",
+    "start": 359.495
+  },
+  {
+    "word": "The",
+    "start": 360.424
+  },
+  {
+    "word": "frontend",
+    "start": 360.922
+  },
+  {
+    "word": "is",
+    "start": 361.421
+  },
+  {
+    "word": "a",
+    "start": 361.919
+  },
+  {
+    "word": "sophisticated",
+    "start": 362.417
+  },
+  {
+    "word": "React",
+    "start": 362.915
+  },
+  {
+    "word": "18",
+    "start": 363.414
+  },
+  {
+    "word": "application",
+    "start": 363.912
+  },
+  {
+    "word": "built",
+    "start": 364.41
+  },
+  {
+    "word": "on",
+    "start": 364.909
+  },
+  {
+    "word": "a",
+    "start": 365.407
+  },
+  {
+    "word": "Domain-Driven",
+    "start": 365.905
+  },
+  {
+    "word": "Design",
+    "start": 366.403
+  },
+  {
+    "word": "structure.",
+    "start": 366.902
+  },
+  {
+    "word": "It",
+    "start": 367.7
+  },
+  {
+    "word": "features",
+    "start": 368.248
+  },
+  {
+    "word": "a",
+    "start": 368.795
+  },
+  {
+    "word": "custom",
+    "start": 369.343
+  },
+  {
+    "word": "'Artefact'",
+    "start": 369.89
+  },
+  {
+    "word": "system",
+    "start": 370.438
+  },
+  {
+    "word": "for",
+    "start": 370.985
+  },
+  {
+    "word": "real-time",
+    "start": 371.533
+  },
+  {
+    "word": "document",
+    "start": 372.08
+  },
+  {
+    "word": "collaboration,",
+    "start": 372.628
+  },
+  {
+    "word": "complex",
+    "start": 373.176
+  },
+  {
+    "word": "Graphviz-powered",
+    "start": 373.723
+  },
+  {
+    "word": "conversation",
+    "start": 374.271
+  },
+  {
+    "word": "visualizations,",
+    "start": 374.818
+  },
+  {
+    "word": "and",
+    "start": 375.366
+  },
+  {
+    "word": "a",
+    "start": 375.913
+  },
+  {
+    "word": "robust",
+    "start": 376.461
+  },
+  {
+    "word": "Admin",
+    "start": 377.008
+  },
+  {
+    "word": "control",
+    "start": 377.556
+  },
+  {
+    "word": "plane",
+    "start": 378.104
+  },
+  {
+    "word": "for",
+    "start": 378.651
+  },
+  {
+    "word": "managing",
+    "start": 379.199
+  },
+  {
+    "word": "multi-tenant",
+    "start": 379.746
+  },
+  {
+    "word": "organizations",
+    "start": 380.294
+  },
+  {
+    "word": "and",
+    "start": 380.841
+  },
+  {
+    "word": "project",
+    "start": 381.389
+  },
+  {
+    "word": "hierarchies.",
+    "start": 381.936
+  },
+  {
+    "word": "State",
+    "start": 382.784
+  },
+  {
+    "word": "is",
+    "start": 383.248
+  },
+  {
+    "word": "managed",
+    "start": 383.712
+  },
+  {
+    "word": "via",
+    "start": 384.175
+  },
+  {
+    "word": "specialized",
+    "start": 384.639
+  },
+  {
+    "word": "contexts",
+    "start": 385.103
+  },
+  {
+    "word": "and",
+    "start": 385.567
+  },
+  {
+    "word": "a",
+    "start": 386.03
+  },
+  {
+    "word": "massive",
+    "start": 386.494
+  },
+  {
+    "word": "library",
+    "start": 386.958
+  },
+  {
+    "word": "of",
+    "start": 387.422
+  },
+  {
+    "word": "over",
+    "start": 387.885
+  },
+  {
+    "word": "100",
+    "start": 388.349
+  },
+  {
+    "word": "custom",
+    "start": 388.813
+  },
+  {
+    "word": "hooks",
+    "start": 389.277
+  },
+  {
+    "word": "for",
+    "start": 389.741
+  },
+  {
+    "word": "everything",
+    "start": 390.204
+  },
+  {
+    "word": "from",
+    "start": 390.668
+  },
+  {
+    "word": "presence",
+    "start": 391.132
+  },
+  {
+    "word": "tracking",
+    "start": 391.596
+  },
+  {
+    "word": "to",
+    "start": 392.059
+  },
+  {
+    "word": "real-time",
+    "start": 392.523
+  },
+  {
+    "word": "Excel-diffing.",
+    "start": 392.987
+  },
+  {
+    "word": "Domain:",
+    "start": 393.751
+  },
+  {
+    "word": "Backend",
+    "start": 394.327
+  },
+  {
+    "word": "and",
+    "start": 394.903
+  },
+  {
+    "word": "Serverless.",
+    "start": 395.479
+  },
+  {
+    "word": "The",
+    "start": 396.355
+  },
+  {
+    "word": "backbone",
+    "start": 396.874
+  },
+  {
+    "word": "is",
+    "start": 397.394
+  },
+  {
+    "word": "Supabase,",
+    "start": 397.914
+  },
+  {
+    "word": "running",
+    "start": 398.433
+  },
+  {
+    "word": "a",
+    "start": 398.953
+  },
+  {
+    "word": "highly",
+    "start": 399.472
+  },
+  {
+    "word": "optimized",
+    "start": 399.992
+  },
+  {
+    "word": "PostgreSQL",
+    "start": 400.512
+  },
+  {
+    "word": "schema",
+    "start": 401.031
+  },
+  {
+    "word": "with",
+    "start": 401.551
+  },
+  {
+    "word": "over",
+    "start": 402.07
+  },
+  {
+    "word": "500",
+    "start": 402.59
+  },
+  {
+    "word": "migrations.",
+    "start": 403.11
+  },
+  {
+    "word": "The",
+    "start": 403.929
+  },
+  {
+    "word": "logic",
+    "start": 404.39
+  },
+  {
+    "word": "layer",
+    "start": 404.851
+  },
+  {
+    "word": "consists",
+    "start": 405.312
+  },
+  {
+    "word": "of",
+    "start": 405.773
+  },
+  {
+    "word": "250",
+    "start": 406.233
+  },
+  {
+    "word": "plus",
+    "start": 406.694
+  },
+  {
+    "word": "Deno",
+    "start": 407.155
+  },
+  {
+    "word": "Edge",
+    "start": 407.616
+  },
+  {
+    "word": "Functions.",
+    "start": 408.077
+  },
+  {
+    "word": "These",
+    "start": 408.837
+  },
+  {
+    "word": "aren't",
+    "start": 409.349
+  },
+  {
+    "word": "just",
+    "start": 409.861
+  },
+  {
+    "word": "endpoints;",
+    "start": 410.373
+  },
+  {
+    "word": "they",
+    "start": 410.885
+  },
+  {
+    "word": "are",
+    "start": 411.397
+  },
+  {
+    "word": "specialized",
+    "start": 411.909
+  },
+  {
+    "word": "workers",
+    "start": 412.421
+  },
+  {
+    "word": "handling",
+    "start": 412.933
+  },
+  {
+    "word": "everything",
+    "start": 413.445
+  },
+  {
+    "word": "from",
+    "start": 413.957
+  },
+  {
+    "word": "real-time",
+    "start": 414.469
+  },
+  {
+    "word": "PDF",
+    "start": 414.981
+  },
+  {
+    "word": "generation",
+    "start": 415.493
+  },
+  {
+    "word": "and",
+    "start": 416.005
+  },
+  {
+    "word": "SendGrid",
+    "start": 416.517
+  },
+  {
+    "word": "domain",
+    "start": 417.029
+  },
+  {
+    "word": "verification",
+    "start": 417.541
+  },
+  {
+    "word": "to",
+    "start": 418.053
+  },
+  {
+    "word": "complex",
+    "start": 418.565
+  },
+  {
+    "word": "financial",
+    "start": 419.077
+  },
+  {
+    "word": "aggregations",
+    "start": 419.589
+  },
+  {
+    "word": "for",
+    "start": 420.101
+  },
+  {
+    "word": "Xero",
+    "start": 420.613
+  },
+  {
+    "word": "and",
+    "start": 421.125
+  },
+  {
+    "word": "Stripe.",
+    "start": 421.637
+  },
+  {
+    "word": "Domain:",
+    "start": 422.449
+  },
+  {
+    "word": "AI",
+    "start": 423.175
+  },
+  {
+    "word": "Orchestration.",
+    "start": 423.9
+  },
+  {
+    "word": "AI",
+    "start": 424.925
+  },
+  {
+    "word": "isn't",
+    "start": 425.294
+  },
+  {
+    "word": "a",
+    "start": 425.663
+  },
+  {
+    "word": "bolt-on;",
+    "start": 426.032
+  },
+  {
+    "word": "it's",
+    "start": 426.4
+  },
+  {
+    "word": "the",
+    "start": 426.769
+  },
+  {
+    "word": "core.",
+    "start": 427.138
+  },
+  {
+    "word": "The",
+    "start": 427.807
+  },
+  {
+    "word": "system",
+    "start": 428.326
+  },
+  {
+    "word": "runs",
+    "start": 428.845
+  },
+  {
+    "word": "an",
+    "start": 429.364
+  },
+  {
+    "word": "'Agent",
+    "start": 429.883
+  },
+  {
+    "word": "Town'",
+    "start": 430.402
+  },
+  {
+    "word": "simulation",
+    "start": 430.921
+  },
+  {
+    "word": "with",
+    "start": 431.44
+  },
+  {
+    "word": "specialized",
+    "start": 431.96
+  },
+  {
+    "word": "personas",
+    "start": 432.479
+  },
+  {
+    "word": "(CEO,",
+    "start": 432.998
+  },
+  {
+    "word": "CFO,",
+    "start": 433.517
+  },
+  {
+    "word": "COO,",
+    "start": 434.036
+  },
+  {
+    "word": "SRE)",
+    "start": 434.555
+  },
+  {
+    "word": "that",
+    "start": 435.074
+  },
+  {
+    "word": "collaborate",
+    "start": 435.593
+  },
+  {
+    "word": "via",
+    "start": 436.112
+  },
+  {
+    "word": "the",
+    "start": 436.632
+  },
+  {
+    "word": "Model",
+    "start": 437.151
+  },
+  {
+    "word": "Context",
+    "start": 437.67
+  },
+  {
+    "word": "Protocol.",
+    "start": 438.189
+  },
+  {
+    "word": "These",
+    "start": 439.008
+  },
+  {
+    "word": "agents",
+    "start": 439.5
+  },
+  {
+    "word": "have",
+    "start": 439.991
+  },
+  {
+    "word": "access",
+    "start": 440.483
+  },
+  {
+    "word": "to",
+    "start": 440.974
+  },
+  {
+    "word": "a",
+    "start": 441.466
+  },
+  {
+    "word": "rich",
+    "start": 441.957
+  },
+  {
+    "word": "toolbelt:",
+    "start": 442.449
+  },
+  {
+    "word": "executing",
+    "start": 442.94
+  },
+  {
+    "word": "Python",
+    "start": 443.432
+  },
+  {
+    "word": "in",
+    "start": 443.924
+  },
+  {
+    "word": "sandboxes,",
+    "start": 444.415
+  },
+  {
+    "word": "generating",
+    "start": 444.907
+  },
+  {
+    "word": "SQL,",
+    "start": 445.398
+  },
+  {
+    "word": "and",
+    "start": 445.89
+  },
+  {
+    "word": "even",
+    "start": 446.381
+  },
+  {
+    "word": "launching",
+    "start": 446.873
+  },
+  {
+    "word": "'Cursor",
+    "start": 447.364
+  },
+  {
+    "word": "Agents'",
+    "start": 447.856
+  },
+  {
+    "word": "to",
+    "start": 448.348
+  },
+  {
+    "word": "perform",
+    "start": 448.839
+  },
+  {
+    "word": "code",
+    "start": 449.331
+  },
+  {
+    "word": "changes",
+    "start": 449.822
+  },
+  {
+    "word": "autonomously.",
+    "start": 450.314
+  },
+  {
+    "word": "Domain:",
+    "start": 451.105
+  },
+  {
+    "word": "Integrations",
+    "start": 451.793
+  },
+  {
+    "word": "and",
+    "start": 452.481
+  },
+  {
+    "word": "Infrastructure.",
+    "start": 453.169
+  },
+  {
+    "word": "Infrastructure",
+    "start": 454.157
+  },
+  {
+    "word": "is",
+    "start": 454.813
+  },
+  {
+    "word": "truly",
+    "start": 455.469
+  },
+  {
+    "word": "multi-cloud.",
+    "start": 456.125
+  },
+  {
+    "word": "It",
+    "start": 457.081
+  },
+  {
+    "word": "maps",
+    "start": 457.634
+  },
+  {
+    "word": "business",
+    "start": 458.187
+  },
+  {
+    "word": "relationships",
+    "start": 458.74
+  },
+  {
+    "word": "into",
+    "start": 459.292
+  },
+  {
+    "word": "Neo4j",
+    "start": 459.845
+  },
+  {
+    "word": "for",
+    "start": 460.398
+  },
+  {
+    "word": "graph-based",
+    "start": 460.95
+  },
+  {
+    "word": "insights,",
+    "start": 461.503
+  },
+  {
+    "word": "synchronizes",
+    "start": 462.056
+  },
+  {
+    "word": "deep",
+    "start": 462.609
+  },
+  {
+    "word": "HR",
+    "start": 463.161
+  },
+  {
+    "word": "data",
+    "start": 463.714
+  },
+  {
+    "word": "from",
+    "start": 464.267
+  },
+  {
+    "word": "Rippling,",
+    "start": 464.82
+  },
+  {
+    "word": "and",
+    "start": 465.372
+  },
+  {
+    "word": "bridges",
+    "start": 465.925
+  },
+  {
+    "word": "plain-text",
+    "start": 466.478
+  },
+  {
+    "word": "WhatsApp",
+    "start": 467.03
+  },
+  {
+    "word": "conversations",
+    "start": 467.583
+  },
+  {
+    "word": "via",
+    "start": 468.136
+  },
+  {
+    "word": "Twilio.",
+    "start": 468.689
+  },
+  {
+    "word": "The",
+    "start": 469.541
+  },
+  {
+    "word": "entire",
+    "start": 470.002
+  },
+  {
+    "word": "stack",
+    "start": 470.462
+  },
+  {
+    "word": "is",
+    "start": 470.922
+  },
+  {
+    "word": "enforced",
+    "start": 471.382
+  },
+  {
+    "word": "with",
+    "start": 471.842
+  },
+  {
+    "word": "Vitest",
+    "start": 472.302
+  },
+  {
+    "word": "and",
+    "start": 472.763
+  },
+  {
+    "word": "Playwright,",
+    "start": 473.223
+  },
+  {
+    "word": "ensuring",
+    "start": 473.683
+  },
+  {
+    "word": "that",
+    "start": 474.143
+  },
+  {
+    "word": "every",
+    "start": 474.603
+  },
+  {
+    "word": "automated",
+    "start": 475.064
+  },
+  {
+    "word": "reminder",
+    "start": 475.524
+  },
+  {
+    "word": "or",
+    "start": 475.984
+  },
+  {
+    "word": "financial",
+    "start": 476.444
+  },
+  {
+    "word": "summary",
+    "start": 476.904
+  },
+  {
+    "word": "is",
+    "start": 477.365
+  },
+  {
+    "word": "grounded",
+    "start": 477.825
+  },
+  {
+    "word": "and",
+    "start": 478.285
+  },
+  {
+    "word": "accurate.",
+    "start": 478.745
+  }
+]
