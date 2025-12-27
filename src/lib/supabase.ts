@@ -1,7 +1,8 @@
 import { createClient } from '@supabase/supabase-js';
 
-const SUPABASE_URL = "https://app.captainapp.co.uk";
-const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_ZGM4Nzg3OTEtNTViYi00ZGRmLWFjNDktMjA0ZTYzMjI5Y2RhOmZjYjRiZjdhLWFkNjMtNGNmYy1iYTgyLWRiOGM1MTQwZjk1ZA==";
+// USING THE EXACT SAME CREDENTIALS AS THE MAIN APP
+const SUPABASE_URL = "https://kjbcjkihxskuwwfdqklt.supabase.co";
+const SUPABASE_PUBLISHABLE_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtqYmNqa2loeHNrdXd3ZmRxa2x0Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTA3MDU2OTAsImV4cCI6MjA2NjI4MTY5MH0.V9e7XsuTlTOLqefOIedTqlBiTxUSn4O5FZSPWwAxiSI";
 
 // Custom storage to share session across subdomains using a root domain cookie
 const cookieStorage = {
@@ -11,7 +12,6 @@ const cookieStorage = {
     // On localhost, fallback to standard localStorage for easier development
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
       const val = localStorage.getItem(key);
-      console.log(`Supabase LocalStorage: getItem(${key}) found:`, !!val);
       return val;
     }
 
@@ -30,7 +30,6 @@ const cookieStorage = {
     if (typeof document === 'undefined') return;
 
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      console.log(`Supabase LocalStorage: setItem(${key})`);
       localStorage.setItem(key, value);
       return;
     }
@@ -43,7 +42,6 @@ const cookieStorage = {
     if (typeof document === 'undefined') return;
 
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      console.log(`Supabase LocalStorage: removeItem(${key})`);
       localStorage.removeItem(key);
       return;
     }
@@ -55,7 +53,6 @@ const cookieStorage = {
 export const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
   auth: {
     storage: cookieStorage,
-    // Use the exact key that the main app is using to ensure they share the same cookie
     storageKey: 'sb-kjbcjkihxskuwwfdqklt-auth-token',
     persistSession: true,
     autoRefreshToken: true,
