@@ -7,13 +7,18 @@ const AuthCallback: React.FC = () => {
   useEffect(() => {
     const handleCallback = async () => {
       try {
-        console.log('AuthCallback: Starting recovery handler');
+        console.log('AuthCallback: Starting secure recovery handler');
+        
+        // 1. Capture tokens from hash
         const hash = window.location.hash.substring(1);
         const hashParams = new URLSearchParams(hash);
         const accessToken = hashParams.get('access_token');
         const refreshToken = hashParams.get('refresh_token');
         
+        // 2. IMMEDIATELY WIPE HASH FROM URL & HISTORY to prevent referer leakage
         if (accessToken) {
+          window.history.replaceState(null, '', window.location.pathname + window.location.search);
+          
           console.log('AuthCallback: Session tokens detected in hash. Bridging...');
           const { data, error: setError } = await supabase.auth.setSession({
             access_token: accessToken,
@@ -25,10 +30,12 @@ const AuthCallback: React.FC = () => {
             throw setError;
           }
           
-          if (data.session) {
-            console.log('AuthCallback: Session established manually. User:', data.session.user.id);
-            // Force save to standard key as well for redundancy on localhost
-            localStorage.setItem('captainapp-sso-v1', JSON.stringify(data.session));
+          // 3. STRICTLY LIMIT LOCAL STORAGE TO LOCALHOST
+          // Production uses Domain Cookies which are much more secure against XSS.
+          if (data.session && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+            const storageKey = 'captainapp-sso-v1';
+            localStorage.setItem(storageKey, JSON.stringify(data.session));
+            console.log('AuthCallback: Localhost session persisted to localStorage.');
           }
         } else {
           console.log('AuthCallback: No tokens in hash, attempting standard exchange...');
@@ -40,19 +47,22 @@ const AuthCallback: React.FC = () => {
           }
         }
         
-        // Final verification with small delay
-        await new Promise(resolve => setTimeout(resolve, 500));
+        // Brief wait for session propagation
+        await new Promise(resolve => setTimeout(resolve, 300));
         const { data: { session } } = await supabase.auth.getSession();
         
         if (!session) {
-          console.warn('AuthCallback: No session found after processing.');
-          // Try loading from localStorage manual key as ultimate fallback
-          const backup = localStorage.getItem('captainapp-sso-v1');
-          if (backup) {
-            console.log('AuthCallback: Using backup session from localStorage');
-            await supabase.auth.setSession(JSON.parse(backup));
+          // Ultimate fallback for localhost development only
+          if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+            const backup = localStorage.getItem('captainapp-sso-v1');
+            if (backup) {
+              console.log('AuthCallback: Using backup session from localStorage (localhost only)');
+              await supabase.auth.setSession(JSON.parse(backup));
+            } else {
+              throw new Error('Could not establish session on localhost.');
+            }
           } else {
-            throw new Error('Could not establish session. Please ensure local storage is enabled.');
+            throw new Error('Authentication failed. No secure session could be established.');
           }
         }
         
