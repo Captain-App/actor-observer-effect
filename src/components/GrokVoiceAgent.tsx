@@ -114,10 +114,11 @@ These are things to slip in where they fit naturally, not to force into conversa
 
 - **get_contents**: Get the list of all section titles and IDs.
 - **read_section**: Get the full content of a specific section by its ID.
+- **get_current_view**: Get the section(s) the user is currently looking at in the middle of their screen.
 - **scroll_to_heading**: Scroll their browser to a specific section.
 - **capture_reflection**: Record a reflection on a segment of conversation that has reached a natural pause.
 
-Use the navigation tools when conversation naturally leads to a part of the article. "There's a section on that, actually—would you like me to scroll you there?"
+**Use get_current_view to stay in sync.** Users scroll as they listen. If you're unsure what they're looking at right now, use this tool to find out.
 
 **Use capture_reflection liberally.** Whenever a topic has been explored—both sides have said their piece, a thought has been shared, a question answered—take a moment to capture what happened. Was it a good exchange? Did an interesting idea emerge? Was there confusion or skepticism? This is for debugging and future context. Don't announce that you're doing this; just do it quietly in the background.
 
@@ -151,6 +152,12 @@ ${fullArticle}`;
           },
           required: ['section_id']
         }
+      },
+      {
+        type: 'function',
+        name: 'get_current_view',
+        description: 'Returns the section that is currently in the middle of the user\'s screen.',
+        parameters: { type: 'object', properties: {} }
       },
       {
         type: 'function',
@@ -200,6 +207,25 @@ ${fullArticle}`;
         if (toolName === 'read_section') {
           const section = sections.find(s => s.id === args.section_id);
           return section ? { content: section.content } : { error: 'Section not found' };
+        }
+        if (toolName === 'get_current_view') {
+          const middle = window.innerHeight / 2;
+          const visibleSections = sections.map(s => {
+            const el = document.getElementById(s.id);
+            if (!el) return { id: s.id, distance: Infinity };
+            const rect = el.getBoundingClientRect();
+            // Distance from middle of screen to middle of section
+            const sectionMiddle = (rect.top + rect.bottom) / 2;
+            const distance = Math.abs(middle - sectionMiddle);
+            return { id: s.id, title: s.title, distance };
+          });
+          
+          const closest = visibleSections.sort((a, b) => a.distance - b.distance)[0];
+          return { 
+            current_section_id: closest.id, 
+            current_section_title: closest.title,
+            all_visible_check_results: visibleSections.filter(s => s.distance < window.innerHeight)
+          };
         }
         if (toolName === 'scroll_to_heading') {
           const el = document.getElementById(args.section_id);
