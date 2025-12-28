@@ -125,13 +125,17 @@ export class XAIRealtimeClient {
           }
 
           if (event.type === 'response.created') {
+            // This is a TRUE barge-in or a new turn.
+            // Mark the previous response as interrupted so we don't play any more of its chunks.
+            if (this.currentResponseId) {
+              this.lastInterruptedResponseId = this.currentResponseId;
+            }
+            
             this.currentResponseId = event.response?.id;
-            // Reset interruption state and gain for every new response
             this.isInterrupted = false; 
             this.nextPlayTime = 0;
             
-            // Hard stop all previous sources to prevent "playing over himself" 
-            // if a new response starts before the previous fade finished.
+            // Hard stop all previous sources immediately.
             this.activeSources.forEach(source => {
               try { source.stop(); } catch (e) {}
             });
@@ -143,7 +147,7 @@ export class XAIRealtimeClient {
               this.masterGain.gain.setValueAtTime(1, now);
             }
 
-            console.log('%c[xAI] Response Created:', 'color: #10b981', {
+            console.log('%c[xAI] Response Created (Turn Start):', 'color: #10b981', {
               id: event.response?.id,
               voice: event.response?.voice,
               status: event.response?.status
@@ -155,7 +159,15 @@ export class XAIRealtimeClient {
           }
 
           if (event.type === 'input_audio_buffer.speech_stopped') {
-            this.isInterrupted = false; // Allow audio processing again, but the response_id check will still block zombie audio
+            console.log('%c[xAI] Speech stopped. Fading back in...', 'color: #10b981');
+            this.isInterrupted = false; 
+            
+            if (this.masterGain && this.audioContext) {
+              const now = this.audioContext.currentTime;
+              // Fade back in over 400ms if no new response has taken over
+              this.masterGain.gain.cancelScheduledValues(now);
+              this.masterGain.gain.exponentialRampToValueAtTime(1, now + 0.4);
+            }
           }
 
           if (event.type === 'error') {
@@ -257,8 +269,10 @@ export class XAIRealtimeClient {
   private handleAudioDelta(base64Delta: string, responseId?: string) {
     if (!this.audioContext || !this.masterGain) return;
     
-    // Ignore audio if we are currently interrupted OR if this audio belongs to the last interrupted response
-    if (this.isInterrupted || (responseId && responseId === this.lastInterruptedResponseId)) {
+    // Ignore audio ONLY if it belongs to a response we've explicitly killed.
+    // We NO LONGER check this.isInterrupted here, because we want audio to keep 
+    // scheduling in the background during a potential false-positive fade.
+    if (responseId && responseId === this.lastInterruptedResponseId) {
       return;
     }
 
@@ -292,9 +306,8 @@ export class XAIRealtimeClient {
   private async fadeAndStop() {
     if (!this.masterGain || !this.audioContext || this.isInterrupted) return;
     
-    console.log('%c[xAI] User speech detected. Fading out AI...', 'color: #f59e0b');
+    console.log('%c[xAI] Speech started. Fading out...', 'color: #f59e0b');
     this.isInterrupted = true;
-    this.lastInterruptedResponseId = this.currentResponseId;
     
     const now = this.audioContext.currentTime;
     
@@ -302,11 +315,10 @@ export class XAIRealtimeClient {
     this.masterGain.gain.cancelScheduledValues(now);
     this.masterGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.4);
     
-    // Reset scheduler immediately so the next response doesn't wait
-    this.nextPlayTime = 0;
-    
-    // We KEEP the activeSources set intact here so we can stop them 
-    // if a new response starts before they finish their fade.
+    // We NO LONGER reset nextPlayTime here or set lastInterruptedResponseId.
+    // We allow the audio deltas to keep scheduling in silence.
+    // If it was just noise, we'll fade back in.
+    // If it was a real barge-in, response.created will do the hard cut.
   }
 
   sendEvent(event: XAIEvent) {
