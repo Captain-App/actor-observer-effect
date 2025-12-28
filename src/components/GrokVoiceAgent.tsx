@@ -210,16 +210,36 @@ ${fullArticle}`;
           return { error: 'Section not found' };
         }
         if (toolName === 'capture_reflection') {
+          const { data: { user } } = await supabase.auth.getUser();
+          
           const reflection = {
-            timestamp: new Date().toISOString(),
-            sessionId: sessionIdRef.current,
+            session_id: sessionIdRef.current,
+            user_id: user?.id,
             topic: args.topic,
             summary: args.summary,
             sentiment: args.sentiment as 'positive' | 'neutral' | 'skeptical' | 'confused',
-            insight: args.insight
+            insight: args.insight,
+            metadata: {
+              article_section: currentSection.id,
+              url: window.location.href
+            }
           };
-          reflectionsRef.current.push(reflection);
-          console.log('[Marvin] 📝 Reflection captured:', reflection);
+
+          const { error } = await supabase
+            .from('conversation_reflections')
+            .insert(reflection);
+
+          if (error) {
+            console.error('[Marvin] Failed to persist reflection:', error);
+            return { error: 'Failed to persist reflection' };
+          }
+
+          reflectionsRef.current.push({
+            timestamp: new Date().toISOString(),
+            ...reflection
+          } as any);
+
+          console.log('[Marvin] 📝 Reflection persisted:', reflection);
           return { success: true, reflectionCount: reflectionsRef.current.length };
         }
       }
@@ -239,7 +259,7 @@ ${fullArticle}`;
     
     // Dump all reflections from this session for debugging
     if (reflectionsRef.current.length > 0) {
-      console.log('[Marvin] 📋 Session reflections:', JSON.stringify(reflectionsRef.current, null, 2));
+      console.log('[Marvin] 📋 Session reflections persisted:', reflectionsRef.current);
     } else {
       console.log('[Marvin] No reflections captured this session.');
     }
