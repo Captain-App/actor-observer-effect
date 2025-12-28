@@ -6,69 +6,52 @@ export interface XAIEvent {
 }
 
 export class XAIRealtimeClient {
-  private pc: RTCPeerConnection | null = null;
-  private dc: RTCDataChannel | null = null;
-  private audioEl: HTMLAudioElement;
+  private ws: WebSocket | null = null;
+  private audioContext: AudioContext | null = null;
+  private processor: ScriptProcessorNode | null = null;
+  private input: MediaStreamAudioSourceNode | null = null;
   private localStream: MediaStream | null = null;
   private isConnected: boolean = false;
+  private audioQueue: Int16Array[] = [];
+  private isPlaying: boolean = false;
+  private nextPlayTime: number = 0;
 
   constructor(
     private onMessage: (event: XAIEvent) => void,
     private onError: (error: Error) => void
-  ) {
-    this.audioEl = document.createElement('audio');
-    this.audioEl.autoplay = true;
-  }
+  ) {}
 
   async init(instructions: string) {
     try {
-      console.log('[xAI] Initializing realtime client');
+      console.log('[xAI] Initializing realtime client (WebSocket)');
 
       // 1) Get ephemeral token from Supabase Edge Function
       const { data, error: invokeError } = await supabase.functions.invoke('xai-realtime-token');
-      
       if (invokeError) throw invokeError;
       
-      // xAI response has 'value' directly at the root, or within client_secret
-      console.log('[xAI] Token response data:', JSON.stringify(data));
       const token = data?.value || data?.client_secret?.value;
       if (!token) {
-        console.error('[xAI] Invalid token response. Available keys:', Object.keys(data || {}));
         throw new Error('Failed to get xAI ephemeral token');
       }
 
-      // 2) Request microphone access
-      this.localStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      // 2) Establish WebSocket connection
+      this.ws = new WebSocket('wss://api.x.ai/v1/realtime');
 
-      // 3) Create PeerConnection
-      this.pc = new RTCPeerConnection();
+      this.ws.onopen = () => {
+        console.log('[xAI] WebSocket connected, authenticating...');
+        // Authenticate
+        this.sendEvent({
+          type: 'session.authenticate',
+          token: token
+        });
 
-      // Handle remote tracks (AI voice)
-      this.pc.ontrack = (e) => {
-        console.log('[xAI] Received remote audio track');
-        this.audioEl.srcObject = e.streams[0];
-        this.audioEl.play().catch(err => console.error('[xAI] Audio play blocked:', err));
-      };
-
-      // Add local audio track
-      this.localStream.getTracks().forEach((track) => {
-        this.pc!.addTrack(track, this.localStream!);
-      });
-
-      // 4) Data channel for events
-      this.dc = this.pc.createDataChannel('oai-events'); // Using oai-events as per compatible spec
-      
-      this.dc.addEventListener('open', () => {
-        console.log('[xAI] Data channel open');
-        this.isConnected = true;
-        
-        // Send initial session configuration
+        // Configure session
         this.sendEvent({
           type: 'session.update',
           session: {
             modalities: ['text', 'audio'],
             instructions: instructions,
-            voice: 'Leo', // Using the Leo voice as requested (case sensitive)
+            voice: 'Leo',
             input_audio_format: 'pcm16',
             output_audio_format: 'pcm16',
             turn_detection: {
@@ -79,76 +62,142 @@ export class XAIRealtimeClient {
             },
           },
         });
-      });
+      };
 
-      this.dc.addEventListener('message', (e) => {
+      this.ws.onmessage = (e) => {
         try {
           const event = JSON.parse(e.data);
+          
+          if (event.type === 'session.created' || event.type === 'session.updated') {
+            this.isConnected = true;
+            console.log('[xAI] Session active');
+          }
+
+          if (event.type === 'response.output_audio.delta') {
+            this.handleAudioDelta(event.delta);
+          }
+
           this.onMessage(event);
         } catch (err) {
           console.error('[xAI] Failed to parse message:', err);
         }
-      });
+      };
 
-      // 5) WebRTC Offer/Answer via xAI Realtime API
-      const offer = await this.pc.createOffer();
-      await this.pc.setLocalDescription(offer);
+      this.ws.onerror = (e) => {
+        console.error('[xAI] WebSocket error:', e);
+        this.onError(new Error('WebSocket connection error'));
+      };
 
-      const baseUrl = 'https://api.x.ai/v1/realtime';
-      const model = 'grok-beta';
+      this.ws.onclose = () => {
+        console.log('[xAI] WebSocket closed');
+        this.disconnect();
+      };
+
+      // 3) Setup Audio Recording
+      this.localStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
+      this.input = this.audioContext.createMediaStreamSource(this.localStream);
       
-      const sdpResponse = await fetch(`${baseUrl}?model=${model}`, {
-        method: 'POST',
-        body: offer.sdp,
-        headers: {
-          Authorization: `Bearer ${token}`,
-          'Content-Type': 'application/sdp',
-        },
-      });
+      // ScriptProcessor for 24kHz PCM16 mono
+      this.processor = this.audioContext.createScriptProcessor(4096, 1, 1);
+      
+      this.processor.onaudioprocess = (e) => {
+        if (!this.isConnected) return;
 
-      if (!sdpResponse.ok) {
-        const errorText = await sdpResponse.text();
-        throw new Error(`xAI API error (${sdpResponse.status}): ${errorText}`);
-      }
+        const inputData = e.inputBuffer.getChannelData(0);
+        // Convert Float32 to Int16
+        const pcm16 = new Int16Array(inputData.length);
+        for (let i = 0; i < inputData.length; i++) {
+          const s = Math.max(-1, Math.min(1, inputData[i]));
+          pcm16[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
+        }
 
-      const answer = { type: 'answer' as RTCSdpType, sdp: await sdpResponse.text() };
-      await this.pc.setRemoteDescription(answer);
+        // Base64 encode and send
+        const base64 = btoa(String.fromCharCode(...new Uint8Array(pcm16.buffer)));
+        this.sendEvent({
+          type: 'input_audio_buffer.append',
+          audio: base64
+        });
+      };
 
-      console.log('[xAI] WebRTC connection established');
+      this.input.connect(this.processor);
+      this.processor.connect(this.audioContext.destination);
+
     } catch (err: any) {
-      console.error('[xAI] Initialization error detailed:', {
-        name: err.name,
-        message: err.message,
-        error: err
-      });
+      console.error('[xAI] Initialization error:', err);
       this.onError(err instanceof Error ? err : new Error(String(err)));
       this.disconnect();
     }
   }
 
+  private handleAudioDelta(base64Delta: string) {
+    if (!this.audioContext) return;
+
+    const binary = atob(base64Delta);
+    const bytes = new Uint8Array(binary.length);
+    for (let i = 0; i < binary.length; i++) {
+      bytes[i] = binary.charCodeAt(i);
+    }
+    const pcm16 = new Int16Array(bytes.buffer);
+    const float32 = new Float32Array(pcm16.length);
+    for (let i = 0; i < pcm16.length; i++) {
+      float32[i] = pcm16[i] / 32768;
+    }
+
+    const buffer = this.audioContext.createBuffer(1, float32.length, 24000);
+    buffer.getChannelData(0).set(float32);
+
+    const source = this.audioContext.createBufferSource();
+    source.buffer = buffer;
+    source.connect(this.audioContext.destination);
+
+    const currentTime = this.audioContext.currentTime;
+    if (this.nextPlayTime < currentTime) {
+      this.nextPlayTime = currentTime;
+    }
+    source.start(this.nextPlayTime);
+    this.nextPlayTime += buffer.duration;
+  }
+
   sendEvent(event: XAIEvent) {
-    if (this.dc?.readyState === 'open') {
-      this.dc.send(JSON.stringify(event));
+    if (this.ws?.readyState === WebSocket.OPEN) {
+      this.ws.send(JSON.stringify(event));
     } else {
-      console.warn('[xAI] Data channel not ready for event:', event.type);
+      console.warn('[xAI] WebSocket not ready for event:', event.type);
     }
   }
 
   disconnect() {
     console.log('[xAI] Disconnecting');
     this.isConnected = false;
-    this.dc?.close();
-    this.pc?.close();
+    
+    if (this.ws) {
+      this.ws.close();
+      this.ws = null;
+    }
+
+    if (this.processor) {
+      this.processor.disconnect();
+      this.processor = null;
+    }
+
+    if (this.input) {
+      this.input.disconnect();
+      this.input = null;
+    }
+
+    if (this.audioContext) {
+      this.audioContext.close();
+      this.audioContext = null;
+    }
+
     if (this.localStream) {
       this.localStream.getTracks().forEach((t) => t.stop());
+      this.localStream = null;
     }
-    this.dc = null;
-    this.pc = null;
-    this.localStream = null;
   }
 
   getIsConnected() {
     return this.isConnected;
   }
 }
-
