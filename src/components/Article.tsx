@@ -30,7 +30,7 @@ const HighlightableText: React.FC<HighlightableTextProps> = ({ text, currentWord
             onClick={() => onWordClick?.(currentIndex)}
             className={`transition-all duration-200 cursor-pointer hover:text-primary/80 ${
               isHighlighted 
-                ? 'bg-primary/20 text-primary font-bold shadow-[0_0_15px_rgba(59,130,246,0.2)] rounded-sm px-0.5' 
+                ? 'text-primary font-bold scale-110 inline-block' 
                 : ''
             }`}
           >
