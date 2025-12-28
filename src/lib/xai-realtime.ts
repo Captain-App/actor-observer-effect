@@ -12,8 +12,6 @@ export class XAIRealtimeClient {
   private input: MediaStreamAudioSourceNode | null = null;
   private localStream: MediaStream | null = null;
   private isConnected: boolean = false;
-  private audioQueue: Int16Array[] = [];
-  private isPlaying: boolean = false;
   private nextPlayTime: number = 0;
 
   constructor(
@@ -23,29 +21,38 @@ export class XAIRealtimeClient {
 
   async init(instructions: string) {
     try {
-      console.log('[xAI] Initializing realtime client (WebSocket)');
+      console.log('%c[xAI] Starting Initialization...', 'color: #3b82f6; font-weight: bold');
 
-      // 1) Get ephemeral token from Supabase Edge Function
+      // 1) Get ephemeral token
+      console.log('[xAI] Step 1: Requesting ephemeral token from Supabase...');
       const { data, error: invokeError } = await supabase.functions.invoke('xai-realtime-token');
-      if (invokeError) throw invokeError;
+      if (invokeError) {
+        console.error('[xAI] Supabase invocation error:', invokeError);
+        throw invokeError;
+      }
+      console.log('[xAI] Token response:', data);
       
       const token = data?.value || data?.client_secret?.value;
       if (!token) {
+        console.error('[xAI] No token found in response data');
         throw new Error('Failed to get xAI ephemeral token');
       }
+      console.log('[xAI] Ephemeral token acquired');
 
       // 2) Establish WebSocket connection
+      console.log('[xAI] Step 2: Connecting to WebSocket wss://api.x.ai/v1/realtime');
       this.ws = new WebSocket('wss://api.x.ai/v1/realtime');
 
       this.ws.onopen = () => {
-        console.log('[xAI] WebSocket connected, authenticating...');
-        // Authenticate
+        console.log('%c[xAI] WebSocket Connected!', 'color: #10b981; font-weight: bold');
+        
+        console.log('[xAI] Step 3: Authenticating...');
         this.sendEvent({
           type: 'session.authenticate',
           token: token
         });
 
-        // Configure session as per xAI documentation
+        console.log('[xAI] Step 4: Configuring session...');
         this.sendEvent({
           type: 'session.update',
           session: {
@@ -53,18 +60,8 @@ export class XAIRealtimeClient {
             instructions: instructions,
             voice: 'Leo',
             audio: {
-              input: {
-                format: {
-                  type: 'audio/pcm',
-                  rate: 24000
-                }
-              },
-              output: {
-                format: {
-                  type: 'audio/pcm',
-                  rate: 24000
-                }
-              }
+              input: { format: { type: 'audio/pcm', rate: 24000 } },
+              output: { format: { type: 'audio/pcm', rate: 24000 } }
             },
             turn_detection: {
               type: 'server_vad',
@@ -79,15 +76,15 @@ export class XAIRealtimeClient {
       this.ws.onmessage = (e) => {
         try {
           const event = JSON.parse(e.data);
-          console.log('[xAI] Received event:', event.type, event);
+          console.log('%c[xAI] Incoming Event:', 'color: #8b5cf6', event.type, event);
           
           if (event.type === 'session.created' || event.type === 'session.updated') {
             this.isConnected = true;
-            console.log('[xAI] Session active');
+            console.log('%c[xAI] Session Active & Configured', 'color: #10b981; font-weight: bold');
           }
 
           if (event.type === 'error') {
-            console.error('[xAI] Server error:', event.error);
+            console.error('[xAI] Server reported an error:', event.error);
             this.onError(new Error(event.error?.message || 'xAI server error'));
           }
 
@@ -97,75 +94,74 @@ export class XAIRealtimeClient {
 
           this.onMessage(event);
         } catch (err) {
-          console.error('[xAI] Failed to parse message:', err);
+          console.error('[xAI] Error parsing WebSocket message:', err);
         }
       };
 
       this.ws.onerror = (e) => {
-        console.error('[xAI] WebSocket error:', e);
+        console.error('[xAI] WebSocket Error Observed:', e);
         this.onError(new Error('WebSocket connection error'));
       };
 
-      this.ws.onclose = () => {
-        console.log('[xAI] WebSocket closed');
+      this.ws.onclose = (e) => {
+        console.warn('[xAI] WebSocket Closed. Code:', e.code, 'Reason:', e.reason);
         this.disconnect();
       };
 
-      // 3) Setup Audio Recording
-      console.log('[xAI] Requesting microphone access...');
+      // 3) Setup Audio Recording - CRITICAL: This is where permission should trigger
+      console.log('[xAI] Step 5: Requesting microphone permission via getUserMedia...');
       try {
-        this.localStream = await navigator.mediaDevices.getUserMedia({ audio: true });
-        console.log('[xAI] Microphone access granted');
+        this.localStream = await navigator.mediaDevices.getUserMedia({ 
+          audio: {
+            channelCount: 1,
+            sampleRate: 24000,
+            echoCancellation: true,
+            noiseSuppression: true
+          } 
+        });
+        console.log('%c[xAI] Microphone permission granted!', 'color: #10b981; font-weight: bold');
       } catch (err: any) {
-        console.error('[xAI] Microphone access denied:', err);
-        throw new Error(`Microphone access denied: ${err.message}`);
+        console.error('[xAI] CRITICAL: Microphone permission denied or failed:', err.name, err.message);
+        throw new Error(`Microphone access failed: ${err.message}`);
       }
 
-      console.log('[xAI] Initializing AudioContext...');
-      try {
-        this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
-        console.log('[xAI] AudioContext initialized at', this.audioContext.sampleRate, 'Hz');
-      } catch (err: any) {
-        console.error('[xAI] AudioContext initialization failed:', err);
-        throw new Error(`AudioContext failed: ${err.message}`);
+      console.log('[xAI] Step 6: Initializing AudioContext for recording...');
+      this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
+      console.log('[xAI] AudioContext state:', this.audioContext.state);
+      
+      if (this.audioContext.state === 'suspended') {
+        console.log('[xAI] Resuming suspended AudioContext...');
+        await this.audioContext.resume();
       }
 
       this.input = this.audioContext.createMediaStreamSource(this.localStream);
-      
-      // ScriptProcessor for 24kHz PCM16 mono
       this.processor = this.audioContext.createScriptProcessor(4096, 1, 1);
       
       this.processor.onaudioprocess = (e) => {
-        if (!this.isConnected) return;
+        if (!this.isConnected || this.ws?.readyState !== WebSocket.OPEN) return;
 
         const inputData = e.inputBuffer.getChannelData(0);
-        // Convert Float32 to Int16
         const pcm16 = new Int16Array(inputData.length);
         for (let i = 0; i < inputData.length; i++) {
           const s = Math.max(-1, Math.min(1, inputData[i]));
           pcm16[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
         }
 
-        // Base64 encode and send (using a more robust method for large buffers)
-        let binary = '';
-        const bytes = new Uint8Array(pcm16.buffer);
-        const len = bytes.byteLength;
-        for (let i = 0; i < len; i++) {
-          binary += String.fromCharCode(bytes[i]);
-        }
+        const binary = String.fromCharCode(...new Uint8Array(pcm16.buffer));
         const base64 = btoa(binary);
         
-        this.sendEvent({
+        this.ws.send(JSON.stringify({
           type: 'input_audio_buffer.append',
           audio: base64
-        });
+        }));
       };
 
       this.input.connect(this.processor);
       this.processor.connect(this.audioContext.destination);
+      console.log('[xAI] Audio pipeline connected and running');
 
     } catch (err: any) {
-      console.error('[xAI] Initialization error:', err);
+      console.error('%c[xAI] Initialization Failed:', 'color: #ef4444; font-weight: bold', err);
       this.onError(err instanceof Error ? err : new Error(String(err)));
       this.disconnect();
     }
