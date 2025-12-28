@@ -112,6 +112,45 @@ function App() {
     }
   }, [sectionMetadata, isPlaying]);
 
+  const handleWordClick = useCallback((globalWordIndex: number) => {
+    const sectionIdx = sectionMetadata.sections.findIndex(
+      (s, i) => {
+        const nextStart = sectionMetadata.sections[i + 1]?.startIndex ?? Infinity;
+        return globalWordIndex >= s.startIndex && globalWordIndex < nextStart;
+      }
+    );
+
+    if (sectionIdx !== -1) {
+      const metadata = sectionMetadata.sections[sectionIdx];
+      const sectionId = metadata.id;
+      const localWordIdx = globalWordIndex - metadata.startIndex;
+      
+      const setTime = () => {
+        const sectionTiming = timingData[sectionId];
+        if (sectionTiming && sectionTiming[localWordIdx] && audioRef.current) {
+          audioRef.current.currentTime = sectionTiming[localWordIdx].start;
+          if (!isPlaying) setIsPlaying(true);
+        }
+      };
+
+      if (audioRef.current) {
+        const newSrc = `/audio/sections/${sectionId}.mp3`;
+        if (currentSectionIndex !== sectionIdx) {
+          setCurrentSectionIndex(sectionIdx);
+          lastWordIdxRef.current = localWordIdx;
+          setCurrentWordIndex(globalWordIndex);
+          audioRef.current.src = newSrc;
+          audioRef.current.onloadedmetadata = () => {
+            setTime();
+            audioRef.current!.onloadedmetadata = null;
+          };
+        } else {
+          setTime();
+        }
+      }
+    }
+  }, [sectionMetadata, timingData, currentSectionIndex, isPlaying]);
+
   const isAuthCallback = window.location.pathname === '/auth/callback';
 
   // Intersection Observer for Sidebar highlighting
@@ -344,7 +383,10 @@ function App() {
             onNavigate={handleNavigateToSection} 
           />
           <main className="flex-1 w-full lg:ml-96">
-            <Article currentWordIndex={currentWordIndex} />
+            <Article 
+              currentWordIndex={currentWordIndex} 
+              onWordClick={handleWordClick}
+            />
           </main>
         </div>
 

@@ -6,9 +6,10 @@ interface HighlightableTextProps {
   text: string;
   currentWordIndex: number | null;
   baseIndex: number;
+  onWordClick?: (index: number) => void;
 }
 
-const HighlightableText: React.FC<HighlightableTextProps> = ({ text, currentWordIndex, baseIndex }) => {
+const HighlightableText: React.FC<HighlightableTextProps> = ({ text, currentWordIndex, baseIndex, onWordClick }) => {
   const parts = useMemo(() => splitIntoParts(text), [text]);
   
   let wordCounter = 0;
@@ -26,7 +27,8 @@ const HighlightableText: React.FC<HighlightableTextProps> = ({ text, currentWord
           <span
             key={i}
             id={isHighlighted ? 'current-reading-word' : undefined}
-            className={`transition-all duration-200 ${
+            onClick={() => onWordClick?.(currentIndex)}
+            className={`transition-all duration-200 cursor-pointer hover:text-primary/80 ${
               isHighlighted 
                 ? 'bg-primary/20 text-primary font-bold shadow-[0_0_15px_rgba(59,130,246,0.2)] rounded-sm px-0.5' 
                 : ''
@@ -42,9 +44,10 @@ const HighlightableText: React.FC<HighlightableTextProps> = ({ text, currentWord
 
 interface ArticleProps {
   currentWordIndex: number | null;
+  onWordClick?: (index: number) => void;
 }
 
-const Article: React.FC<ArticleProps> = ({ currentWordIndex }) => {
+const Article: React.FC<ArticleProps> = ({ currentWordIndex, onWordClick }) => {
   // Map words to global indices
   let globalWordCounter = 0;
 
@@ -76,18 +79,18 @@ const Article: React.FC<ArticleProps> = ({ currentWordIndex }) => {
                   ? "text-6xl lg:text-7xl font-black tracking-tight leading-[1.1] text-foreground" 
                   : "text-4xl font-extrabold tracking-tight text-foreground/90"
               }`}>
-                <HighlightableText text={section.title} currentWordIndex={currentWordIndex} baseIndex={titleIndex} />
+                <HighlightableText text={section.title} currentWordIndex={currentWordIndex} baseIndex={titleIndex} onWordClick={onWordClick} />
               </h2>
               {section.subtitle && (
                 <p className="text-2xl text-muted-foreground/80 font-medium tracking-tight leading-relaxed max-w-2xl">
-                  <HighlightableText text={section.subtitle} currentWordIndex={currentWordIndex} baseIndex={subtitleIndex} />
+                  <HighlightableText text={section.subtitle} currentWordIndex={currentWordIndex} baseIndex={subtitleIndex} onWordClick={onWordClick} />
                 </p>
               )}
             </header>
             
             <div className="prose prose-slate dark:prose-invert max-w-none">
               <p className="text-xl leading-[1.8] text-muted-foreground font-normal">
-                <HighlightableText text={section.content} currentWordIndex={currentWordIndex} baseIndex={contentIndex} />
+                <HighlightableText text={section.content} currentWordIndex={currentWordIndex} baseIndex={contentIndex} onWordClick={onWordClick} />
               </p>
             </div>
             
