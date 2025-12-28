@@ -24,50 +24,39 @@ export class XAIRealtimeClient {
       console.log('%c[xAI] Starting Initialization (via Cloudflare Proxy)...', 'color: #3b82f6; font-weight: bold');
 
       // 1) Get ephemeral token
-      console.log('[xAI] Step 1: Fetching token from Supabase...');
       const { data, error: invokeError } = await supabase.functions.invoke('xai-realtime-token');
-      if (invokeError) {
-        console.error('[xAI] Supabase invocation error:', invokeError);
-        throw invokeError;
-      }
+      if (invokeError) throw invokeError;
       
       const token = data?.value || data?.client_secret?.value;
-      if (!token) {
-        console.error('[xAI] No token found in response:', data);
-        throw new Error('Failed to get xAI ephemeral token');
-      }
-      console.log('[xAI] Ephemeral token acquired');
+      if (!token) throw new Error('Failed to get xAI ephemeral token');
+      console.log('[xAI] Token acquired');
 
-      // 2) Request microphone access
-      console.log('[xAI] Step 2: Requesting microphone permission...');
+      // 2) Request microphone
       try {
         this.localStream = await navigator.mediaDevices.getUserMedia({ audio: true });
-        console.log('[xAI] Microphone access granted');
+        console.log('[xAI] Microphone granted');
       } catch (err: any) {
-        console.error('[xAI] Microphone permission denied:', err);
         throw new Error(`Microphone access denied: ${err.message}`);
       }
 
       // 3) Establish WebSocket connection via Proxy
-      // We connect to the worker, which adds the Authorization header browsers can't send
       const proxyUrl = 'wss://xai-realtime-proxy.captainapp.workers.dev';
       const wsUrl = `${proxyUrl}/?token=${token}`;
-      console.log(`[xAI] Step 3: Connecting to Proxy at ${proxyUrl}`);
+      console.log(`[xAI] Connecting to: ${wsUrl}`);
       
       this.ws = new WebSocket(wsUrl);
 
       this.ws.onopen = () => {
-        console.log('%c[xAI] WebSocket Handshake Successful (via Proxy)!', 'color: #10b981; font-weight: bold');
+        console.log('%c[xAI] WebSocket Proxy Handshake Successful!', 'color: #10b981; font-weight: bold');
         
-        // 4) In-band authentication (xAI spec still requires this event even if header is sent)
-        console.log('[xAI] Step 4: Sending session.authenticate...');
+        // 4) Configure Session
+        // We skip session.authenticate if the proxy added the header, 
+        // but Grok docs show it as a message, so let's keep it just in case.
         this.sendEvent({
           type: 'session.authenticate',
           token: token
         });
 
-        // 5) Session configuration
-        console.log('[xAI] Step 5: Sending session.update...');
         this.sendEvent({
           type: 'session.update',
           session: {
@@ -77,10 +66,7 @@ export class XAIRealtimeClient {
             input_audio_format: 'pcm16',
             output_audio_format: 'pcm16',
             turn_detection: { 
-              type: 'server_vad',
-              threshold: 0.5,
-              prefix_padding_ms: 300,
-              silence_duration_ms: 800
+              type: 'server_vad'
             }
           },
         });
@@ -89,7 +75,7 @@ export class XAIRealtimeClient {
       this.ws.onmessage = (e) => {
         try {
           const event = JSON.parse(e.data);
-          console.log('%c[xAI] Incoming Event:', 'color: #8b5cf6', event.type, event);
+          console.log('%c[xAI] Event:', 'color: #8b5cf6', event.type, event);
           
           if (event.type === 'session.created' || event.type === 'session.updated') {
             console.log('%c[xAI] Session Active!', 'color: #10b981; font-weight: bold');
@@ -97,7 +83,7 @@ export class XAIRealtimeClient {
           }
 
           if (event.type === 'error') {
-            console.error('[xAI] Server reported an error:', event.error);
+            console.error('[xAI] Server error:', event.error);
             this.onError(new Error(event.error?.message || 'xAI server error'));
           }
 
@@ -107,12 +93,12 @@ export class XAIRealtimeClient {
 
           this.onMessage(event);
         } catch (err) {
-          console.error('[xAI] Failed to parse message:', err);
+          console.error('[xAI] Non-JSON or malformed message:', e.data);
         }
       };
 
       this.ws.onerror = (e) => {
-        console.error('[xAI] WebSocket Error Observed:', e);
+        console.error('[xAI] WebSocket Error');
         this.onError(new Error('WebSocket connection error'));
       };
 
@@ -121,42 +107,32 @@ export class XAIRealtimeClient {
         this.disconnect();
       };
 
-      // 6) Setup Recording Pipeline
-      console.log('[xAI] Step 6: Initializing audio recording pipeline...');
+      // 6) Setup Recording
       this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
-      
-      if (this.audioContext.state === 'suspended') {
-        await this.audioContext.resume();
-      }
+      if (this.audioContext.state === 'suspended') await this.audioContext.resume();
 
       this.input = this.audioContext.createMediaStreamSource(this.localStream);
       this.processor = this.audioContext.createScriptProcessor(4096, 1, 1);
       
       this.processor.onaudioprocess = (e) => {
         if (!this.isConnected || this.ws?.readyState !== WebSocket.OPEN) return;
-
         const inputData = e.inputBuffer.getChannelData(0);
         const pcm16 = new Int16Array(inputData.length);
         for (let i = 0; i < inputData.length; i++) {
           const s = Math.max(-1, Math.min(1, inputData[i]));
           pcm16[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
         }
-
-        const binary = String.fromCharCode(...new Uint8Array(pcm16.buffer));
-        const base64 = btoa(binary);
-        
-        this.sendEvent({
+        this.ws.send(JSON.stringify({
           type: 'input_audio_buffer.append',
-          audio: base64
-        });
+          audio: btoa(String.fromCharCode(...new Uint8Array(pcm16.buffer)))
+        }));
       };
 
       this.input.connect(this.processor);
       this.processor.connect(this.audioContext.destination);
-      console.log('[xAI] Audio recording active');
 
     } catch (err: any) {
-      console.error('%c[xAI] Initialization Failed:', 'color: #ef4444; font-weight: bold', err);
+      console.error('%c[xAI] Init Failed:', 'color: #ef4444; font-weight: bold', err);
       this.onError(err instanceof Error ? err : new Error(String(err)));
       this.disconnect();
     }
@@ -164,29 +140,20 @@ export class XAIRealtimeClient {
 
   private handleAudioDelta(base64Delta: string) {
     if (!this.audioContext) return;
-
     const binary = atob(base64Delta);
     const bytes = new Uint8Array(binary.length);
-    for (let i = 0; i < binary.length; i++) {
-      bytes[i] = binary.charCodeAt(i);
-    }
+    for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
     const pcm16 = new Int16Array(bytes.buffer);
     const float32 = new Float32Array(pcm16.length);
-    for (let i = 0; i < pcm16.length; i++) {
-      float32[i] = pcm16[i] / 32768;
-    }
+    for (let i = 0; i < pcm16.length; i++) float32[i] = pcm16[i] / 32768;
 
     const buffer = this.audioContext.createBuffer(1, float32.length, 24000);
     buffer.getChannelData(0).set(float32);
-
     const source = this.audioContext.createBufferSource();
     source.buffer = buffer;
     source.connect(this.audioContext.destination);
-
-    const currentTime = this.audioContext.currentTime;
-    if (this.nextPlayTime < currentTime) {
-      this.nextPlayTime = currentTime;
-    }
+    const now = this.audioContext.currentTime;
+    if (this.nextPlayTime < now) this.nextPlayTime = now;
     source.start(this.nextPlayTime);
     this.nextPlayTime += buffer.duration;
   }
@@ -209,7 +176,5 @@ export class XAIRealtimeClient {
     }
   }
 
-  getIsConnected() {
-    return this.isConnected;
-  }
+  getIsConnected() { return this.isConnected; }
 }
