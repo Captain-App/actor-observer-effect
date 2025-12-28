@@ -47,39 +47,37 @@ export class XAIRealtimeClient {
       this.ws = new WebSocket(wsUrl);
 
       this.ws.onopen = () => {
-        console.log('%c[xAI] WebSocket Proxy Handshake Successful!', 'color: #10b981; font-weight: bold');
-        
-        // 4) Configure Session
-        // We skip session.authenticate if the proxy added the header, 
-        // but Grok docs show it as a message, so let's keep it just in case.
-        this.sendEvent({
-          type: 'session.authenticate',
-          token: token
-        });
-
-        this.sendEvent({
-          type: 'session.update',
-          session: {
-            modalities: ['text', 'audio'],
-            instructions: instructions,
-            voice: 'Leo',
-            input_audio_format: 'pcm16',
-            output_audio_format: 'pcm16',
-            turn_detection: { 
-              type: 'server_vad'
-            }
-          },
-        });
+        console.log('%c[xAI] Proxy Socket Open. Waiting for worker logs...', 'color: #10b981; font-weight: bold');
       };
 
       this.ws.onmessage = (e) => {
         try {
           const event = JSON.parse(e.data);
+          
+          // Handle logs sent from the worker
+          if (event.type === 'worker_log') {
+            console.log('%c' + event.message, 'color: #94a3b8; font-style: italic');
+            return;
+          }
+
           console.log('%c[xAI] Event:', 'color: #8b5cf6', event.type, event);
           
           if (event.type === 'session.created' || event.type === 'session.updated') {
             console.log('%c[xAI] Session Active!', 'color: #10b981; font-weight: bold');
             this.isConnected = true;
+            
+            // Send initial config after session is created
+            this.sendEvent({
+              type: 'session.update',
+              session: {
+                modalities: ['text', 'audio'],
+                instructions: instructions,
+                voice: 'Leo',
+                input_audio_format: 'pcm16',
+                output_audio_format: 'pcm16',
+                turn_detection: { type: 'server_vad' }
+              },
+            });
           }
 
           if (event.type === 'error') {
@@ -98,7 +96,7 @@ export class XAIRealtimeClient {
       };
 
       this.ws.onerror = (e) => {
-        console.error('[xAI] WebSocket Error');
+        console.error('[xAI] WebSocket Error Observed');
         this.onError(new Error('WebSocket connection error'));
       };
 
@@ -107,7 +105,7 @@ export class XAIRealtimeClient {
         this.disconnect();
       };
 
-      // 6) Setup Recording
+      // 6) Setup Recording Pipeline
       this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
       if (this.audioContext.state === 'suspended') await this.audioContext.resume();
 
