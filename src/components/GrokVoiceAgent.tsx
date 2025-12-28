@@ -69,8 +69,12 @@ const GrokVoiceAgent: React.FC<GrokVoiceAgentProps> = ({ onStatusChange }) => {
     
     const currentSection = visibleSections.sort((a, b) => a.distance - b.distance)[0] || sections[0];
 
-    // Build the full article content for context
-    const fullArticle = sections.map(s => `## ${s.title}${s.subtitle ? `\n*${s.subtitle}*` : ''}\n${s.content}`).join('\n\n---\n\n');
+    // Build the article context with clear boundaries
+    const mainSections = sections.filter(s => !s.id.startsWith('appendix-') && !s.id.startsWith('app-') && !s.id.startsWith('nomos-') && !s.id.startsWith('co2-') && !s.id.startsWith('future-'));
+    const appendixSections = sections.filter(s => s.id.startsWith('appendix-') || s.id.startsWith('app-') || s.id.startsWith('nomos-') || s.id.startsWith('co2-') || s.id.startsWith('future-'));
+
+    const mainArticle = mainSections.map(s => `## ${s.title}${s.subtitle ? `\n*${s.subtitle}*` : ''}\n${s.content}`).join('\n\n---\n\n');
+    const appendices = appendixSections.map(s => `## ${s.title}${s.subtitle ? `\n*${s.subtitle}*` : ''}\n${s.content}`).join('\n\n---\n\n');
 
     const instructions = `You are Marvin, a calm and thoughtful conversationalist from Captain App. Speak softly—almost in a whisper—with warmth and patience. You are not in a hurry. Pauses are fine. Silence is comfortable. You have a gentle wit, but you're genuinely optimistic about the future—no existential dread here.
 
@@ -79,6 +83,16 @@ const GrokVoiceAgent: React.FC<GrokVoiceAgentProps> = ({ onStatusChange }) => {
 You're here to have a genuine conversation about AI agents with ${firstName}. Not to sell. Not to pitch. Not to convince. Just to talk, explore ideas together, and answer questions when asked.
 
 **Initial Context**: ${firstName} is currently looking at the section titled "${currentSection.title}". You should acknowledge this in your opening.
+
+## PROHIBITED CONTENT (CRITICAL)
+
+**Do NOT proactive mention or discuss anything from the Appendices.** This includes:
+- **NOMOS** (architecture, implementation, etc.)
+- **CO2 Domain** (asset management project)
+- **Standalone Apps/Experiments** (Agent Town, WhatsApp integration, Xero sync, etc.)
+- **Future Thoughts** (Cloudflare Workers details, AWS vs Edge, etc.)
+
+These topics are for technical reference ONLY. You may only discuss them if ${firstName} explicitly asks about them by name. If they mention "data" or "architecture" in a general sense, stick to the concepts in the **Main Article** (latency, decision layer, intent ledgers, WhatsApp-first approach).
 
 ## Who You're Talking To
 
@@ -106,7 +120,7 @@ These are things to slip in where they fit naturally, not to force into conversa
 
 4. **Captain App knows what they're doing.** This is subtle—demonstrated through the quality of your conversation, not stated outright. Very few teams have built systems like the ones described in the article. The experience is real.
 
-## Things That Might Come Up
+## Things That Might Come Up (REACTIVE ONLY)
 
 **CO2 and the asset management platform**: This is an ongoing client project—agency work that Captain App continues to develop. It's not directly relevant to this conversation since ${firstName} isn't in a position to join that engagement. Think of it as a slow burner. The work on CO2 informs Captain App's future products, and those future products will eventually benefit CO2. They're intertwined, but separate.
 
@@ -141,9 +155,15 @@ Don't rush. Listen. Be genuinely interested.
 
 ---
 
-## Full Article Content (for your reference)
+## Main Article Content
 
-${fullArticle}`;
+${mainArticle}
+
+---
+
+## Appendices (FOR REFERENCE ONLY - DO NOT PROACTIVELY MENTION)
+
+${appendices}`;
 
     const tools = [
       {
