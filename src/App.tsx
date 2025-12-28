@@ -2,9 +2,10 @@ import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import Article from './components/Article';
 import PlayerBar from './components/PlayerBar';
 import Sidebar from './components/Sidebar';
-import FloatingChatBubble from './components/FloatingChatBubble';
+import GrokVoiceAgent from './components/GrokVoiceAgent';
 import AuthGuard from './components/AuthGuard';
 import AuthCallback from './pages/AuthCallback';
+import { supabase } from './lib/supabase';
 import { sections } from './data/sections';
 import { splitIntoWords } from './lib/utils';
 
@@ -18,6 +19,47 @@ interface TimingWord {
 }
 
 function App() {
+  // Nuclear logout shortcut: Just 'l'
+  useEffect(() => {
+    const handleNuclearLogout = async (e: KeyboardEvent) => {
+      // Ignore if user is typing in an input or textarea
+      const target = e.target as HTMLElement;
+      if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable) {
+        return;
+      }
+
+      if (e.key.toLowerCase() === 'q' && e.shiftKey && !e.metaKey && !e.ctrlKey && !e.altKey) {
+        console.log('☢️ Nuclear Logout initiated...');
+        
+        // 1. Clear Supabase session
+        await supabase.auth.signOut();
+        
+        // 2. Clear localStorage
+        localStorage.clear();
+        
+        // 3. Clear cookies
+        const domain = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+          ? ''
+          : '; domain=.captainapp.co.uk';
+        
+        const cookies = document.cookie.split(";");
+        for (let i = 0; i < cookies.length; i++) {
+          const cookie = cookies[i];
+          const eqPos = cookie.indexOf("=");
+          const name = eqPos > -1 ? cookie.substr(0, eqPos).trim() : cookie.trim();
+          document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; SameSite=Lax; Secure${domain}`;
+          document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/; SameSite=Lax; Secure`;
+        }
+        
+        console.log('☢️ Session cleared. Reloading...');
+        window.location.reload();
+      }
+    };
+
+    window.addEventListener('keydown', handleNuclearLogout);
+    return () => window.removeEventListener('keydown', handleNuclearLogout);
+  }, []);
+
   const [progress, setProgress] = useState(0);
   const [audioProgress, setAudioProgress] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -407,7 +449,7 @@ function App() {
           onToggleReaderMode={() => setIsReaderMode(!isReaderMode)}
           onProgressChange={handleProgressChange}
         />
-        <FloatingChatBubble />
+        <GrokVoiceAgent />
       </div>
     </AuthGuard>
   );

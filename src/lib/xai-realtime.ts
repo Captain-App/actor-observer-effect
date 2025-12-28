@@ -19,10 +19,11 @@ export class XAIRealtimeClient {
 
   constructor(
     private onMessage: (event: XAIEvent) => void,
-    private onError: (error: Error) => void
+    private onError: (error: Error) => void,
+    private onToolCall?: (name: string, args: any) => Promise<any>
   ) {}
 
-  async init(instructions: string) {
+  async init(instructions: string, tools?: any[]) {
     try {
       console.log('%c[xAI] Starting Initialization (via Cloudflare Proxy)...', 'color: #3b82f6; font-weight: bold');
 
@@ -44,7 +45,7 @@ export class XAIRealtimeClient {
 
       // 3) Establish WebSocket connection via Proxy
       const proxyUrl = 'wss://xai-realtime-proxy.captainapp.workers.dev';
-      const wsUrl = `${proxyUrl}/?token=${token}`;
+      const wsUrl = `${proxyUrl}/?token=${token}&model=grok-beta`;
       console.log(`[xAI] Connecting to: ${wsUrl}`);
       
       this.ws = new WebSocket(wsUrl);
@@ -56,9 +57,12 @@ export class XAIRealtimeClient {
         this.sendEvent({
           type: 'session.update',
           session: {
+            model: 'grok-beta', // Explicitly set model in session
             modalities: ['text', 'audio'],
             instructions,
-            voice: 'Leo',
+            voice: 'leo',
+            tools: tools || [],
+            tool_choice: 'auto',
             audio: {
               input: { format: { type: 'audio/pcm', rate: 24000 } },
               output: { format: { type: 'audio/pcm', rate: 24000 } },
@@ -67,21 +71,13 @@ export class XAIRealtimeClient {
               type: 'server_vad',
               threshold: 0.5,
               prefix_padding_ms: 300,
-              silence_duration_ms: 800,
+              silence_duration_ms: 500,
             },
           },
         });
-
-        // IMPORTANT: Trigger the assistant to greet immediately, before we start streaming mic audio.
-        // This uses the system instructions ("Greet the user warmly") rather than hardcoding a user message.
-        if (!this.didTriggerGreeting) {
-          this.didTriggerGreeting = true;
-          // Per docs, this can be a bare event. The model should greet based on session instructions.
-          this.sendEvent({ type: 'response.create' } as any);
-        }
       };
 
-      this.ws.onmessage = (e) => {
+      this.ws.onmessage = async (e) => {
         try {
           const event = JSON.parse(e.data);
           
@@ -95,7 +91,6 @@ export class XAIRealtimeClient {
           
           // Keepalive
           if (event.type === 'ping') {
-            // xAI sends ping; do not respond with a custom event unless docs explicitly require it.
             this.onMessage(event);
             return;
           }
@@ -106,8 +101,30 @@ export class XAIRealtimeClient {
           }
 
           if (event.type === 'session.created' || event.type === 'session.updated') {
-            console.log('%c[xAI] Session Active!', 'color: #10b981; font-weight: bold');
+            console.log('%c[xAI] Session Status:', 'color: #10b981; font-weight: bold', {
+              type: event.type,
+              voice: event.session?.voice,
+              model: event.session?.model,
+              vad: event.session?.turn_detection
+            });
             this.isConnected = true;
+
+            // Trigger greeting ONLY after session is updated with our instructions and voice.
+            if (event.type === 'session.updated' && !this.didTriggerGreeting) {
+              this.didTriggerGreeting = true;
+              console.log('%c[xAI] Session updated. Triggering initial greeting...', 'color: #10b981');
+              this.sendEvent({ 
+                type: 'response.create'
+              } as any);
+            }
+          }
+
+          if (event.type === 'response.created') {
+            console.log('%c[xAI] Response Created:', 'color: #10b981', {
+              id: event.response?.id,
+              voice: event.response?.voice,
+              status: event.response?.status
+            });
           }
 
           if (event.type === 'error') {
@@ -123,6 +140,32 @@ export class XAIRealtimeClient {
               console.log('%c[xAI] Assistant audio started; enabling mic streaming', 'color: #10b981');
             }
             this.handleAudioDelta(event.delta);
+          }
+
+          if (event.type === 'response.function_call_arguments.done') {
+            const { name, call_id, arguments: argsJson } = event;
+            console.log(`%c[xAI] Tool Call: ${name}`, 'color: #f59e0b; font-weight: bold', argsJson);
+            
+            const args = JSON.parse(argsJson);
+            let output = { error: 'Tool not implemented' };
+            
+            if (this.onToolCall) {
+              try {
+                output = await this.onToolCall(name, args);
+              } catch (err: any) {
+                output = { error: err.message };
+              }
+            }
+
+            this.sendEvent({
+              type: 'conversation.item.create',
+              item: {
+                type: 'function_call_output',
+                call_id,
+                output: JSON.stringify(output)
+              }
+            });
+            this.sendEvent({ type: 'response.create' });
           }
 
           this.onMessage(event);

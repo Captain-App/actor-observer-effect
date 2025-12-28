@@ -1,7 +1,6 @@
 import React, { useMemo } from 'react';
 import { sections } from '../data/sections';
 import { splitIntoWords, splitIntoParts } from '../lib/utils';
-import { MessageSquare } from 'lucide-react';
 
 interface HighlightableTextProps {
   text: string;
@@ -86,27 +85,6 @@ const Article: React.FC<ArticleProps> = ({ currentWordIndex, onWordClick }) => {
                 <p className="text-2xl text-muted-foreground/80 font-medium tracking-tight leading-relaxed max-w-2xl">
                   <HighlightableText text={section.subtitle} currentWordIndex={currentWordIndex} baseIndex={subtitleIndex} onWordClick={onWordClick} />
                 </p>
-              )}
-              {isIntro && (
-                <div className="pt-4 flex items-center gap-6">
-                  <button 
-                    onClick={() => window.dispatchEvent(new CustomEvent('open-xai-chat'))}
-                    className="flex items-center gap-3 px-8 py-4 bg-primary text-primary-foreground rounded-2xl font-bold hover:scale-105 transition-all shadow-xl shadow-primary/20 group"
-                  >
-                    <MessageSquare className="w-5 h-5 animate-bounce" />
-                    <span>Discuss Architecture with Grok</span>
-                  </button>
-                  <div className="flex -space-x-2">
-                    {[1,2,3].map(i => (
-                      <div key={i} className="w-8 h-8 rounded-full border-2 border-background bg-slate-800 flex items-center justify-center overflow-hidden">
-                        <div className="w-full h-full bg-gradient-to-br from-primary/40 to-primary/10 animate-pulse" />
-                      </div>
-                    ))}
-                    <div className="pl-4 text-xs font-bold text-muted-foreground uppercase tracking-widest flex items-center">
-                      Live Chat Enabled
-                    </div>
-                  </div>
-                </div>
               )}
             </header>
             

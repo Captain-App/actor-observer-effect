@@ -29,7 +29,8 @@ const cookieStorage = {
     const domain = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
       ? ''
       : '; domain=.captainapp.co.uk';
-    document.cookie = `${key}=${encodedValue}${domain}; path=/; max-age=31536000; SameSite=Lax; Secure`;
+    const secure = window.location.protocol === 'https:' ? '; Secure' : '';
+    document.cookie = `${key}=${encodedValue}${domain}; path=/; max-age=31536000; SameSite=Lax${secure}`;
     
     // Backup to localStorage for non-sensitive apps that don't support cookies well
     if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
@@ -42,7 +43,8 @@ const cookieStorage = {
     const domain = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
       ? ''
       : '; domain=.captainapp.co.uk';
-    document.cookie = `${key}=; ${domain}; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC; SameSite=Lax; Secure`;
+    const secure = window.location.protocol === 'https:' ? '; Secure' : '';
+    document.cookie = `${key}=; ${domain}; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC; SameSite=Lax${secure}`;
     localStorage.removeItem(key);
   }
 };
@@ -53,6 +55,11 @@ export const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY, {
     storageKey: 'captainapp-sso-v1', // Standardized key for all apps
     persistSession: true,
     autoRefreshToken: true,
-    detectSessionInUrl: true
+    detectSessionInUrl: false // DISABLE automatic pickup to prevent race conditions with AuthCallback
   }
 });
+
+// For debugging
+if (typeof window !== 'undefined') {
+  (window as any).supabase = supabase;
+}

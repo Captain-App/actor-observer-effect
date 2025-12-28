@@ -1,5 +1,5 @@
 import React from 'react';
-import { Play, Pause, RotateCcw, Volume2, VolumeX, Loader2 } from 'lucide-react';
+import { Play, Pause, RotateCcw, Volume2, VolumeX, Loader2, AudioLines } from 'lucide-react';
 
 interface PlayerBarProps {
   progress: number;
@@ -24,6 +24,10 @@ const PlayerBar: React.FC<PlayerBarProps> = ({
   onToggleReaderMode,
   onProgressChange
 }) => {
+  const handleToggleDiscuss = () => {
+    window.dispatchEvent(new CustomEvent('open-xai-chat'));
+  };
+
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50">
       <div className="bg-background/80 backdrop-blur-xl border-t border-white/5 px-8 py-4 flex items-center gap-8 shadow-[0_-10px_40px_rgba(0,0,0,0.3)]">
@@ -82,25 +86,37 @@ const PlayerBar: React.FC<PlayerBarProps> = ({
 
         {/* Extra Controls */}
         <div className="flex items-center gap-4">
-          <button
-            onClick={onToggleReaderMode}
-            className={`flex items-center gap-3 px-4 py-2 rounded-full transition-all duration-300 border ${
-              isReaderMode 
-                ? 'bg-primary/5 border-primary/20 text-primary' 
-                : 'border-white/5 text-muted-foreground hover:text-foreground hover:border-white/10'
-            }`}
-          >
-            {isLoading ? (
-              <Loader2 className="w-4 h-4 animate-spin" />
-            ) : isReaderMode ? (
-              <Volume2 className="w-4 h-4" />
-            ) : (
-              <VolumeX className="w-4 h-4 opacity-50" />
-            )}
-            <span className="text-[10px] font-black uppercase tracking-widest">
-              {isLoading ? 'Loading...' : 'Reader'}
-            </span>
-          </button>
+          <div className="flex flex-col gap-2">
+            <button
+              onClick={handleToggleDiscuss}
+              className="flex items-center justify-center gap-3 px-4 py-1.5 rounded-full transition-all duration-300 bg-primary text-primary-foreground shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:scale-105 active:scale-95 whitespace-nowrap group border border-white/20"
+            >
+              <AudioLines className="w-3.5 h-3.5" />
+              <span className="text-[9px] font-black uppercase tracking-widest">
+                Discuss
+              </span>
+            </button>
+
+            <button
+              onClick={onToggleReaderMode}
+              className={`flex items-center justify-center gap-3 px-4 py-1.5 rounded-full transition-all duration-300 border ${
+                isReaderMode 
+                  ? 'bg-primary/5 border-primary/20 text-primary' 
+                  : 'border-white/5 text-muted-foreground hover:text-foreground hover:border-white/10'
+              }`}
+            >
+              {isLoading ? (
+                <Loader2 className="w-3.5 h-3.5 animate-spin" />
+              ) : isReaderMode ? (
+                <Volume2 className="w-3.5 h-3.5" />
+              ) : (
+                <VolumeX className="w-3.5 h-3.5 opacity-50" />
+              )}
+              <span className="text-[9px] font-black uppercase tracking-widest">
+                {isLoading ? 'Loading...' : 'Reader'}
+              </span>
+            </button>
+          </div>
 
           <button
             onClick={onReset}
