@@ -267,10 +267,16 @@ function App() {
     const handleEnded = () => {
       if (currentSectionIndex < sections.length - 1) {
         const nextIdx = currentSectionIndex + 1;
-        setCurrentSectionIndex(nextIdx);
-        lastWordIdxRef.current = -1; // Reset for next section
-        audio.src = `/audio/sections/${sections[nextIdx].id}.mp3`;
-        audio.play();
+        
+        // Brief pause before next section
+        setTimeout(() => {
+          if (audioRef.current) {
+            setCurrentSectionIndex(nextIdx);
+            lastWordIdxRef.current = -1; // Reset for next section
+            audioRef.current.src = `/audio/sections/${sections[nextIdx].id}.mp3`;
+            audioRef.current.play().catch(e => console.log('Playback failed', e));
+          }
+        }, 400); // 0.4 second pause
       } else {
         setIsPlaying(false);
       }
