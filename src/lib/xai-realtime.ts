@@ -79,10 +79,16 @@ export class XAIRealtimeClient {
       this.ws.onmessage = (e) => {
         try {
           const event = JSON.parse(e.data);
+          console.log('[xAI] Received event:', event.type, event);
           
           if (event.type === 'session.created' || event.type === 'session.updated') {
             this.isConnected = true;
             console.log('[xAI] Session active');
+          }
+
+          if (event.type === 'error') {
+            console.error('[xAI] Server error:', event.error);
+            this.onError(new Error(event.error?.message || 'xAI server error'));
           }
 
           if (event.type === 'response.output_audio.delta') {
@@ -140,8 +146,15 @@ export class XAIRealtimeClient {
           pcm16[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
         }
 
-        // Base64 encode and send
-        const base64 = btoa(String.fromCharCode(...new Uint8Array(pcm16.buffer)));
+        // Base64 encode and send (using a more robust method for large buffers)
+        let binary = '';
+        const bytes = new Uint8Array(pcm16.buffer);
+        const len = bytes.byteLength;
+        for (let i = 0; i < len; i++) {
+          binary += String.fromCharCode(bytes[i]);
+        }
+        const base64 = btoa(binary);
+        
         this.sendEvent({
           type: 'input_audio_buffer.append',
           audio: base64
