@@ -19,6 +19,8 @@ export class XAIRealtimeClient {
   private didTriggerGreeting: boolean = false;
   private activeSources: Set<AudioBufferSourceNode> = new Set();
   private isInterrupted: boolean = false;
+  private currentResponseId: string | null = null;
+  private lastInterruptedResponseId: string | null = null;
 
   constructor(
     private onMessage: (event: XAIEvent) => void,
@@ -123,6 +125,7 @@ export class XAIRealtimeClient {
           }
 
           if (event.type === 'response.created') {
+            this.currentResponseId = event.response?.id;
             // Reset interruption state and gain for every new response
             this.isInterrupted = false; 
             this.nextPlayTime = 0;
@@ -144,6 +147,10 @@ export class XAIRealtimeClient {
             this.fadeAndStop();
           }
 
+          if (event.type === 'input_audio_buffer.speech_stopped') {
+            this.isInterrupted = false; // Allow audio processing again, but the response_id check will still block zombie audio
+          }
+
           if (event.type === 'error') {
             console.error('[xAI] Server error:', event.error);
             this.onError(new Error(event.error?.message || 'xAI server error'));
@@ -156,7 +163,7 @@ export class XAIRealtimeClient {
               this.allowMicStreaming = true;
               console.log('%c[xAI] Assistant audio started; enabling mic streaming', 'color: #10b981');
             }
-            this.handleAudioDelta(event.delta);
+            this.handleAudioDelta(event.delta, event.response_id);
           }
 
           if (event.type === 'response.function_call_arguments.done') {
@@ -240,8 +247,18 @@ export class XAIRealtimeClient {
     }
   }
 
-  private handleAudioDelta(base64Delta: string) {
-    if (!this.audioContext || !this.masterGain || this.isInterrupted) return;
+  private handleAudioDelta(base64Delta: string, responseId?: string) {
+    if (!this.audioContext || !this.masterGain) return;
+    
+    // Ignore audio if we are currently interrupted OR if this audio belongs to the last interrupted response
+    if (this.isInterrupted || (responseId && responseId === this.lastInterruptedResponseId)) {
+      return;
+    }
+
+    if (this.audioContext.state === 'suspended') {
+      this.audioContext.resume();
+    }
+
     const binary = atob(base64Delta);
     const bytes = new Uint8Array(binary.length);
     for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
@@ -270,6 +287,8 @@ export class XAIRealtimeClient {
     
     console.log('%c[xAI] User speech detected. Fading out AI...', 'color: #f59e0b');
     this.isInterrupted = true;
+    this.lastInterruptedResponseId = this.currentResponseId;
+    
     const now = this.audioContext.currentTime;
     
     // Softer fade out over 400ms
