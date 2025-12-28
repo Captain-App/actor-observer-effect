@@ -11,11 +11,14 @@ export class XAIRealtimeClient {
   private processor: ScriptProcessorNode | null = null;
   private input: MediaStreamAudioSourceNode | null = null;
   private silenceGain: GainNode | null = null;
+  private masterGain: GainNode | null = null;
   private localStream: MediaStream | null = null;
   private isConnected: boolean = false;
   private nextPlayTime: number = 0;
   private allowMicStreaming: boolean = false;
   private didTriggerGreeting: boolean = false;
+  private activeSources: Set<AudioBufferSourceNode> = new Set();
+  private isInterrupted: boolean = false;
 
   constructor(
     private onMessage: (event: XAIEvent) => void,
@@ -69,9 +72,9 @@ export class XAIRealtimeClient {
             },
             turn_detection: {
               type: 'server_vad',
-              threshold: 0.5,
+              threshold: 0.2,
               prefix_padding_ms: 300,
-              silence_duration_ms: 500,
+              silence_duration_ms: 200,
             },
           },
         });
@@ -120,11 +123,16 @@ export class XAIRealtimeClient {
           }
 
           if (event.type === 'response.created') {
+            this.isInterrupted = false; // Reset interruption state for new response
             console.log('%c[xAI] Response Created:', 'color: #10b981', {
               id: event.response?.id,
               voice: event.response?.voice,
               status: event.response?.status
             });
+          }
+
+          if (event.type === 'input_audio_buffer.speech_started') {
+            this.fadeAndStop();
           }
 
           if (event.type === 'error') {
@@ -188,6 +196,9 @@ export class XAIRealtimeClient {
       this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
       if (this.audioContext.state === 'suspended') await this.audioContext.resume();
 
+      this.masterGain = this.audioContext.createGain();
+      this.masterGain.connect(this.audioContext.destination);
+
       this.input = this.audioContext.createMediaStreamSource(this.localStream);
       this.processor = this.audioContext.createScriptProcessor(4096, 1, 1);
       this.silenceGain = this.audioContext.createGain();
@@ -221,7 +232,7 @@ export class XAIRealtimeClient {
   }
 
   private handleAudioDelta(base64Delta: string) {
-    if (!this.audioContext) return;
+    if (!this.audioContext || !this.masterGain || this.isInterrupted) return;
     const binary = atob(base64Delta);
     const bytes = new Uint8Array(binary.length);
     for (let i = 0; i < binary.length; i++) bytes[i] = binary.charCodeAt(i);
@@ -233,11 +244,42 @@ export class XAIRealtimeClient {
     buffer.getChannelData(0).set(float32);
     const source = this.audioContext.createBufferSource();
     source.buffer = buffer;
-    source.connect(this.audioContext.destination);
+    source.connect(this.masterGain);
+    
+    // Track active sources so we can stop them on interruption
+    this.activeSources.add(source);
+    source.onended = () => this.activeSources.delete(source);
+
     const now = this.audioContext.currentTime;
     if (this.nextPlayTime < now) this.nextPlayTime = now;
     source.start(this.nextPlayTime);
     this.nextPlayTime += buffer.duration;
+  }
+
+  private async fadeAndStop() {
+    if (!this.masterGain || !this.audioContext) return;
+    
+    console.log('%c[xAI] Interrupting audio with fade...', 'color: #f59e0b');
+    this.isInterrupted = true;
+    const now = this.audioContext.currentTime;
+    
+    // Quick fade out over 150ms
+    this.masterGain.gain.cancelScheduledValues(now);
+    this.masterGain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+    
+    // Stop all active sources after fade
+    setTimeout(() => {
+      this.activeSources.forEach(source => {
+        try { source.stop(); } catch (e) {}
+      });
+      this.activeSources.clear();
+      this.nextPlayTime = 0;
+      
+      // Reset gain to 1 for next turn, but keep isInterrupted until next response
+      if (this.masterGain) {
+        this.masterGain.gain.value = 1;
+      }
+    }, 200);
   }
 
   sendEvent(event: XAIEvent) {
