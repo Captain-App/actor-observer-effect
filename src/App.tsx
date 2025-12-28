@@ -65,8 +65,8 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isReaderMode, setIsReaderMode] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
-  const [audioIsLoading, setAudioIsLoading] = useState(true);
-  const [timingIsLoading, setTimingIsLoading] = useState(true);
+  const [audioIsLoading, setAudioIsLoading] = useState(false);
+  const [timingIsLoading, setTimingIsLoading] = useState(false);
   
   // Overall loading state is true if either audio or timing data is missing
   useEffect(() => {
@@ -93,11 +93,34 @@ function App() {
     const audio = audioRef.current;
     if (!audio) return;
 
+    // Check actual status of audio element relative to current section
+    const checkAudioStatus = () => {
+      const currentSrc = `/audio/sections/${sections[currentSectionIndex].id}.mp3`;
+      const actualSrc = audio.getAttribute('src') || audio.src;
+      
+      // If the src is wrong, it's definitely loading
+      if (!actualSrc.includes(currentSrc)) {
+        setAudioIsLoading(true);
+        return;
+      }
+
+      // If readyState is 3 (future data) or 4 (enough data), it's not loading
+      if (audio.readyState >= 3) {
+        setAudioIsLoading(false);
+      } else {
+        setAudioIsLoading(true);
+      }
+    };
+
     const handleLoadStart = () => setAudioIsLoading(true);
     const handleCanPlay = () => setAudioIsLoading(false);
     const handleWaiting = () => setAudioIsLoading(true);
     const handlePlaying = () => setAudioIsLoading(false);
-    const handleStalled = () => setAudioIsLoading(true);
+    const handleStalled = () => {
+      // Stalled just means it's not currently downloading, but might have enough data
+      if (audio.readyState < 3) setAudioIsLoading(true);
+      else setAudioIsLoading(false);
+    };
 
     audio.addEventListener('loadstart', handleLoadStart);
     audio.addEventListener('canplay', handleCanPlay);
@@ -105,6 +128,11 @@ function App() {
     audio.addEventListener('waiting', handleWaiting);
     audio.addEventListener('playing', handlePlaying);
     audio.addEventListener('stalled', handleStalled);
+    audio.addEventListener('loadeddata', checkAudioStatus);
+    audio.addEventListener('progress', checkAudioStatus);
+
+    // Initial check
+    checkAudioStatus();
 
     return () => {
       audio.removeEventListener('loadstart', handleLoadStart);
@@ -113,18 +141,29 @@ function App() {
       audio.removeEventListener('waiting', handleWaiting);
       audio.removeEventListener('playing', handlePlaying);
       audio.removeEventListener('stalled', handleStalled);
+      audio.removeEventListener('loadeddata', checkAudioStatus);
+      audio.removeEventListener('progress', checkAudioStatus);
     };
-  }, []);
+  }, [currentSectionIndex]);
 
-  // Monitor current section timing availability
+  // Monitor current section timing availability with a timeout fallback
   useEffect(() => {
     const sectionId = sections[currentSectionIndex].id;
+    
     if (timingData[sectionId]) {
       setTimingIsLoading(false);
-    } else {
-      setTimingIsLoading(true);
-      loadSectionTiming(sectionId);
+      return;
     }
+
+    setTimingIsLoading(true);
+    loadSectionTiming(sectionId);
+
+    // Fallback: If timing data takes too long or fails, don't stay stuck
+    const timer = setTimeout(() => {
+      setTimingIsLoading(false);
+    }, 3000);
+
+    return () => clearTimeout(timer);
   }, [currentSectionIndex, timingData]);
 
   // Pre-calculate section metadata for global indexing and progress
@@ -159,23 +198,33 @@ function App() {
       if (res.ok) {
         const data = await res.json();
         setTimingData(prev => ({ ...prev, [sectionId]: data }));
+      } else {
+        // Mark as empty so we don't keep retrying and stay in loading state
+        setTimingData(prev => ({ ...prev, [sectionId]: [] }));
       }
     } catch (e) {
       console.error(`Failed to load timing for ${sectionId}`);
+      setTimingData(prev => ({ ...prev, [sectionId]: [] }));
     }
   }, [timingData]);
 
-  // Load first section immediately and background load others
+  // Load first section immediately and then lazy-load others one by one
   useEffect(() => {
     const init = async () => {
+      // 1. Prioritize the first section's data
       await loadSectionTiming(sections[0].id);
       
-      // Background load the rest
-      sections.slice(1).forEach(section => {
-        loadSectionTiming(section.id);
-        const audio = new Audio(`/audio/sections/${section.id}.mp3`);
-        audio.preload = "auto";
-      });
+      // 2. Load the rest sequentially to avoid saturating the connection pool
+      const loadOthers = async () => {
+        for (const section of sections.slice(1)) {
+          await loadSectionTiming(section.id);
+          // Just hint to the browser to get metadata, don't saturate
+          const audio = new Audio(`/audio/sections/${section.id}.mp3`);
+          audio.preload = "metadata";
+        }
+      };
+      
+      loadOthers();
     };
     init();
   }, []);
