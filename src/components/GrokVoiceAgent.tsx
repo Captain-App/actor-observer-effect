@@ -9,9 +9,22 @@ const GrokVoiceAgent: React.FC = () => {
   const [isConnecting, setIsConnecting] = useState(false);
   const [isConnected, setIsConnected] = useState(false);
   const clientRef = useRef<XAIRealtimeClient | null>(null);
+  const sessionIdRef = useRef<string>('');
+  const reflectionsRef = useRef<Array<{
+    timestamp: string;
+    topic: string;
+    summary: string;
+    sentiment: 'positive' | 'neutral' | 'skeptical' | 'confused';
+    insight?: string;
+  }>>([]);
 
   const startChat = async () => {
     setIsConnecting(true);
+    
+    // Generate session ID for this conversation
+    sessionIdRef.current = `session_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+    reflectionsRef.current = [];
+    console.log('[Marvin] Starting session:', sessionIdRef.current);
     
     // Get user info for personalization
     const { data: { user } } = await supabase.auth.getUser();
@@ -102,8 +115,11 @@ These are things to slip in where they fit naturally, not to force into conversa
 - **get_contents**: Get the list of all section titles and IDs.
 - **read_section**: Get the full content of a specific section by its ID.
 - **scroll_to_heading**: Scroll their browser to a specific section.
+- **capture_reflection**: Record a reflection on a segment of conversation that has reached a natural pause.
 
-Use these when conversation naturally leads to a part of the article. "There's a section on that, actually—would you like me to scroll you there?"
+Use the navigation tools when conversation naturally leads to a part of the article. "There's a section on that, actually—would you like me to scroll you there?"
+
+**Use capture_reflection liberally.** Whenever a topic has been explored—both sides have said their piece, a thought has been shared, a question answered—take a moment to capture what happened. Was it a good exchange? Did an interesting idea emerge? Was there confusion or skepticism? This is for debugging and future context. Don't announce that you're doing this; just do it quietly in the background.
 
 ## Starting the Conversation
 
@@ -147,6 +163,21 @@ ${fullArticle}`;
           },
           required: ['section_id']
         }
+      },
+      {
+        type: 'function',
+        name: 'capture_reflection',
+        description: 'Record a reflection on a segment of conversation that has reached a natural pause. Use this after a topic has been explored, a question answered, or an idea shared. This helps with debugging and building context for future conversations.',
+        parameters: {
+          type: 'object',
+          properties: {
+            topic: { type: 'string', description: 'A brief label for what was discussed (e.g., "AI vs Google", "skepticism about agents", "custom UI frustration")' },
+            summary: { type: 'string', description: 'A 1-2 sentence summary of the exchange.' },
+            sentiment: { type: 'string', enum: ['positive', 'neutral', 'skeptical', 'confused'], description: 'The overall sentiment of the user during this exchange.' },
+            insight: { type: 'string', description: 'Optional: Any interesting idea, question, or observation that emerged worth remembering.' }
+          },
+          required: ['topic', 'summary', 'sentiment']
+        }
       }
     ];
 
@@ -162,21 +193,34 @@ ${fullArticle}`;
         console.error('[Chat] Client error:', error);
         stopChat();
       },
-      async (name, args) => {
-        if (name === 'get_contents') {
+      async (toolName, args) => {
+        if (toolName === 'get_contents') {
           return sections.map(s => ({ id: s.id, title: s.title }));
         }
-        if (name === 'read_section') {
+        if (toolName === 'read_section') {
           const section = sections.find(s => s.id === args.section_id);
           return section ? { content: section.content } : { error: 'Section not found' };
         }
-        if (name === 'scroll_to_heading') {
+        if (toolName === 'scroll_to_heading') {
           const el = document.getElementById(args.section_id);
           if (el) {
             el.scrollIntoView({ behavior: 'smooth' });
             return { success: true };
           }
           return { error: 'Section not found' };
+        }
+        if (toolName === 'capture_reflection') {
+          const reflection = {
+            timestamp: new Date().toISOString(),
+            sessionId: sessionIdRef.current,
+            topic: args.topic,
+            summary: args.summary,
+            sentiment: args.sentiment as 'positive' | 'neutral' | 'skeptical' | 'confused',
+            insight: args.insight
+          };
+          reflectionsRef.current.push(reflection);
+          console.log('[Marvin] 📝 Reflection captured:', reflection);
+          return { success: true, reflectionCount: reflectionsRef.current.length };
         }
       }
     );
@@ -191,7 +235,15 @@ ${fullArticle}`;
   };
 
   const stopChat = () => {
-    console.log('[Chat] Stopping session');
+    console.log('[Marvin] Stopping session:', sessionIdRef.current);
+    
+    // Dump all reflections from this session for debugging
+    if (reflectionsRef.current.length > 0) {
+      console.log('[Marvin] 📋 Session reflections:', JSON.stringify(reflectionsRef.current, null, 2));
+    } else {
+      console.log('[Marvin] No reflections captured this session.');
+    }
+    
     clientRef.current?.disconnect();
     clientRef.current = null;
     setIsActive(false);
