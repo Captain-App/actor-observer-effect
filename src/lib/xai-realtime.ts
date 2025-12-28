@@ -52,10 +52,6 @@ export class XAIRealtimeClient {
       this.ws.onopen = () => {
         console.log('%c[xAI] Proxy Socket Open. Sending session.update...', 'color: #10b981; font-weight: bold');
 
-        // Some deployments require explicit in-band auth even if the handshake used Authorization.
-        // This is safe to send either way.
-        this.sendEvent({ type: 'session.authenticate', token } as any);
-
         // Configure session immediately (xAI won't send session.updated until we do)
         this.sendEvent({
           type: 'session.update',
@@ -80,12 +76,8 @@ export class XAIRealtimeClient {
         // This uses the system instructions ("Greet the user warmly") rather than hardcoding a user message.
         if (!this.didTriggerGreeting) {
           this.didTriggerGreeting = true;
-          this.sendEvent({
-            type: 'response.create',
-            response: {
-              modalities: ['audio', 'text'],
-            },
-          } as any);
+          // Per docs, this can be a bare event. The model should greet based on session instructions.
+          this.sendEvent({ type: 'response.create' } as any);
         }
       };
 
@@ -103,7 +95,7 @@ export class XAIRealtimeClient {
           
           // Keepalive
           if (event.type === 'ping') {
-            this.sendEvent({ type: 'pong' } as any);
+            // xAI sends ping; do not respond with a custom event unless docs explicitly require it.
             this.onMessage(event);
             return;
           }
