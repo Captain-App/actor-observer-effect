@@ -36,12 +36,12 @@ const PlayerBar: React.FC<PlayerBarProps> = ({
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50">
-      <div className="bg-background/80 backdrop-blur-xl border-t border-white/5 px-8 py-4 flex items-center gap-8 shadow-[0_-10px_40px_rgba(0,0,0,0.3)]">
+      <div className="bg-background/80 backdrop-blur-xl border-t border-white/5 px-4 md:px-8 py-3 md:py-4 flex items-center gap-4 md:gap-8 shadow-[0_-10px_40px_rgba(0,0,0,0.3)]">
         {/* Play/Pause */}
         <button
           onClick={onTogglePlay}
           disabled={isLoading}
-          className={`p-4 rounded-full bg-primary text-primary-foreground hover:scale-105 transition-all shadow-xl shadow-primary/20 active:scale-95 group relative overflow-hidden ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
+          className={`w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-primary text-primary-foreground hover:scale-105 transition-all shadow-xl shadow-primary/20 active:scale-95 group relative overflow-hidden ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
         >
           <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
           {isLoading ? (
@@ -56,11 +56,11 @@ const PlayerBar: React.FC<PlayerBarProps> = ({
         {/* Progress & Info */}
         <div className="flex-1 flex flex-col gap-1.5">
           <div className="flex justify-between items-baseline">
-            <div className="flex items-center gap-3">
-              <span className="text-[10px] font-black text-primary uppercase tracking-[0.3em]">The Plan 2026</span>
-              <span className="text-xs font-bold text-foreground opacity-60 tracking-tight italic">A new agent platform</span>
+            <div className="flex items-center gap-2 md:gap-3">
+              <span className="text-[10px] font-black text-primary uppercase tracking-[0.1em] md:tracking-[0.3em] whitespace-nowrap">The Plan 2026</span>
+              <span className="text-xs font-bold text-foreground opacity-60 tracking-tight italic hidden sm:inline">A new agent platform</span>
             </div>
-            <div className="text-[10px] font-black tabular-nums text-foreground/40 tracking-widest">
+            <div className="text-[10px] font-black tabular-nums text-foreground/40 tracking-wider md:tracking-widest whitespace-nowrap">
               {Math.round(progress)}% COMPLETE
             </div>
           </div>
@@ -91,11 +91,11 @@ const PlayerBar: React.FC<PlayerBarProps> = ({
         </div>
 
         {/* Extra Controls */}
-        <div className="flex items-center gap-4">
-          <div className="flex flex-col gap-2">
+        <div className="flex items-center gap-2 md:gap-4">
+          <div className="flex flex-col gap-1.5 md:gap-2">
             <button
               onClick={handleToggleDiscuss}
-              className={`flex items-center justify-center gap-3 px-4 py-1.5 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:scale-105 active:scale-95 whitespace-nowrap group border border-white/20 ${
+              className={`flex items-center justify-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:scale-105 active:scale-95 whitespace-nowrap group border border-white/20 ${
                 agentStatus.isActive 
                   ? 'bg-red-500 text-white shadow-[0_0_20px_rgba(239,68,68,0.4)]' 
                   : 'bg-primary text-primary-foreground'
@@ -127,7 +127,7 @@ const PlayerBar: React.FC<PlayerBarProps> = ({
 
             <button
               onClick={onToggleReaderMode}
-              className={`flex items-center justify-center gap-3 px-4 py-1.5 rounded-full transition-all duration-300 border ${
+              className={`flex items-center justify-center gap-2 md:gap-3 px-3 md:px-4 py-1.5 rounded-full transition-all duration-300 border ${
                 isReaderMode 
                   ? 'bg-primary/5 border-primary/20 text-primary' 
                   : 'border-white/5 text-muted-foreground hover:text-foreground hover:border-white/10'
@@ -148,7 +148,7 @@ const PlayerBar: React.FC<PlayerBarProps> = ({
 
           <button
             onClick={onReset}
-            className="p-3 text-muted-foreground hover:text-foreground transition-all duration-300 group"
+            className="p-2 md:p-3 text-muted-foreground hover:text-foreground transition-all duration-300 group"
             title="Reset to beginning (Esc)"
           >
             <RotateCcw className="w-4 h-4 group-hover:rotate-[-45deg] transition-transform opacity-40 group-hover:opacity-100" />

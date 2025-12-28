@@ -8,6 +8,7 @@ export interface XAIEvent {
 export class XAIRealtimeClient {
   private ws: WebSocket | null = null;
   private audioContext: AudioContext | null = null;
+  private audioEl: HTMLAudioElement | null = null;
   private processor: ScriptProcessorNode | null = null;
   private input: MediaStreamAudioSourceNode | null = null;
   private silenceGain: GainNode | null = null;
@@ -42,7 +43,13 @@ export class XAIRealtimeClient {
 
       // 2) Request microphone
       try {
-        this.localStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        this.localStream = await navigator.mediaDevices.getUserMedia({ 
+          audio: {
+            echoCancellation: true,
+            noiseSuppression: true,
+            autoGainControl: true,
+          } 
+        });
         console.log('[xAI] Microphone granted');
       } catch (err: any) {
         throw new Error(`Microphone access denied: ${err.message}`);
@@ -74,7 +81,7 @@ export class XAIRealtimeClient {
             },
             turn_detection: {
               type: 'server_vad',
-              threshold: 0.5,
+              threshold: 0.7,
               prefix_padding_ms: 300,
               silence_duration_ms: 400,
             },
@@ -228,11 +235,23 @@ export class XAIRealtimeClient {
       };
 
       // 6) Setup Recording Pipeline (mic -> processor -> zero-gain -> destination)
-      this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
+      this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)({ 
+        sampleRate: 24000,
+        latencyHint: 'playback'
+      });
       if (this.audioContext.state === 'suspended') await this.audioContext.resume();
 
       this.masterGain = this.audioContext.createGain();
-      this.masterGain.connect(this.audioContext.destination);
+
+      // Create a hidden audio element to act as the sink.
+      // On mobile, this forces the audio to go through the media speaker rather than the earpiece.
+      const dest = this.audioContext.createMediaStreamDestination();
+      this.masterGain.connect(dest);
+      this.audioEl = new Audio();
+      this.audioEl.srcObject = dest.stream;
+      this.audioEl.setAttribute('playsinline', '');
+      this.audioEl.setAttribute('autoplay', '');
+      this.audioEl.play().catch(err => console.warn('[xAI] Audio element play failed:', err));
 
       this.input = this.audioContext.createMediaStreamSource(this.localStream);
       this.processor = this.audioContext.createScriptProcessor(4096, 1, 1);
@@ -334,6 +353,11 @@ export class XAIRealtimeClient {
     if (this.processor) { this.processor.disconnect(); this.processor = null; }
     if (this.input) { this.input.disconnect(); this.input = null; }
     if (this.silenceGain) { this.silenceGain.disconnect(); this.silenceGain = null; }
+    if (this.audioEl) {
+      this.audioEl.pause();
+      this.audioEl.srcObject = null;
+      this.audioEl = null;
+    }
     if (this.audioContext) { this.audioContext.close(); this.audioContext = null; }
     if (this.localStream) {
       this.localStream.getTracks().forEach((t) => t.stop());

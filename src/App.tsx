@@ -430,7 +430,7 @@ function App() {
         {/* Subtle background glow */}
         <div className="fixed inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(59,130,246,0.03),transparent_40%)] pointer-events-none" />
         
-        <div className="flex justify-center max-w-[1600px] mx-auto px-12 relative z-10">
+        <div className="flex justify-center max-w-[1600px] mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
           <Sidebar 
             currentSectionId={activeSectionId} 
             onNavigate={handleNavigateToSection} 
@@ -439,6 +439,7 @@ function App() {
             <Article 
               currentWordIndex={currentWordIndex} 
               onWordClick={handleWordClick}
+              onNavigate={handleNavigateToSection}
             />
           </main>
         </div>
