@@ -21,7 +21,7 @@ export class XAIRealtimeClient {
 
   async init(instructions: string) {
     try {
-      console.log('%c[xAI] Starting WebSocket Initialization...', 'color: #3b82f6; font-weight: bold');
+      console.log('%c[xAI] Starting Initialization (via Cloudflare Proxy)...', 'color: #3b82f6; font-weight: bold');
 
       // 1) Get ephemeral token
       console.log('[xAI] Step 1: Fetching token from Supabase...');
@@ -48,18 +48,18 @@ export class XAIRealtimeClient {
         throw new Error(`Microphone access denied: ${err.message}`);
       }
 
-      // 3) Establish WebSocket connection with model parameter
-      // Following OpenAI Realtime pattern which Grok appears to implement
-      const model = 'grok-beta';
-      const wsUrl = `wss://api.x.ai/v1/realtime?model=${model}`;
-      console.log(`[xAI] Step 3: Connecting to WebSocket ${wsUrl}`);
+      // 3) Establish WebSocket connection via Proxy
+      // We connect to the worker, which adds the Authorization header browsers can't send
+      const proxyUrl = 'wss://xai-realtime-proxy.captainapp.workers.dev';
+      const wsUrl = `${proxyUrl}/?token=${token}`;
+      console.log(`[xAI] Step 3: Connecting to Proxy at ${proxyUrl}`);
       
       this.ws = new WebSocket(wsUrl);
 
       this.ws.onopen = () => {
-        console.log('%c[xAI] WebSocket Handshake Successful!', 'color: #10b981; font-weight: bold');
+        console.log('%c[xAI] WebSocket Handshake Successful (via Proxy)!', 'color: #10b981; font-weight: bold');
         
-        // 4) In-band authentication
+        // 4) In-band authentication (xAI spec still requires this event even if header is sent)
         console.log('[xAI] Step 4: Sending session.authenticate...');
         this.sendEvent({
           type: 'session.authenticate',
