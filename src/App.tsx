@@ -129,27 +129,28 @@ function App() {
         const sectionTiming = timingData[sectionId];
         if (sectionTiming && sectionTiming[localWordIdx] && audioRef.current) {
           audioRef.current.currentTime = sectionTiming[localWordIdx].start;
-          if (!isPlaying) setIsPlaying(true);
+          setIsPlaying(true);
         }
       };
 
       if (audioRef.current) {
-        const newSrc = `/audio/sections/${sectionId}.mp3`;
         if (currentSectionIndex !== sectionIdx) {
           setCurrentSectionIndex(sectionIdx);
           lastWordIdxRef.current = localWordIdx;
           setCurrentWordIndex(globalWordIndex);
-          audioRef.current.src = newSrc;
-          audioRef.current.onloadedmetadata = () => {
+          
+          // Wait for the new section's metadata to load before seeking
+          const playNewSection = () => {
             setTime();
-            audioRef.current!.onloadedmetadata = null;
+            audioRef.current?.removeEventListener('loadedmetadata', playNewSection);
           };
+          audioRef.current.addEventListener('loadedmetadata', playNewSection);
         } else {
           setTime();
         }
       }
     }
-  }, [sectionMetadata, timingData, currentSectionIndex, isPlaying]);
+  }, [sectionMetadata, timingData, currentSectionIndex]);
 
   const isAuthCallback = window.location.pathname === '/auth/callback';
 
@@ -266,16 +267,10 @@ function App() {
 
     const handleEnded = () => {
       if (currentSectionIndex < sections.length - 1) {
-        const nextIdx = currentSectionIndex + 1;
-        
         // Brief pause before next section
         setTimeout(() => {
-          if (audioRef.current) {
-            setCurrentSectionIndex(nextIdx);
-            lastWordIdxRef.current = -1; // Reset for next section
-            audioRef.current.src = `/audio/sections/${sections[nextIdx].id}.mp3`;
-            audioRef.current.play().catch(e => console.log('Playback failed', e));
-          }
+          setCurrentSectionIndex(prev => prev + 1);
+          lastWordIdxRef.current = -1; // Reset for next section
         }, 400); // 0.4 second pause
       } else {
         setIsPlaying(false);
@@ -299,12 +294,16 @@ function App() {
 
     if (isPlaying) {
       if (isReaderMode && audioRef.current) {
-        audioRef.current.play().catch(e => console.log('Playback failed', e));
+        // Only call play if not already playing or if src just changed
+        audioRef.current.play().catch(e => {
+          // If play() was interrupted by a src change, it's fine
+          if (e.name !== 'AbortError') console.log('Playback failed', e);
+        });
       }
     } else {
       if (audioRef.current) audioRef.current.pause();
     }
-  }, [isPlaying, isReaderMode, isAuthCallback]);
+  }, [isPlaying, isReaderMode, isAuthCallback, currentSectionIndex]);
 
   // Constant scroll logic (when reader mode is off)
   const animate = useCallback(() => {
