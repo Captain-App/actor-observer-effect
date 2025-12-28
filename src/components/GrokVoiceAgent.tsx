@@ -1,10 +1,17 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { MicOff, X } from 'lucide-react';
 import { XAIRealtimeClient, XAIEvent } from '../lib/xai-realtime';
 import { sections } from '../data/sections';
 import { supabase } from '../lib/supabase';
 
-const GrokVoiceAgent: React.FC = () => {
+interface GrokVoiceAgentProps {
+  onStatusChange?: (status: {
+    isActive: boolean;
+    isConnecting: boolean;
+    isConnected: boolean;
+  }) => void;
+}
+
+const GrokVoiceAgent: React.FC<GrokVoiceAgentProps> = ({ onStatusChange }) => {
   const [isActive, setIsActive] = useState(false);
   const [isConnecting, setIsConnecting] = useState(false);
   const [isConnected, setIsConnected] = useState(false);
@@ -17,6 +24,11 @@ const GrokVoiceAgent: React.FC = () => {
     sentiment: 'positive' | 'neutral' | 'skeptical' | 'confused';
     insight?: string;
   }>>([]);
+
+  // Report status changes to parent
+  useEffect(() => {
+    onStatusChange?.({ isActive, isConnecting, isConnected });
+  }, [isActive, isConnecting, isConnected, onStatusChange]);
 
   const startChat = async () => {
     setIsConnecting(true);
@@ -297,74 +309,26 @@ ${fullArticle}`;
   };
 
   useEffect(() => {
-    const handleOpenChat = () => {
-      if (!isActive) {
+    const handleToggleChat = () => {
+      if (isActive) {
+        stopChat();
+      } else {
         setIsActive(true);
         startChat();
       }
     };
 
-    window.addEventListener('open-xai-chat', handleOpenChat);
+    window.addEventListener('toggle-xai-chat', handleToggleChat);
 
     return () => {
-      window.removeEventListener('open-xai-chat', handleOpenChat);
+      window.removeEventListener('toggle-xai-chat', handleToggleChat);
       if (clientRef.current) {
         clientRef.current.disconnect();
       }
     };
   }, [isActive]);
 
-  if (!isActive) {
-    return null;
-  }
-
-  return (
-    <div className="fixed bottom-[120px] right-8 w-80 bg-slate-900 border border-slate-800 rounded-3xl shadow-2xl overflow-hidden z-50 flex flex-col items-center p-8 space-y-6 animate-in fade-in zoom-in slide-in-from-bottom-4 duration-300">
-      <button 
-        onClick={stopChat}
-        className="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors"
-      >
-        <X className="w-5 h-5" />
-      </button>
-
-      <div className="relative">
-        {isConnected ? (
-          <div className="flex items-center gap-1.5 h-12">
-            {[...Array(5)].map((_, i) => (
-              <div 
-                key={i} 
-                className="w-1.5 bg-primary rounded-full animate-pulse"
-                style={{ 
-                  height: i % 2 === 0 ? '100%' : '60%', 
-                  animationDelay: `${i * 0.1}s`,
-                  animationDuration: '0.8s'
-                }}
-              />
-            ))}
-          </div>
-        ) : (
-          <div className="w-12 h-12 border-4 border-primary/20 border-t-primary rounded-full animate-spin" />
-        )}
-      </div>
-
-      <div className="text-center space-y-2">
-        <h3 className="font-bold text-lg text-white">
-          {isConnecting ? 'Calling xAI...' : isConnected ? 'Listening...' : 'Ending...'}
-        </h3>
-        <p className="text-sm text-slate-400 leading-relaxed">
-          Grok Voice: Discussing the Architecture
-        </p>
-      </div>
-
-      <button
-        onClick={stopChat}
-        className="w-full py-4 bg-red-500/10 text-red-500 hover:bg-red-500/20 rounded-2xl font-bold transition-colors flex items-center justify-center gap-2 border border-red-500/20"
-      >
-        <MicOff className="w-4 h-4" />
-        End Discussion
-      </button>
-    </div>
-  );
+  return null;
 };
 
 export default GrokVoiceAgent;

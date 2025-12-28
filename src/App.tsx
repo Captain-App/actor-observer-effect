@@ -65,6 +65,11 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isReaderMode, setIsReaderMode] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
+  const [agentStatus, setAgentStatus] = useState({
+    isActive: false,
+    isConnecting: false,
+    isConnected: false
+  });
   const [currentWordIndex, setCurrentWordIndex] = useState<number | null>(null);
   const [activeSectionId, setActiveSectionId] = useState<string | null>(null);
   const [currentSectionIndex, setCurrentSectionIndex] = useState(0);
@@ -444,12 +449,13 @@ function App() {
           isPlaying={isPlaying} 
           isReaderMode={isReaderMode}
           isLoading={isLoading}
+          agentStatus={agentStatus}
           onTogglePlay={() => setIsPlaying(!isPlaying)}
           onReset={handleReset}
           onToggleReaderMode={() => setIsReaderMode(!isReaderMode)}
           onProgressChange={handleProgressChange}
         />
-        <GrokVoiceAgent />
+        <GrokVoiceAgent onStatusChange={setAgentStatus} />
       </div>
     </AuthGuard>
   );

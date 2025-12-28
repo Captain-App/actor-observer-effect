@@ -7,6 +7,11 @@ interface PlayerBarProps {
   isPlaying: boolean;
   isReaderMode: boolean;
   isLoading: boolean;
+  agentStatus: {
+    isActive: boolean;
+    isConnecting: boolean;
+    isConnected: boolean;
+  };
   onTogglePlay: () => void;
   onReset: () => void;
   onToggleReaderMode: () => void;
@@ -19,13 +24,14 @@ const PlayerBar: React.FC<PlayerBarProps> = ({
   isPlaying, 
   isReaderMode, 
   isLoading,
+  agentStatus,
   onTogglePlay, 
   onReset, 
   onToggleReaderMode,
   onProgressChange
 }) => {
   const handleToggleDiscuss = () => {
-    window.dispatchEvent(new CustomEvent('open-xai-chat'));
+    window.dispatchEvent(new CustomEvent('toggle-xai-chat'));
   };
 
   return (
@@ -89,11 +95,33 @@ const PlayerBar: React.FC<PlayerBarProps> = ({
           <div className="flex flex-col gap-2">
             <button
               onClick={handleToggleDiscuss}
-              className="flex items-center justify-center gap-3 px-4 py-1.5 rounded-full transition-all duration-300 bg-primary text-primary-foreground shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:scale-105 active:scale-95 whitespace-nowrap group border border-white/20"
+              className={`flex items-center justify-center gap-3 px-4 py-1.5 rounded-full transition-all duration-300 shadow-[0_0_20px_rgba(59,130,246,0.4)] hover:scale-105 active:scale-95 whitespace-nowrap group border border-white/20 ${
+                agentStatus.isActive 
+                  ? 'bg-red-500 text-white shadow-[0_0_20px_rgba(239,68,68,0.4)]' 
+                  : 'bg-primary text-primary-foreground'
+              }`}
             >
-              <AudioLines className="w-3.5 h-3.5" />
+              {agentStatus.isConnected ? (
+                <div className="flex items-center gap-1 h-3">
+                  {[...Array(3)].map((_, i) => (
+                    <div 
+                      key={i} 
+                      className="w-0.5 bg-current rounded-full animate-pulse"
+                      style={{ 
+                        height: i % 2 === 0 ? '100%' : '60%', 
+                        animationDelay: `${i * 0.1}s`,
+                        animationDuration: '0.8s'
+                      }}
+                    />
+                  ))}
+                </div>
+              ) : agentStatus.isConnecting ? (
+                <Loader2 className="w-3.5 h-3.5 animate-spin" />
+              ) : (
+                <AudioLines className="w-3.5 h-3.5" />
+              )}
               <span className="text-[9px] font-black uppercase tracking-widest">
-                Discuss
+                {agentStatus.isConnected ? 'Listening' : agentStatus.isConnecting ? 'Calling...' : 'Discuss'}
               </span>
             </button>
 
