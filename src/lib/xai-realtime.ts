@@ -72,9 +72,9 @@ export class XAIRealtimeClient {
             },
             turn_detection: {
               type: 'server_vad',
-              threshold: 0.2,
+              threshold: 0.5,
               prefix_padding_ms: 300,
-              silence_duration_ms: 200,
+              silence_duration_ms: 400,
             },
           },
         });
@@ -123,7 +123,16 @@ export class XAIRealtimeClient {
           }
 
           if (event.type === 'response.created') {
-            this.isInterrupted = false; // Reset interruption state for new response
+            // Reset interruption state and gain for every new response
+            this.isInterrupted = false; 
+            this.nextPlayTime = 0;
+            
+            if (this.masterGain && this.audioContext) {
+              const now = this.audioContext.currentTime;
+              this.masterGain.gain.cancelScheduledValues(now);
+              this.masterGain.gain.setValueAtTime(1, now);
+            }
+
             console.log('%c[xAI] Response Created:', 'color: #10b981', {
               id: event.response?.id,
               voice: event.response?.voice,
@@ -257,29 +266,23 @@ export class XAIRealtimeClient {
   }
 
   private async fadeAndStop() {
-    if (!this.masterGain || !this.audioContext) return;
+    if (!this.masterGain || !this.audioContext || this.isInterrupted) return;
     
-    console.log('%c[xAI] Interrupting audio with fade...', 'color: #f59e0b');
+    console.log('%c[xAI] User speech detected. Fading out AI...', 'color: #f59e0b');
     this.isInterrupted = true;
     const now = this.audioContext.currentTime;
     
-    // Quick fade out over 150ms
+    // Softer fade out over 400ms
     this.masterGain.gain.cancelScheduledValues(now);
-    this.masterGain.gain.exponentialRampToValueAtTime(0.001, now + 0.15);
+    this.masterGain.gain.exponentialRampToValueAtTime(0.0001, now + 0.4);
     
-    // Stop all active sources after fade
-    setTimeout(() => {
-      this.activeSources.forEach(source => {
-        try { source.stop(); } catch (e) {}
-      });
-      this.activeSources.clear();
-      this.nextPlayTime = 0;
-      
-      // Reset gain to 1 for next turn, but keep isInterrupted until next response
-      if (this.masterGain) {
-        this.masterGain.gain.value = 1;
-      }
-    }, 200);
+    // Reset scheduler immediately so the next response doesn't wait
+    this.nextPlayTime = 0;
+    
+    // We NO LONGER call source.stop() on all active sources.
+    // This allows the current buffer to finish its fade naturally,
+    // which feels more like "finishing the sentence" than a hard cut.
+    this.activeSources.clear();
   }
 
   sendEvent(event: XAIEvent) {
