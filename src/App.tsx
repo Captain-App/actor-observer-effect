@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import Article from './components/Article';
 import PlayerBar from './components/PlayerBar';
 import Sidebar from './components/Sidebar';
+import FloatingChatBubble from './components/FloatingChatBubble';
 import AuthGuard from './components/AuthGuard';
 import AuthCallback from './pages/AuthCallback';
 import { sections } from './data/sections';
@@ -406,6 +407,7 @@ function App() {
           onToggleReaderMode={() => setIsReaderMode(!isReaderMode)}
           onProgressChange={handleProgressChange}
         />
+        <FloatingChatBubble />
       </div>
     </AuthGuard>
   );
