@@ -10,9 +10,12 @@ export class XAIRealtimeClient {
   private audioContext: AudioContext | null = null;
   private processor: ScriptProcessorNode | null = null;
   private input: MediaStreamAudioSourceNode | null = null;
+  private silenceGain: GainNode | null = null;
   private localStream: MediaStream | null = null;
   private isConnected: boolean = false;
   private nextPlayTime: number = 0;
+  private allowMicStreaming: boolean = false;
+  private didTriggerGreeting: boolean = false;
 
   constructor(
     private onMessage: (event: XAIEvent) => void,
@@ -69,9 +72,12 @@ export class XAIRealtimeClient {
           },
         });
 
-        // IMPORTANT: Trigger the assistant to greet the user immediately, without hardcoding any user message.
-        // The system prompt (instructions) explicitly says: "Greet the user warmly."
-        this.sendEvent({ type: 'response.create' } as any);
+        // IMPORTANT: Trigger the assistant to greet immediately, before we start streaming mic audio.
+        // This uses the system instructions ("Greet the user warmly") rather than hardcoding a user message.
+        if (!this.didTriggerGreeting) {
+          this.didTriggerGreeting = true;
+          this.sendEvent({ type: 'response.create' } as any);
+        }
       };
 
       this.ws.onmessage = (e) => {
@@ -109,6 +115,12 @@ export class XAIRealtimeClient {
           }
 
           if (event.type === 'response.output_audio.delta') {
+            // Once we have assistant audio, we can safely enable mic streaming (prevents feedback loop from
+            // keeping VAD permanently "speech_started" before the first greeting).
+            if (!this.allowMicStreaming) {
+              this.allowMicStreaming = true;
+              console.log('%c[xAI] Assistant audio started; enabling mic streaming', 'color: #10b981');
+            }
             this.handleAudioDelta(event.delta);
           }
 
@@ -128,14 +140,18 @@ export class XAIRealtimeClient {
         this.disconnect();
       };
 
-      // 6) Setup Recording Pipeline
+      // 6) Setup Recording Pipeline (mic -> processor -> zero-gain -> destination)
       this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
       if (this.audioContext.state === 'suspended') await this.audioContext.resume();
 
       this.input = this.audioContext.createMediaStreamSource(this.localStream);
       this.processor = this.audioContext.createScriptProcessor(4096, 1, 1);
+      this.silenceGain = this.audioContext.createGain();
+      this.silenceGain.gain.value = 0;
       
       this.processor.onaudioprocess = (e) => {
+        // Don't stream mic audio until we're ready (after greeting begins / server is ready)
+        if (!this.allowMicStreaming) return;
         if (!this.isConnected || this.ws?.readyState !== WebSocket.OPEN) return;
         const inputData = e.inputBuffer.getChannelData(0);
         const pcm16 = new Int16Array(inputData.length);
@@ -150,7 +166,8 @@ export class XAIRealtimeClient {
       };
 
       this.input.connect(this.processor);
-      this.processor.connect(this.audioContext.destination);
+      this.processor.connect(this.silenceGain);
+      this.silenceGain.connect(this.audioContext.destination);
 
     } catch (err: any) {
       console.error('%c[xAI] Init Failed:', 'color: #ef4444; font-weight: bold', err);
@@ -187,9 +204,11 @@ export class XAIRealtimeClient {
 
   disconnect() {
     this.isConnected = false;
+    this.allowMicStreaming = false;
     if (this.ws) { this.ws.close(); this.ws = null; }
     if (this.processor) { this.processor.disconnect(); this.processor = null; }
     if (this.input) { this.input.disconnect(); this.input = null; }
+    if (this.silenceGain) { this.silenceGain.disconnect(); this.silenceGain = null; }
     if (this.audioContext) { this.audioContext.close(); this.audioContext = null; }
     if (this.localStream) {
       this.localStream.getTracks().forEach((t) => t.stop());
