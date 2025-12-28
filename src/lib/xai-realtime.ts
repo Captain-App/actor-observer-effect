@@ -45,15 +45,27 @@ export class XAIRealtimeClient {
           token: token
         });
 
-        // Configure session
+        // Configure session as per xAI documentation
         this.sendEvent({
           type: 'session.update',
           session: {
             modalities: ['text', 'audio'],
             instructions: instructions,
             voice: 'Leo',
-            input_audio_format: 'pcm16',
-            output_audio_format: 'pcm16',
+            audio: {
+              input: {
+                format: {
+                  type: 'audio/pcm',
+                  rate: 24000
+                }
+              },
+              output: {
+                format: {
+                  type: 'audio/pcm',
+                  rate: 24000
+                }
+              }
+            },
             turn_detection: {
               type: 'server_vad',
               threshold: 0.5,
@@ -94,8 +106,24 @@ export class XAIRealtimeClient {
       };
 
       // 3) Setup Audio Recording
-      this.localStream = await navigator.mediaDevices.getUserMedia({ audio: true });
-      this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
+      console.log('[xAI] Requesting microphone access...');
+      try {
+        this.localStream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        console.log('[xAI] Microphone access granted');
+      } catch (err: any) {
+        console.error('[xAI] Microphone access denied:', err);
+        throw new Error(`Microphone access denied: ${err.message}`);
+      }
+
+      console.log('[xAI] Initializing AudioContext...');
+      try {
+        this.audioContext = new (window.AudioContext || (window as any).webkitAudioContext)({ sampleRate: 24000 });
+        console.log('[xAI] AudioContext initialized at', this.audioContext.sampleRate, 'Hz');
+      } catch (err: any) {
+        console.error('[xAI] AudioContext initialization failed:', err);
+        throw new Error(`AudioContext failed: ${err.message}`);
+      }
+
       this.input = this.audioContext.createMediaStreamSource(this.localStream);
       
       // ScriptProcessor for 24kHz PCM16 mono
