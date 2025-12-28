@@ -65,6 +65,14 @@ function App() {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isReaderMode, setIsReaderMode] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
+  const [audioIsLoading, setAudioIsLoading] = useState(true);
+  const [timingIsLoading, setTimingIsLoading] = useState(true);
+  
+  // Overall loading state is true if either audio or timing data is missing
+  useEffect(() => {
+    setIsLoading(audioIsLoading || timingIsLoading);
+  }, [audioIsLoading, timingIsLoading]);
+
   const [agentStatus, setAgentStatus] = useState({
     isActive: false,
     isConnecting: false,
@@ -81,6 +89,43 @@ function App() {
   const lastManualScrollTime = useRef<number>(0);
   const isAutoScrolling = useRef<boolean>(false);
   const lastWordIdxRef = useRef<number>(-1);
+  useEffect(() => {
+    const audio = audioRef.current;
+    if (!audio) return;
+
+    const handleLoadStart = () => setAudioIsLoading(true);
+    const handleCanPlay = () => setAudioIsLoading(false);
+    const handleWaiting = () => setAudioIsLoading(true);
+    const handlePlaying = () => setAudioIsLoading(false);
+    const handleStalled = () => setAudioIsLoading(true);
+
+    audio.addEventListener('loadstart', handleLoadStart);
+    audio.addEventListener('canplay', handleCanPlay);
+    audio.addEventListener('canplaythrough', handleCanPlay);
+    audio.addEventListener('waiting', handleWaiting);
+    audio.addEventListener('playing', handlePlaying);
+    audio.addEventListener('stalled', handleStalled);
+
+    return () => {
+      audio.removeEventListener('loadstart', handleLoadStart);
+      audio.removeEventListener('canplay', handleCanPlay);
+      audio.removeEventListener('canplaythrough', handleCanPlay);
+      audio.removeEventListener('waiting', handleWaiting);
+      audio.removeEventListener('playing', handlePlaying);
+      audio.removeEventListener('stalled', handleStalled);
+    };
+  }, []);
+
+  // Monitor current section timing availability
+  useEffect(() => {
+    const sectionId = sections[currentSectionIndex].id;
+    if (timingData[sectionId]) {
+      setTimingIsLoading(false);
+    } else {
+      setTimingIsLoading(true);
+      loadSectionTiming(sectionId);
+    }
+  }, [currentSectionIndex, timingData]);
 
   // Pre-calculate section metadata for global indexing and progress
   const sectionMetadata = useMemo(() => {
@@ -123,9 +168,7 @@ function App() {
   // Load first section immediately and background load others
   useEffect(() => {
     const init = async () => {
-      setIsLoading(true);
       await loadSectionTiming(sections[0].id);
-      setIsLoading(false);
       
       // Background load the rest
       sections.slice(1).forEach(section => {

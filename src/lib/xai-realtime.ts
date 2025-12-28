@@ -33,6 +33,10 @@ export class XAIRealtimeClient {
     try {
       console.log('%c[xAI] Starting Initialization (via Cloudflare Proxy)...', 'color: #3b82f6; font-weight: bold');
 
+      const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+      const vadThreshold = isMobile ? 0.85 : 0.7;
+      console.log(`[xAI] Setting VAD threshold to ${vadThreshold} (isMobile: ${isMobile})`);
+
       // 1) Get ephemeral token
       const { data, error: invokeError } = await supabase.functions.invoke('xai-realtime-token');
       if (invokeError) throw invokeError;
@@ -81,7 +85,7 @@ export class XAIRealtimeClient {
             },
             turn_detection: {
               type: 'server_vad',
-              threshold: 0.7,
+              threshold: vadThreshold,
               prefix_padding_ms: 300,
               silence_duration_ms: 400,
             },
