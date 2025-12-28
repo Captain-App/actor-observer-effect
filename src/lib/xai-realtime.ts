@@ -48,9 +48,13 @@ export class XAIRealtimeClient {
         throw new Error(`Microphone access denied: ${err.message}`);
       }
 
-      // 3) Establish WebSocket connection (standard GET handshake)
-      console.log('[xAI] Step 3: Connecting to WebSocket wss://api.x.ai/v1/realtime');
-      this.ws = new WebSocket('wss://api.x.ai/v1/realtime');
+      // 3) Establish WebSocket connection with model parameter
+      // Following OpenAI Realtime pattern which Grok appears to implement
+      const model = 'grok-beta';
+      const wsUrl = `wss://api.x.ai/v1/realtime?model=${model}`;
+      console.log(`[xAI] Step 3: Connecting to WebSocket ${wsUrl}`);
+      
+      this.ws = new WebSocket(wsUrl);
 
       this.ws.onopen = () => {
         console.log('%c[xAI] WebSocket Handshake Successful!', 'color: #10b981; font-weight: bold');
