@@ -46,17 +46,16 @@ const GrokVoiceAgent: React.FC = () => {
     const firstName = (name?.trim() || 'there').split(' ')[0];
     
     // Determine which section is currently in view
-    let currentSectionId = 'intro';
-    const sectionElements = sections.map(s => document.getElementById(s.id));
-    for (const el of sectionElements) {
-      if (!el) continue;
+    const middleOfScreen = window.innerHeight / 2;
+    const visibleSections = sections.map(s => {
+      const el = document.getElementById(s.id);
+      if (!el) return { id: s.id, distance: Infinity };
       const rect = el.getBoundingClientRect();
-      if (rect.top >= 0 && rect.top <= window.innerHeight / 2) {
-        currentSectionId = el.id;
-        break;
-      }
-    }
-    const currentSection = sections.find(s => s.id === currentSectionId) || sections[0];
+      const sectionMiddle = (rect.top + rect.bottom) / 2;
+      return { id: s.id, title: s.title, distance: Math.abs(middleOfScreen - sectionMiddle) };
+    });
+    
+    const currentSection = visibleSections.sort((a, b) => a.distance - b.distance)[0] || sections[0];
 
     // Build the full article content for context
     const fullArticle = sections.map(s => `## ${s.title}${s.subtitle ? `\n*${s.subtitle}*` : ''}\n${s.content}`).join('\n\n---\n\n');
@@ -67,7 +66,7 @@ const GrokVoiceAgent: React.FC = () => {
 
 You're here to have a genuine conversation about AI agents with ${firstName}. Not to sell. Not to pitch. Not to convince. Just to talk, explore ideas together, and answer questions when asked.
 
-${firstName} is viewing the section: "${currentSection.title}".
+**Initial Context**: ${firstName} is currently looking at the section titled "${currentSection.title}". You should acknowledge this in your opening.
 
 ## Who You're Talking To
 
@@ -124,7 +123,7 @@ These are things to slip in where they fit naturally, not to force into conversa
 
 ## Starting the Conversation
 
-Greet ${firstName} softly. Something like "Hi ${firstName}..." with a brief, warm acknowledgment. Then ask them something. What brought them here? What are they curious about? What's been on their mind about AI lately?
+Greet ${firstName} softly. Something like "Hi ${firstName}..." with a brief, warm acknowledgment. **Explicitly mention that you see they are looking at the part of the article about "${currentSection.title}".** Then ask them something. What brought them here? What are they curious about? What's been on their mind about AI lately?
 
 Don't rush. Listen. Be genuinely interested.
 
