@@ -130,6 +130,13 @@ export class XAIRealtimeClient {
             this.isInterrupted = false; 
             this.nextPlayTime = 0;
             
+            // Hard stop all previous sources to prevent "playing over himself" 
+            // if a new response starts before the previous fade finished.
+            this.activeSources.forEach(source => {
+              try { source.stop(); } catch (e) {}
+            });
+            this.activeSources.clear();
+
             if (this.masterGain && this.audioContext) {
               const now = this.audioContext.currentTime;
               this.masterGain.gain.cancelScheduledValues(now);
@@ -298,10 +305,8 @@ export class XAIRealtimeClient {
     // Reset scheduler immediately so the next response doesn't wait
     this.nextPlayTime = 0;
     
-    // We NO LONGER call source.stop() on all active sources.
-    // This allows the current buffer to finish its fade naturally,
-    // which feels more like "finishing the sentence" than a hard cut.
-    this.activeSources.clear();
+    // We KEEP the activeSources set intact here so we can stop them 
+    // if a new response starts before they finish their fade.
   }
 
   sendEvent(event: XAIEvent) {
