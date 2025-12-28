@@ -1,0 +1,410 @@
+[
+  {
+    "word": "Technical",
+    "start": 0
+  },
+  {
+    "word": "Deep",
+    "start": 0.473
+  },
+  {
+    "word": "Dive:",
+    "start": 0.946
+  },
+  {
+    "word": "Defining",
+    "start": 1.419
+  },
+  {
+    "word": "an",
+    "start": 1.892
+  },
+  {
+    "word": "Intent",
+    "start": 2.364
+  },
+  {
+    "word": "The",
+    "start": 3.337
+  },
+  {
+    "word": "anatomy",
+    "start": 3.721
+  },
+  {
+    "word": "of",
+    "start": 4.105
+  },
+  {
+    "word": "a",
+    "start": 4.489
+  },
+  {
+    "word": "decision",
+    "start": 4.873
+  },
+  {
+    "word": "An",
+    "start": 5.757
+  },
+  {
+    "word": "Intent",
+    "start": 6.531
+  },
+  {
+    "word": "extends",
+    "start": 7.304
+  },
+  {
+    "word": "the",
+    "start": 8.078
+  },
+  {
+    "word": "Intent",
+    "start": 8.852
+  },
+  {
+    "word": "base",
+    "start": 9.625
+  },
+  {
+    "word": "class,",
+    "start": 10.399
+  },
+  {
+    "word": "requiring:",
+    "start": 11.172
+  },
+  {
+    "word": "toJson()",
+    "start": 11.946
+  },
+  {
+    "word": "returning",
+    "start": 12.719
+  },
+  {
+    "word": "Map",
+    "start": 13.493
+  },
+  {
+    "word": "with",
+    "start": 14.267
+  },
+  {
+    "word": "'id'",
+    "start": 15.04
+  },
+  {
+    "word": "and",
+    "start": 15.814
+  },
+  {
+    "word": "'serialisationTargetClassName',",
+    "start": 16.587
+  },
+  {
+    "word": "a",
+    "start": 17.361
+  },
+  {
+    "word": "static",
+    "start": 18.134
+  },
+  {
+    "word": "fromJson(Map)",
+    "start": 18.908
+  },
+  {
+    "word": "factory,",
+    "start": 19.682
+  },
+  {
+    "word": "and",
+    "start": 20.455
+  },
+  {
+    "word": "describe(NomosIntentDescribeCtx)",
+    "start": 21.229
+  },
+  {
+    "word": "returning",
+    "start": 22.002
+  },
+  {
+    "word": "NomosIntentDescription.",
+    "start": 22.776
+  },
+  {
+    "word": "The",
+    "start": 23.849
+  },
+  {
+    "word": "constructor",
+    "start": 24.462
+  },
+  {
+    "word": "calls",
+    "start": 25.075
+  },
+  {
+    "word": "super()",
+    "start": 25.688
+  },
+  {
+    "word": "which",
+    "start": 26.301
+  },
+  {
+    "word": "assigns",
+    "start": 26.914
+  },
+  {
+    "word": "a",
+    "start": 27.527
+  },
+  {
+    "word": "UUIDv7",
+    "start": 28.14
+  },
+  {
+    "word": "via",
+    "start": 28.753
+  },
+  {
+    "word": "Uuid().v7(),",
+    "start": 29.366
+  },
+  {
+    "word": "ensuring",
+    "start": 29.979
+  },
+  {
+    "word": "globally",
+    "start": 30.592
+  },
+  {
+    "word": "unique,",
+    "start": 31.205
+  },
+  {
+    "word": "time-sortable",
+    "start": 31.818
+  },
+  {
+    "word": "IDs.",
+    "start": 32.431
+  },
+  {
+    "word": "Key",
+    "start": 33.344
+  },
+  {
+    "word": "properties:",
+    "start": 34.035
+  },
+  {
+    "word": "id",
+    "start": 34.726
+  },
+  {
+    "word": "(the",
+    "start": 35.417
+  },
+  {
+    "word": "UUID),",
+    "start": 36.107
+  },
+  {
+    "word": "workspaceIntentSequence",
+    "start": 36.798
+  },
+  {
+    "word": "(assigned",
+    "start": 37.489
+  },
+  {
+    "word": "by",
+    "start": 38.18
+  },
+  {
+    "word": "framework),",
+    "start": 38.871
+  },
+  {
+    "word": "kind",
+    "start": 39.562
+  },
+  {
+    "word": "(runtime",
+    "start": 40.253
+  },
+  {
+    "word": "type),",
+    "start": 40.944
+  },
+  {
+    "word": "strikeOutIntentIds",
+    "start": 41.634
+  },
+  {
+    "word": "(list",
+    "start": 42.325
+  },
+  {
+    "word": "of",
+    "start": 43.016
+  },
+  {
+    "word": "intents",
+    "start": 43.707
+  },
+  {
+    "word": "to",
+    "start": 44.398
+  },
+  {
+    "word": "undo),",
+    "start": 45.089
+  },
+  {
+    "word": "newPolicyVersion",
+    "start": 45.78
+  },
+  {
+    "word": "(for",
+    "start": 46.471
+  },
+  {
+    "word": "migrations),",
+    "start": 47.161
+  },
+  {
+    "word": "and",
+    "start": 47.852
+  },
+  {
+    "word": "requiresServerExecution",
+    "start": 48.543
+  },
+  {
+    "word": "(for",
+    "start": 49.234
+  },
+  {
+    "word": "server-only",
+    "start": 49.925
+  },
+  {
+    "word": "operations).",
+    "start": 50.616
+  },
+  {
+    "word": "IntentBase.fromRegistry()",
+    "start": 51.607
+  },
+  {
+    "word": "handles",
+    "start": 52.748
+  },
+  {
+    "word": "deserialisation",
+    "start": 53.889
+  },
+  {
+    "word": "via",
+    "start": 55.031
+  },
+  {
+    "word": "IntentFactoryRegistry",
+    "start": 56.172
+  },
+  {
+    "word": "lookup.",
+    "start": 57.313
+  },
+  {
+    "word": "The",
+    "start": 58.755
+  },
+  {
+    "word": "TypeRegistry",
+    "start": 59.228
+  },
+  {
+    "word": "maps",
+    "start": 59.7
+  },
+  {
+    "word": "string",
+    "start": 60.173
+  },
+  {
+    "word": "type",
+    "start": 60.646
+  },
+  {
+    "word": "names",
+    "start": 61.119
+  },
+  {
+    "word": "to",
+    "start": 61.592
+  },
+  {
+    "word": "Dart",
+    "start": 62.065
+  },
+  {
+    "word": "Types",
+    "start": 62.538
+  },
+  {
+    "word": "for",
+    "start": 63.011
+  },
+  {
+    "word": "cross-platform",
+    "start": 63.484
+  },
+  {
+    "word": "serialisation.",
+    "start": 63.956
+  },
+  {
+    "word": "Intents",
+    "start": 64.729
+  },
+  {
+    "word": "carry",
+    "start": 65.227
+  },
+  {
+    "word": "the",
+    "start": 65.725
+  },
+  {
+    "word": "'what'",
+    "start": 66.223
+  },
+  {
+    "word": "without",
+    "start": 66.72
+  },
+  {
+    "word": "the",
+    "start": 67.218
+  },
+  {
+    "word": "'how'\u2014Directives",
+    "start": 67.716
+  },
+  {
+    "word": "handle",
+    "start": 68.214
+  },
+  {
+    "word": "execution.",
+    "start": 68.712
+  }
+]

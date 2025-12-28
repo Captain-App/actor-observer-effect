@@ -30,12 +30,16 @@ const AuthCallback: React.FC = () => {
             throw setError;
           }
           
-          // 3. STRICTLY LIMIT LOCAL STORAGE TO LOCALHOST
+          // 3. STRICTLY LIMIT TO SECURE COOKIES
           // Production uses Domain Cookies which are much more secure against XSS.
-          if (data.session && (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1')) {
+          if (data.session) {
             const storageKey = 'captainapp-sso-v1';
-            localStorage.setItem(storageKey, JSON.stringify(data.session));
-            console.log('AuthCallback: Localhost session persisted to localStorage.');
+            const encodedValue = encodeURIComponent(JSON.stringify(data.session));
+            const domain = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+              ? ''
+              : '; domain=.captainapp.co.uk';
+            document.cookie = `${storageKey}=${encodedValue}${domain}; path=/; max-age=31536000; SameSite=Lax; Secure`;
+            console.log('AuthCallback: Session persisted to cookies.');
           }
         } else {
           console.log('AuthCallback: No tokens in hash, attempting standard exchange...');
@@ -52,18 +56,7 @@ const AuthCallback: React.FC = () => {
         const { data: { session } } = await supabase.auth.getSession();
         
         if (!session) {
-          // Ultimate fallback for localhost development only
-          if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-            const backup = localStorage.getItem('captainapp-sso-v1');
-            if (backup) {
-              console.log('AuthCallback: Using backup session from localStorage (localhost only)');
-              await supabase.auth.setSession(JSON.parse(backup));
-            } else {
-              throw new Error('Could not establish session on localhost.');
-            }
-          } else {
-            throw new Error('Authentication failed. No secure session could be established.');
-          }
+          throw new Error('Authentication failed. No secure session could be established.');
         }
         
         console.log('AuthCallback: Handshake complete! Redirecting home...');

@@ -1,0 +1,254 @@
+[
+  {
+    "word": "Execution:",
+    "start": 0
+  },
+  {
+    "word": "OpenCode",
+    "start": 0.683
+  },
+  {
+    "word": "and",
+    "start": 1.365
+  },
+  {
+    "word": "Cloudflare",
+    "start": 2.048
+  },
+  {
+    "word": "If",
+    "start": 3.231
+  },
+  {
+    "word": "you",
+    "start": 3.551
+  },
+  {
+    "word": "want",
+    "start": 3.871
+  },
+  {
+    "word": "agents",
+    "start": 4.191
+  },
+  {
+    "word": "that",
+    "start": 4.511
+  },
+  {
+    "word": "are",
+    "start": 4.831
+  },
+  {
+    "word": "safe",
+    "start": 5.151
+  },
+  {
+    "word": "and",
+    "start": 5.471
+  },
+  {
+    "word": "scalable,",
+    "start": 5.791
+  },
+  {
+    "word": "you",
+    "start": 6.111
+  },
+  {
+    "word": "need",
+    "start": 6.431
+  },
+  {
+    "word": "a",
+    "start": 6.751
+  },
+  {
+    "word": "strong",
+    "start": 7.071
+  },
+  {
+    "word": "execution",
+    "start": 7.391
+  },
+  {
+    "word": "model.",
+    "start": 7.711
+  },
+  {
+    "word": "Cloudflare",
+    "start": 8.331
+  },
+  {
+    "word": "Workers",
+    "start": 9.048
+  },
+  {
+    "word": "give",
+    "start": 9.765
+  },
+  {
+    "word": "us",
+    "start": 10.483
+  },
+  {
+    "word": "isolates\u2014lightweight,",
+    "start": 11.2
+  },
+  {
+    "word": "fast-starting",
+    "start": 11.917
+  },
+  {
+    "word": "sandboxed",
+    "start": 12.635
+  },
+  {
+    "word": "environments.",
+    "start": 13.352
+  },
+  {
+    "word": "Every",
+    "start": 14.369
+  },
+  {
+    "word": "SME",
+    "start": 14.895
+  },
+  {
+    "word": "gets",
+    "start": 15.42
+  },
+  {
+    "word": "a",
+    "start": 15.945
+  },
+  {
+    "word": "logically",
+    "start": 16.471
+  },
+  {
+    "word": "isolated",
+    "start": 16.996
+  },
+  {
+    "word": "agent",
+    "start": 17.521
+  },
+  {
+    "word": "runtime.",
+    "start": 18.047
+  },
+  {
+    "word": "OpenCode",
+    "start": 18.872
+  },
+  {
+    "word": "becomes",
+    "start": 19.377
+  },
+  {
+    "word": "the",
+    "start": 19.881
+  },
+  {
+    "word": "agent",
+    "start": 20.386
+  },
+  {
+    "word": "framework",
+    "start": 20.89
+  },
+  {
+    "word": "we",
+    "start": 21.395
+  },
+  {
+    "word": "build",
+    "start": 21.899
+  },
+  {
+    "word": "on",
+    "start": 22.404
+  },
+  {
+    "word": "top\u2014our",
+    "start": 22.908
+  },
+  {
+    "word": "orchestration",
+    "start": 23.413
+  },
+  {
+    "word": "layer",
+    "start": 23.917
+  },
+  {
+    "word": "and",
+    "start": 24.422
+  },
+  {
+    "word": "tool",
+    "start": 24.926
+  },
+  {
+    "word": "system\u2014while",
+    "start": 25.431
+  },
+  {
+    "word": "Cloudflare",
+    "start": 25.935
+  },
+  {
+    "word": "provides",
+    "start": 26.44
+  },
+  {
+    "word": "the",
+    "start": 26.945
+  },
+  {
+    "word": "sandbox",
+    "start": 27.449
+  },
+  {
+    "word": "and",
+    "start": 27.954
+  },
+  {
+    "word": "distribution.",
+    "start": 28.458
+  },
+  {
+    "word": "Compute",
+    "start": 29.263
+  },
+  {
+    "word": "scales",
+    "start": 29.916
+  },
+  {
+    "word": "elastically\u2014without",
+    "start": 30.569
+  },
+  {
+    "word": "forcing",
+    "start": 31.223
+  },
+  {
+    "word": "customers",
+    "start": 31.876
+  },
+  {
+    "word": "into",
+    "start": 32.529
+  },
+  {
+    "word": "'Kubernetes",
+    "start": 33.183
+  },
+  {
+    "word": "brain'.",
+    "start": 33.836
+  }
+]

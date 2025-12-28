@@ -1,0 +1,498 @@
+[
+  {
+    "word": "Ledgers",
+    "start": 0
+  },
+  {
+    "word": "for",
+    "start": 0.519
+  },
+  {
+    "word": "RAG",
+    "start": 1.038
+  },
+  {
+    "word": "and",
+    "start": 1.557
+  },
+  {
+    "word": "State",
+    "start": 2.076
+  },
+  {
+    "word": "Exploration",
+    "start": 2.596
+  },
+  {
+    "word": "AI",
+    "start": 3.615
+  },
+  {
+    "word": "that",
+    "start": 3.962
+  },
+  {
+    "word": "understands",
+    "start": 4.31
+  },
+  {
+    "word": "how",
+    "start": 4.657
+  },
+  {
+    "word": "we",
+    "start": 5.004
+  },
+  {
+    "word": "got",
+    "start": 5.352
+  },
+  {
+    "word": "here",
+    "start": 5.699
+  },
+  {
+    "word": "Beyond",
+    "start": 6.547
+  },
+  {
+    "word": "tool",
+    "start": 7.078
+  },
+  {
+    "word": "use,",
+    "start": 7.609
+  },
+  {
+    "word": "NOMOS",
+    "start": 8.141
+  },
+  {
+    "word": "ledgers",
+    "start": 8.672
+  },
+  {
+    "word": "are",
+    "start": 9.204
+  },
+  {
+    "word": "ideal",
+    "start": 9.735
+  },
+  {
+    "word": "for",
+    "start": 10.266
+  },
+  {
+    "word": "Retrieval-Augmented",
+    "start": 10.798
+  },
+  {
+    "word": "Generation",
+    "start": 11.329
+  },
+  {
+    "word": "(RAG).",
+    "start": 11.861
+  },
+  {
+    "word": "When",
+    "start": 12.692
+  },
+  {
+    "word": "an",
+    "start": 13.275
+  },
+  {
+    "word": "AI",
+    "start": 13.859
+  },
+  {
+    "word": "needs",
+    "start": 14.442
+  },
+  {
+    "word": "to",
+    "start": 15.026
+  },
+  {
+    "word": "answer",
+    "start": 15.609
+  },
+  {
+    "word": "'What",
+    "start": 16.192
+  },
+  {
+    "word": "happened",
+    "start": 16.776
+  },
+  {
+    "word": "to",
+    "start": 17.359
+  },
+  {
+    "word": "Asset",
+    "start": 17.942
+  },
+  {
+    "word": "X?',",
+    "start": 18.526
+  },
+  {
+    "word": "the",
+    "start": 19.109
+  },
+  {
+    "word": "aggregateIntentHistory()",
+    "start": 19.693
+  },
+  {
+    "word": "API",
+    "start": 20.276
+  },
+  {
+    "word": "returns",
+    "start": 20.859
+  },
+  {
+    "word": "all",
+    "start": 21.443
+  },
+  {
+    "word": "IntentLedgerEntries",
+    "start": 22.026
+  },
+  {
+    "word": "where",
+    "start": 22.61
+  },
+  {
+    "word": "targetAggregateIds",
+    "start": 23.193
+  },
+  {
+    "word": "contains",
+    "start": 23.776
+  },
+  {
+    "word": "that",
+    "start": 24.36
+  },
+  {
+    "word": "aggregate\u2014each",
+    "start": 24.943
+  },
+  {
+    "word": "with",
+    "start": 25.526
+  },
+  {
+    "word": "a",
+    "start": 26.11
+  },
+  {
+    "word": "human-readable",
+    "start": 26.693
+  },
+  {
+    "word": "description.",
+    "start": 27.277
+  },
+  {
+    "word": "For",
+    "start": 28.16
+  },
+  {
+    "word": "time-travel",
+    "start": 28.98
+  },
+  {
+    "word": "queries,",
+    "start": 29.799
+  },
+  {
+    "word": "stateAtSequence(workspaceId,",
+    "start": 30.619
+  },
+  {
+    "word": "timelineId,",
+    "start": 31.438
+  },
+  {
+    "word": "inclusiveSequence)",
+    "start": 32.258
+  },
+  {
+    "word": "reconstructs",
+    "start": 33.077
+  },
+  {
+    "word": "state",
+    "start": 33.897
+  },
+  {
+    "word": "at",
+    "start": 34.716
+  },
+  {
+    "word": "any",
+    "start": 35.536
+  },
+  {
+    "word": "historical",
+    "start": 36.356
+  },
+  {
+    "word": "point.",
+    "start": 37.175
+  },
+  {
+    "word": "readRecentIntentTimeline()",
+    "start": 38.295
+  },
+  {
+    "word": "fetches",
+    "start": 38.892
+  },
+  {
+    "word": "the",
+    "start": 39.489
+  },
+  {
+    "word": "latest",
+    "start": 40.087
+  },
+  {
+    "word": "N",
+    "start": 40.684
+  },
+  {
+    "word": "entries",
+    "start": 41.281
+  },
+  {
+    "word": "in",
+    "start": 41.879
+  },
+  {
+    "word": "descending",
+    "start": 42.476
+  },
+  {
+    "word": "order",
+    "start": 43.073
+  },
+  {
+    "word": "for",
+    "start": 43.671
+  },
+  {
+    "word": "efficient",
+    "start": 44.268
+  },
+  {
+    "word": "'recent",
+    "start": 44.865
+  },
+  {
+    "word": "activity'",
+    "start": 45.463
+  },
+  {
+    "word": "queries.",
+    "start": 46.06
+  },
+  {
+    "word": "countIntentTimeline()",
+    "start": 46.957
+  },
+  {
+    "word": "provides",
+    "start": 47.644
+  },
+  {
+    "word": "counts",
+    "start": 48.33
+  },
+  {
+    "word": "without",
+    "start": 49.016
+  },
+  {
+    "word": "loading",
+    "start": 49.702
+  },
+  {
+    "word": "data.",
+    "start": 50.388
+  },
+  {
+    "word": "AI",
+    "start": 51.375
+  },
+  {
+    "word": "agents",
+    "start": 52.061
+  },
+  {
+    "word": "can",
+    "start": 52.748
+  },
+  {
+    "word": "simulate",
+    "start": 53.435
+  },
+  {
+    "word": "what-if",
+    "start": 54.122
+  },
+  {
+    "word": "scenarios:",
+    "start": 54.808
+  },
+  {
+    "word": "fork",
+    "start": 55.495
+  },
+  {
+    "word": "a",
+    "start": 56.182
+  },
+  {
+    "word": "NomosTimelineId,",
+    "start": 56.869
+  },
+  {
+    "word": "execute",
+    "start": 57.555
+  },
+  {
+    "word": "test",
+    "start": 58.242
+  },
+  {
+    "word": "intents",
+    "start": 58.929
+  },
+  {
+    "word": "via",
+    "start": 59.615
+  },
+  {
+    "word": "dispatchOptimistic(),",
+    "start": 60.302
+  },
+  {
+    "word": "evaluate",
+    "start": 60.989
+  },
+  {
+    "word": "the",
+    "start": 61.676
+  },
+  {
+    "word": "OptimisticIntentExecutionResult,",
+    "start": 62.362
+  },
+  {
+    "word": "and",
+    "start": 63.049
+  },
+  {
+    "word": "discard",
+    "start": 63.736
+  },
+  {
+    "word": "or",
+    "start": 64.423
+  },
+  {
+    "word": "merge.",
+    "start": 65.109
+  },
+  {
+    "word": "The",
+    "start": 66.096
+  },
+  {
+    "word": "combination",
+    "start": 66.709
+  },
+  {
+    "word": "of",
+    "start": 67.321
+  },
+  {
+    "word": "descriptions,",
+    "start": 67.934
+  },
+  {
+    "word": "rich",
+    "start": 68.546
+  },
+  {
+    "word": "metadata",
+    "start": 69.159
+  },
+  {
+    "word": "(correlationId,",
+    "start": 69.771
+  },
+  {
+    "word": "causationId),",
+    "start": 70.384
+  },
+  {
+    "word": "and",
+    "start": 70.997
+  },
+  {
+    "word": "time-travel",
+    "start": 71.609
+  },
+  {
+    "word": "makes",
+    "start": 72.222
+  },
+  {
+    "word": "NOMOS",
+    "start": 72.834
+  },
+  {
+    "word": "uniquely",
+    "start": 73.447
+  },
+  {
+    "word": "suited",
+    "start": 74.059
+  },
+  {
+    "word": "for",
+    "start": 74.672
+  },
+  {
+    "word": "AI",
+    "start": 75.285
+  },
+  {
+    "word": "reasoning",
+    "start": 75.897
+  },
+  {
+    "word": "about",
+    "start": 76.51
+  },
+  {
+    "word": "complex,",
+    "start": 77.122
+  },
+  {
+    "word": "evolving",
+    "start": 77.735
+  },
+  {
+    "word": "systems.",
+    "start": 78.347
+  }
+]

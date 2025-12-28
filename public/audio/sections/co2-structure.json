@@ -1,0 +1,486 @@
+[
+  {
+    "word": "The",
+    "start": 0
+  },
+  {
+    "word": "Package",
+    "start": 0.476
+  },
+  {
+    "word": "Structure",
+    "start": 0.953
+  },
+  {
+    "word": "How",
+    "start": 1.929
+  },
+  {
+    "word": "bounded",
+    "start": 2.429
+  },
+  {
+    "word": "contexts",
+    "start": 2.928
+  },
+  {
+    "word": "become",
+    "start": 3.427
+  },
+  {
+    "word": "packages",
+    "start": 3.926
+  },
+  {
+    "word": "The",
+    "start": 4.925
+  },
+  {
+    "word": "CO2",
+    "start": 5.579
+  },
+  {
+    "word": "codebase",
+    "start": 6.232
+  },
+  {
+    "word": "is",
+    "start": 6.886
+  },
+  {
+    "word": "organised",
+    "start": 7.54
+  },
+  {
+    "word": "as",
+    "start": 8.193
+  },
+  {
+    "word": "a",
+    "start": 8.847
+  },
+  {
+    "word": "Melos",
+    "start": 9.5
+  },
+  {
+    "word": "monorepo",
+    "start": 10.154
+  },
+  {
+    "word": "under",
+    "start": 10.808
+  },
+  {
+    "word": "dart_packages/co2/.",
+    "start": 11.461
+  },
+  {
+    "word": "Each",
+    "start": 12.415
+  },
+  {
+    "word": "bounded",
+    "start": 13.157
+  },
+  {
+    "word": "context",
+    "start": 13.9
+  },
+  {
+    "word": "is",
+    "start": 14.643
+  },
+  {
+    "word": "its",
+    "start": 15.385
+  },
+  {
+    "word": "own",
+    "start": 16.128
+  },
+  {
+    "word": "Dart",
+    "start": 16.871
+  },
+  {
+    "word": "package",
+    "start": 17.613
+  },
+  {
+    "word": "with",
+    "start": 18.356
+  },
+  {
+    "word": "its",
+    "start": 19.099
+  },
+  {
+    "word": "own",
+    "start": 19.842
+  },
+  {
+    "word": "pubspec.yaml:",
+    "start": 20.584
+  },
+  {
+    "word": "contracts_v1",
+    "start": 21.327
+  },
+  {
+    "word": "(shared",
+    "start": 22.07
+  },
+  {
+    "word": "value",
+    "start": 22.812
+  },
+  {
+    "word": "objects",
+    "start": 23.555
+  },
+  {
+    "word": "and",
+    "start": 24.298
+  },
+  {
+    "word": "payloads),",
+    "start": 25.04
+  },
+  {
+    "word": "identity_v1",
+    "start": 25.783
+  },
+  {
+    "word": "(users,",
+    "start": 26.526
+  },
+  {
+    "word": "organisations,",
+    "start": 27.268
+  },
+  {
+    "word": "invitations),",
+    "start": 28.011
+  },
+  {
+    "word": "estate_structures_v1",
+    "start": 28.754
+  },
+  {
+    "word": "(estates,",
+    "start": 29.497
+  },
+  {
+    "word": "sites,",
+    "start": 30.239
+  },
+  {
+    "word": "buildings,",
+    "start": 30.982
+  },
+  {
+    "word": "rooms,",
+    "start": 31.725
+  },
+  {
+    "word": "topology),",
+    "start": 32.467
+  },
+  {
+    "word": "trackable_asset_v1",
+    "start": 33.21
+  },
+  {
+    "word": "(the",
+    "start": 33.953
+  },
+  {
+    "word": "assets",
+    "start": 34.695
+  },
+  {
+    "word": "themselves),",
+    "start": 35.438
+  },
+  {
+    "word": "catalogues_v1",
+    "start": 36.181
+  },
+  {
+    "word": "(listings,",
+    "start": 36.923
+  },
+  {
+    "word": "suppliers,",
+    "start": 37.666
+  },
+  {
+    "word": "taxonomies),",
+    "start": 38.409
+  },
+  {
+    "word": "attachments_v1",
+    "start": 39.151
+  },
+  {
+    "word": "(file",
+    "start": 39.894
+  },
+  {
+    "word": "storage),",
+    "start": 40.637
+  },
+  {
+    "word": "permissions_v1",
+    "start": 41.38
+  },
+  {
+    "word": "(access",
+    "start": 42.122
+  },
+  {
+    "word": "control),",
+    "start": 42.865
+  },
+  {
+    "word": "proposals_v1",
+    "start": 43.608
+  },
+  {
+    "word": "(change",
+    "start": 44.35
+  },
+  {
+    "word": "management),",
+    "start": 45.093
+  },
+  {
+    "word": "responsibilities_v1",
+    "start": 45.836
+  },
+  {
+    "word": "(accountability),",
+    "start": 46.578
+  },
+  {
+    "word": "insights_v1",
+    "start": 47.321
+  },
+  {
+    "word": "(analytics),",
+    "start": 48.064
+  },
+  {
+    "word": "feedback_v1",
+    "start": 48.806
+  },
+  {
+    "word": "(user",
+    "start": 49.549
+  },
+  {
+    "word": "feedback),",
+    "start": 50.292
+  },
+  {
+    "word": "licensing_v1",
+    "start": 51.035
+  },
+  {
+    "word": "(licence",
+    "start": 51.777
+  },
+  {
+    "word": "management),",
+    "start": 52.52
+  },
+  {
+    "word": "and",
+    "start": 53.263
+  },
+  {
+    "word": "funding_programs_v1",
+    "start": 54.005
+  },
+  {
+    "word": "(grant",
+    "start": 54.748
+  },
+  {
+    "word": "applications).",
+    "start": 55.491
+  },
+  {
+    "word": "The",
+    "start": 56.533
+  },
+  {
+    "word": "intents_v1",
+    "start": 57.204
+  },
+  {
+    "word": "package",
+    "start": 57.875
+  },
+  {
+    "word": "holds",
+    "start": 58.546
+  },
+  {
+    "word": "all",
+    "start": 59.217
+  },
+  {
+    "word": "the",
+    "start": 59.888
+  },
+  {
+    "word": "intents\u2014146",
+    "start": 60.56
+  },
+  {
+    "word": "files",
+    "start": 61.231
+  },
+  {
+    "word": "of",
+    "start": 61.902
+  },
+  {
+    "word": "user-facing",
+    "start": 62.573
+  },
+  {
+    "word": "commands.",
+    "start": 63.244
+  },
+  {
+    "word": "The",
+    "start": 64.215
+  },
+  {
+    "word": "policy_v1",
+    "start": 64.806
+  },
+  {
+    "word": "package",
+    "start": 65.397
+  },
+  {
+    "word": "contains",
+    "start": 65.987
+  },
+  {
+    "word": "the",
+    "start": 66.578
+  },
+  {
+    "word": "single",
+    "start": 67.169
+  },
+  {
+    "word": "PolicyRouter",
+    "start": 67.76
+  },
+  {
+    "word": "that",
+    "start": 68.351
+  },
+  {
+    "word": "orchestrates",
+    "start": 68.942
+  },
+  {
+    "word": "everything.",
+    "start": 69.533
+  },
+  {
+    "word": "This",
+    "start": 70.424
+  },
+  {
+    "word": "structure",
+    "start": 70.89
+  },
+  {
+    "word": "enforces",
+    "start": 71.357
+  },
+  {
+    "word": "DDD",
+    "start": 71.823
+  },
+  {
+    "word": "boundaries",
+    "start": 72.29
+  },
+  {
+    "word": "at",
+    "start": 72.756
+  },
+  {
+    "word": "the",
+    "start": 73.223
+  },
+  {
+    "word": "package",
+    "start": 73.689
+  },
+  {
+    "word": "level:",
+    "start": 74.155
+  },
+  {
+    "word": "domains",
+    "start": 74.622
+  },
+  {
+    "word": "can",
+    "start": 75.088
+  },
+  {
+    "word": "only",
+    "start": 75.555
+  },
+  {
+    "word": "depend",
+    "start": 76.021
+  },
+  {
+    "word": "on",
+    "start": 76.488
+  },
+  {
+    "word": "contracts_v1",
+    "start": 76.954
+  },
+  {
+    "word": "and",
+    "start": 77.42
+  },
+  {
+    "word": "nomos_core,",
+    "start": 77.887
+  },
+  {
+    "word": "never",
+    "start": 78.353
+  },
+  {
+    "word": "on",
+    "start": 78.82
+  },
+  {
+    "word": "each",
+    "start": 79.286
+  },
+  {
+    "word": "other",
+    "start": 79.752
+  },
+  {
+    "word": "directly.",
+    "start": 80.219
+  }
+]

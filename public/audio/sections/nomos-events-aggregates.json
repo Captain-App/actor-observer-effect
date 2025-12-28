@@ -1,0 +1,394 @@
+[
+  {
+    "word": "Technical",
+    "start": 0
+  },
+  {
+    "word": "Deep",
+    "start": 0.508
+  },
+  {
+    "word": "Dive:",
+    "start": 1.017
+  },
+  {
+    "word": "Events",
+    "start": 1.525
+  },
+  {
+    "word": "and",
+    "start": 2.034
+  },
+  {
+    "word": "Aggregates",
+    "start": 2.542
+  },
+  {
+    "word": "State",
+    "start": 3.551
+  },
+  {
+    "word": "as",
+    "start": 3.903
+  },
+  {
+    "word": "a",
+    "start": 4.255
+  },
+  {
+    "word": "fold",
+    "start": 4.607
+  },
+  {
+    "word": "over",
+    "start": 4.959
+  },
+  {
+    "word": "history",
+    "start": 5.311
+  },
+  {
+    "word": "Event",
+    "start": 6.163
+  },
+  {
+    "word": "is",
+    "start": 6.849
+  },
+  {
+    "word": "an",
+    "start": 7.536
+  },
+  {
+    "word": "immutable",
+    "start": 8.223
+  },
+  {
+    "word": "class",
+    "start": 8.909
+  },
+  {
+    "word": "with",
+    "start": 9.596
+  },
+  {
+    "word": "payload,",
+    "start": 10.283
+  },
+  {
+    "word": "optional",
+    "start": 10.969
+  },
+  {
+    "word": "globalSequenceNumber,",
+    "start": 11.656
+  },
+  {
+    "word": "copyWith()",
+    "start": 12.343
+  },
+  {
+    "word": "for",
+    "start": 13.029
+  },
+  {
+    "word": "sequence",
+    "start": 13.716
+  },
+  {
+    "word": "assignment,",
+    "start": 14.403
+  },
+  {
+    "word": "and",
+    "start": 15.089
+  },
+  {
+    "word": "toJson()/fromJson()",
+    "start": 15.776
+  },
+  {
+    "word": "serialisation.",
+    "start": 16.463
+  },
+  {
+    "word": "EventFactoryRegistry",
+    "start": 17.449
+  },
+  {
+    "word": "enables",
+    "start": 18.511
+  },
+  {
+    "word": "type-safe",
+    "start": 19.572
+  },
+  {
+    "word": "deserialisation.",
+    "start": 20.633
+  },
+  {
+    "word": "Aggregate<TSelf>",
+    "start": 21.995
+  },
+  {
+    "word": "is",
+    "start": 22.684
+  },
+  {
+    "word": "self-referential",
+    "start": 23.374
+  },
+  {
+    "word": "generic:",
+    "start": 24.064
+  },
+  {
+    "word": "apply(Event)",
+    "start": 24.754
+  },
+  {
+    "word": "returns",
+    "start": 25.444
+  },
+  {
+    "word": "TSelf",
+    "start": 26.133
+  },
+  {
+    "word": "(a",
+    "start": 26.823
+  },
+  {
+    "word": "fresh",
+    "start": 27.513
+  },
+  {
+    "word": "instance,",
+    "start": 28.203
+  },
+  {
+    "word": "never",
+    "start": 28.892
+  },
+  {
+    "word": "mutation).",
+    "start": 29.582
+  },
+  {
+    "word": "Constructor",
+    "start": 30.572
+  },
+  {
+    "word": "assigns",
+    "start": 31.464
+  },
+  {
+    "word": "UUIDv7",
+    "start": 32.355
+  },
+  {
+    "word": "via",
+    "start": 33.247
+  },
+  {
+    "word": "AggregateId;",
+    "start": 34.139
+  },
+  {
+    "word": "Aggregate.fromId()",
+    "start": 35.031
+  },
+  {
+    "word": "preserves",
+    "start": 35.922
+  },
+  {
+    "word": "IDs",
+    "start": 36.814
+  },
+  {
+    "word": "during",
+    "start": 37.706
+  },
+  {
+    "word": "deserialisation.",
+    "start": 38.598
+  },
+  {
+    "word": "Key",
+    "start": 39.789
+  },
+  {
+    "word": "properties:",
+    "start": 40.69
+  },
+  {
+    "word": "id,",
+    "start": 41.591
+  },
+  {
+    "word": "contextVersion",
+    "start": 42.492
+  },
+  {
+    "word": "(for",
+    "start": 43.392
+  },
+  {
+    "word": "optimistic",
+    "start": 44.293
+  },
+  {
+    "word": "concurrency),",
+    "start": 45.194
+  },
+  {
+    "word": "workspaceIntentSequence,",
+    "start": 46.095
+  },
+  {
+    "word": "timelineId.",
+    "start": 46.995
+  },
+  {
+    "word": "The",
+    "start": 48.196
+  },
+  {
+    "word": "validate()",
+    "start": 48.821
+  },
+  {
+    "word": "method",
+    "start": 49.446
+  },
+  {
+    "word": "enforces",
+    "start": 50.071
+  },
+  {
+    "word": "invariants\u2014failures",
+    "start": 50.696
+  },
+  {
+    "word": "abort",
+    "start": 51.321
+  },
+  {
+    "word": "the",
+    "start": 51.946
+  },
+  {
+    "word": "entire",
+    "start": 52.571
+  },
+  {
+    "word": "intent",
+    "start": 53.197
+  },
+  {
+    "word": "atomically.",
+    "start": 53.822
+  },
+  {
+    "word": "setFrameworkContext()",
+    "start": 54.747
+  },
+  {
+    "word": "stamps",
+    "start": 55.475
+  },
+  {
+    "word": "workspace,",
+    "start": 56.203
+  },
+  {
+    "word": "timeline,",
+    "start": 56.932
+  },
+  {
+    "word": "and",
+    "start": 57.66
+  },
+  {
+    "word": "version",
+    "start": 58.389
+  },
+  {
+    "word": "automatically.",
+    "start": 59.117
+  },
+  {
+    "word": "AggregateFactoryRegistry.createEmpty()",
+    "start": 60.145
+  },
+  {
+    "word": "instantiates",
+    "start": 61.246
+  },
+  {
+    "word": "aggregates",
+    "start": 62.347
+  },
+  {
+    "word": "for",
+    "start": 63.448
+  },
+  {
+    "word": "replay.",
+    "start": 64.549
+  },
+  {
+    "word": "The",
+    "start": 65.949
+  },
+  {
+    "word": "pattern",
+    "start": 66.555
+  },
+  {
+    "word": "is",
+    "start": 67.16
+  },
+  {
+    "word": "purely",
+    "start": 67.766
+  },
+  {
+    "word": "functional:",
+    "start": 68.371
+  },
+  {
+    "word": "state",
+    "start": 68.977
+  },
+  {
+    "word": "=",
+    "start": 69.583
+  },
+  {
+    "word": "fold(events),",
+    "start": 70.188
+  },
+  {
+    "word": "enabling",
+    "start": 70.794
+  },
+  {
+    "word": "perfect",
+    "start": 71.399
+  },
+  {
+    "word": "reproducibility",
+    "start": 72.005
+  },
+  {
+    "word": "and",
+    "start": 72.61
+  },
+  {
+    "word": "time-travel.",
+    "start": 73.216
+  }
+]

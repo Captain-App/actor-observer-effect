@@ -1,0 +1,382 @@
+[
+  {
+    "word": "Technical",
+    "start": 0
+  },
+  {
+    "word": "Deep",
+    "start": 0.587
+  },
+  {
+    "word": "Dive:",
+    "start": 1.173
+  },
+  {
+    "word": "Directives",
+    "start": 1.76
+  },
+  {
+    "word": "The",
+    "start": 2.847
+  },
+  {
+    "word": "mutation",
+    "start": 3.28
+  },
+  {
+    "word": "layer",
+    "start": 3.714
+  },
+  {
+    "word": "Directive<TAgg,",
+    "start": 4.648
+  },
+  {
+    "word": "TPayload>",
+    "start": 5.171
+  },
+  {
+    "word": "is",
+    "start": 5.693
+  },
+  {
+    "word": "generic",
+    "start": 6.216
+  },
+  {
+    "word": "over",
+    "start": 6.739
+  },
+  {
+    "word": "an",
+    "start": 7.261
+  },
+  {
+    "word": "Aggregate",
+    "start": 7.784
+  },
+  {
+    "word": "and",
+    "start": 8.307
+  },
+  {
+    "word": "Payload",
+    "start": 8.829
+  },
+  {
+    "word": "type.",
+    "start": 9.352
+  },
+  {
+    "word": "The",
+    "start": 10.175
+  },
+  {
+    "word": "constructor",
+    "start": 10.863
+  },
+  {
+    "word": "assigns",
+    "start": 11.552
+  },
+  {
+    "word": "a",
+    "start": 12.241
+  },
+  {
+    "word": "UUIDv7",
+    "start": 12.93
+  },
+  {
+    "word": "via",
+    "start": 13.618
+  },
+  {
+    "word": "NomosDirectiveId.",
+    "start": 14.307
+  },
+  {
+    "word": "Two-phase",
+    "start": 15.296
+  },
+  {
+    "word": "execution:",
+    "start": 16.193
+  },
+  {
+    "word": "plan(DirectiveCtx,",
+    "start": 17.09
+  },
+  {
+    "word": "IntentBase,",
+    "start": 17.987
+  },
+  {
+    "word": "SnapshotReader,",
+    "start": 18.884
+  },
+  {
+    "word": "stagedUpdates)",
+    "start": 19.781
+  },
+  {
+    "word": "is",
+    "start": 20.678
+  },
+  {
+    "word": "impure\u2014reading",
+    "start": 21.575
+  },
+  {
+    "word": "snapshots,",
+    "start": 22.472
+  },
+  {
+    "word": "checking",
+    "start": 23.369
+  },
+  {
+    "word": "permissions,",
+    "start": 24.266
+  },
+  {
+    "word": "returning",
+    "start": 25.163
+  },
+  {
+    "word": "List<ExecutionTarget>;",
+    "start": 26.06
+  },
+  {
+    "word": "execute(TAgg",
+    "start": 26.957
+  },
+  {
+    "word": "snapshot,",
+    "start": 27.854
+  },
+  {
+    "word": "TPayload",
+    "start": 28.751
+  },
+  {
+    "word": "payload)",
+    "start": 29.648
+  },
+  {
+    "word": "is",
+    "start": 30.545
+  },
+  {
+    "word": "pure\u2014returning",
+    "start": 31.442
+  },
+  {
+    "word": "List<Event>",
+    "start": 32.339
+  },
+  {
+    "word": "deterministically.",
+    "start": 33.236
+  },
+  {
+    "word": "DirectiveCtx",
+    "start": 34.433
+  },
+  {
+    "word": "provides",
+    "start": 35.261
+  },
+  {
+    "word": "workspaceId,",
+    "start": 36.088
+  },
+  {
+    "word": "timelineId,",
+    "start": 36.915
+  },
+  {
+    "word": "intentSeq,",
+    "start": 37.742
+  },
+  {
+    "word": "actorId,",
+    "start": 38.57
+  },
+  {
+    "word": "correlationId,",
+    "start": 39.397
+  },
+  {
+    "word": "causationId,",
+    "start": 40.224
+  },
+  {
+    "word": "timestamp,",
+    "start": 41.051
+  },
+  {
+    "word": "plus",
+    "start": 41.879
+  },
+  {
+    "word": "query<T>()",
+    "start": 42.706
+  },
+  {
+    "word": "for",
+    "start": 43.533
+  },
+  {
+    "word": "projections",
+    "start": 44.36
+  },
+  {
+    "word": "and",
+    "start": 45.188
+  },
+  {
+    "word": "callIntent()",
+    "start": 46.015
+  },
+  {
+    "word": "for",
+    "start": 46.842
+  },
+  {
+    "word": "nested",
+    "start": 47.669
+  },
+  {
+    "word": "intents.",
+    "start": 48.497
+  },
+  {
+    "word": "The",
+    "start": 49.624
+  },
+  {
+    "word": "contextVersion",
+    "start": 50.294
+  },
+  {
+    "word": "property",
+    "start": 50.965
+  },
+  {
+    "word": "enables",
+    "start": 51.635
+  },
+  {
+    "word": "optimistic",
+    "start": 52.306
+  },
+  {
+    "word": "concurrency",
+    "start": 52.976
+  },
+  {
+    "word": "checks.",
+    "start": 53.647
+  },
+  {
+    "word": "Implementing",
+    "start": 54.617
+  },
+  {
+    "word": "ArchivesAtIntent",
+    "start": 55.55
+  },
+  {
+    "word": "with",
+    "start": 56.483
+  },
+  {
+    "word": "archiveAggregateIds",
+    "start": 57.416
+  },
+  {
+    "word": "marks",
+    "start": 58.349
+  },
+  {
+    "word": "aggregates",
+    "start": 59.282
+  },
+  {
+    "word": "for",
+    "start": 60.214
+  },
+  {
+    "word": "soft-deletion\u2014SnapshotWriter.archiveAtIntent()",
+    "start": 61.147
+  },
+  {
+    "word": "writes",
+    "start": 62.08
+  },
+  {
+    "word": "a",
+    "start": 63.013
+  },
+  {
+    "word": "tombstone.",
+    "start": 63.946
+  },
+  {
+    "word": "The",
+    "start": 65.179
+  },
+  {
+    "word": "separation",
+    "start": 65.767
+  },
+  {
+    "word": "ensures",
+    "start": 66.355
+  },
+  {
+    "word": "plan()",
+    "start": 66.943
+  },
+  {
+    "word": "handles",
+    "start": 67.531
+  },
+  {
+    "word": "distributed",
+    "start": 68.12
+  },
+  {
+    "word": "reality",
+    "start": 68.708
+  },
+  {
+    "word": "while",
+    "start": 69.296
+  },
+  {
+    "word": "execute()",
+    "start": 69.884
+  },
+  {
+    "word": "remains",
+    "start": 70.472
+  },
+  {
+    "word": "perfectly",
+    "start": 71.061
+  },
+  {
+    "word": "reproducible",
+    "start": 71.649
+  },
+  {
+    "word": "for",
+    "start": 72.237
+  },
+  {
+    "word": "replay.",
+    "start": 72.825
+  }
+]

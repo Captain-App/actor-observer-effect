@@ -1,0 +1,314 @@
+[
+  {
+    "word": "App:",
+    "start": 0
+  },
+  {
+    "word": "The",
+    "start": 0.389
+  },
+  {
+    "word": "Admin",
+    "start": 0.779
+  },
+  {
+    "word": "Sprawl",
+    "start": 1.168
+  },
+  {
+    "word": "Seventy",
+    "start": 2.057
+  },
+  {
+    "word": "pages",
+    "start": 2.552
+  },
+  {
+    "word": "of",
+    "start": 3.047
+  },
+  {
+    "word": "internal",
+    "start": 3.542
+  },
+  {
+    "word": "tooling",
+    "start": 4.037
+  },
+  {
+    "word": "The",
+    "start": 5.032
+  },
+  {
+    "word": "admin",
+    "start": 5.64
+  },
+  {
+    "word": "section",
+    "start": 6.248
+  },
+  {
+    "word": "has",
+    "start": 6.857
+  },
+  {
+    "word": "metastasised",
+    "start": 7.465
+  },
+  {
+    "word": "into",
+    "start": 8.073
+  },
+  {
+    "word": "70+",
+    "start": 8.681
+  },
+  {
+    "word": "pages:",
+    "start": 9.29
+  },
+  {
+    "word": "user",
+    "start": 9.898
+  },
+  {
+    "word": "management,",
+    "start": 10.506
+  },
+  {
+    "word": "organisation",
+    "start": 11.114
+  },
+  {
+    "word": "hierarchy,",
+    "start": 11.723
+  },
+  {
+    "word": "project",
+    "start": 12.331
+  },
+  {
+    "word": "settings,",
+    "start": 12.939
+  },
+  {
+    "word": "integration",
+    "start": 13.547
+  },
+  {
+    "word": "configuration,",
+    "start": 14.156
+  },
+  {
+    "word": "sync",
+    "start": 14.764
+  },
+  {
+    "word": "job",
+    "start": 15.372
+  },
+  {
+    "word": "monitoring,",
+    "start": 15.98
+  },
+  {
+    "word": "session",
+    "start": 16.589
+  },
+  {
+    "word": "analytics,",
+    "start": 17.197
+  },
+  {
+    "word": "traffic",
+    "start": 17.805
+  },
+  {
+    "word": "dashboards,",
+    "start": 18.413
+  },
+  {
+    "word": "COO",
+    "start": 19.022
+  },
+  {
+    "word": "notifications,",
+    "start": 19.63
+  },
+  {
+    "word": "SRE",
+    "start": 20.238
+  },
+  {
+    "word": "monitoring,",
+    "start": 20.846
+  },
+  {
+    "word": "search,",
+    "start": 21.455
+  },
+  {
+    "word": "SEO",
+    "start": 22.063
+  },
+  {
+    "word": "stats,",
+    "start": 22.671
+  },
+  {
+    "word": "Facebook/Instagram",
+    "start": 23.279
+  },
+  {
+    "word": "analytics,",
+    "start": 23.888
+  },
+  {
+    "word": "SendGrid",
+    "start": 24.496
+  },
+  {
+    "word": "domain",
+    "start": 25.104
+  },
+  {
+    "word": "management,",
+    "start": 25.712
+  },
+  {
+    "word": "Anthropic",
+    "start": 26.321
+  },
+  {
+    "word": "usage",
+    "start": 26.929
+  },
+  {
+    "word": "tracking,",
+    "start": 27.537
+  },
+  {
+    "word": "Cursor",
+    "start": 28.145
+  },
+  {
+    "word": "agent",
+    "start": 28.754
+  },
+  {
+    "word": "spawning,",
+    "start": 29.362
+  },
+  {
+    "word": "and",
+    "start": 29.97
+  },
+  {
+    "word": "more.",
+    "start": 30.578
+  },
+  {
+    "word": "Each",
+    "start": 31.487
+  },
+  {
+    "word": "page",
+    "start": 31.892
+  },
+  {
+    "word": "works.",
+    "start": 32.297
+  },
+  {
+    "word": "Together",
+    "start": 33.003
+  },
+  {
+    "word": "they",
+    "start": 33.479
+  },
+  {
+    "word": "form",
+    "start": 33.956
+  },
+  {
+    "word": "an",
+    "start": 34.432
+  },
+  {
+    "word": "impenetrable",
+    "start": 34.908
+  },
+  {
+    "word": "maze.",
+    "start": 35.385
+  },
+  {
+    "word": "This",
+    "start": 36.161
+  },
+  {
+    "word": "is",
+    "start": 36.589
+  },
+  {
+    "word": "the",
+    "start": 37.017
+  },
+  {
+    "word": "accumulated",
+    "start": 37.445
+  },
+  {
+    "word": "archaeology",
+    "start": 37.873
+  },
+  {
+    "word": "of",
+    "start": 38.301
+  },
+  {
+    "word": "two",
+    "start": 38.729
+  },
+  {
+    "word": "years",
+    "start": 39.157
+  },
+  {
+    "word": "of",
+    "start": 39.585
+  },
+  {
+    "word": "building\u2014useful",
+    "start": 40.013
+  },
+  {
+    "word": "for",
+    "start": 40.441
+  },
+  {
+    "word": "the",
+    "start": 40.868
+  },
+  {
+    "word": "developer,",
+    "start": 41.296
+  },
+  {
+    "word": "bewildering",
+    "start": 41.724
+  },
+  {
+    "word": "for",
+    "start": 42.152
+  },
+  {
+    "word": "anyone",
+    "start": 42.58
+  },
+  {
+    "word": "else.",
+    "start": 43.008
+  }
+]

@@ -1,0 +1,330 @@
+[
+  {
+    "word": "App:",
+    "start": 0
+  },
+  {
+    "word": "WhatsApp",
+    "start": 0.619
+  },
+  {
+    "word": "Integration",
+    "start": 1.237
+  },
+  {
+    "word": "Bidirectional",
+    "start": 2.356
+  },
+  {
+    "word": "messaging",
+    "start": 3.012
+  },
+  {
+    "word": "via",
+    "start": 3.668
+  },
+  {
+    "word": "Twilio",
+    "start": 4.324
+  },
+  {
+    "word": "The",
+    "start": 5.48
+  },
+  {
+    "word": "WhatsApp",
+    "start": 6.088
+  },
+  {
+    "word": "integration",
+    "start": 6.696
+  },
+  {
+    "word": "is",
+    "start": 7.304
+  },
+  {
+    "word": "production-ready",
+    "start": 7.912
+  },
+  {
+    "word": "infrastructure.",
+    "start": 8.52
+  },
+  {
+    "word": "Incoming",
+    "start": 9.428
+  },
+  {
+    "word": "messages",
+    "start": 9.902
+  },
+  {
+    "word": "hit",
+    "start": 10.375
+  },
+  {
+    "word": "a",
+    "start": 10.849
+  },
+  {
+    "word": "Twilio",
+    "start": 11.322
+  },
+  {
+    "word": "webhook,",
+    "start": 11.796
+  },
+  {
+    "word": "get",
+    "start": 12.27
+  },
+  {
+    "word": "stored",
+    "start": 12.743
+  },
+  {
+    "word": "in",
+    "start": 13.217
+  },
+  {
+    "word": "Supabase,",
+    "start": 13.69
+  },
+  {
+    "word": "and",
+    "start": 14.164
+  },
+  {
+    "word": "can",
+    "start": 14.638
+  },
+  {
+    "word": "trigger",
+    "start": 15.111
+  },
+  {
+    "word": "AI-drafted",
+    "start": 15.585
+  },
+  {
+    "word": "replies.",
+    "start": 16.058
+  },
+  {
+    "word": "Outgoing",
+    "start": 16.832
+  },
+  {
+    "word": "messages",
+    "start": 17.472
+  },
+  {
+    "word": "flow",
+    "start": 18.112
+  },
+  {
+    "word": "through",
+    "start": 18.752
+  },
+  {
+    "word": "send-whatsapp-message",
+    "start": 19.392
+  },
+  {
+    "word": "with",
+    "start": 20.032
+  },
+  {
+    "word": "template",
+    "start": 20.672
+  },
+  {
+    "word": "compliance.",
+    "start": 21.312
+  },
+  {
+    "word": "There's",
+    "start": 22.252
+  },
+  {
+    "word": "a",
+    "start": 22.718
+  },
+  {
+    "word": "full",
+    "start": 23.184
+  },
+  {
+    "word": "conversation",
+    "start": 23.65
+  },
+  {
+    "word": "UI",
+    "start": 24.116
+  },
+  {
+    "word": "with",
+    "start": 24.582
+  },
+  {
+    "word": "contact",
+    "start": 25.048
+  },
+  {
+    "word": "management,",
+    "start": 25.514
+  },
+  {
+    "word": "message",
+    "start": 25.98
+  },
+  {
+    "word": "history,",
+    "start": 26.446
+  },
+  {
+    "word": "and",
+    "start": 26.913
+  },
+  {
+    "word": "call",
+    "start": 27.379
+  },
+  {
+    "word": "monitoring.",
+    "start": 27.845
+  },
+  {
+    "word": "The",
+    "start": 28.611
+  },
+  {
+    "word": "voice",
+    "start": 29.178
+  },
+  {
+    "word": "integration",
+    "start": 29.746
+  },
+  {
+    "word": "uses",
+    "start": 30.313
+  },
+  {
+    "word": "OpenAI's",
+    "start": 30.881
+  },
+  {
+    "word": "realtime",
+    "start": 31.448
+  },
+  {
+    "word": "API",
+    "start": 32.015
+  },
+  {
+    "word": "for",
+    "start": 32.583
+  },
+  {
+    "word": "live",
+    "start": 33.15
+  },
+  {
+    "word": "transcription.",
+    "start": 33.718
+  },
+  {
+    "word": "What's",
+    "start": 34.585
+  },
+  {
+    "word": "missing",
+    "start": 34.991
+  },
+  {
+    "word": "is",
+    "start": 35.396
+  },
+  {
+    "word": "the",
+    "start": 35.801
+  },
+  {
+    "word": "business",
+    "start": 36.207
+  },
+  {
+    "word": "logic",
+    "start": 36.612
+  },
+  {
+    "word": "layer\u2014the",
+    "start": 37.017
+  },
+  {
+    "word": "'why'",
+    "start": 37.423
+  },
+  {
+    "word": "of",
+    "start": 37.828
+  },
+  {
+    "word": "sending",
+    "start": 38.233
+  },
+  {
+    "word": "messages.",
+    "start": 38.639
+  },
+  {
+    "word": "The",
+    "start": 39.344
+  },
+  {
+    "word": "pipes",
+    "start": 39.653
+  },
+  {
+    "word": "work;",
+    "start": 39.963
+  },
+  {
+    "word": "we",
+    "start": 40.272
+  },
+  {
+    "word": "just",
+    "start": 40.581
+  },
+  {
+    "word": "haven't",
+    "start": 40.891
+  },
+  {
+    "word": "decided",
+    "start": 41.2
+  },
+  {
+    "word": "what",
+    "start": 41.509
+  },
+  {
+    "word": "to",
+    "start": 41.819
+  },
+  {
+    "word": "pump",
+    "start": 42.128
+  },
+  {
+    "word": "through",
+    "start": 42.437
+  },
+  {
+    "word": "them.",
+    "start": 42.747
+  }
+]

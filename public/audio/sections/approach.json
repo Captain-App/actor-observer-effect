@@ -1,0 +1,354 @@
+[
+  {
+    "word": "Approaching",
+    "start": 0
+  },
+  {
+    "word": "agents",
+    "start": 0.668
+  },
+  {
+    "word": "differently",
+    "start": 1.337
+  },
+  {
+    "word": "We\u2019re",
+    "start": 2.505
+  },
+  {
+    "word": "not",
+    "start": 2.847
+  },
+  {
+    "word": "building",
+    "start": 3.188
+  },
+  {
+    "word": "a",
+    "start": 3.529
+  },
+  {
+    "word": "chatbot",
+    "start": 3.871
+  },
+  {
+    "word": "that",
+    "start": 4.212
+  },
+  {
+    "word": "guesses.",
+    "start": 4.553
+  },
+  {
+    "word": "We\u2019re",
+    "start": 5.195
+  },
+  {
+    "word": "building",
+    "start": 5.584
+  },
+  {
+    "word": "an",
+    "start": 5.973
+  },
+  {
+    "word": "accountable",
+    "start": 6.362
+  },
+  {
+    "word": "decision",
+    "start": 6.751
+  },
+  {
+    "word": "layer\u2014an",
+    "start": 7.14
+  },
+  {
+    "word": "agent",
+    "start": 7.529
+  },
+  {
+    "word": "that",
+    "start": 7.918
+  },
+  {
+    "word": "can",
+    "start": 8.307
+  },
+  {
+    "word": "show",
+    "start": 8.696
+  },
+  {
+    "word": "its",
+    "start": 9.085
+  },
+  {
+    "word": "working,",
+    "start": 9.474
+  },
+  {
+    "word": "and",
+    "start": 9.863
+  },
+  {
+    "word": "rewind",
+    "start": 10.252
+  },
+  {
+    "word": "its",
+    "start": 10.641
+  },
+  {
+    "word": "own",
+    "start": 11.03
+  },
+  {
+    "word": "history.",
+    "start": 11.419
+  },
+  {
+    "word": "We\u2019ve",
+    "start": 12.108
+  },
+  {
+    "word": "been",
+    "start": 12.484
+  },
+  {
+    "word": "leaning",
+    "start": 12.86
+  },
+  {
+    "word": "hard",
+    "start": 13.236
+  },
+  {
+    "word": "into",
+    "start": 13.611
+  },
+  {
+    "word": "event-sourced",
+    "start": 13.987
+  },
+  {
+    "word": "thinking\u2014especially",
+    "start": 14.363
+  },
+  {
+    "word": "the",
+    "start": 14.739
+  },
+  {
+    "word": "idea",
+    "start": 15.115
+  },
+  {
+    "word": "that",
+    "start": 15.491
+  },
+  {
+    "word": "the",
+    "start": 15.867
+  },
+  {
+    "word": "most",
+    "start": 16.243
+  },
+  {
+    "word": "valuable",
+    "start": 16.618
+  },
+  {
+    "word": "thing",
+    "start": 16.994
+  },
+  {
+    "word": "you",
+    "start": 17.37
+  },
+  {
+    "word": "can",
+    "start": 17.746
+  },
+  {
+    "word": "store",
+    "start": 18.122
+  },
+  {
+    "word": "isn\u2019t",
+    "start": 18.498
+  },
+  {
+    "word": "the",
+    "start": 18.874
+  },
+  {
+    "word": "current",
+    "start": 19.25
+  },
+  {
+    "word": "state...",
+    "start": 19.625
+  },
+  {
+    "word": "it\u2019s",
+    "start": 20.301
+  },
+  {
+    "word": "how",
+    "start": 20.566
+  },
+  {
+    "word": "you",
+    "start": 20.83
+  },
+  {
+    "word": "got",
+    "start": 21.095
+  },
+  {
+    "word": "there.",
+    "start": 21.359
+  },
+  {
+    "word": "Internally,",
+    "start": 21.924
+  },
+  {
+    "word": "we\u2019ve",
+    "start": 22.327
+  },
+  {
+    "word": "discussed",
+    "start": 22.73
+  },
+  {
+    "word": "building",
+    "start": 23.133
+  },
+  {
+    "word": "systems",
+    "start": 23.536
+  },
+  {
+    "word": "around",
+    "start": 23.938
+  },
+  {
+    "word": "a",
+    "start": 24.341
+  },
+  {
+    "word": "ledger",
+    "start": 24.744
+  },
+  {
+    "word": "of",
+    "start": 25.147
+  },
+  {
+    "word": "intents\u2014a",
+    "start": 25.55
+  },
+  {
+    "word": "record",
+    "start": 25.953
+  },
+  {
+    "word": "of",
+    "start": 26.356
+  },
+  {
+    "word": "'what",
+    "start": 26.759
+  },
+  {
+    "word": "the",
+    "start": 27.162
+  },
+  {
+    "word": "user",
+    "start": 27.565
+  },
+  {
+    "word": "meant",
+    "start": 27.967
+  },
+  {
+    "word": "to",
+    "start": 28.37
+  },
+  {
+    "word": "do'\u2014and",
+    "start": 28.773
+  },
+  {
+    "word": "the",
+    "start": 29.176
+  },
+  {
+    "word": "resulting",
+    "start": 29.579
+  },
+  {
+    "word": "directives",
+    "start": 29.982
+  },
+  {
+    "word": "and",
+    "start": 30.385
+  },
+  {
+    "word": "events,",
+    "start": 30.788
+  },
+  {
+    "word": "so",
+    "start": 31.191
+  },
+  {
+    "word": "you",
+    "start": 31.593
+  },
+  {
+    "word": "can",
+    "start": 31.996
+  },
+  {
+    "word": "audit,",
+    "start": 32.399
+  },
+  {
+    "word": "replay,",
+    "start": 32.802
+  },
+  {
+    "word": "and",
+    "start": 33.205
+  },
+  {
+    "word": "even",
+    "start": 33.608
+  },
+  {
+    "word": "fast-forward",
+    "start": 34.011
+  },
+  {
+    "word": "a",
+    "start": 34.414
+  },
+  {
+    "word": "system",
+    "start": 34.817
+  },
+  {
+    "word": "through",
+    "start": 35.22
+  },
+  {
+    "word": "time.",
+    "start": 35.622
+  }
+]

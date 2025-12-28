@@ -1,0 +1,550 @@
+[
+  {
+    "word": "The",
+    "start": 0
+  },
+  {
+    "word": "Cloudflare",
+    "start": 0.576
+  },
+  {
+    "word": "Edge:",
+    "start": 1.152
+  },
+  {
+    "word": "Serverless",
+    "start": 1.728
+  },
+  {
+    "word": "Distributed",
+    "start": 2.304
+  },
+  {
+    "word": "Computing",
+    "start": 2.88
+  },
+  {
+    "word": "This",
+    "start": 3.956
+  },
+  {
+    "word": "brings",
+    "start": 4.231
+  },
+  {
+    "word": "me",
+    "start": 4.507
+  },
+  {
+    "word": "on",
+    "start": 4.782
+  },
+  {
+    "word": "to",
+    "start": 5.058
+  },
+  {
+    "word": "the",
+    "start": 5.333
+  },
+  {
+    "word": "work",
+    "start": 5.608
+  },
+  {
+    "word": "that",
+    "start": 5.884
+  },
+  {
+    "word": "Cloudflare",
+    "start": 6.159
+  },
+  {
+    "word": "are",
+    "start": 6.435
+  },
+  {
+    "word": "doing.",
+    "start": 6.71
+  },
+  {
+    "word": "Some",
+    "start": 7.285
+  },
+  {
+    "word": "employees",
+    "start": 7.718
+  },
+  {
+    "word": "there,",
+    "start": 8.151
+  },
+  {
+    "word": "given",
+    "start": 8.583
+  },
+  {
+    "word": "permission",
+    "start": 9.016
+  },
+  {
+    "word": "to",
+    "start": 9.449
+  },
+  {
+    "word": "work",
+    "start": 9.881
+  },
+  {
+    "word": "on",
+    "start": 10.314
+  },
+  {
+    "word": "pet",
+    "start": 10.747
+  },
+  {
+    "word": "projects",
+    "start": 11.179
+  },
+  {
+    "word": "during",
+    "start": 11.612
+  },
+  {
+    "word": "working",
+    "start": 12.045
+  },
+  {
+    "word": "hours,",
+    "start": 12.477
+  },
+  {
+    "word": "are",
+    "start": 12.91
+  },
+  {
+    "word": "combining",
+    "start": 13.343
+  },
+  {
+    "word": "D1,",
+    "start": 13.775
+  },
+  {
+    "word": "Durable",
+    "start": 14.208
+  },
+  {
+    "word": "Objects,",
+    "start": 14.641
+  },
+  {
+    "word": "Workers,",
+    "start": 15.073
+  },
+  {
+    "word": "and",
+    "start": 15.506
+  },
+  {
+    "word": "sandbox",
+    "start": 15.939
+  },
+  {
+    "word": "primitives",
+    "start": 16.371
+  },
+  {
+    "word": "to",
+    "start": 16.804
+  },
+  {
+    "word": "effectively",
+    "start": 17.237
+  },
+  {
+    "word": "build",
+    "start": 17.669
+  },
+  {
+    "word": "a",
+    "start": 18.102
+  },
+  {
+    "word": "file",
+    "start": 18.535
+  },
+  {
+    "word": "system",
+    "start": 18.967
+  },
+  {
+    "word": "on",
+    "start": 19.4
+  },
+  {
+    "word": "top",
+    "start": 19.833
+  },
+  {
+    "word": "of",
+    "start": 20.265
+  },
+  {
+    "word": "SQLite.",
+    "start": 20.698
+  },
+  {
+    "word": "For",
+    "start": 21.431
+  },
+  {
+    "word": "all",
+    "start": 21.903
+  },
+  {
+    "word": "intents",
+    "start": 22.376
+  },
+  {
+    "word": "and",
+    "start": 22.849
+  },
+  {
+    "word": "purposes,",
+    "start": 23.321
+  },
+  {
+    "word": "this",
+    "start": 23.794
+  },
+  {
+    "word": "gives",
+    "start": 24.266
+  },
+  {
+    "word": "harnesses",
+    "start": 24.739
+  },
+  {
+    "word": "such",
+    "start": 25.212
+  },
+  {
+    "word": "as",
+    "start": 25.684
+  },
+  {
+    "word": "OpenCode\u2014a",
+    "start": 26.157
+  },
+  {
+    "word": "fast,",
+    "start": 26.629
+  },
+  {
+    "word": "up-and-coming",
+    "start": 27.102
+  },
+  {
+    "word": "open-source",
+    "start": 27.575
+  },
+  {
+    "word": "competitor",
+    "start": 28.047
+  },
+  {
+    "word": "to",
+    "start": 28.52
+  },
+  {
+    "word": "Claude",
+    "start": 28.993
+  },
+  {
+    "word": "Code\u2014a",
+    "start": 29.465
+  },
+  {
+    "word": "Linux",
+    "start": 29.938
+  },
+  {
+    "word": "machine",
+    "start": 30.41
+  },
+  {
+    "word": "with",
+    "start": 30.883
+  },
+  {
+    "word": "a",
+    "start": 31.356
+  },
+  {
+    "word": "terminal",
+    "start": 31.828
+  },
+  {
+    "word": "and",
+    "start": 32.301
+  },
+  {
+    "word": "file",
+    "start": 32.773
+  },
+  {
+    "word": "system.",
+    "start": 33.246
+  },
+  {
+    "word": "It's",
+    "start": 34.019
+  },
+  {
+    "word": "much",
+    "start": 34.461
+  },
+  {
+    "word": "like",
+    "start": 34.904
+  },
+  {
+    "word": "the",
+    "start": 35.347
+  },
+  {
+    "word": "environments",
+    "start": 35.789
+  },
+  {
+    "word": "used",
+    "start": 36.232
+  },
+  {
+    "word": "in",
+    "start": 36.675
+  },
+  {
+    "word": "reinforcement",
+    "start": 37.117
+  },
+  {
+    "word": "learning",
+    "start": 37.56
+  },
+  {
+    "word": "with",
+    "start": 38.003
+  },
+  {
+    "word": "verifiable",
+    "start": 38.445
+  },
+  {
+    "word": "training.",
+    "start": 38.888
+  },
+  {
+    "word": "It's",
+    "start": 39.631
+  },
+  {
+    "word": "serverless,",
+    "start": 40.038
+  },
+  {
+    "word": "distributed,",
+    "start": 40.444
+  },
+  {
+    "word": "scales",
+    "start": 40.851
+  },
+  {
+    "word": "to",
+    "start": 41.258
+  },
+  {
+    "word": "zero,",
+    "start": 41.665
+  },
+  {
+    "word": "easy",
+    "start": 42.072
+  },
+  {
+    "word": "to",
+    "start": 42.479
+  },
+  {
+    "word": "secure,",
+    "start": 42.886
+  },
+  {
+    "word": "and",
+    "start": 43.292
+  },
+  {
+    "word": "runs",
+    "start": 43.699
+  },
+  {
+    "word": "on",
+    "start": 44.106
+  },
+  {
+    "word": "the",
+    "start": 44.513
+  },
+  {
+    "word": "edge.",
+    "start": 44.92
+  },
+  {
+    "word": "This",
+    "start": 45.627
+  },
+  {
+    "word": "is",
+    "start": 45.934
+  },
+  {
+    "word": "not",
+    "start": 46.242
+  },
+  {
+    "word": "something",
+    "start": 46.549
+  },
+  {
+    "word": "we",
+    "start": 46.857
+  },
+  {
+    "word": "need",
+    "start": 47.164
+  },
+  {
+    "word": "to",
+    "start": 47.472
+  },
+  {
+    "word": "build;",
+    "start": 47.78
+  },
+  {
+    "word": "it's",
+    "start": 48.087
+  },
+  {
+    "word": "something",
+    "start": 48.395
+  },
+  {
+    "word": "being",
+    "start": 48.702
+  },
+  {
+    "word": "built.",
+    "start": 49.01
+  },
+  {
+    "word": "All",
+    "start": 49.617
+  },
+  {
+    "word": "we",
+    "start": 49.982
+  },
+  {
+    "word": "have",
+    "start": 50.346
+  },
+  {
+    "word": "to",
+    "start": 50.711
+  },
+  {
+    "word": "do",
+    "start": 51.075
+  },
+  {
+    "word": "is",
+    "start": 51.44
+  },
+  {
+    "word": "provide",
+    "start": 51.804
+  },
+  {
+    "word": "the",
+    "start": 52.168
+  },
+  {
+    "word": "cleanest",
+    "start": 52.533
+  },
+  {
+    "word": "user",
+    "start": 52.897
+  },
+  {
+    "word": "experience",
+    "start": 53.262
+  },
+  {
+    "word": "to",
+    "start": 53.626
+  },
+  {
+    "word": "set",
+    "start": 53.991
+  },
+  {
+    "word": "it",
+    "start": 54.355
+  },
+  {
+    "word": "up",
+    "start": 54.72
+  },
+  {
+    "word": "and",
+    "start": 55.084
+  },
+  {
+    "word": "take",
+    "start": 55.448
+  },
+  {
+    "word": "responsibility",
+    "start": 55.813
+  },
+  {
+    "word": "for",
+    "start": 56.177
+  },
+  {
+    "word": "hosting",
+    "start": 56.542
+  },
+  {
+    "word": "and",
+    "start": 56.906
+  },
+  {
+    "word": "isolating",
+    "start": 57.271
+  },
+  {
+    "word": "client",
+    "start": 57.635
+  },
+  {
+    "word": "data.",
+    "start": 58.0
+  }
+]

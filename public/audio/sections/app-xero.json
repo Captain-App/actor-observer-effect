@@ -1,0 +1,334 @@
+[
+  {
+    "word": "App:",
+    "start": 0
+  },
+  {
+    "word": "Xero",
+    "start": 0.603
+  },
+  {
+    "word": "Financial",
+    "start": 1.205
+  },
+  {
+    "word": "Intelligence",
+    "start": 1.808
+  },
+  {
+    "word": "Deep",
+    "start": 2.911
+  },
+  {
+    "word": "accounting",
+    "start": 3.608
+  },
+  {
+    "word": "integration",
+    "start": 4.304
+  },
+  {
+    "word": "The",
+    "start": 5.501
+  },
+  {
+    "word": "Xero",
+    "start": 5.949
+  },
+  {
+    "word": "integration",
+    "start": 6.397
+  },
+  {
+    "word": "goes",
+    "start": 6.845
+  },
+  {
+    "word": "far",
+    "start": 7.293
+  },
+  {
+    "word": "beyond",
+    "start": 7.741
+  },
+  {
+    "word": "OAuth.",
+    "start": 8.189
+  },
+  {
+    "word": "Dedicated",
+    "start": 8.937
+  },
+  {
+    "word": "edge",
+    "start": 9.517
+  },
+  {
+    "word": "functions",
+    "start": 10.096
+  },
+  {
+    "word": "sync",
+    "start": 10.676
+  },
+  {
+    "word": "invoices,",
+    "start": 11.256
+  },
+  {
+    "word": "contacts,",
+    "start": 11.835
+  },
+  {
+    "word": "accounts,",
+    "start": 12.415
+  },
+  {
+    "word": "bank",
+    "start": 12.994
+  },
+  {
+    "word": "transactions,",
+    "start": 13.574
+  },
+  {
+    "word": "products,",
+    "start": 14.153
+  },
+  {
+    "word": "and",
+    "start": 14.733
+  },
+  {
+    "word": "reports.",
+    "start": 15.312
+  },
+  {
+    "word": "There's",
+    "start": 16.192
+  },
+  {
+    "word": "monthly",
+    "start": 16.804
+  },
+  {
+    "word": "expense",
+    "start": 17.416
+  },
+  {
+    "word": "aggregation,",
+    "start": 18.028
+  },
+  {
+    "word": "directors'",
+    "start": 18.64
+  },
+  {
+    "word": "loan",
+    "start": 19.253
+  },
+  {
+    "word": "tracking,",
+    "start": 19.865
+  },
+  {
+    "word": "VAT/tax",
+    "start": 20.477
+  },
+  {
+    "word": "calculation,",
+    "start": 21.089
+  },
+  {
+    "word": "and",
+    "start": 21.701
+  },
+  {
+    "word": "cash",
+    "start": 22.313
+  },
+  {
+    "word": "flow",
+    "start": 22.925
+  },
+  {
+    "word": "analysis.",
+    "start": 23.537
+  },
+  {
+    "word": "The",
+    "start": 24.449
+  },
+  {
+    "word": "admin",
+    "start": 24.961
+  },
+  {
+    "word": "UI",
+    "start": 25.473
+  },
+  {
+    "word": "shows",
+    "start": 25.985
+  },
+  {
+    "word": "aging",
+    "start": 26.497
+  },
+  {
+    "word": "receivables,",
+    "start": 27.009
+  },
+  {
+    "word": "P&L",
+    "start": 27.521
+  },
+  {
+    "word": "breakdowns,",
+    "start": 28.033
+  },
+  {
+    "word": "and",
+    "start": 28.545
+  },
+  {
+    "word": "invoice",
+    "start": 29.057
+  },
+  {
+    "word": "line",
+    "start": 29.569
+  },
+  {
+    "word": "items.",
+    "start": 30.081
+  },
+  {
+    "word": "Automated",
+    "start": 30.893
+  },
+  {
+    "word": "syncs",
+    "start": 31.337
+  },
+  {
+    "word": "run",
+    "start": 31.781
+  },
+  {
+    "word": "on",
+    "start": 32.225
+  },
+  {
+    "word": "crons.",
+    "start": 32.668
+  },
+  {
+    "word": "This",
+    "start": 33.412
+  },
+  {
+    "word": "is",
+    "start": 33.807
+  },
+  {
+    "word": "probably",
+    "start": 34.202
+  },
+  {
+    "word": "the",
+    "start": 34.597
+  },
+  {
+    "word": "most",
+    "start": 34.992
+  },
+  {
+    "word": "'product-ready'",
+    "start": 35.387
+  },
+  {
+    "word": "experiment\u2014it",
+    "start": 35.782
+  },
+  {
+    "word": "genuinely",
+    "start": 36.177
+  },
+  {
+    "word": "answers",
+    "start": 36.572
+  },
+  {
+    "word": "the",
+    "start": 36.968
+  },
+  {
+    "word": "question",
+    "start": 37.363
+  },
+  {
+    "word": "'Who",
+    "start": 37.758
+  },
+  {
+    "word": "owes",
+    "start": 38.153
+  },
+  {
+    "word": "us",
+    "start": 38.548
+  },
+  {
+    "word": "money?'\u2014but",
+    "start": 38.943
+  },
+  {
+    "word": "it",
+    "start": 39.338
+  },
+  {
+    "word": "lives",
+    "start": 39.733
+  },
+  {
+    "word": "in",
+    "start": 40.128
+  },
+  {
+    "word": "an",
+    "start": 40.523
+  },
+  {
+    "word": "admin",
+    "start": 40.918
+  },
+  {
+    "word": "panel",
+    "start": 41.313
+  },
+  {
+    "word": "that",
+    "start": 41.708
+  },
+  {
+    "word": "no",
+    "start": 42.103
+  },
+  {
+    "word": "customer",
+    "start": 42.498
+  },
+  {
+    "word": "would",
+    "start": 42.893
+  },
+  {
+    "word": "navigate",
+    "start": 43.289
+  },
+  {
+    "word": "to.",
+    "start": 43.684
+  }
+]

@@ -1,0 +1,526 @@
+[
+  {
+    "word": "Where",
+    "start": 0
+  },
+  {
+    "word": "CO2",
+    "start": 0.418
+  },
+  {
+    "word": "Could",
+    "start": 0.836
+  },
+  {
+    "word": "Be",
+    "start": 1.254
+  },
+  {
+    "word": "Better",
+    "start": 1.673
+  },
+  {
+    "word": "An",
+    "start": 2.591
+  },
+  {
+    "word": "honest",
+    "start": 3.117
+  },
+  {
+    "word": "assessment",
+    "start": 3.643
+  },
+  {
+    "word": "CO2",
+    "start": 4.669
+  },
+  {
+    "word": "demonstrates",
+    "start": 5.132
+  },
+  {
+    "word": "NOMOS,",
+    "start": 5.595
+  },
+  {
+    "word": "but",
+    "start": 6.058
+  },
+  {
+    "word": "it's",
+    "start": 6.521
+  },
+  {
+    "word": "not",
+    "start": 6.984
+  },
+  {
+    "word": "a",
+    "start": 7.447
+  },
+  {
+    "word": "showcase",
+    "start": 7.91
+  },
+  {
+    "word": "of",
+    "start": 8.373
+  },
+  {
+    "word": "perfection.",
+    "start": 8.836
+  },
+  {
+    "word": "The",
+    "start": 9.599
+  },
+  {
+    "word": "VO_REPLACEMENT_OPPORTUNITIES.md",
+    "start": 10.162
+  },
+  {
+    "word": "file",
+    "start": 10.725
+  },
+  {
+    "word": "lists",
+    "start": 11.288
+  },
+  {
+    "word": "21",
+    "start": 11.851
+  },
+  {
+    "word": "domains",
+    "start": 12.415
+  },
+  {
+    "word": "where",
+    "start": 12.978
+  },
+  {
+    "word": "strings",
+    "start": 13.541
+  },
+  {
+    "word": "should",
+    "start": 14.104
+  },
+  {
+    "word": "be",
+    "start": 14.667
+  },
+  {
+    "word": "value",
+    "start": 15.231
+  },
+  {
+    "word": "objects",
+    "start": 15.794
+  },
+  {
+    "word": "but",
+    "start": 16.357
+  },
+  {
+    "word": "aren't",
+    "start": 16.92
+  },
+  {
+    "word": "yet\u2014email",
+    "start": 17.483
+  },
+  {
+    "word": "addresses,",
+    "start": 18.047
+  },
+  {
+    "word": "website",
+    "start": 18.61
+  },
+  {
+    "word": "URLs,",
+    "start": 19.173
+  },
+  {
+    "word": "phone",
+    "start": 19.736
+  },
+  {
+    "word": "numbers.",
+    "start": 20.299
+  },
+  {
+    "word": "Some",
+    "start": 21.163
+  },
+  {
+    "word": "intents",
+    "start": 21.71
+  },
+  {
+    "word": "are",
+    "start": 22.258
+  },
+  {
+    "word": "too",
+    "start": 22.805
+  },
+  {
+    "word": "granular",
+    "start": 23.353
+  },
+  {
+    "word": "(separate",
+    "start": 23.9
+  },
+  {
+    "word": "intents",
+    "start": 24.448
+  },
+  {
+    "word": "for",
+    "start": 24.996
+  },
+  {
+    "word": "adding",
+    "start": 25.543
+  },
+  {
+    "word": "vs",
+    "start": 26.091
+  },
+  {
+    "word": "updating",
+    "start": 26.638
+  },
+  {
+    "word": "taxonomy",
+    "start": 27.186
+  },
+  {
+    "word": "custom",
+    "start": 27.733
+  },
+  {
+    "word": "fields)",
+    "start": 28.281
+  },
+  {
+    "word": "while",
+    "start": 28.828
+  },
+  {
+    "word": "others",
+    "start": 29.376
+  },
+  {
+    "word": "are",
+    "start": 29.924
+  },
+  {
+    "word": "too",
+    "start": 30.471
+  },
+  {
+    "word": "coarse",
+    "start": 31.019
+  },
+  {
+    "word": "(UpdateListingAggregateIntent",
+    "start": 31.566
+  },
+  {
+    "word": "accepts",
+    "start": 32.114
+  },
+  {
+    "word": "15",
+    "start": 32.661
+  },
+  {
+    "word": "optional",
+    "start": 33.209
+  },
+  {
+    "word": "parameters).",
+    "start": 33.756
+  },
+  {
+    "word": "The",
+    "start": 34.604
+  },
+  {
+    "word": "40+",
+    "start": 35.132
+  },
+  {
+    "word": "topology",
+    "start": 35.659
+  },
+  {
+    "word": "intents",
+    "start": 36.187
+  },
+  {
+    "word": "reflect",
+    "start": 36.714
+  },
+  {
+    "word": "organic",
+    "start": 37.242
+  },
+  {
+    "word": "growth",
+    "start": 37.769
+  },
+  {
+    "word": "rather",
+    "start": 38.297
+  },
+  {
+    "word": "than",
+    "start": 38.824
+  },
+  {
+    "word": "careful",
+    "start": 39.352
+  },
+  {
+    "word": "design.",
+    "start": 39.879
+  },
+  {
+    "word": "Test",
+    "start": 40.707
+  },
+  {
+    "word": "coverage",
+    "start": 41.224
+  },
+  {
+    "word": "is",
+    "start": 41.741
+  },
+  {
+    "word": "narrative-heavy",
+    "start": 42.259
+  },
+  {
+    "word": "but",
+    "start": 42.776
+  },
+  {
+    "word": "assertion-light",
+    "start": 43.293
+  },
+  {
+    "word": "in",
+    "start": 43.811
+  },
+  {
+    "word": "places.",
+    "start": 44.328
+  },
+  {
+    "word": "The",
+    "start": 45.145
+  },
+  {
+    "word": "contracts_v1",
+    "start": 45.724
+  },
+  {
+    "word": "package",
+    "start": 46.303
+  },
+  {
+    "word": "has",
+    "start": 46.882
+  },
+  {
+    "word": "grown",
+    "start": 47.462
+  },
+  {
+    "word": "to",
+    "start": 48.041
+  },
+  {
+    "word": "126",
+    "start": 48.62
+  },
+  {
+    "word": "exports\u2014it",
+    "start": 49.199
+  },
+  {
+    "word": "risks",
+    "start": 49.778
+  },
+  {
+    "word": "becoming",
+    "start": 50.357
+  },
+  {
+    "word": "a",
+    "start": 50.936
+  },
+  {
+    "word": "'shared",
+    "start": 51.515
+  },
+  {
+    "word": "kernel'",
+    "start": 52.094
+  },
+  {
+    "word": "anti-pattern.",
+    "start": 52.673
+  },
+  {
+    "word": "Some",
+    "start": 53.552
+  },
+  {
+    "word": "domains",
+    "start": 54.177
+  },
+  {
+    "word": "(licensing,",
+    "start": 54.802
+  },
+  {
+    "word": "funding)",
+    "start": 55.426
+  },
+  {
+    "word": "have",
+    "start": 56.051
+  },
+  {
+    "word": "minimal",
+    "start": 56.676
+  },
+  {
+    "word": "implementation.",
+    "start": 57.301
+  },
+  {
+    "word": "The",
+    "start": 58.225
+  },
+  {
+    "word": "integration",
+    "start": 58.663
+  },
+  {
+    "word": "with",
+    "start": 59.101
+  },
+  {
+    "word": "the",
+    "start": 59.539
+  },
+  {
+    "word": "Flutter",
+    "start": 59.977
+  },
+  {
+    "word": "UI",
+    "start": 60.415
+  },
+  {
+    "word": "isn't",
+    "start": 60.853
+  },
+  {
+    "word": "shown",
+    "start": 61.291
+  },
+  {
+    "word": "here\u2014there's",
+    "start": 61.729
+  },
+  {
+    "word": "a",
+    "start": 62.167
+  },
+  {
+    "word": "separate",
+    "start": 62.605
+  },
+  {
+    "word": "complexity",
+    "start": 63.043
+  },
+  {
+    "word": "in",
+    "start": 63.481
+  },
+  {
+    "word": "binding",
+    "start": 63.919
+  },
+  {
+    "word": "aggregates",
+    "start": 64.357
+  },
+  {
+    "word": "to",
+    "start": 64.795
+  },
+  {
+    "word": "widgets.",
+    "start": 65.233
+  },
+  {
+    "word": "These",
+    "start": 65.971
+  },
+  {
+    "word": "are",
+    "start": 66.465
+  },
+  {
+    "word": "real-world",
+    "start": 66.959
+  },
+  {
+    "word": "trade-offs:",
+    "start": 67.453
+  },
+  {
+    "word": "the",
+    "start": 67.948
+  },
+  {
+    "word": "team",
+    "start": 68.442
+  },
+  {
+    "word": "shipped",
+    "start": 68.936
+  },
+  {
+    "word": "features",
+    "start": 69.43
+  },
+  {
+    "word": "rather",
+    "start": 69.924
+  },
+  {
+    "word": "than",
+    "start": 70.419
+  },
+  {
+    "word": "refactoring",
+    "start": 70.913
+  },
+  {
+    "word": "foundations.",
+    "start": 71.407
+  }
+]

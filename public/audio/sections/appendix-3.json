@@ -1,0 +1,406 @@
+[
+  {
+    "word": "Appendix",
+    "start": 0
+  },
+  {
+    "word": "3:",
+    "start": 0.64
+  },
+  {
+    "word": "CO2",
+    "start": 1.28
+  },
+  {
+    "word": "Domain",
+    "start": 1.92
+  },
+  {
+    "word": "A",
+    "start": 3.06
+  },
+  {
+    "word": "complex",
+    "start": 3.54
+  },
+  {
+    "word": "application",
+    "start": 4.02
+  },
+  {
+    "word": "built",
+    "start": 4.5
+  },
+  {
+    "word": "with",
+    "start": 4.98
+  },
+  {
+    "word": "NOMOS",
+    "start": 5.46
+  },
+  {
+    "word": "Appendix",
+    "start": 6.44
+  },
+  {
+    "word": "2",
+    "start": 6.918
+  },
+  {
+    "word": "described",
+    "start": 7.397
+  },
+  {
+    "word": "NOMOS",
+    "start": 7.875
+  },
+  {
+    "word": "in",
+    "start": 8.354
+  },
+  {
+    "word": "the",
+    "start": 8.832
+  },
+  {
+    "word": "abstract.",
+    "start": 9.311
+  },
+  {
+    "word": "Now",
+    "start": 10.089
+  },
+  {
+    "word": "let's",
+    "start": 10.351
+  },
+  {
+    "word": "see",
+    "start": 10.614
+  },
+  {
+    "word": "what",
+    "start": 10.876
+  },
+  {
+    "word": "it",
+    "start": 11.138
+  },
+  {
+    "word": "looks",
+    "start": 11.4
+  },
+  {
+    "word": "like",
+    "start": 11.662
+  },
+  {
+    "word": "when",
+    "start": 11.924
+  },
+  {
+    "word": "you",
+    "start": 12.186
+  },
+  {
+    "word": "actually",
+    "start": 12.448
+  },
+  {
+    "word": "build",
+    "start": 12.71
+  },
+  {
+    "word": "something",
+    "start": 12.972
+  },
+  {
+    "word": "with",
+    "start": 13.234
+  },
+  {
+    "word": "it.",
+    "start": 13.497
+  },
+  {
+    "word": "The",
+    "start": 14.059
+  },
+  {
+    "word": "CO2",
+    "start": 14.561
+  },
+  {
+    "word": "Asset",
+    "start": 15.063
+  },
+  {
+    "word": "Management",
+    "start": 15.565
+  },
+  {
+    "word": "Platform",
+    "start": 16.068
+  },
+  {
+    "word": "is",
+    "start": 16.57
+  },
+  {
+    "word": "a",
+    "start": 17.072
+  },
+  {
+    "word": "client",
+    "start": 17.574
+  },
+  {
+    "word": "project:",
+    "start": 18.077
+  },
+  {
+    "word": "a",
+    "start": 18.579
+  },
+  {
+    "word": "Flutter",
+    "start": 19.081
+  },
+  {
+    "word": "application",
+    "start": 19.583
+  },
+  {
+    "word": "for",
+    "start": 20.086
+  },
+  {
+    "word": "managing",
+    "start": 20.588
+  },
+  {
+    "word": "physical",
+    "start": 21.09
+  },
+  {
+    "word": "assets",
+    "start": 21.592
+  },
+  {
+    "word": "across",
+    "start": 22.095
+  },
+  {
+    "word": "commercial",
+    "start": 22.597
+  },
+  {
+    "word": "property",
+    "start": 23.099
+  },
+  {
+    "word": "portfolios\u2014think",
+    "start": 23.601
+  },
+  {
+    "word": "HVAC",
+    "start": 24.104
+  },
+  {
+    "word": "units,",
+    "start": 24.606
+  },
+  {
+    "word": "lighting",
+    "start": 25.108
+  },
+  {
+    "word": "fixtures,",
+    "start": 25.61
+  },
+  {
+    "word": "fire",
+    "start": 26.113
+  },
+  {
+    "word": "extinguishers,",
+    "start": 26.615
+  },
+  {
+    "word": "and",
+    "start": 27.117
+  },
+  {
+    "word": "solar",
+    "start": 27.619
+  },
+  {
+    "word": "panels",
+    "start": 28.122
+  },
+  {
+    "word": "spread",
+    "start": 28.624
+  },
+  {
+    "word": "across",
+    "start": 29.126
+  },
+  {
+    "word": "multiple",
+    "start": 29.628
+  },
+  {
+    "word": "buildings",
+    "start": 30.131
+  },
+  {
+    "word": "and",
+    "start": 30.633
+  },
+  {
+    "word": "sites.",
+    "start": 31.135
+  },
+  {
+    "word": "It's",
+    "start": 31.937
+  },
+  {
+    "word": "not",
+    "start": 32.287
+  },
+  {
+    "word": "a",
+    "start": 32.637
+  },
+  {
+    "word": "toy",
+    "start": 32.987
+  },
+  {
+    "word": "example.",
+    "start": 33.337
+  },
+  {
+    "word": "It's",
+    "start": 33.987
+  },
+  {
+    "word": "500+",
+    "start": 34.614
+  },
+  {
+    "word": "Dart",
+    "start": 35.242
+  },
+  {
+    "word": "files",
+    "start": 35.869
+  },
+  {
+    "word": "across",
+    "start": 36.497
+  },
+  {
+    "word": "13",
+    "start": 37.124
+  },
+  {
+    "word": "bounded",
+    "start": 37.752
+  },
+  {
+    "word": "contexts",
+    "start": 38.38
+  },
+  {
+    "word": "with",
+    "start": 39.007
+  },
+  {
+    "word": "146",
+    "start": 39.635
+  },
+  {
+    "word": "registered",
+    "start": 40.262
+  },
+  {
+    "word": "intents.",
+    "start": 40.89
+  },
+  {
+    "word": "And",
+    "start": 41.817
+  },
+  {
+    "word": "it's",
+    "start": 42.124
+  },
+  {
+    "word": "still",
+    "start": 42.431
+  },
+  {
+    "word": "under",
+    "start": 42.738
+  },
+  {
+    "word": "active",
+    "start": 43.045
+  },
+  {
+    "word": "development,",
+    "start": 43.352
+  },
+  {
+    "word": "which",
+    "start": 43.659
+  },
+  {
+    "word": "means",
+    "start": 43.966
+  },
+  {
+    "word": "we",
+    "start": 44.273
+  },
+  {
+    "word": "can",
+    "start": 44.58
+  },
+  {
+    "word": "be",
+    "start": 44.887
+  },
+  {
+    "word": "honest",
+    "start": 45.194
+  },
+  {
+    "word": "about",
+    "start": 45.501
+  },
+  {
+    "word": "what",
+    "start": 45.808
+  },
+  {
+    "word": "works",
+    "start": 46.115
+  },
+  {
+    "word": "and",
+    "start": 46.422
+  },
+  {
+    "word": "what",
+    "start": 46.729
+  },
+  {
+    "word": "doesn't.",
+    "start": 47.036
+  }
+]

@@ -1,0 +1,486 @@
+[
+  {
+    "word": "Scaling",
+    "start": 0
+  },
+  {
+    "word": "with",
+    "start": 0.491
+  },
+  {
+    "word": "Bounded",
+    "start": 0.981
+  },
+  {
+    "word": "Contexts",
+    "start": 1.472
+  },
+  {
+    "word": "Maintainable,",
+    "start": 2.463
+  },
+  {
+    "word": "testable",
+    "start": 3.215
+  },
+  {
+    "word": "distributed",
+    "start": 3.967
+  },
+  {
+    "word": "systems",
+    "start": 4.719
+  },
+  {
+    "word": "Real-world",
+    "start": 5.971
+  },
+  {
+    "word": "applications",
+    "start": 6.454
+  },
+  {
+    "word": "rarely",
+    "start": 6.938
+  },
+  {
+    "word": "fit",
+    "start": 7.421
+  },
+  {
+    "word": "into",
+    "start": 7.905
+  },
+  {
+    "word": "a",
+    "start": 8.388
+  },
+  {
+    "word": "single",
+    "start": 8.872
+  },
+  {
+    "word": "domain",
+    "start": 9.356
+  },
+  {
+    "word": "model.",
+    "start": 9.839
+  },
+  {
+    "word": "NOMOS",
+    "start": 10.623
+  },
+  {
+    "word": "embraces",
+    "start": 11.095
+  },
+  {
+    "word": "this",
+    "start": 11.566
+  },
+  {
+    "word": "complexity",
+    "start": 12.038
+  },
+  {
+    "word": "through",
+    "start": 12.51
+  },
+  {
+    "word": "its",
+    "start": 12.982
+  },
+  {
+    "word": "Directive",
+    "start": 13.454
+  },
+  {
+    "word": "system,",
+    "start": 13.926
+  },
+  {
+    "word": "where",
+    "start": 14.398
+  },
+  {
+    "word": "a",
+    "start": 14.87
+  },
+  {
+    "word": "single",
+    "start": 15.342
+  },
+  {
+    "word": "Intent",
+    "start": 15.813
+  },
+  {
+    "word": "fans",
+    "start": 16.285
+  },
+  {
+    "word": "out",
+    "start": 16.757
+  },
+  {
+    "word": "into",
+    "start": 17.229
+  },
+  {
+    "word": "multiple",
+    "start": 17.701
+  },
+  {
+    "word": "Directives,",
+    "start": 18.173
+  },
+  {
+    "word": "each",
+    "start": 18.645
+  },
+  {
+    "word": "targeting",
+    "start": 19.117
+  },
+  {
+    "word": "different",
+    "start": 19.589
+  },
+  {
+    "word": "aggregates",
+    "start": 20.061
+  },
+  {
+    "word": "across",
+    "start": 20.532
+  },
+  {
+    "word": "different",
+    "start": 21.004
+  },
+  {
+    "word": "bounded",
+    "start": 21.476
+  },
+  {
+    "word": "contexts.",
+    "start": 21.948
+  },
+  {
+    "word": "The",
+    "start": 22.72
+  },
+  {
+    "word": "PolicyRouter.route()",
+    "start": 23.369
+  },
+  {
+    "word": "method",
+    "start": 24.017
+  },
+  {
+    "word": "receives",
+    "start": 24.666
+  },
+  {
+    "word": "an",
+    "start": 25.314
+  },
+  {
+    "word": "Intent,",
+    "start": 25.963
+  },
+  {
+    "word": "policyVersion,",
+    "start": 26.611
+  },
+  {
+    "word": "and",
+    "start": 27.26
+  },
+  {
+    "word": "IntentContext,",
+    "start": 27.908
+  },
+  {
+    "word": "returning",
+    "start": 28.557
+  },
+  {
+    "word": "constructed",
+    "start": 29.205
+  },
+  {
+    "word": "Directives",
+    "start": 29.854
+  },
+  {
+    "word": "ready",
+    "start": 30.502
+  },
+  {
+    "word": "for",
+    "start": 31.151
+  },
+  {
+    "word": "execution.",
+    "start": 31.799
+  },
+  {
+    "word": "PolicyRouter.validateDirectiveExecution()",
+    "start": 32.748
+  },
+  {
+    "word": "runs",
+    "start": 34.001
+  },
+  {
+    "word": "post-mutation",
+    "start": 35.255
+  },
+  {
+    "word": "checks.",
+    "start": 36.508
+  },
+  {
+    "word": "TypedPolicyRouter",
+    "start": 38.061
+  },
+  {
+    "word": "provides",
+    "start": 38.813
+  },
+  {
+    "word": "generic",
+    "start": 39.564
+  },
+  {
+    "word": "type",
+    "start": 40.316
+  },
+  {
+    "word": "safety",
+    "start": 41.067
+  },
+  {
+    "word": "for",
+    "start": 41.818
+  },
+  {
+    "word": "specific",
+    "start": 42.57
+  },
+  {
+    "word": "aggregate/payload",
+    "start": 43.321
+  },
+  {
+    "word": "combinations.",
+    "start": 44.073
+  },
+  {
+    "word": "Conflict",
+    "start": 45.124
+  },
+  {
+    "word": "resolution",
+    "start": 45.665
+  },
+  {
+    "word": "uses",
+    "start": 46.205
+  },
+  {
+    "word": "optimistic",
+    "start": 46.746
+  },
+  {
+    "word": "concurrency:",
+    "start": 47.287
+  },
+  {
+    "word": "if",
+    "start": 47.828
+  },
+  {
+    "word": "two",
+    "start": 48.368
+  },
+  {
+    "word": "clients",
+    "start": 48.909
+  },
+  {
+    "word": "write",
+    "start": 49.45
+  },
+  {
+    "word": "to",
+    "start": 49.99
+  },
+  {
+    "word": "the",
+    "start": 50.531
+  },
+  {
+    "word": "same",
+    "start": 51.072
+  },
+  {
+    "word": "timeline,",
+    "start": 51.613
+  },
+  {
+    "word": "one",
+    "start": 52.153
+  },
+  {
+    "word": "throws",
+    "start": 52.694
+  },
+  {
+    "word": "LedgerWriteConflict",
+    "start": 53.235
+  },
+  {
+    "word": "and",
+    "start": 53.775
+  },
+  {
+    "word": "must",
+    "start": 54.316
+  },
+  {
+    "word": "retry",
+    "start": 54.857
+  },
+  {
+    "word": "(NomosApp.dispatch()",
+    "start": 55.398
+  },
+  {
+    "word": "retries",
+    "start": 55.938
+  },
+  {
+    "word": "automatically",
+    "start": 56.479
+  },
+  {
+    "word": "up",
+    "start": 57.02
+  },
+  {
+    "word": "to",
+    "start": 57.561
+  },
+  {
+    "word": "10",
+    "start": 58.101
+  },
+  {
+    "word": "times).",
+    "start": 58.642
+  },
+  {
+    "word": "For",
+    "start": 59.483
+  },
+  {
+    "word": "complex",
+    "start": 60.155
+  },
+  {
+    "word": "merges,",
+    "start": 60.827
+  },
+  {
+    "word": "NOMOS",
+    "start": 61.499
+  },
+  {
+    "word": "supports",
+    "start": 62.171
+  },
+  {
+    "word": "branching",
+    "start": 62.843
+  },
+  {
+    "word": "timelines",
+    "start": 63.515
+  },
+  {
+    "word": "via",
+    "start": 64.187
+  },
+  {
+    "word": "NomosTimelineId\u2014clients",
+    "start": 64.859
+  },
+  {
+    "word": "fork,",
+    "start": 65.531
+  },
+  {
+    "word": "experiment,",
+    "start": 66.203
+  },
+  {
+    "word": "and",
+    "start": 66.875
+  },
+  {
+    "word": "merge",
+    "start": 67.547
+  },
+  {
+    "word": "semantically.",
+    "start": 68.219
+  },
+  {
+    "word": "The",
+    "start": 69.191
+  },
+  {
+    "word": "policyVersion",
+    "start": 69.771
+  },
+  {
+    "word": "field",
+    "start": 70.35
+  },
+  {
+    "word": "enables",
+    "start": 70.93
+  },
+  {
+    "word": "gradual",
+    "start": 71.51
+  },
+  {
+    "word": "schema",
+    "start": 72.09
+  },
+  {
+    "word": "evolution",
+    "start": 72.67
+  },
+  {
+    "word": "without",
+    "start": 73.25
+  },
+  {
+    "word": "breaking",
+    "start": 73.83
+  },
+  {
+    "word": "existing",
+    "start": 74.41
+  },
+  {
+    "word": "clients.",
+    "start": 74.989
+  }
+]

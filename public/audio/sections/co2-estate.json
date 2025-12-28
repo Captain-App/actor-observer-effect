@@ -1,0 +1,554 @@
+[
+  {
+    "word": "Bounded",
+    "start": 0
+  },
+  {
+    "word": "Context:",
+    "start": 0.651
+  },
+  {
+    "word": "Estate",
+    "start": 1.301
+  },
+  {
+    "word": "Structures",
+    "start": 1.952
+  },
+  {
+    "word": "The",
+    "start": 3.103
+  },
+  {
+    "word": "spatial",
+    "start": 3.629
+  },
+  {
+    "word": "hierarchy",
+    "start": 4.155
+  },
+  {
+    "word": "estate_structures_v1",
+    "start": 5.181
+  },
+  {
+    "word": "models",
+    "start": 5.758
+  },
+  {
+    "word": "the",
+    "start": 6.335
+  },
+  {
+    "word": "physical",
+    "start": 6.912
+  },
+  {
+    "word": "world:",
+    "start": 7.489
+  },
+  {
+    "word": "an",
+    "start": 8.066
+  },
+  {
+    "word": "Estate",
+    "start": 8.643
+  },
+  {
+    "word": "(a",
+    "start": 9.22
+  },
+  {
+    "word": "company's",
+    "start": 9.796
+  },
+  {
+    "word": "entire",
+    "start": 10.373
+  },
+  {
+    "word": "property",
+    "start": 10.95
+  },
+  {
+    "word": "portfolio)",
+    "start": 11.527
+  },
+  {
+    "word": "contains",
+    "start": 12.104
+  },
+  {
+    "word": "Sites",
+    "start": 12.681
+  },
+  {
+    "word": "(individual",
+    "start": 13.258
+  },
+  {
+    "word": "buildings",
+    "start": 13.835
+  },
+  {
+    "word": "or",
+    "start": 14.412
+  },
+  {
+    "word": "facilities),",
+    "start": 14.988
+  },
+  {
+    "word": "which",
+    "start": 15.565
+  },
+  {
+    "word": "contain",
+    "start": 16.142
+  },
+  {
+    "word": "Buildings,",
+    "start": 16.719
+  },
+  {
+    "word": "which",
+    "start": 17.296
+  },
+  {
+    "word": "contain",
+    "start": 17.873
+  },
+  {
+    "word": "Rooms.",
+    "start": 18.45
+  },
+  {
+    "word": "But",
+    "start": 19.327
+  },
+  {
+    "word": "it",
+    "start": 19.647
+  },
+  {
+    "word": "goes",
+    "start": 19.967
+  },
+  {
+    "word": "deeper.",
+    "start": 20.287
+  },
+  {
+    "word": "SiteTopologyAggregate",
+    "start": 20.907
+  },
+  {
+    "word": "manages",
+    "start": 21.602
+  },
+  {
+    "word": "spatial",
+    "start": 22.297
+  },
+  {
+    "word": "geometry:",
+    "start": 22.992
+  },
+  {
+    "word": "site",
+    "start": 23.688
+  },
+  {
+    "word": "boundaries",
+    "start": 24.383
+  },
+  {
+    "word": "as",
+    "start": 25.078
+  },
+  {
+    "word": "GeoJSON",
+    "start": 25.773
+  },
+  {
+    "word": "polygons,",
+    "start": 26.468
+  },
+  {
+    "word": "building",
+    "start": 27.164
+  },
+  {
+    "word": "footprints,",
+    "start": 27.859
+  },
+  {
+    "word": "floor",
+    "start": 28.554
+  },
+  {
+    "word": "plans",
+    "start": 29.249
+  },
+  {
+    "word": "calibrated",
+    "start": 29.944
+  },
+  {
+    "word": "to",
+    "start": 30.64
+  },
+  {
+    "word": "real-world",
+    "start": 31.335
+  },
+  {
+    "word": "coordinates.",
+    "start": 32.03
+  },
+  {
+    "word": "MapTile",
+    "start": 33.025
+  },
+  {
+    "word": "value",
+    "start": 33.575
+  },
+  {
+    "word": "objects",
+    "start": 34.125
+  },
+  {
+    "word": "represent",
+    "start": 34.675
+  },
+  {
+    "word": "floor",
+    "start": 35.224
+  },
+  {
+    "word": "plan",
+    "start": 35.774
+  },
+  {
+    "word": "images",
+    "start": 36.324
+  },
+  {
+    "word": "with",
+    "start": 36.874
+  },
+  {
+    "word": "rotation,",
+    "start": 37.423
+  },
+  {
+    "word": "scale,",
+    "start": 37.973
+  },
+  {
+    "word": "and",
+    "start": 38.523
+  },
+  {
+    "word": "position",
+    "start": 39.073
+  },
+  {
+    "word": "transforms.",
+    "start": 39.622
+  },
+  {
+    "word": "The",
+    "start": 40.472
+  },
+  {
+    "word": "TopologyIndex",
+    "start": 41.028
+  },
+  {
+    "word": "provides",
+    "start": 41.585
+  },
+  {
+    "word": "spatial",
+    "start": 42.141
+  },
+  {
+    "word": "queries:",
+    "start": 42.698
+  },
+  {
+    "word": "'Which",
+    "start": 43.254
+  },
+  {
+    "word": "rooms",
+    "start": 43.81
+  },
+  {
+    "word": "contain",
+    "start": 44.367
+  },
+  {
+    "word": "this",
+    "start": 44.923
+  },
+  {
+    "word": "point?',",
+    "start": 45.48
+  },
+  {
+    "word": "'What's",
+    "start": 46.036
+  },
+  {
+    "word": "at",
+    "start": 46.592
+  },
+  {
+    "word": "building",
+    "start": 47.149
+  },
+  {
+    "word": "Main,",
+    "start": 47.705
+  },
+  {
+    "word": "level",
+    "start": 48.262
+  },
+  {
+    "word": "2?'",
+    "start": 48.818
+  },
+  {
+    "word": "There's",
+    "start": 49.374
+  },
+  {
+    "word": "a",
+    "start": 49.931
+  },
+  {
+    "word": "full",
+    "start": 50.487
+  },
+  {
+    "word": "draft/publish",
+    "start": 51.044
+  },
+  {
+    "word": "workflow\u2014topology",
+    "start": 51.6
+  },
+  {
+    "word": "changes",
+    "start": 52.156
+  },
+  {
+    "word": "are",
+    "start": 52.713
+  },
+  {
+    "word": "staged,",
+    "start": 53.269
+  },
+  {
+    "word": "validated",
+    "start": 53.826
+  },
+  {
+    "word": "for",
+    "start": 54.382
+  },
+  {
+    "word": "geometric",
+    "start": 54.938
+  },
+  {
+    "word": "correctness",
+    "start": 55.495
+  },
+  {
+    "word": "(no",
+    "start": 56.051
+  },
+  {
+    "word": "self-intersecting",
+    "start": 56.607
+  },
+  {
+    "word": "polygons,",
+    "start": 57.164
+  },
+  {
+    "word": "buildings",
+    "start": 57.72
+  },
+  {
+    "word": "inside",
+    "start": 58.277
+  },
+  {
+    "word": "boundaries),",
+    "start": 58.833
+  },
+  {
+    "word": "then",
+    "start": 59.389
+  },
+  {
+    "word": "published",
+    "start": 59.946
+  },
+  {
+    "word": "atomically.",
+    "start": 60.502
+  },
+  {
+    "word": "It's",
+    "start": 61.359
+  },
+  {
+    "word": "genuinely",
+    "start": 61.952
+  },
+  {
+    "word": "sophisticated",
+    "start": 62.545
+  },
+  {
+    "word": "spatial",
+    "start": 63.138
+  },
+  {
+    "word": "modelling.",
+    "start": 63.731
+  },
+  {
+    "word": "It's",
+    "start": 64.624
+  },
+  {
+    "word": "also",
+    "start": 65.152
+  },
+  {
+    "word": "where",
+    "start": 65.68
+  },
+  {
+    "word": "the",
+    "start": 66.207
+  },
+  {
+    "word": "codebase",
+    "start": 66.735
+  },
+  {
+    "word": "shows",
+    "start": 67.263
+  },
+  {
+    "word": "its",
+    "start": 67.791
+  },
+  {
+    "word": "archaeology:",
+    "start": 68.319
+  },
+  {
+    "word": "there",
+    "start": 68.847
+  },
+  {
+    "word": "are",
+    "start": 69.374
+  },
+  {
+    "word": "legacy",
+    "start": 69.902
+  },
+  {
+    "word": "GeoJSON",
+    "start": 70.43
+  },
+  {
+    "word": "storage",
+    "start": 70.958
+  },
+  {
+    "word": "formats,",
+    "start": 71.486
+  },
+  {
+    "word": "deprecated",
+    "start": 72.014
+  },
+  {
+    "word": "feature",
+    "start": 72.541
+  },
+  {
+    "word": "types,",
+    "start": 73.069
+  },
+  {
+    "word": "and",
+    "start": 73.597
+  },
+  {
+    "word": "a",
+    "start": 74.125
+  },
+  {
+    "word": "500-line",
+    "start": 74.653
+  },
+  {
+    "word": "glossary",
+    "start": 75.181
+  },
+  {
+    "word": "entry",
+    "start": 75.708
+  },
+  {
+    "word": "trying",
+    "start": 76.236
+  },
+  {
+    "word": "to",
+    "start": 76.764
+  },
+  {
+    "word": "explain",
+    "start": 77.292
+  },
+  {
+    "word": "the",
+    "start": 77.82
+  },
+  {
+    "word": "difference",
+    "start": 78.348
+  },
+  {
+    "word": "between",
+    "start": 78.875
+  },
+  {
+    "word": "unplacedBuildingMapTile",
+    "start": 79.403
+  },
+  {
+    "word": "and",
+    "start": 79.931
+  },
+  {
+    "word": "unplacedSiteMapTile.",
+    "start": 80.459
+  }
+]

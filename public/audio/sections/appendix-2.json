@@ -1,0 +1,322 @@
+[
+  {
+    "word": "Appendix",
+    "start": 0
+  },
+  {
+    "word": "2:",
+    "start": 0.597
+  },
+  {
+    "word": "NOMOS",
+    "start": 1.195
+  },
+  {
+    "word": "A",
+    "start": 2.292
+  },
+  {
+    "word": "Decision",
+    "start": 2.838
+  },
+  {
+    "word": "Trace",
+    "start": 3.383
+  },
+  {
+    "word": "Framework",
+    "start": 3.929
+  },
+  {
+    "word": "for",
+    "start": 4.474
+  },
+  {
+    "word": "AI-Native",
+    "start": 5.02
+  },
+  {
+    "word": "Applications",
+    "start": 5.565
+  },
+  {
+    "word": "NOMOS",
+    "start": 6.611
+  },
+  {
+    "word": "is",
+    "start": 6.925
+  },
+  {
+    "word": "more",
+    "start": 7.238
+  },
+  {
+    "word": "than",
+    "start": 7.552
+  },
+  {
+    "word": "a",
+    "start": 7.866
+  },
+  {
+    "word": "data",
+    "start": 8.18
+  },
+  {
+    "word": "layer.",
+    "start": 8.494
+  },
+  {
+    "word": "It",
+    "start": 9.108
+  },
+  {
+    "word": "is",
+    "start": 9.473
+  },
+  {
+    "word": "a",
+    "start": 9.838
+  },
+  {
+    "word": "technical",
+    "start": 10.204
+  },
+  {
+    "word": "realisation",
+    "start": 10.569
+  },
+  {
+    "word": "of",
+    "start": 10.934
+  },
+  {
+    "word": "what",
+    "start": 11.299
+  },
+  {
+    "word": "the",
+    "start": 11.664
+  },
+  {
+    "word": "industry",
+    "start": 12.029
+  },
+  {
+    "word": "has",
+    "start": 12.395
+  },
+  {
+    "word": "started",
+    "start": 12.76
+  },
+  {
+    "word": "calling",
+    "start": 13.125
+  },
+  {
+    "word": "'Decision",
+    "start": 13.49
+  },
+  {
+    "word": "Traces'\u2014a",
+    "start": 13.855
+  },
+  {
+    "word": "paradigm",
+    "start": 14.22
+  },
+  {
+    "word": "where",
+    "start": 14.586
+  },
+  {
+    "word": "systems",
+    "start": 14.951
+  },
+  {
+    "word": "don't",
+    "start": 15.316
+  },
+  {
+    "word": "just",
+    "start": 15.681
+  },
+  {
+    "word": "store",
+    "start": 16.046
+  },
+  {
+    "word": "what",
+    "start": 16.412
+  },
+  {
+    "word": "happened,",
+    "start": 16.777
+  },
+  {
+    "word": "but",
+    "start": 17.142
+  },
+  {
+    "word": "why",
+    "start": 17.507
+  },
+  {
+    "word": "it",
+    "start": 17.872
+  },
+  {
+    "word": "happened,",
+    "start": 18.237
+  },
+  {
+    "word": "who",
+    "start": 18.603
+  },
+  {
+    "word": "authorised",
+    "start": 18.968
+  },
+  {
+    "word": "it,",
+    "start": 19.333
+  },
+  {
+    "word": "and",
+    "start": 19.698
+  },
+  {
+    "word": "how",
+    "start": 20.063
+  },
+  {
+    "word": "to",
+    "start": 20.428
+  },
+  {
+    "word": "undo",
+    "start": 20.794
+  },
+  {
+    "word": "it.",
+    "start": 21.159
+  },
+  {
+    "word": "Where",
+    "start": 21.824
+  },
+  {
+    "word": "traditional",
+    "start": 22.252
+  },
+  {
+    "word": "databases",
+    "start": 22.68
+  },
+  {
+    "word": "ask",
+    "start": 23.108
+  },
+  {
+    "word": "'What",
+    "start": 23.537
+  },
+  {
+    "word": "is",
+    "start": 23.965
+  },
+  {
+    "word": "the",
+    "start": 24.393
+  },
+  {
+    "word": "current",
+    "start": 24.821
+  },
+  {
+    "word": "state?',",
+    "start": 25.249
+  },
+  {
+    "word": "NOMOS",
+    "start": 25.677
+  },
+  {
+    "word": "asks",
+    "start": 26.105
+  },
+  {
+    "word": "'How",
+    "start": 26.534
+  },
+  {
+    "word": "did",
+    "start": 26.962
+  },
+  {
+    "word": "we",
+    "start": 27.39
+  },
+  {
+    "word": "arrive",
+    "start": 27.818
+  },
+  {
+    "word": "here?'",
+    "start": 28.246
+  },
+  {
+    "word": "This",
+    "start": 28.674
+  },
+  {
+    "word": "distinction",
+    "start": 29.102
+  },
+  {
+    "word": "transforms",
+    "start": 29.53
+  },
+  {
+    "word": "auditability",
+    "start": 29.959
+  },
+  {
+    "word": "from",
+    "start": 30.387
+  },
+  {
+    "word": "a",
+    "start": 30.815
+  },
+  {
+    "word": "compliance",
+    "start": 31.243
+  },
+  {
+    "word": "checkbox",
+    "start": 31.671
+  },
+  {
+    "word": "into",
+    "start": 32.099
+  },
+  {
+    "word": "a",
+    "start": 32.527
+  },
+  {
+    "word": "core",
+    "start": 32.956
+  },
+  {
+    "word": "product",
+    "start": 33.384
+  },
+  {
+    "word": "feature.",
+    "start": 33.812
+  }
+]

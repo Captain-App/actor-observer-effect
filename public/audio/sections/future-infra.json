@@ -1,0 +1,590 @@
+[
+  {
+    "word": "The",
+    "start": 0
+  },
+  {
+    "word": "VM",
+    "start": 0.544
+  },
+  {
+    "word": "Problem:",
+    "start": 1.088
+  },
+  {
+    "word": "AWS",
+    "start": 1.632
+  },
+  {
+    "word": "EC2",
+    "start": 2.176
+  },
+  {
+    "word": "and",
+    "start": 2.72
+  },
+  {
+    "word": "its",
+    "start": 3.264
+  },
+  {
+    "word": "Pitfalls",
+    "start": 3.808
+  },
+  {
+    "word": "One",
+    "start": 4.852
+  },
+  {
+    "word": "possible",
+    "start": 5.303
+  },
+  {
+    "word": "solution",
+    "start": 5.753
+  },
+  {
+    "word": "is",
+    "start": 6.204
+  },
+  {
+    "word": "just",
+    "start": 6.654
+  },
+  {
+    "word": "spinning",
+    "start": 7.105
+  },
+  {
+    "word": "up",
+    "start": 7.555
+  },
+  {
+    "word": "an",
+    "start": 8.006
+  },
+  {
+    "word": "AWS",
+    "start": 8.456
+  },
+  {
+    "word": "EC2",
+    "start": 8.907
+  },
+  {
+    "word": "container,",
+    "start": 9.357
+  },
+  {
+    "word": "giving",
+    "start": 9.808
+  },
+  {
+    "word": "every",
+    "start": 10.258
+  },
+  {
+    "word": "user",
+    "start": 10.709
+  },
+  {
+    "word": "a",
+    "start": 11.159
+  },
+  {
+    "word": "Ubuntu",
+    "start": 11.61
+  },
+  {
+    "word": "instance.",
+    "start": 12.06
+  },
+  {
+    "word": "However,",
+    "start": 12.811
+  },
+  {
+    "word": "there",
+    "start": 13.12
+  },
+  {
+    "word": "are",
+    "start": 13.429
+  },
+  {
+    "word": "two",
+    "start": 13.739
+  },
+  {
+    "word": "key",
+    "start": 14.048
+  },
+  {
+    "word": "problems",
+    "start": 14.357
+  },
+  {
+    "word": "with",
+    "start": 14.667
+  },
+  {
+    "word": "this.",
+    "start": 14.976
+  },
+  {
+    "word": "Firstly,",
+    "start": 15.585
+  },
+  {
+    "word": "the",
+    "start": 15.962
+  },
+  {
+    "word": "security",
+    "start": 16.338
+  },
+  {
+    "word": "risk:",
+    "start": 16.714
+  },
+  {
+    "word": "managing",
+    "start": 17.091
+  },
+  {
+    "word": "hundreds",
+    "start": 17.467
+  },
+  {
+    "word": "of",
+    "start": 17.843
+  },
+  {
+    "word": "VMs",
+    "start": 18.219
+  },
+  {
+    "word": "(one",
+    "start": 18.596
+  },
+  {
+    "word": "per",
+    "start": 18.972
+  },
+  {
+    "word": "client)",
+    "start": 19.348
+  },
+  {
+    "word": "and",
+    "start": 19.725
+  },
+  {
+    "word": "keeping",
+    "start": 20.101
+  },
+  {
+    "word": "them",
+    "start": 20.477
+  },
+  {
+    "word": "isolated",
+    "start": 20.853
+  },
+  {
+    "word": "from",
+    "start": 21.23
+  },
+  {
+    "word": "each",
+    "start": 21.606
+  },
+  {
+    "word": "other",
+    "start": 21.982
+  },
+  {
+    "word": "and",
+    "start": 22.359
+  },
+  {
+    "word": "the",
+    "start": 22.735
+  },
+  {
+    "word": "rest",
+    "start": 23.111
+  },
+  {
+    "word": "of",
+    "start": 23.488
+  },
+  {
+    "word": "our",
+    "start": 23.864
+  },
+  {
+    "word": "cloud,",
+    "start": 24.24
+  },
+  {
+    "word": "while",
+    "start": 24.616
+  },
+  {
+    "word": "enabling",
+    "start": 24.993
+  },
+  {
+    "word": "them",
+    "start": 25.369
+  },
+  {
+    "word": "access",
+    "start": 25.745
+  },
+  {
+    "word": "to",
+    "start": 26.122
+  },
+  {
+    "word": "the",
+    "start": 26.498
+  },
+  {
+    "word": "wider",
+    "start": 26.874
+  },
+  {
+    "word": "web,",
+    "start": 27.251
+  },
+  {
+    "word": "is",
+    "start": 27.627
+  },
+  {
+    "word": "doable",
+    "start": 28.003
+  },
+  {
+    "word": "but",
+    "start": 28.379
+  },
+  {
+    "word": "complicated.",
+    "start": 28.756
+  },
+  {
+    "word": "The",
+    "start": 29.432
+  },
+  {
+    "word": "second",
+    "start": 29.781
+  },
+  {
+    "word": "and",
+    "start": 30.131
+  },
+  {
+    "word": "more",
+    "start": 30.48
+  },
+  {
+    "word": "prohibitive",
+    "start": 30.829
+  },
+  {
+    "word": "issue",
+    "start": 31.179
+  },
+  {
+    "word": "is",
+    "start": 31.528
+  },
+  {
+    "word": "cost.",
+    "start": 31.877
+  },
+  {
+    "word": "Persuading",
+    "start": 32.527
+  },
+  {
+    "word": "users",
+    "start": 32.889
+  },
+  {
+    "word": "to",
+    "start": 33.252
+  },
+  {
+    "word": "pay",
+    "start": 33.615
+  },
+  {
+    "word": "a",
+    "start": 33.977
+  },
+  {
+    "word": "subscription",
+    "start": 34.34
+  },
+  {
+    "word": "is",
+    "start": 34.703
+  },
+  {
+    "word": "one",
+    "start": 35.065
+  },
+  {
+    "word": "thing,",
+    "start": 35.428
+  },
+  {
+    "word": "but",
+    "start": 35.791
+  },
+  {
+    "word": "an",
+    "start": 36.153
+  },
+  {
+    "word": "always-on",
+    "start": 36.516
+  },
+  {
+    "word": "container",
+    "start": 36.879
+  },
+  {
+    "word": "that",
+    "start": 37.241
+  },
+  {
+    "word": "they",
+    "start": 37.604
+  },
+  {
+    "word": "don't",
+    "start": 37.967
+  },
+  {
+    "word": "use",
+    "start": 38.329
+  },
+  {
+    "word": "most",
+    "start": 38.692
+  },
+  {
+    "word": "of",
+    "start": 39.055
+  },
+  {
+    "word": "the",
+    "start": 39.417
+  },
+  {
+    "word": "time",
+    "start": 39.78
+  },
+  {
+    "word": "just",
+    "start": 40.143
+  },
+  {
+    "word": "eats",
+    "start": 40.505
+  },
+  {
+    "word": "into",
+    "start": 40.868
+  },
+  {
+    "word": "margins.",
+    "start": 41.231
+  },
+  {
+    "word": "If",
+    "start": 41.893
+  },
+  {
+    "word": "it",
+    "start": 42.221
+  },
+  {
+    "word": "did",
+    "start": 42.548
+  },
+  {
+    "word": "make",
+    "start": 42.876
+  },
+  {
+    "word": "sense,",
+    "start": 43.203
+  },
+  {
+    "word": "I",
+    "start": 43.531
+  },
+  {
+    "word": "suspect",
+    "start": 43.859
+  },
+  {
+    "word": "others",
+    "start": 44.186
+  },
+  {
+    "word": "would",
+    "start": 44.514
+  },
+  {
+    "word": "already",
+    "start": 44.841
+  },
+  {
+    "word": "be",
+    "start": 45.169
+  },
+  {
+    "word": "doing",
+    "start": 45.496
+  },
+  {
+    "word": "it\u2014and",
+    "start": 45.824
+  },
+  {
+    "word": "I",
+    "start": 46.151
+  },
+  {
+    "word": "notice",
+    "start": 46.479
+  },
+  {
+    "word": "they're",
+    "start": 46.806
+  },
+  {
+    "word": "not.",
+    "start": 47.134
+  },
+  {
+    "word": "[Audio",
+    "start": 47.761
+  },
+  {
+    "word": "Description:",
+    "start": 48.21
+  },
+  {
+    "word": "A",
+    "start": 48.659
+  },
+  {
+    "word": "diagram",
+    "start": 49.108
+  },
+  {
+    "word": "showing",
+    "start": 49.556
+  },
+  {
+    "word": "a",
+    "start": 50.005
+  },
+  {
+    "word": "one-to-one",
+    "start": 50.454
+  },
+  {
+    "word": "mapping",
+    "start": 50.903
+  },
+  {
+    "word": "of",
+    "start": 51.351
+  },
+  {
+    "word": "users",
+    "start": 51.8
+  },
+  {
+    "word": "to",
+    "start": 52.249
+  },
+  {
+    "word": "heavy",
+    "start": 52.698
+  },
+  {
+    "word": "EC2",
+    "start": 53.146
+  },
+  {
+    "word": "virtual",
+    "start": 53.595
+  },
+  {
+    "word": "machines,",
+    "start": 54.044
+  },
+  {
+    "word": "illustrating",
+    "start": 54.493
+  },
+  {
+    "word": "the",
+    "start": 54.942
+  },
+  {
+    "word": "management",
+    "start": 55.39
+  },
+  {
+    "word": "overhead",
+    "start": 55.839
+  },
+  {
+    "word": "and",
+    "start": 56.288
+  },
+  {
+    "word": "the",
+    "start": 56.737
+  },
+  {
+    "word": "high",
+    "start": 57.185
+  },
+  {
+    "word": "idle",
+    "start": 57.634
+  },
+  {
+    "word": "costs",
+    "start": 58.083
+  },
+  {
+    "word": "that",
+    "start": 58.532
+  },
+  {
+    "word": "eat",
+    "start": 58.98
+  },
+  {
+    "word": "into",
+    "start": 59.429
+  },
+  {
+    "word": "margins.]",
+    "start": 59.878
+  }
+]

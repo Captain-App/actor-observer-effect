@@ -1,0 +1,306 @@
+[
+  {
+    "word": "Fragmentation",
+    "start": 0
+  },
+  {
+    "word": "and",
+    "start": 0.672
+  },
+  {
+    "word": "decision",
+    "start": 1.344
+  },
+  {
+    "word": "latency",
+    "start": 2.016
+  },
+  {
+    "word": "Xero",
+    "start": 3.188
+  },
+  {
+    "word": "knows",
+    "start": 3.617
+  },
+  {
+    "word": "the",
+    "start": 4.047
+  },
+  {
+    "word": "truth",
+    "start": 4.476
+  },
+  {
+    "word": "about",
+    "start": 4.905
+  },
+  {
+    "word": "invoices",
+    "start": 5.335
+  },
+  {
+    "word": "and",
+    "start": 5.764
+  },
+  {
+    "word": "debtors.",
+    "start": 6.193
+  },
+  {
+    "word": "Stripe",
+    "start": 6.923
+  },
+  {
+    "word": "knows",
+    "start": 7.375
+  },
+  {
+    "word": "revenue",
+    "start": 7.827
+  },
+  {
+    "word": "and",
+    "start": 8.279
+  },
+  {
+    "word": "churn.",
+    "start": 8.732
+  },
+  {
+    "word": "WhatsApp",
+    "start": 9.484
+  },
+  {
+    "word": "is",
+    "start": 9.921
+  },
+  {
+    "word": "where",
+    "start": 10.359
+  },
+  {
+    "word": "people",
+    "start": 10.796
+  },
+  {
+    "word": "actually",
+    "start": 11.233
+  },
+  {
+    "word": "respond.",
+    "start": 11.671
+  },
+  {
+    "word": "And",
+    "start": 12.408
+  },
+  {
+    "word": "the",
+    "start": 12.728
+  },
+  {
+    "word": "problem",
+    "start": 13.048
+  },
+  {
+    "word": "isn\u2019t",
+    "start": 13.368
+  },
+  {
+    "word": "a",
+    "start": 13.688
+  },
+  {
+    "word": "lack",
+    "start": 14.008
+  },
+  {
+    "word": "of",
+    "start": 14.328
+  },
+  {
+    "word": "data.",
+    "start": 14.648
+  },
+  {
+    "word": "It\u2019s",
+    "start": 15.268
+  },
+  {
+    "word": "friction.",
+    "start": 15.705
+  },
+  {
+    "word": "It\u2019s",
+    "start": 16.443
+  },
+  {
+    "word": "fragmentation.",
+    "start": 17.136
+  },
+  {
+    "word": "It\u2019s",
+    "start": 18.129
+  },
+  {
+    "word": "decision",
+    "start": 18.684
+  },
+  {
+    "word": "latency.",
+    "start": 19.239
+  },
+  {
+    "word": "CaptainApp\u2019s",
+    "start": 20.093
+  },
+  {
+    "word": "agent",
+    "start": 20.55
+  },
+  {
+    "word": "platform",
+    "start": 21.006
+  },
+  {
+    "word": "is",
+    "start": 21.463
+  },
+  {
+    "word": "being",
+    "start": 21.919
+  },
+  {
+    "word": "built",
+    "start": 22.376
+  },
+  {
+    "word": "to",
+    "start": 22.833
+  },
+  {
+    "word": "remove",
+    "start": 23.289
+  },
+  {
+    "word": "that",
+    "start": 23.746
+  },
+  {
+    "word": "latency.",
+    "start": 24.202
+  },
+  {
+    "word": "Not",
+    "start": 24.959
+  },
+  {
+    "word": "by",
+    "start": 25.421
+  },
+  {
+    "word": "adding",
+    "start": 25.884
+  },
+  {
+    "word": "another",
+    "start": 26.346
+  },
+  {
+    "word": "dashboard,",
+    "start": 26.809
+  },
+  {
+    "word": "but",
+    "start": 27.271
+  },
+  {
+    "word": "by",
+    "start": 27.734
+  },
+  {
+    "word": "giving",
+    "start": 28.196
+  },
+  {
+    "word": "decision",
+    "start": 28.658
+  },
+  {
+    "word": "makers",
+    "start": 29.121
+  },
+  {
+    "word": "a",
+    "start": 29.583
+  },
+  {
+    "word": "simple",
+    "start": 30.046
+  },
+  {
+    "word": "interface",
+    "start": 30.508
+  },
+  {
+    "word": "they",
+    "start": 30.971
+  },
+  {
+    "word": "already",
+    "start": 31.433
+  },
+  {
+    "word": "use\u2014WhatsApp\u2014and",
+    "start": 31.896
+  },
+  {
+    "word": "letting",
+    "start": 32.358
+  },
+  {
+    "word": "them",
+    "start": 32.821
+  },
+  {
+    "word": "ask",
+    "start": 33.283
+  },
+  {
+    "word": "plain-English",
+    "start": 33.746
+  },
+  {
+    "word": "questions",
+    "start": 34.208
+  },
+  {
+    "word": "that",
+    "start": 34.671
+  },
+  {
+    "word": "get",
+    "start": 35.133
+  },
+  {
+    "word": "answered",
+    "start": 35.596
+  },
+  {
+    "word": "with",
+    "start": 36.058
+  },
+  {
+    "word": "grounded,",
+    "start": 36.521
+  },
+  {
+    "word": "auditable",
+    "start": 36.983
+  },
+  {
+    "word": "summaries.",
+    "start": 37.446
+  }
+]

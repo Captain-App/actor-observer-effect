@@ -1,10 +1,12 @@
 import React from 'react';
-import { Play, Pause, RotateCcw, Volume2, VolumeX } from 'lucide-react';
+import { Play, Pause, RotateCcw, Volume2, VolumeX, Loader2 } from 'lucide-react';
 
 interface PlayerBarProps {
   progress: number;
+  audioProgress: number;
   isPlaying: boolean;
   isReaderMode: boolean;
+  isLoading: boolean;
   onTogglePlay: () => void;
   onReset: () => void;
   onToggleReaderMode: () => void;
@@ -13,81 +15,101 @@ interface PlayerBarProps {
 
 const PlayerBar: React.FC<PlayerBarProps> = ({ 
   progress, 
+  audioProgress,
   isPlaying, 
   isReaderMode, 
+  isLoading,
   onTogglePlay, 
   onReset, 
   onToggleReaderMode,
   onProgressChange
 }) => {
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-background/90 backdrop-blur-md border-t border-border z-50 group">
-      {/* Full width interactive progress bar */}
-      <div className="absolute top-0 left-0 right-0 -translate-y-1/2 px-0">
-        <div className="relative w-full h-1.5 bg-muted hover:h-2 transition-all cursor-pointer">
-          <div 
-            className="absolute top-0 left-0 h-full bg-primary transition-all duration-100 ease-out"
-            style={{ width: `${progress}%` }}
-          />
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value={progress}
-            onChange={(e) => onProgressChange(Number(e.target.value))}
-            className="absolute top-0 left-0 w-full h-full opacity-0 cursor-pointer z-10"
-          />
-          {/* Drag handle */}
-          <div 
-            className="absolute top-1/2 -translate-y-1/2 w-4 h-4 bg-primary border-2 border-background rounded-full shadow-lg scale-0 group-hover:scale-100 transition-transform pointer-events-none"
-            style={{ left: `${progress}%`, marginLeft: '-8px' }}
-          />
-        </div>
-      </div>
+    <div className="fixed bottom-0 left-0 right-0 z-50">
+      <div className="bg-background/80 backdrop-blur-xl border-t border-white/5 px-8 py-4 flex items-center gap-8 shadow-[0_-10px_40px_rgba(0,0,0,0.3)]">
+        {/* Play/Pause */}
+        <button
+          onClick={onTogglePlay}
+          disabled={isLoading}
+          className={`p-4 rounded-full bg-primary text-primary-foreground hover:scale-105 transition-all shadow-xl shadow-primary/20 active:scale-95 group relative overflow-hidden ${isLoading ? 'opacity-50 cursor-not-allowed' : ''}`}
+        >
+          <div className="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+          {isLoading ? (
+            <Loader2 className="w-6 h-6 animate-spin" />
+          ) : isPlaying ? (
+            <Pause className="w-6 h-6 fill-current" />
+          ) : (
+            <Play className="w-6 h-6 fill-current ml-0.5" />
+          )}
+        </button>
 
-      <div className="max-w-screen-xl mx-auto px-6 py-4 flex items-center justify-between">
-        {/* Left: Progress text */}
-        <div className="text-sm font-medium tabular-nums text-muted-foreground w-20">
-          {Math.round(progress)}%
+        {/* Progress & Info */}
+        <div className="flex-1 flex flex-col gap-1.5">
+          <div className="flex justify-between items-baseline">
+            <div className="flex items-center gap-3">
+              <span className="text-[10px] font-black text-primary uppercase tracking-[0.3em]">The Plan 2026</span>
+              <span className="text-xs font-bold text-foreground opacity-60 tracking-tight italic">A new agent platform</span>
+            </div>
+            <div className="text-[10px] font-black tabular-nums text-foreground/40 tracking-widest">
+              {Math.round(progress)}% COMPLETE
+            </div>
+          </div>
+          
+          <div className="relative h-1 w-full group/progress">
+            <div className="absolute inset-0 bg-white/5 rounded-full overflow-hidden">
+              {/* Audio Progress (Ghostly Marker) */}
+              <div 
+                className="absolute top-0 bottom-0 bg-primary/30 transition-all duration-300 ease-out"
+                style={{ width: `${audioProgress}%` }}
+              />
+              {/* Scroll Progress */}
+              <div 
+                className="h-full bg-primary transition-all duration-150 ease-out shadow-[0_0_15px_rgba(59,130,246,0.6)] relative z-10"
+                style={{ width: `${progress}%` }}
+              />
+            </div>
+            <input
+              type="range"
+              min="0"
+              max="100"
+              step="0.1"
+              value={progress}
+              onChange={(e) => onProgressChange(Number(e.target.value))}
+              className="absolute inset-0 w-full h-full opacity-0 cursor-pointer z-20"
+            />
+          </div>
         </div>
 
-        {/* Center: Main Controls */}
+        {/* Extra Controls */}
         <div className="flex items-center gap-4">
           <button
+            onClick={onToggleReaderMode}
+            className={`flex items-center gap-3 px-4 py-2 rounded-full transition-all duration-300 border ${
+              isReaderMode 
+                ? 'bg-primary/5 border-primary/20 text-primary' 
+                : 'border-white/5 text-muted-foreground hover:text-foreground hover:border-white/10'
+            }`}
+          >
+            {isLoading ? (
+              <Loader2 className="w-4 h-4 animate-spin" />
+            ) : isReaderMode ? (
+              <Volume2 className="w-4 h-4" />
+            ) : (
+              <VolumeX className="w-4 h-4 opacity-50" />
+            )}
+            <span className="text-[10px] font-black uppercase tracking-widest">
+              {isLoading ? 'Loading...' : 'Reader'}
+            </span>
+          </button>
+
+          <button
             onClick={onReset}
-            className="p-2 rounded-full hover:bg-muted transition-colors text-muted-foreground"
+            className="p-3 text-muted-foreground hover:text-foreground transition-all duration-300 group"
             title="Reset to beginning (Esc)"
           >
-            <RotateCcw className="w-5 h-5" />
-          </button>
-
-          <button
-            onClick={onTogglePlay}
-            className="p-3 rounded-full bg-primary text-primary-foreground hover:scale-105 transition-all shadow-md active:scale-95"
-            title={isPlaying ? "Pause (Space)" : "Play (Space)"}
-          >
-            {isPlaying ? (
-              <Pause className="w-6 h-6 fill-current" />
-            ) : (
-              <Play className="w-6 h-6 fill-current" />
-            )}
-          </button>
-
-          <button
-            onClick={onToggleReaderMode}
-            className={`p-2 rounded-full transition-colors ${isReaderMode ? 'bg-primary/10 text-primary' : 'hover:bg-muted text-muted-foreground'}`}
-            title={isReaderMode ? "Reader Mode: ON" : "Reader Mode: OFF"}
-          >
-            {isReaderMode ? (
-              <Volume2 className="w-5 h-5" />
-            ) : (
-              <VolumeX className="w-5 h-5" />
-            )}
+            <RotateCcw className="w-4 h-4 group-hover:rotate-[-45deg] transition-transform opacity-40 group-hover:opacity-100" />
           </button>
         </div>
-
-        {/* Right: Empty spacer to keep center centered */}
-        <div className="w-20" />
       </div>
     </div>
   );

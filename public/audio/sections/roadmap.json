@@ -1,0 +1,302 @@
+[
+  {
+    "word": "The",
+    "start": 0
+  },
+  {
+    "word": "Roadmap",
+    "start": 0.48
+  },
+  {
+    "word": "Stage",
+    "start": 1.46
+  },
+  {
+    "word": "1",
+    "start": 1.925
+  },
+  {
+    "word": "is",
+    "start": 2.39
+  },
+  {
+    "word": "the",
+    "start": 2.855
+  },
+  {
+    "word": "Foundation:",
+    "start": 3.32
+  },
+  {
+    "word": "defining",
+    "start": 3.785
+  },
+  {
+    "word": "the",
+    "start": 4.25
+  },
+  {
+    "word": "intent",
+    "start": 4.715
+  },
+  {
+    "word": "protocol",
+    "start": 5.181
+  },
+  {
+    "word": "and",
+    "start": 5.646
+  },
+  {
+    "word": "implementing",
+    "start": 6.111
+  },
+  {
+    "word": "the",
+    "start": 6.576
+  },
+  {
+    "word": "audit",
+    "start": 7.041
+  },
+  {
+    "word": "timeline",
+    "start": 7.506
+  },
+  {
+    "word": "early.",
+    "start": 7.971
+  },
+  {
+    "word": "Stage",
+    "start": 8.736
+  },
+  {
+    "word": "2",
+    "start": 9.227
+  },
+  {
+    "word": "is",
+    "start": 9.717
+  },
+  {
+    "word": "Integrations:",
+    "start": 10.208
+  },
+  {
+    "word": "starting",
+    "start": 10.699
+  },
+  {
+    "word": "with",
+    "start": 11.189
+  },
+  {
+    "word": "Xero",
+    "start": 11.68
+  },
+  {
+    "word": "and",
+    "start": 12.171
+  },
+  {
+    "word": "Stripe",
+    "start": 12.661
+  },
+  {
+    "word": "OAuth",
+    "start": 13.152
+  },
+  {
+    "word": "workflows.",
+    "start": 13.643
+  },
+  {
+    "word": "Stage",
+    "start": 14.433
+  },
+  {
+    "word": "3",
+    "start": 14.932
+  },
+  {
+    "word": "is",
+    "start": 15.43
+  },
+  {
+    "word": "the",
+    "start": 15.929
+  },
+  {
+    "word": "Channel:",
+    "start": 16.427
+  },
+  {
+    "word": "WhatsApp",
+    "start": 16.925
+  },
+  {
+    "word": "via",
+    "start": 17.424
+  },
+  {
+    "word": "Twilio",
+    "start": 17.922
+  },
+  {
+    "word": "with",
+    "start": 18.421
+  },
+  {
+    "word": "human-in-the-loop",
+    "start": 18.919
+  },
+  {
+    "word": "approvals.",
+    "start": 19.418
+  },
+  {
+    "word": "Stage",
+    "start": 20.216
+  },
+  {
+    "word": "4",
+    "start": 20.681
+  },
+  {
+    "word": "is",
+    "start": 21.146
+  },
+  {
+    "word": "the",
+    "start": 21.611
+  },
+  {
+    "word": "Portal:",
+    "start": 22.076
+  },
+  {
+    "word": "onboarding,",
+    "start": 22.541
+  },
+  {
+    "word": "roles,",
+    "start": 23.006
+  },
+  {
+    "word": "and",
+    "start": 23.471
+  },
+  {
+    "word": "Stripe-based",
+    "start": 23.937
+  },
+  {
+    "word": "billing.",
+    "start": 24.402
+  },
+  {
+    "word": "Stage",
+    "start": 25.167
+  },
+  {
+    "word": "5",
+    "start": 25.721
+  },
+  {
+    "word": "is",
+    "start": 26.276
+  },
+  {
+    "word": "Hosted",
+    "start": 26.831
+  },
+  {
+    "word": "Execution:",
+    "start": 27.385
+  },
+  {
+    "word": "deploying",
+    "start": 27.94
+  },
+  {
+    "word": "tenant",
+    "start": 28.495
+  },
+  {
+    "word": "agents",
+    "start": 29.049
+  },
+  {
+    "word": "onto",
+    "start": 29.604
+  },
+  {
+    "word": "Cloudflare",
+    "start": 30.159
+  },
+  {
+    "word": "isolates.",
+    "start": 30.713
+  },
+  {
+    "word": "Finally,",
+    "start": 31.568
+  },
+  {
+    "word": "Stage",
+    "start": 32.096
+  },
+  {
+    "word": "6",
+    "start": 32.623
+  },
+  {
+    "word": "is",
+    "start": 33.151
+  },
+  {
+    "word": "Solutions:",
+    "start": 33.679
+  },
+  {
+    "word": "providing",
+    "start": 34.206
+  },
+  {
+    "word": "packaged",
+    "start": 34.734
+  },
+  {
+    "word": "outcomes",
+    "start": 35.262
+  },
+  {
+    "word": "like",
+    "start": 35.789
+  },
+  {
+    "word": "reduced",
+    "start": 36.317
+  },
+  {
+    "word": "aged",
+    "start": 36.844
+  },
+  {
+    "word": "receivables",
+    "start": 37.372
+  },
+  {
+    "word": "and",
+    "start": 37.9
+  },
+  {
+    "word": "faster",
+    "start": 38.427
+  },
+  {
+    "word": "reporting.",
+    "start": 38.955
+  }
+]

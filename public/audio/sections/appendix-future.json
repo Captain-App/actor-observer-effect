@@ -1,0 +1,562 @@
+[
+  {
+    "word": "Additional",
+    "start": 0
+  },
+  {
+    "word": "Context",
+    "start": 0.576
+  },
+  {
+    "word": "And...",
+    "start": 1.152
+  },
+  {
+    "word": "Thoughts",
+    "start": 2.028
+  },
+  {
+    "word": "about",
+    "start": 2.428
+  },
+  {
+    "word": "the",
+    "start": 2.828
+  },
+  {
+    "word": "future?",
+    "start": 3.228
+  },
+  {
+    "word": "Just",
+    "start": 4.128
+  },
+  {
+    "word": "some",
+    "start": 4.457
+  },
+  {
+    "word": "opinions",
+    "start": 4.787
+  },
+  {
+    "word": "about",
+    "start": 5.116
+  },
+  {
+    "word": "where",
+    "start": 5.446
+  },
+  {
+    "word": "this",
+    "start": 5.775
+  },
+  {
+    "word": "is",
+    "start": 6.105
+  },
+  {
+    "word": "all",
+    "start": 6.434
+  },
+  {
+    "word": "going.",
+    "start": 6.764
+  },
+  {
+    "word": "Agent",
+    "start": 7.593
+  },
+  {
+    "word": "harnesses",
+    "start": 8.019
+  },
+  {
+    "word": "like",
+    "start": 8.444
+  },
+  {
+    "word": "Claude",
+    "start": 8.87
+  },
+  {
+    "word": "Code,",
+    "start": 9.295
+  },
+  {
+    "word": "when",
+    "start": 9.72
+  },
+  {
+    "word": "combined",
+    "start": 10.146
+  },
+  {
+    "word": "with",
+    "start": 10.571
+  },
+  {
+    "word": "a",
+    "start": 10.997
+  },
+  {
+    "word": "Unix-based",
+    "start": 11.422
+  },
+  {
+    "word": "operating",
+    "start": 11.847
+  },
+  {
+    "word": "system",
+    "start": 12.273
+  },
+  {
+    "word": "that",
+    "start": 12.698
+  },
+  {
+    "word": "has",
+    "start": 13.124
+  },
+  {
+    "word": "an",
+    "start": 13.549
+  },
+  {
+    "word": "enormous",
+    "start": 13.975
+  },
+  {
+    "word": "user",
+    "start": 14.4
+  },
+  {
+    "word": "base\u2014such",
+    "start": 14.825
+  },
+  {
+    "word": "as",
+    "start": 15.251
+  },
+  {
+    "word": "Ubuntu",
+    "start": 15.676
+  },
+  {
+    "word": "or",
+    "start": 16.102
+  },
+  {
+    "word": "macOS\u2014seem",
+    "start": 16.527
+  },
+  {
+    "word": "to",
+    "start": 16.952
+  },
+  {
+    "word": "be",
+    "start": 17.378
+  },
+  {
+    "word": "the",
+    "start": 17.803
+  },
+  {
+    "word": "environment",
+    "start": 18.229
+  },
+  {
+    "word": "in",
+    "start": 18.654
+  },
+  {
+    "word": "which",
+    "start": 19.079
+  },
+  {
+    "word": "these",
+    "start": 19.505
+  },
+  {
+    "word": "agents",
+    "start": 19.93
+  },
+  {
+    "word": "are",
+    "start": 20.356
+  },
+  {
+    "word": "now",
+    "start": 20.781
+  },
+  {
+    "word": "most",
+    "start": 21.207
+  },
+  {
+    "word": "performant.",
+    "start": 21.632
+  },
+  {
+    "word": "It",
+    "start": 22.357
+  },
+  {
+    "word": "is",
+    "start": 22.736
+  },
+  {
+    "word": "becoming",
+    "start": 23.115
+  },
+  {
+    "word": "the",
+    "start": 23.493
+  },
+  {
+    "word": "environment",
+    "start": 23.872
+  },
+  {
+    "word": "in",
+    "start": 24.251
+  },
+  {
+    "word": "which",
+    "start": 24.629
+  },
+  {
+    "word": "the",
+    "start": 25.008
+  },
+  {
+    "word": "foundation",
+    "start": 25.387
+  },
+  {
+    "word": "models",
+    "start": 25.765
+  },
+  {
+    "word": "are",
+    "start": 26.144
+  },
+  {
+    "word": "actually",
+    "start": 26.523
+  },
+  {
+    "word": "left",
+    "start": 26.901
+  },
+  {
+    "word": "to",
+    "start": 27.28
+  },
+  {
+    "word": "explore",
+    "start": 27.659
+  },
+  {
+    "word": "and",
+    "start": 28.037
+  },
+  {
+    "word": "become",
+    "start": 28.416
+  },
+  {
+    "word": "even",
+    "start": 28.795
+  },
+  {
+    "word": "more",
+    "start": 29.173
+  },
+  {
+    "word": "performant.",
+    "start": 29.552
+  },
+  {
+    "word": "The",
+    "start": 30.231
+  },
+  {
+    "word": "trouble",
+    "start": 30.544
+  },
+  {
+    "word": "is,",
+    "start": 30.858
+  },
+  {
+    "word": "not",
+    "start": 31.171
+  },
+  {
+    "word": "every",
+    "start": 31.485
+  },
+  {
+    "word": "user",
+    "start": 31.799
+  },
+  {
+    "word": "has",
+    "start": 32.112
+  },
+  {
+    "word": "one",
+    "start": 32.426
+  },
+  {
+    "word": "of",
+    "start": 32.739
+  },
+  {
+    "word": "those.",
+    "start": 33.053
+  },
+  {
+    "word": "And",
+    "start": 33.667
+  },
+  {
+    "word": "even",
+    "start": 33.968
+  },
+  {
+    "word": "if",
+    "start": 34.269
+  },
+  {
+    "word": "they",
+    "start": 34.57
+  },
+  {
+    "word": "do,",
+    "start": 34.871
+  },
+  {
+    "word": "there's",
+    "start": 35.172
+  },
+  {
+    "word": "a",
+    "start": 35.473
+  },
+  {
+    "word": "setup",
+    "start": 35.774
+  },
+  {
+    "word": "cost.",
+    "start": 36.075
+  },
+  {
+    "word": "There's",
+    "start": 36.676
+  },
+  {
+    "word": "also",
+    "start": 37.049
+  },
+  {
+    "word": "the",
+    "start": 37.421
+  },
+  {
+    "word": "risk",
+    "start": 37.794
+  },
+  {
+    "word": "of",
+    "start": 38.166
+  },
+  {
+    "word": "granting",
+    "start": 38.539
+  },
+  {
+    "word": "a",
+    "start": 38.912
+  },
+  {
+    "word": "foundation",
+    "start": 39.284
+  },
+  {
+    "word": "model",
+    "start": 39.657
+  },
+  {
+    "word": "access",
+    "start": 40.03
+  },
+  {
+    "word": "to",
+    "start": 40.402
+  },
+  {
+    "word": "your",
+    "start": 40.775
+  },
+  {
+    "word": "whole",
+    "start": 41.147
+  },
+  {
+    "word": "file",
+    "start": 41.52
+  },
+  {
+    "word": "system.",
+    "start": 41.893
+  },
+  {
+    "word": "So",
+    "start": 42.565
+  },
+  {
+    "word": "the",
+    "start": 42.913
+  },
+  {
+    "word": "goal",
+    "start": 43.26
+  },
+  {
+    "word": "should",
+    "start": 43.607
+  },
+  {
+    "word": "be",
+    "start": 43.954
+  },
+  {
+    "word": "to",
+    "start": 44.302
+  },
+  {
+    "word": "provide",
+    "start": 44.649
+  },
+  {
+    "word": "the",
+    "start": 44.996
+  },
+  {
+    "word": "user",
+    "start": 45.343
+  },
+  {
+    "word": "with",
+    "start": 45.691
+  },
+  {
+    "word": "a",
+    "start": 46.038
+  },
+  {
+    "word": "persistent,",
+    "start": 46.385
+  },
+  {
+    "word": "always-on",
+    "start": 46.732
+  },
+  {
+    "word": "Cloud-based",
+    "start": 47.08
+  },
+  {
+    "word": "Box",
+    "start": 47.427
+  },
+  {
+    "word": "that",
+    "start": 47.774
+  },
+  {
+    "word": "is",
+    "start": 48.121
+  },
+  {
+    "word": "as",
+    "start": 48.469
+  },
+  {
+    "word": "close",
+    "start": 48.816
+  },
+  {
+    "word": "as",
+    "start": 49.163
+  },
+  {
+    "word": "possible",
+    "start": 49.511
+  },
+  {
+    "word": "to",
+    "start": 49.858
+  },
+  {
+    "word": "the",
+    "start": 50.205
+  },
+  {
+    "word": "environment",
+    "start": 50.552
+  },
+  {
+    "word": "in",
+    "start": 50.9
+  },
+  {
+    "word": "which",
+    "start": 51.247
+  },
+  {
+    "word": "the",
+    "start": 51.594
+  },
+  {
+    "word": "foundation",
+    "start": 51.941
+  },
+  {
+    "word": "models",
+    "start": 52.289
+  },
+  {
+    "word": "are",
+    "start": 52.636
+  },
+  {
+    "word": "trained",
+    "start": 52.983
+  },
+  {
+    "word": "to",
+    "start": 53.33
+  },
+  {
+    "word": "have",
+    "start": 53.678
+  },
+  {
+    "word": "the",
+    "start": 54.025
+  },
+  {
+    "word": "most",
+    "start": 54.372
+  },
+  {
+    "word": "capability.",
+    "start": 54.719
+  }
+]

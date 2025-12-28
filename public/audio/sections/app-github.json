@@ -1,0 +1,318 @@
+[
+  {
+    "word": "App:",
+    "start": 0
+  },
+  {
+    "word": "GitHub",
+    "start": 0.64
+  },
+  {
+    "word": "Intelligence",
+    "start": 1.28
+  },
+  {
+    "word": "Commits,",
+    "start": 2.42
+  },
+  {
+    "word": "PRs,",
+    "start": 2.879
+  },
+  {
+    "word": "workflows,",
+    "start": 3.337
+  },
+  {
+    "word": "and",
+    "start": 3.796
+  },
+  {
+    "word": "line",
+    "start": 4.255
+  },
+  {
+    "word": "counts",
+    "start": 4.713
+  },
+  {
+    "word": "GitHub",
+    "start": 5.672
+  },
+  {
+    "word": "sync",
+    "start": 6.198
+  },
+  {
+    "word": "captures",
+    "start": 6.723
+  },
+  {
+    "word": "commits,",
+    "start": 7.249
+  },
+  {
+    "word": "pull",
+    "start": 7.774
+  },
+  {
+    "word": "requests,",
+    "start": 8.3
+  },
+  {
+    "word": "workflow",
+    "start": 8.825
+  },
+  {
+    "word": "runs,",
+    "start": 9.351
+  },
+  {
+    "word": "and",
+    "start": 9.877
+  },
+  {
+    "word": "repository",
+    "start": 10.402
+  },
+  {
+    "word": "statistics.",
+    "start": 10.928
+  },
+  {
+    "word": "There's",
+    "start": 11.753
+  },
+  {
+    "word": "a",
+    "start": 12.167
+  },
+  {
+    "word": "backfill",
+    "start": 12.58
+  },
+  {
+    "word": "system",
+    "start": 12.993
+  },
+  {
+    "word": "for",
+    "start": 13.406
+  },
+  {
+    "word": "historical",
+    "start": 13.819
+  },
+  {
+    "word": "data,",
+    "start": 14.232
+  },
+  {
+    "word": "rate",
+    "start": 14.646
+  },
+  {
+    "word": "limiting",
+    "start": 15.059
+  },
+  {
+    "word": "to",
+    "start": 15.472
+  },
+  {
+    "word": "stay",
+    "start": 15.885
+  },
+  {
+    "word": "within",
+    "start": 16.298
+  },
+  {
+    "word": "API",
+    "start": 16.712
+  },
+  {
+    "word": "quotas,",
+    "start": 17.125
+  },
+  {
+    "word": "and",
+    "start": 17.538
+  },
+  {
+    "word": "daily",
+    "start": 17.951
+  },
+  {
+    "word": "line",
+    "start": 18.364
+  },
+  {
+    "word": "count",
+    "start": 18.778
+  },
+  {
+    "word": "refresh.",
+    "start": 19.191
+  },
+  {
+    "word": "The",
+    "start": 19.904
+  },
+  {
+    "word": "admin",
+    "start": 20.385
+  },
+  {
+    "word": "UI",
+    "start": 20.866
+  },
+  {
+    "word": "shows",
+    "start": 21.347
+  },
+  {
+    "word": "commit",
+    "start": 21.828
+  },
+  {
+    "word": "timelines,",
+    "start": 22.309
+  },
+  {
+    "word": "author",
+    "start": 22.79
+  },
+  {
+    "word": "activity,",
+    "start": 23.271
+  },
+  {
+    "word": "and",
+    "start": 23.752
+  },
+  {
+    "word": "repository",
+    "start": 24.233
+  },
+  {
+    "word": "health.",
+    "start": 24.714
+  },
+  {
+    "word": "PR",
+    "start": 25.495
+  },
+  {
+    "word": "webhooks",
+    "start": 26.097
+  },
+  {
+    "word": "trigger",
+    "start": 26.7
+  },
+  {
+    "word": "notifications.",
+    "start": 27.303
+  },
+  {
+    "word": "Workflow",
+    "start": 28.205
+  },
+  {
+    "word": "failures",
+    "start": 28.63
+  },
+  {
+    "word": "can",
+    "start": 29.055
+  },
+  {
+    "word": "be",
+    "start": 29.48
+  },
+  {
+    "word": "printed",
+    "start": 29.905
+  },
+  {
+    "word": "to",
+    "start": 30.33
+  },
+  {
+    "word": "a",
+    "start": 30.755
+  },
+  {
+    "word": "physical",
+    "start": 31.18
+  },
+  {
+    "word": "thermal",
+    "start": 31.604
+  },
+  {
+    "word": "printer",
+    "start": 32.029
+  },
+  {
+    "word": "(yes,",
+    "start": 32.454
+  },
+  {
+    "word": "really).",
+    "start": 32.879
+  },
+  {
+    "word": "This",
+    "start": 33.604
+  },
+  {
+    "word": "powers",
+    "start": 34.034
+  },
+  {
+    "word": "the",
+    "start": 34.464
+  },
+  {
+    "word": "'what",
+    "start": 34.894
+  },
+  {
+    "word": "did",
+    "start": 35.324
+  },
+  {
+    "word": "we",
+    "start": 35.754
+  },
+  {
+    "word": "ship?'",
+    "start": 36.184
+  },
+  {
+    "word": "question,",
+    "start": 36.614
+  },
+  {
+    "word": "but",
+    "start": 37.044
+  },
+  {
+    "word": "it's",
+    "start": 37.474
+  },
+  {
+    "word": "developer-facing,",
+    "start": 37.903
+  },
+  {
+    "word": "not",
+    "start": 38.333
+  },
+  {
+    "word": "customer-facing.",
+    "start": 38.763
+  }
+]

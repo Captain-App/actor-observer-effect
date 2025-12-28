@@ -1,0 +1,294 @@
+[
+  {
+    "word": "App:",
+    "start": 0
+  },
+  {
+    "word": "Linear",
+    "start": 0.421
+  },
+  {
+    "word": "Project",
+    "start": 0.843
+  },
+  {
+    "word": "Sync",
+    "start": 1.264
+  },
+  {
+    "word": "Issues,",
+    "start": 2.185
+  },
+  {
+    "word": "cycles,",
+    "start": 2.74
+  },
+  {
+    "word": "and",
+    "start": 3.295
+  },
+  {
+    "word": "velocity",
+    "start": 3.849
+  },
+  {
+    "word": "tracking",
+    "start": 4.404
+  },
+  {
+    "word": "Linear",
+    "start": 5.459
+  },
+  {
+    "word": "sync",
+    "start": 5.909
+  },
+  {
+    "word": "pulls",
+    "start": 6.36
+  },
+  {
+    "word": "teams,",
+    "start": 6.811
+  },
+  {
+    "word": "projects,",
+    "start": 7.261
+  },
+  {
+    "word": "issues,",
+    "start": 7.712
+  },
+  {
+    "word": "and",
+    "start": 8.163
+  },
+  {
+    "word": "cycles.",
+    "start": 8.613
+  },
+  {
+    "word": "Requirements",
+    "start": 9.364
+  },
+  {
+    "word": "from",
+    "start": 9.754
+  },
+  {
+    "word": "CaptainApp",
+    "start": 10.145
+  },
+  {
+    "word": "can",
+    "start": 10.535
+  },
+  {
+    "word": "be",
+    "start": 10.926
+  },
+  {
+    "word": "pushed",
+    "start": 11.316
+  },
+  {
+    "word": "to",
+    "start": 11.706
+  },
+  {
+    "word": "Linear",
+    "start": 12.097
+  },
+  {
+    "word": "as",
+    "start": 12.487
+  },
+  {
+    "word": "issues.",
+    "start": 12.878
+  },
+  {
+    "word": "Cycle",
+    "start": 13.568
+  },
+  {
+    "word": "time",
+    "start": 14.108
+  },
+  {
+    "word": "analytics",
+    "start": 14.649
+  },
+  {
+    "word": "measure",
+    "start": 15.189
+  },
+  {
+    "word": "team",
+    "start": 15.73
+  },
+  {
+    "word": "velocity.",
+    "start": 16.27
+  },
+  {
+    "word": "Sprint",
+    "start": 17.111
+  },
+  {
+    "word": "summaries",
+    "start": 17.735
+  },
+  {
+    "word": "aggregate",
+    "start": 18.359
+  },
+  {
+    "word": "progress.",
+    "start": 18.983
+  },
+  {
+    "word": "The",
+    "start": 19.907
+  },
+  {
+    "word": "integration",
+    "start": 20.403
+  },
+  {
+    "word": "works,",
+    "start": 20.9
+  },
+  {
+    "word": "but",
+    "start": 21.396
+  },
+  {
+    "word": "it",
+    "start": 21.893
+  },
+  {
+    "word": "duplicates",
+    "start": 22.389
+  },
+  {
+    "word": "functionality",
+    "start": 22.886
+  },
+  {
+    "word": "that",
+    "start": 23.382
+  },
+  {
+    "word": "Linear",
+    "start": 23.879
+  },
+  {
+    "word": "already",
+    "start": 24.375
+  },
+  {
+    "word": "provides.",
+    "start": 24.872
+  },
+  {
+    "word": "The",
+    "start": 25.668
+  },
+  {
+    "word": "value",
+    "start": 26.06
+  },
+  {
+    "word": "would",
+    "start": 26.451
+  },
+  {
+    "word": "be",
+    "start": 26.843
+  },
+  {
+    "word": "in",
+    "start": 27.235
+  },
+  {
+    "word": "cross-referencing",
+    "start": 27.626
+  },
+  {
+    "word": "Linear",
+    "start": 28.018
+  },
+  {
+    "word": "data",
+    "start": 28.41
+  },
+  {
+    "word": "with",
+    "start": 28.801
+  },
+  {
+    "word": "financial",
+    "start": 29.193
+  },
+  {
+    "word": "or",
+    "start": 29.585
+  },
+  {
+    "word": "HR",
+    "start": 29.976
+  },
+  {
+    "word": "data\u2014which",
+    "start": 30.368
+  },
+  {
+    "word": "the",
+    "start": 30.76
+  },
+  {
+    "word": "Graphable",
+    "start": 31.152
+  },
+  {
+    "word": "notebook",
+    "start": 31.543
+  },
+  {
+    "word": "can",
+    "start": 31.935
+  },
+  {
+    "word": "do,",
+    "start": 32.327
+  },
+  {
+    "word": "but",
+    "start": 32.718
+  },
+  {
+    "word": "nobody",
+    "start": 33.11
+  },
+  {
+    "word": "has",
+    "start": 33.502
+  },
+  {
+    "word": "built",
+    "start": 33.893
+  },
+  {
+    "word": "that",
+    "start": 34.285
+  },
+  {
+    "word": "playbook",
+    "start": 34.677
+  },
+  {
+    "word": "yet.",
+    "start": 35.068
+  }
+]

@@ -1,0 +1,538 @@
+[
+  {
+    "word": "The",
+    "start": 0
+  },
+  {
+    "word": "1,300-Line",
+    "start": 1.017
+  },
+  {
+    "word": "Glossary",
+    "start": 2.034
+  },
+  {
+    "word": "Ubiquitous",
+    "start": 3.551
+  },
+  {
+    "word": "language,",
+    "start": 4.34
+  },
+  {
+    "word": "exhaustively",
+    "start": 5.129
+  },
+  {
+    "word": "documented",
+    "start": 5.919
+  },
+  {
+    "word": "The",
+    "start": 7.208
+  },
+  {
+    "word": "GLOSSARY.md",
+    "start": 7.82
+  },
+  {
+    "word": "file",
+    "start": 8.431
+  },
+  {
+    "word": "is",
+    "start": 9.043
+  },
+  {
+    "word": "1,300+",
+    "start": 9.654
+  },
+  {
+    "word": "lines",
+    "start": 10.266
+  },
+  {
+    "word": "of",
+    "start": 10.877
+  },
+  {
+    "word": "domain",
+    "start": 11.489
+  },
+  {
+    "word": "definitions.",
+    "start": 12.1
+  },
+  {
+    "word": "Every",
+    "start": 13.012
+  },
+  {
+    "word": "value",
+    "start": 13.513
+  },
+  {
+    "word": "object,",
+    "start": 14.015
+  },
+  {
+    "word": "every",
+    "start": 14.516
+  },
+  {
+    "word": "aggregate,",
+    "start": 15.017
+  },
+  {
+    "word": "every",
+    "start": 15.519
+  },
+  {
+    "word": "concept",
+    "start": 16.02
+  },
+  {
+    "word": "has",
+    "start": 16.521
+  },
+  {
+    "word": "a",
+    "start": 17.023
+  },
+  {
+    "word": "definition,",
+    "start": 17.524
+  },
+  {
+    "word": "usage",
+    "start": 18.025
+  },
+  {
+    "word": "example,",
+    "start": 18.527
+  },
+  {
+    "word": "and",
+    "start": 19.028
+  },
+  {
+    "word": "sometimes",
+    "start": 19.529
+  },
+  {
+    "word": "migration",
+    "start": 20.031
+  },
+  {
+    "word": "notes.",
+    "start": 20.532
+  },
+  {
+    "word": "'Money:",
+    "start": 21.333
+  },
+  {
+    "word": "An",
+    "start": 21.836
+  },
+  {
+    "word": "immutable",
+    "start": 22.339
+  },
+  {
+    "word": "value",
+    "start": 22.842
+  },
+  {
+    "word": "object",
+    "start": 23.345
+  },
+  {
+    "word": "representing",
+    "start": 23.848
+  },
+  {
+    "word": "a",
+    "start": 24.351
+  },
+  {
+    "word": "monetary",
+    "start": 24.854
+  },
+  {
+    "word": "amount",
+    "start": 25.357
+  },
+  {
+    "word": "with",
+    "start": 25.859
+  },
+  {
+    "word": "its",
+    "start": 26.362
+  },
+  {
+    "word": "associated",
+    "start": 26.865
+  },
+  {
+    "word": "currency,",
+    "start": 27.368
+  },
+  {
+    "word": "stored",
+    "start": 27.871
+  },
+  {
+    "word": "internally",
+    "start": 28.374
+  },
+  {
+    "word": "as",
+    "start": 28.877
+  },
+  {
+    "word": "integer",
+    "start": 29.38
+  },
+  {
+    "word": "minor",
+    "start": 29.883
+  },
+  {
+    "word": "units",
+    "start": 30.386
+  },
+  {
+    "word": "to",
+    "start": 30.888
+  },
+  {
+    "word": "avoid",
+    "start": 31.391
+  },
+  {
+    "word": "floating-point",
+    "start": 31.894
+  },
+  {
+    "word": "precision",
+    "start": 32.397
+  },
+  {
+    "word": "issues.'",
+    "start": 32.9
+  },
+  {
+    "word": "'Virtual",
+    "start": 33.403
+  },
+  {
+    "word": "Footprint:",
+    "start": 33.906
+  },
+  {
+    "word": "A",
+    "start": 34.409
+  },
+  {
+    "word": "dynamically",
+    "start": 34.912
+  },
+  {
+    "word": "calculated",
+    "start": 35.415
+  },
+  {
+    "word": "geographic",
+    "start": 35.917
+  },
+  {
+    "word": "bounds",
+    "start": 36.42
+  },
+  {
+    "word": "centered",
+    "start": 36.923
+  },
+  {
+    "word": "at",
+    "start": 37.426
+  },
+  {
+    "word": "(0,0)",
+    "start": 37.929
+  },
+  {
+    "word": "that",
+    "start": 38.432
+  },
+  {
+    "word": "represents",
+    "start": 38.935
+  },
+  {
+    "word": "the",
+    "start": 39.438
+  },
+  {
+    "word": "coordinate",
+    "start": 39.941
+  },
+  {
+    "word": "space",
+    "start": 40.444
+  },
+  {
+    "word": "for",
+    "start": 40.947
+  },
+  {
+    "word": "an",
+    "start": 41.449
+  },
+  {
+    "word": "unplaced",
+    "start": 41.952
+  },
+  {
+    "word": "map",
+    "start": 42.455
+  },
+  {
+    "word": "tile.'",
+    "start": 42.958
+  },
+  {
+    "word": "There",
+    "start": 43.461
+  },
+  {
+    "word": "are",
+    "start": 43.964
+  },
+  {
+    "word": "deprecation",
+    "start": 44.467
+  },
+  {
+    "word": "warnings",
+    "start": 44.97
+  },
+  {
+    "word": "('Deprecated:",
+    "start": 45.473
+  },
+  {
+    "word": "FloorPlanPosition",
+    "start": 45.976
+  },
+  {
+    "word": "-",
+    "start": 46.478
+  },
+  {
+    "word": "replaced",
+    "start": 46.981
+  },
+  {
+    "word": "by",
+    "start": 47.484
+  },
+  {
+    "word": "LocalXYPosition'),",
+    "start": 47.987
+  },
+  {
+    "word": "status",
+    "start": 48.49
+  },
+  {
+    "word": "markers",
+    "start": 48.993
+  },
+  {
+    "word": "('Draft",
+    "start": 49.496
+  },
+  {
+    "word": "v1",
+    "start": 49.999
+  },
+  {
+    "word": "built",
+    "start": 50.502
+  },
+  {
+    "word": "from",
+    "start": 51.005
+  },
+  {
+    "word": "exports",
+    "start": 51.507
+  },
+  {
+    "word": "and",
+    "start": 52.01
+  },
+  {
+    "word": "known",
+    "start": 52.513
+  },
+  {
+    "word": "consumers'),",
+    "start": 53.016
+  },
+  {
+    "word": "and",
+    "start": 53.519
+  },
+  {
+    "word": "cross-references",
+    "start": 54.022
+  },
+  {
+    "word": "to",
+    "start": 54.525
+  },
+  {
+    "word": "code.",
+    "start": 55.028
+  },
+  {
+    "word": "The",
+    "start": 55.831
+  },
+  {
+    "word": "glossary",
+    "start": 56.231
+  },
+  {
+    "word": "grows",
+    "start": 56.631
+  },
+  {
+    "word": "with",
+    "start": 57.032
+  },
+  {
+    "word": "the",
+    "start": 57.432
+  },
+  {
+    "word": "codebase\u2014every",
+    "start": 57.833
+  },
+  {
+    "word": "PR",
+    "start": 58.233
+  },
+  {
+    "word": "that",
+    "start": 58.634
+  },
+  {
+    "word": "adds",
+    "start": 59.034
+  },
+  {
+    "word": "concepts",
+    "start": 59.434
+  },
+  {
+    "word": "must",
+    "start": 59.835
+  },
+  {
+    "word": "update",
+    "start": 60.235
+  },
+  {
+    "word": "it.",
+    "start": 60.636
+  },
+  {
+    "word": "It's",
+    "start": 61.336
+  },
+  {
+    "word": "an",
+    "start": 61.829
+  },
+  {
+    "word": "impressive",
+    "start": 62.323
+  },
+  {
+    "word": "artefact",
+    "start": 62.816
+  },
+  {
+    "word": "of",
+    "start": 63.309
+  },
+  {
+    "word": "disciplined",
+    "start": 63.803
+  },
+  {
+    "word": "domain",
+    "start": 64.296
+  },
+  {
+    "word": "modelling.",
+    "start": 64.789
+  },
+  {
+    "word": "It's",
+    "start": 65.583
+  },
+  {
+    "word": "also",
+    "start": 65.954
+  },
+  {
+    "word": "overwhelming:",
+    "start": 66.324
+  },
+  {
+    "word": "finding",
+    "start": 66.695
+  },
+  {
+    "word": "what",
+    "start": 67.066
+  },
+  {
+    "word": "you",
+    "start": 67.437
+  },
+  {
+    "word": "need",
+    "start": 67.808
+  },
+  {
+    "word": "requires",
+    "start": 68.179
+  },
+  {
+    "word": "knowing",
+    "start": 68.55
+  },
+  {
+    "word": "what",
+    "start": 68.921
+  },
+  {
+    "word": "to",
+    "start": 69.291
+  },
+  {
+    "word": "search",
+    "start": 69.662
+  },
+  {
+    "word": "for.",
+    "start": 70.033
+  }
+]

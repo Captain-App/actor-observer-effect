@@ -1,0 +1,494 @@
+[
+  {
+    "word": "The",
+    "start": 0
+  },
+  {
+    "word": "Immutable",
+    "start": 0.434
+  },
+  {
+    "word": "Ledger",
+    "start": 0.868
+  },
+  {
+    "word": "Write-only,",
+    "start": 1.801
+  },
+  {
+    "word": "append-only",
+    "start": 2.562
+  },
+  {
+    "word": "truth",
+    "start": 3.323
+  },
+  {
+    "word": "At",
+    "start": 4.584
+  },
+  {
+    "word": "the",
+    "start": 4.978
+  },
+  {
+    "word": "heart",
+    "start": 5.371
+  },
+  {
+    "word": "of",
+    "start": 5.765
+  },
+  {
+    "word": "NOMOS",
+    "start": 6.158
+  },
+  {
+    "word": "is",
+    "start": 6.552
+  },
+  {
+    "word": "the",
+    "start": 6.946
+  },
+  {
+    "word": "Intent",
+    "start": 7.339
+  },
+  {
+    "word": "Ledger\u2014a",
+    "start": 7.733
+  },
+  {
+    "word": "write-only,",
+    "start": 8.126
+  },
+  {
+    "word": "append-only",
+    "start": 8.52
+  },
+  {
+    "word": "log",
+    "start": 8.914
+  },
+  {
+    "word": "that",
+    "start": 9.307
+  },
+  {
+    "word": "serves",
+    "start": 9.701
+  },
+  {
+    "word": "as",
+    "start": 10.094
+  },
+  {
+    "word": "the",
+    "start": 10.488
+  },
+  {
+    "word": "single",
+    "start": 10.882
+  },
+  {
+    "word": "source",
+    "start": 11.275
+  },
+  {
+    "word": "of",
+    "start": 11.669
+  },
+  {
+    "word": "truth.",
+    "start": 12.062
+  },
+  {
+    "word": "Nothing",
+    "start": 12.756
+  },
+  {
+    "word": "is",
+    "start": 13.193
+  },
+  {
+    "word": "ever",
+    "start": 13.631
+  },
+  {
+    "word": "deleted",
+    "start": 14.068
+  },
+  {
+    "word": "or",
+    "start": 14.505
+  },
+  {
+    "word": "mutated.",
+    "start": 14.943
+  },
+  {
+    "word": "Instead,",
+    "start": 15.68
+  },
+  {
+    "word": "corrections",
+    "start": 16.099
+  },
+  {
+    "word": "are",
+    "start": 16.518
+  },
+  {
+    "word": "made",
+    "start": 16.936
+  },
+  {
+    "word": "by",
+    "start": 17.355
+  },
+  {
+    "word": "appending",
+    "start": 17.774
+  },
+  {
+    "word": "new",
+    "start": 18.193
+  },
+  {
+    "word": "intents",
+    "start": 18.612
+  },
+  {
+    "word": "that",
+    "start": 19.03
+  },
+  {
+    "word": "'strike",
+    "start": 19.449
+  },
+  {
+    "word": "out'",
+    "start": 19.868
+  },
+  {
+    "word": "previous",
+    "start": 20.287
+  },
+  {
+    "word": "ones,",
+    "start": 20.706
+  },
+  {
+    "word": "preserving",
+    "start": 21.124
+  },
+  {
+    "word": "the",
+    "start": 21.543
+  },
+  {
+    "word": "complete",
+    "start": 21.962
+  },
+  {
+    "word": "history",
+    "start": 22.381
+  },
+  {
+    "word": "of",
+    "start": 22.8
+  },
+  {
+    "word": "decisions.",
+    "start": 23.219
+  },
+  {
+    "word": "Every",
+    "start": 23.937
+  },
+  {
+    "word": "IntentLedgerEntry",
+    "start": 24.626
+  },
+  {
+    "word": "captures",
+    "start": 25.314
+  },
+  {
+    "word": "rich",
+    "start": 26.003
+  },
+  {
+    "word": "context:",
+    "start": 26.691
+  },
+  {
+    "word": "NomosActorId",
+    "start": 27.38
+  },
+  {
+    "word": "(who",
+    "start": 28.068
+  },
+  {
+    "word": "initiated",
+    "start": 28.757
+  },
+  {
+    "word": "it),",
+    "start": 29.445
+  },
+  {
+    "word": "NomosWorkspaceId",
+    "start": 30.134
+  },
+  {
+    "word": "(the",
+    "start": 30.822
+  },
+  {
+    "word": "tenant",
+    "start": 31.511
+  },
+  {
+    "word": "boundary),",
+    "start": 32.199
+  },
+  {
+    "word": "NomosTimelineId",
+    "start": 32.888
+  },
+  {
+    "word": "(enabling",
+    "start": 33.576
+  },
+  {
+    "word": "branching",
+    "start": 34.265
+  },
+  {
+    "word": "for",
+    "start": 34.953
+  },
+  {
+    "word": "what-if",
+    "start": 35.642
+  },
+  {
+    "word": "scenarios),",
+    "start": 36.33
+  },
+  {
+    "word": "NomosCorrelationId",
+    "start": 37.019
+  },
+  {
+    "word": "and",
+    "start": 37.707
+  },
+  {
+    "word": "NomosCausationId",
+    "start": 38.396
+  },
+  {
+    "word": "(for",
+    "start": 39.084
+  },
+  {
+    "word": "distributed",
+    "start": 39.772
+  },
+  {
+    "word": "tracing),",
+    "start": 40.461
+  },
+  {
+    "word": "plus",
+    "start": 41.149
+  },
+  {
+    "word": "the",
+    "start": 41.838
+  },
+  {
+    "word": "full",
+    "start": 42.526
+  },
+  {
+    "word": "chain",
+    "start": 43.215
+  },
+  {
+    "word": "of",
+    "start": 43.903
+  },
+  {
+    "word": "DirectiveOutcomes",
+    "start": 44.592
+  },
+  {
+    "word": "and",
+    "start": 45.28
+  },
+  {
+    "word": "Events.",
+    "start": 45.969
+  },
+  {
+    "word": "Sequence",
+    "start": 46.957
+  },
+  {
+    "word": "numbers",
+    "start": 47.756
+  },
+  {
+    "word": "track",
+    "start": 48.554
+  },
+  {
+    "word": "ordering:",
+    "start": 49.352
+  },
+  {
+    "word": "workspaceIntentSequence",
+    "start": 50.15
+  },
+  {
+    "word": "for",
+    "start": 50.948
+  },
+  {
+    "word": "intents,",
+    "start": 51.747
+  },
+  {
+    "word": "startWorkspaceEventSequence",
+    "start": 52.545
+  },
+  {
+    "word": "and",
+    "start": 53.343
+  },
+  {
+    "word": "endWorkspaceEventSequence",
+    "start": 54.141
+  },
+  {
+    "word": "for",
+    "start": 54.94
+  },
+  {
+    "word": "events.",
+    "start": 55.738
+  },
+  {
+    "word": "This",
+    "start": 56.836
+  },
+  {
+    "word": "structure",
+    "start": 57.23
+  },
+  {
+    "word": "enables",
+    "start": 57.625
+  },
+  {
+    "word": "something",
+    "start": 58.019
+  },
+  {
+    "word": "remarkable:",
+    "start": 58.413
+  },
+  {
+    "word": "you",
+    "start": 58.807
+  },
+  {
+    "word": "can",
+    "start": 59.202
+  },
+  {
+    "word": "replay",
+    "start": 59.596
+  },
+  {
+    "word": "the",
+    "start": 59.99
+  },
+  {
+    "word": "entire",
+    "start": 60.384
+  },
+  {
+    "word": "history",
+    "start": 60.779
+  },
+  {
+    "word": "of",
+    "start": 61.173
+  },
+  {
+    "word": "a",
+    "start": 61.567
+  },
+  {
+    "word": "system,",
+    "start": 61.962
+  },
+  {
+    "word": "skip",
+    "start": 62.356
+  },
+  {
+    "word": "struck-out",
+    "start": 62.75
+  },
+  {
+    "word": "intents,",
+    "start": 63.144
+  },
+  {
+    "word": "and",
+    "start": 63.539
+  },
+  {
+    "word": "arrive",
+    "start": 63.933
+  },
+  {
+    "word": "at",
+    "start": 64.327
+  },
+  {
+    "word": "any",
+    "start": 64.721
+  },
+  {
+    "word": "point",
+    "start": 65.116
+  },
+  {
+    "word": "in",
+    "start": 65.51
+  },
+  {
+    "word": "time",
+    "start": 65.904
+  },
+  {
+    "word": "with",
+    "start": 66.299
+  },
+  {
+    "word": "perfect",
+    "start": 66.693
+  },
+  {
+    "word": "fidelity.",
+    "start": 67.087
+  }
+]

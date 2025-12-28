@@ -1,0 +1,434 @@
+[
+  {
+    "word": "The",
+    "start": 0
+  },
+  {
+    "word": "Policy",
+    "start": 0.469
+  },
+  {
+    "word": "Router",
+    "start": 0.939
+  },
+  {
+    "word": "Orchestrating",
+    "start": 1.908
+  },
+  {
+    "word": "cross-context",
+    "start": 2.768
+  },
+  {
+    "word": "workflows",
+    "start": 3.629
+  },
+  {
+    "word": "policy_v1",
+    "start": 4.989
+  },
+  {
+    "word": "is",
+    "start": 5.488
+  },
+  {
+    "word": "the",
+    "start": 5.987
+  },
+  {
+    "word": "orchestration",
+    "start": 6.486
+  },
+  {
+    "word": "layer\u2014the",
+    "start": 6.985
+  },
+  {
+    "word": "single",
+    "start": 7.484
+  },
+  {
+    "word": "file",
+    "start": 7.983
+  },
+  {
+    "word": "that",
+    "start": 8.482
+  },
+  {
+    "word": "knows",
+    "start": 8.981
+  },
+  {
+    "word": "about",
+    "start": 9.48
+  },
+  {
+    "word": "all",
+    "start": 9.979
+  },
+  {
+    "word": "bounded",
+    "start": 10.478
+  },
+  {
+    "word": "contexts",
+    "start": 10.977
+  },
+  {
+    "word": "and",
+    "start": 11.476
+  },
+  {
+    "word": "routes",
+    "start": 11.975
+  },
+  {
+    "word": "intents",
+    "start": 12.474
+  },
+  {
+    "word": "to",
+    "start": 12.973
+  },
+  {
+    "word": "directives.",
+    "start": 13.472
+  },
+  {
+    "word": "Co2PolicyRouter",
+    "start": 14.271
+  },
+  {
+    "word": "implements",
+    "start": 14.93
+  },
+  {
+    "word": "PolicyRouter.route(),",
+    "start": 15.59
+  },
+  {
+    "word": "receiving",
+    "start": 16.249
+  },
+  {
+    "word": "an",
+    "start": 16.909
+  },
+  {
+    "word": "intent",
+    "start": 17.568
+  },
+  {
+    "word": "and",
+    "start": 18.228
+  },
+  {
+    "word": "returning",
+    "start": 18.888
+  },
+  {
+    "word": "directives",
+    "start": 19.547
+  },
+  {
+    "word": "that",
+    "start": 20.207
+  },
+  {
+    "word": "span",
+    "start": 20.866
+  },
+  {
+    "word": "contexts.",
+    "start": 21.526
+  },
+  {
+    "word": "When",
+    "start": 22.485
+  },
+  {
+    "word": "AcceptEstateInvitationIntent",
+    "start": 23.441
+  },
+  {
+    "word": "arrives,",
+    "start": 24.396
+  },
+  {
+    "word": "the",
+    "start": 25.352
+  },
+  {
+    "word": "router",
+    "start": 26.307
+  },
+  {
+    "word": "might",
+    "start": 27.263
+  },
+  {
+    "word": "return:",
+    "start": 28.218
+  },
+  {
+    "word": "UpdateInvitationStatusDirective",
+    "start": 29.174
+  },
+  {
+    "word": "(identity",
+    "start": 30.129
+  },
+  {
+    "word": "context),",
+    "start": 31.085
+  },
+  {
+    "word": "GrantEstatePermissionDirective",
+    "start": 32.04
+  },
+  {
+    "word": "(permissions",
+    "start": 32.996
+  },
+  {
+    "word": "context),",
+    "start": 33.951
+  },
+  {
+    "word": "and",
+    "start": 34.907
+  },
+  {
+    "word": "CreateNotificationDirective",
+    "start": 35.862
+  },
+  {
+    "word": "(identity",
+    "start": 36.818
+  },
+  {
+    "word": "context,",
+    "start": 37.773
+  },
+  {
+    "word": "different",
+    "start": 38.729
+  },
+  {
+    "word": "aggregate).",
+    "start": 39.684
+  },
+  {
+    "word": "This",
+    "start": 40.94
+  },
+  {
+    "word": "is",
+    "start": 41.363
+  },
+  {
+    "word": "where",
+    "start": 41.786
+  },
+  {
+    "word": "cross-cutting",
+    "start": 42.209
+  },
+  {
+    "word": "concerns",
+    "start": 42.632
+  },
+  {
+    "word": "live.",
+    "start": 43.056
+  },
+  {
+    "word": "The",
+    "start": 43.779
+  },
+  {
+    "word": "router",
+    "start": 44.212
+  },
+  {
+    "word": "enforces",
+    "start": 44.645
+  },
+  {
+    "word": "business",
+    "start": 45.079
+  },
+  {
+    "word": "rules:",
+    "start": 45.512
+  },
+  {
+    "word": "'Only",
+    "start": 45.946
+  },
+  {
+    "word": "admins",
+    "start": 46.379
+  },
+  {
+    "word": "can",
+    "start": 46.812
+  },
+  {
+    "word": "grant",
+    "start": 47.246
+  },
+  {
+    "word": "admin",
+    "start": 47.679
+  },
+  {
+    "word": "permissions',",
+    "start": 48.113
+  },
+  {
+    "word": "'Assets",
+    "start": 48.546
+  },
+  {
+    "word": "can",
+    "start": 48.98
+  },
+  {
+    "word": "only",
+    "start": 49.413
+  },
+  {
+    "word": "be",
+    "start": 49.846
+  },
+  {
+    "word": "placed",
+    "start": 50.28
+  },
+  {
+    "word": "in",
+    "start": 50.713
+  },
+  {
+    "word": "published",
+    "start": 51.147
+  },
+  {
+    "word": "topology'.",
+    "start": 51.58
+  },
+  {
+    "word": "It",
+    "start": 52.313
+  },
+  {
+    "word": "validates",
+    "start": 53.204
+  },
+  {
+    "word": "post-execution:",
+    "start": 54.095
+  },
+  {
+    "word": "router.validateDirectiveExecution()",
+    "start": 54.985
+  },
+  {
+    "word": "checks",
+    "start": 55.876
+  },
+  {
+    "word": "invariants",
+    "start": 56.767
+  },
+  {
+    "word": "after",
+    "start": 57.657
+  },
+  {
+    "word": "mutations.",
+    "start": 58.548
+  },
+  {
+    "word": "The",
+    "start": 59.739
+  },
+  {
+    "word": "policy",
+    "start": 60.175
+  },
+  {
+    "word": "layer",
+    "start": 60.611
+  },
+  {
+    "word": "is",
+    "start": 61.047
+  },
+  {
+    "word": "where",
+    "start": 61.484
+  },
+  {
+    "word": "the",
+    "start": 61.92
+  },
+  {
+    "word": "bounded",
+    "start": 62.356
+  },
+  {
+    "word": "contexts",
+    "start": 62.793
+  },
+  {
+    "word": "talk",
+    "start": 63.229
+  },
+  {
+    "word": "to",
+    "start": 63.665
+  },
+  {
+    "word": "each",
+    "start": 64.101
+  },
+  {
+    "word": "other\u2014not",
+    "start": 64.538
+  },
+  {
+    "word": "through",
+    "start": 64.974
+  },
+  {
+    "word": "direct",
+    "start": 65.41
+  },
+  {
+    "word": "dependencies,",
+    "start": 65.846
+  },
+  {
+    "word": "but",
+    "start": 66.283
+  },
+  {
+    "word": "through",
+    "start": 66.719
+  },
+  {
+    "word": "orchestrated",
+    "start": 67.155
+  },
+  {
+    "word": "intent",
+    "start": 67.591
+  },
+  {
+    "word": "handling.",
+    "start": 68.028
+  }
+]

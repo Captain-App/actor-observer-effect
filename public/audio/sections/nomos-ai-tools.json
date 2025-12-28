@@ -1,0 +1,418 @@
+[
+  {
+    "word": "Intents",
+    "start": 0
+  },
+  {
+    "word": "as",
+    "start": 0.457
+  },
+  {
+    "word": "AI",
+    "start": 0.913
+  },
+  {
+    "word": "Agent",
+    "start": 1.37
+  },
+  {
+    "word": "Tools",
+    "start": 1.826
+  },
+  {
+    "word": "A",
+    "start": 2.783
+  },
+  {
+    "word": "typed",
+    "start": 3.22
+  },
+  {
+    "word": "toolbelt",
+    "start": 3.657
+  },
+  {
+    "word": "for",
+    "start": 4.095
+  },
+  {
+    "word": "autonomous",
+    "start": 4.532
+  },
+  {
+    "word": "action",
+    "start": 4.969
+  },
+  {
+    "word": "Here's",
+    "start": 5.907
+  },
+  {
+    "word": "where",
+    "start": 6.49
+  },
+  {
+    "word": "NOMOS",
+    "start": 7.073
+  },
+  {
+    "word": "becomes",
+    "start": 7.656
+  },
+  {
+    "word": "genuinely",
+    "start": 8.239
+  },
+  {
+    "word": "AI-native.",
+    "start": 8.822
+  },
+  {
+    "word": "NomosIntentOpenApiBuilder",
+    "start": 9.705
+  },
+  {
+    "word": "generates",
+    "start": 11.028
+  },
+  {
+    "word": "OpenAPI",
+    "start": 12.351
+  },
+  {
+    "word": "3.1.0",
+    "start": 13.673
+  },
+  {
+    "word": "specifications",
+    "start": 14.996
+  },
+  {
+    "word": "directly",
+    "start": 16.319
+  },
+  {
+    "word": "from",
+    "start": 17.641
+  },
+  {
+    "word": "IntentRegistrySnapshot.",
+    "start": 18.964
+  },
+  {
+    "word": "The",
+    "start": 20.587
+  },
+  {
+    "word": "POST",
+    "start": 21.264
+  },
+  {
+    "word": "/intent",
+    "start": 21.941
+  },
+  {
+    "word": "endpoint",
+    "start": 22.619
+  },
+  {
+    "word": "accepts",
+    "start": 23.296
+  },
+  {
+    "word": "a",
+    "start": 23.973
+  },
+  {
+    "word": "discriminated",
+    "start": 24.651
+  },
+  {
+    "word": "union:",
+    "start": 25.328
+  },
+  {
+    "word": "intentType",
+    "start": 26.005
+  },
+  {
+    "word": "(enum",
+    "start": 26.683
+  },
+  {
+    "word": "of",
+    "start": 27.36
+  },
+  {
+    "word": "registered",
+    "start": 28.037
+  },
+  {
+    "word": "types),",
+    "start": 28.715
+  },
+  {
+    "word": "payload",
+    "start": 29.392
+  },
+  {
+    "word": "(the",
+    "start": 30.069
+  },
+  {
+    "word": "NomosIntentPayload",
+    "start": 30.747
+  },
+  {
+    "word": "oneOf",
+    "start": 31.424
+  },
+  {
+    "word": "schema),",
+    "start": 32.101
+  },
+  {
+    "word": "and",
+    "start": 32.779
+  },
+  {
+    "word": "context",
+    "start": 33.456
+  },
+  {
+    "word": "(workspaceId,",
+    "start": 34.133
+  },
+  {
+    "word": "timelineId,",
+    "start": 34.811
+  },
+  {
+    "word": "actorId,",
+    "start": 35.488
+  },
+  {
+    "word": "correlationId).",
+    "start": 36.165
+  },
+  {
+    "word": "Each",
+    "start": 37.143
+  },
+  {
+    "word": "Intent",
+    "start": 37.821
+  },
+  {
+    "word": "becomes",
+    "start": 38.5
+  },
+  {
+    "word": "a",
+    "start": 39.179
+  },
+  {
+    "word": "typed",
+    "start": 39.858
+  },
+  {
+    "word": "schema",
+    "start": 40.537
+  },
+  {
+    "word": "like",
+    "start": 41.215
+  },
+  {
+    "word": "IntentPayload_CreateTrackableAssetIntent",
+    "start": 41.894
+  },
+  {
+    "word": "with",
+    "start": 42.573
+  },
+  {
+    "word": "documented",
+    "start": 43.252
+  },
+  {
+    "word": "properties.",
+    "start": 43.931
+  },
+  {
+    "word": "The",
+    "start": 44.909
+  },
+  {
+    "word": "response",
+    "start": 45.588
+  },
+  {
+    "word": "returns",
+    "start": 46.267
+  },
+  {
+    "word": "NomosIntentLedgerEntry",
+    "start": 46.946
+  },
+  {
+    "word": "with",
+    "start": 47.624
+  },
+  {
+    "word": "success",
+    "start": 48.303
+  },
+  {
+    "word": "status,",
+    "start": 48.982
+  },
+  {
+    "word": "sequence",
+    "start": 49.661
+  },
+  {
+    "word": "numbers,",
+    "start": 50.34
+  },
+  {
+    "word": "and",
+    "start": 51.018
+  },
+  {
+    "word": "appliedDirectives.",
+    "start": 51.697
+  },
+  {
+    "word": "AI",
+    "start": 52.676
+  },
+  {
+    "word": "agents",
+    "start": 53.515
+  },
+  {
+    "word": "receive",
+    "start": 54.354
+  },
+  {
+    "word": "a",
+    "start": 55.193
+  },
+  {
+    "word": "catalogue",
+    "start": 56.032
+  },
+  {
+    "word": "of",
+    "start": 56.872
+  },
+  {
+    "word": "actions\u2014CreateAssetIntent,",
+    "start": 57.711
+  },
+  {
+    "word": "MoveAssetIntent,",
+    "start": 58.55
+  },
+  {
+    "word": "AssignResponsibilityIntent\u2014each",
+    "start": 59.389
+  },
+  {
+    "word": "with",
+    "start": 60.228
+  },
+  {
+    "word": "clear",
+    "start": 61.067
+  },
+  {
+    "word": "semantics.",
+    "start": 61.906
+  },
+  {
+    "word": "Server-only",
+    "start": 63.045
+  },
+  {
+    "word": "intents",
+    "start": 63.831
+  },
+  {
+    "word": "are",
+    "start": 64.617
+  },
+  {
+    "word": "marked",
+    "start": 65.403
+  },
+  {
+    "word": "with",
+    "start": 66.188
+  },
+  {
+    "word": "x-nomos-requiresServerRuntime.",
+    "start": 66.974
+  },
+  {
+    "word": "The",
+    "start": 68.06
+  },
+  {
+    "word": "agent",
+    "start": 68.531
+  },
+  {
+    "word": "doesn't",
+    "start": 69.002
+  },
+  {
+    "word": "need",
+    "start": 69.472
+  },
+  {
+    "word": "implementation",
+    "start": 69.943
+  },
+  {
+    "word": "details;",
+    "start": 70.414
+  },
+  {
+    "word": "the",
+    "start": 70.885
+  },
+  {
+    "word": "ledger",
+    "start": 71.355
+  },
+  {
+    "word": "provides",
+    "start": 71.826
+  },
+  {
+    "word": "complete",
+    "start": 72.297
+  },
+  {
+    "word": "traceability",
+    "start": 72.768
+  },
+  {
+    "word": "of",
+    "start": 73.238
+  },
+  {
+    "word": "every",
+    "start": 73.709
+  },
+  {
+    "word": "action",
+    "start": 74.18
+  },
+  {
+    "word": "taken.",
+    "start": 74.651
+  }
+]

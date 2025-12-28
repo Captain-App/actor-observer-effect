@@ -1,0 +1,518 @@
+[
+  {
+    "word": "Lessons",
+    "start": 0
+  },
+  {
+    "word": "from",
+    "start": 0.562
+  },
+  {
+    "word": "CO2",
+    "start": 1.124
+  },
+  {
+    "word": "What",
+    "start": 2.185
+  },
+  {
+    "word": "the",
+    "start": 2.598
+  },
+  {
+    "word": "codebase",
+    "start": 3.01
+  },
+  {
+    "word": "teaches",
+    "start": 3.423
+  },
+  {
+    "word": "about",
+    "start": 3.835
+  },
+  {
+    "word": "NOMOS",
+    "start": 4.248
+  },
+  {
+    "word": "Building",
+    "start": 5.16
+  },
+  {
+    "word": "CO2",
+    "start": 5.524
+  },
+  {
+    "word": "taught",
+    "start": 5.889
+  },
+  {
+    "word": "us",
+    "start": 6.253
+  },
+  {
+    "word": "what",
+    "start": 6.617
+  },
+  {
+    "word": "NOMOS",
+    "start": 6.982
+  },
+  {
+    "word": "is",
+    "start": 7.346
+  },
+  {
+    "word": "good",
+    "start": 7.71
+  },
+  {
+    "word": "at",
+    "start": 8.074
+  },
+  {
+    "word": "and",
+    "start": 8.439
+  },
+  {
+    "word": "where",
+    "start": 8.803
+  },
+  {
+    "word": "it",
+    "start": 9.167
+  },
+  {
+    "word": "struggles.",
+    "start": 9.532
+  },
+  {
+    "word": "Intent-driven",
+    "start": 10.196
+  },
+  {
+    "word": "architecture",
+    "start": 10.987
+  },
+  {
+    "word": "works:",
+    "start": 11.779
+  },
+  {
+    "word": "146",
+    "start": 12.57
+  },
+  {
+    "word": "intents",
+    "start": 13.361
+  },
+  {
+    "word": "with",
+    "start": 14.152
+  },
+  {
+    "word": "human-readable",
+    "start": 14.944
+  },
+  {
+    "word": "descriptions",
+    "start": 15.735
+  },
+  {
+    "word": "create",
+    "start": 16.526
+  },
+  {
+    "word": "genuine",
+    "start": 17.317
+  },
+  {
+    "word": "auditability.",
+    "start": 18.109
+  },
+  {
+    "word": "Bounded",
+    "start": 19.2
+  },
+  {
+    "word": "contexts",
+    "start": 19.77
+  },
+  {
+    "word": "as",
+    "start": 20.34
+  },
+  {
+    "word": "packages",
+    "start": 20.91
+  },
+  {
+    "word": "enforce",
+    "start": 21.48
+  },
+  {
+    "word": "clean",
+    "start": 22.05
+  },
+  {
+    "word": "dependencies.",
+    "start": 22.619
+  },
+  {
+    "word": "The",
+    "start": 23.489
+  },
+  {
+    "word": "policy",
+    "start": 24.058
+  },
+  {
+    "word": "router",
+    "start": 24.627
+  },
+  {
+    "word": "centralises",
+    "start": 25.196
+  },
+  {
+    "word": "orchestration",
+    "start": 25.765
+  },
+  {
+    "word": "without",
+    "start": 26.334
+  },
+  {
+    "word": "creating",
+    "start": 26.903
+  },
+  {
+    "word": "a",
+    "start": 27.472
+  },
+  {
+    "word": "monolith.",
+    "start": 28.04
+  },
+  {
+    "word": "Narrative",
+    "start": 28.909
+  },
+  {
+    "word": "tests",
+    "start": 29.502
+  },
+  {
+    "word": "express",
+    "start": 30.095
+  },
+  {
+    "word": "real",
+    "start": 30.689
+  },
+  {
+    "word": "requirements.",
+    "start": 31.282
+  },
+  {
+    "word": "The",
+    "start": 32.175
+  },
+  {
+    "word": "glossary",
+    "start": 32.759
+  },
+  {
+    "word": "maintains",
+    "start": 33.344
+  },
+  {
+    "word": "shared",
+    "start": 33.928
+  },
+  {
+    "word": "understanding.",
+    "start": 34.513
+  },
+  {
+    "word": "But:",
+    "start": 35.397
+  },
+  {
+    "word": "value",
+    "start": 35.836
+  },
+  {
+    "word": "object",
+    "start": 36.274
+  },
+  {
+    "word": "discipline",
+    "start": 36.712
+  },
+  {
+    "word": "is",
+    "start": 37.151
+  },
+  {
+    "word": "hard",
+    "start": 37.589
+  },
+  {
+    "word": "to",
+    "start": 38.027
+  },
+  {
+    "word": "maintain",
+    "start": 38.465
+  },
+  {
+    "word": "under",
+    "start": 38.904
+  },
+  {
+    "word": "deadline",
+    "start": 39.342
+  },
+  {
+    "word": "pressure.",
+    "start": 39.78
+  },
+  {
+    "word": "Growing",
+    "start": 40.519
+  },
+  {
+    "word": "a",
+    "start": 41.012
+  },
+  {
+    "word": "shared",
+    "start": 41.506
+  },
+  {
+    "word": "contracts",
+    "start": 42.0
+  },
+  {
+    "word": "package",
+    "start": 42.494
+  },
+  {
+    "word": "requires",
+    "start": 42.987
+  },
+  {
+    "word": "governance.",
+    "start": 43.481
+  },
+  {
+    "word": "Complex",
+    "start": 44.275
+  },
+  {
+    "word": "spatial",
+    "start": 44.908
+  },
+  {
+    "word": "modelling",
+    "start": 45.54
+  },
+  {
+    "word": "creates",
+    "start": 46.173
+  },
+  {
+    "word": "accidental",
+    "start": 46.806
+  },
+  {
+    "word": "complexity.",
+    "start": 47.439
+  },
+  {
+    "word": "The",
+    "start": 48.372
+  },
+  {
+    "word": "draft/publish",
+    "start": 48.959
+  },
+  {
+    "word": "workflow",
+    "start": 49.545
+  },
+  {
+    "word": "adds",
+    "start": 50.132
+  },
+  {
+    "word": "cognitive",
+    "start": 50.719
+  },
+  {
+    "word": "load.",
+    "start": 51.305
+  },
+  {
+    "word": "Event",
+    "start": 52.192
+  },
+  {
+    "word": "sourcing",
+    "start": 52.665
+  },
+  {
+    "word": "makes",
+    "start": 53.138
+  },
+  {
+    "word": "some",
+    "start": 53.611
+  },
+  {
+    "word": "queries",
+    "start": 54.084
+  },
+  {
+    "word": "expensive.",
+    "start": 54.556
+  },
+  {
+    "word": "NOMOS",
+    "start": 55.329
+  },
+  {
+    "word": "is",
+    "start": 55.663
+  },
+  {
+    "word": "a",
+    "start": 55.997
+  },
+  {
+    "word": "powerful",
+    "start": 56.33
+  },
+  {
+    "word": "foundation,",
+    "start": 56.664
+  },
+  {
+    "word": "but",
+    "start": 56.998
+  },
+  {
+    "word": "it",
+    "start": 57.332
+  },
+  {
+    "word": "doesn't",
+    "start": 57.665
+  },
+  {
+    "word": "prevent",
+    "start": 57.999
+  },
+  {
+    "word": "you",
+    "start": 58.333
+  },
+  {
+    "word": "from",
+    "start": 58.666
+  },
+  {
+    "word": "making",
+    "start": 59.0
+  },
+  {
+    "word": "a",
+    "start": 59.334
+  },
+  {
+    "word": "mess.",
+    "start": 59.668
+  },
+  {
+    "word": "CO2",
+    "start": 60.301
+  },
+  {
+    "word": "is",
+    "start": 60.859
+  },
+  {
+    "word": "an",
+    "start": 61.417
+  },
+  {
+    "word": "honest",
+    "start": 61.974
+  },
+  {
+    "word": "demonstration:",
+    "start": 62.532
+  },
+  {
+    "word": "sophisticated",
+    "start": 63.09
+  },
+  {
+    "word": "architecture,",
+    "start": 63.648
+  },
+  {
+    "word": "real",
+    "start": 64.205
+  },
+  {
+    "word": "client",
+    "start": 64.763
+  },
+  {
+    "word": "value,",
+    "start": 65.321
+  },
+  {
+    "word": "and",
+    "start": 65.878
+  },
+  {
+    "word": "visible",
+    "start": 66.436
+  },
+  {
+    "word": "rough",
+    "start": 66.994
+  },
+  {
+    "word": "edges.",
+    "start": 67.552
+  },
+  {
+    "word": "That's",
+    "start": 68.409
+  },
+  {
+    "word": "what",
+    "start": 68.804
+  },
+  {
+    "word": "production",
+    "start": 69.199
+  },
+  {
+    "word": "software",
+    "start": 69.593
+  },
+  {
+    "word": "looks",
+    "start": 69.988
+  },
+  {
+    "word": "like.",
+    "start": 70.383
+  }
+]

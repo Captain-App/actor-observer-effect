@@ -1,0 +1,270 @@
+[
+  {
+    "word": "App:",
+    "start": 0
+  },
+  {
+    "word": "Neo4j",
+    "start": 0.64
+  },
+  {
+    "word": "Graph",
+    "start": 1.28
+  },
+  {
+    "word": "Database",
+    "start": 1.92
+  },
+  {
+    "word": "Relationship",
+    "start": 3.06
+  },
+  {
+    "word": "mapping",
+    "start": 3.606
+  },
+  {
+    "word": "for",
+    "start": 4.152
+  },
+  {
+    "word": "business",
+    "start": 4.698
+  },
+  {
+    "word": "entities",
+    "start": 5.245
+  },
+  {
+    "word": "Neo4j",
+    "start": 6.291
+  },
+  {
+    "word": "integration",
+    "start": 6.879
+  },
+  {
+    "word": "transforms",
+    "start": 7.468
+  },
+  {
+    "word": "relational",
+    "start": 8.057
+  },
+  {
+    "word": "data",
+    "start": 8.646
+  },
+  {
+    "word": "into",
+    "start": 9.235
+  },
+  {
+    "word": "a",
+    "start": 9.823
+  },
+  {
+    "word": "graph",
+    "start": 10.412
+  },
+  {
+    "word": "of",
+    "start": 11.001
+  },
+  {
+    "word": "connections.",
+    "start": 11.59
+  },
+  {
+    "word": "The",
+    "start": 12.479
+  },
+  {
+    "word": "ingest-to-neo4j",
+    "start": 13.241
+  },
+  {
+    "word": "function",
+    "start": 14.004
+  },
+  {
+    "word": "pushes",
+    "start": 14.767
+  },
+  {
+    "word": "entities;",
+    "start": 15.529
+  },
+  {
+    "word": "execute-graph-read",
+    "start": 16.292
+  },
+  {
+    "word": "queries",
+    "start": 17.055
+  },
+  {
+    "word": "them.",
+    "start": 17.817
+  },
+  {
+    "word": "The",
+    "start": 18.88
+  },
+  {
+    "word": "transform-to-graph",
+    "start": 19.432
+  },
+  {
+    "word": "function",
+    "start": 19.984
+  },
+  {
+    "word": "generates",
+    "start": 20.536
+  },
+  {
+    "word": "Cypher",
+    "start": 21.088
+  },
+  {
+    "word": "from",
+    "start": 21.64
+  },
+  {
+    "word": "natural",
+    "start": 22.192
+  },
+  {
+    "word": "language.",
+    "start": 22.744
+  },
+  {
+    "word": "The",
+    "start": 23.596
+  },
+  {
+    "word": "admin",
+    "start": 24.16
+  },
+  {
+    "word": "UI",
+    "start": 24.723
+  },
+  {
+    "word": "manages",
+    "start": 25.287
+  },
+  {
+    "word": "Neo4j",
+    "start": 25.85
+  },
+  {
+    "word": "Aura",
+    "start": 26.414
+  },
+  {
+    "word": "instances",
+    "start": 26.977
+  },
+  {
+    "word": "with",
+    "start": 27.541
+  },
+  {
+    "word": "pause/resume",
+    "start": 28.104
+  },
+  {
+    "word": "for",
+    "start": 28.668
+  },
+  {
+    "word": "cost",
+    "start": 29.232
+  },
+  {
+    "word": "control.",
+    "start": 29.795
+  },
+  {
+    "word": "It's",
+    "start": 30.659
+  },
+  {
+    "word": "a",
+    "start": 31.125
+  },
+  {
+    "word": "fascinating",
+    "start": 31.591
+  },
+  {
+    "word": "capability\u2014visualising",
+    "start": 32.057
+  },
+  {
+    "word": "'who",
+    "start": 32.523
+  },
+  {
+    "word": "knows",
+    "start": 32.989
+  },
+  {
+    "word": "whom'",
+    "start": 33.455
+  },
+  {
+    "word": "or",
+    "start": 33.922
+  },
+  {
+    "word": "'which",
+    "start": 34.388
+  },
+  {
+    "word": "projects",
+    "start": 34.854
+  },
+  {
+    "word": "touch",
+    "start": 35.32
+  },
+  {
+    "word": "which",
+    "start": 35.786
+  },
+  {
+    "word": "integrations'\u2014but",
+    "start": 36.252
+  },
+  {
+    "word": "it's",
+    "start": 36.718
+  },
+  {
+    "word": "infrastructure",
+    "start": 37.185
+  },
+  {
+    "word": "looking",
+    "start": 37.651
+  },
+  {
+    "word": "for",
+    "start": 38.117
+  },
+  {
+    "word": "a",
+    "start": 38.583
+  },
+  {
+    "word": "use",
+    "start": 39.049
+  },
+  {
+    "word": "case.",
+    "start": 39.515
+  }
+]

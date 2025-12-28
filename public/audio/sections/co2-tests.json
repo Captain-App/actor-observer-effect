@@ -1,0 +1,514 @@
+[
+  {
+    "word": "The",
+    "start": 0
+  },
+  {
+    "word": "Narrative",
+    "start": 0.437
+  },
+  {
+    "word": "Test",
+    "start": 0.875
+  },
+  {
+    "word": "Suite",
+    "start": 1.312
+  },
+  {
+    "word": "Bill's",
+    "start": 2.249
+  },
+  {
+    "word": "journey",
+    "start": 2.655
+  },
+  {
+    "word": "through",
+    "start": 3.06
+  },
+  {
+    "word": "the",
+    "start": 3.465
+  },
+  {
+    "word": "platform",
+    "start": 3.871
+  },
+  {
+    "word": "The",
+    "start": 4.776
+  },
+  {
+    "word": "policy",
+    "start": 5.145
+  },
+  {
+    "word": "tests",
+    "start": 5.514
+  },
+  {
+    "word": "are",
+    "start": 5.883
+  },
+  {
+    "word": "unusual:",
+    "start": 6.252
+  },
+  {
+    "word": "they",
+    "start": 6.621
+  },
+  {
+    "word": "read",
+    "start": 6.99
+  },
+  {
+    "word": "like",
+    "start": 7.359
+  },
+  {
+    "word": "a",
+    "start": 7.729
+  },
+  {
+    "word": "story.",
+    "start": 8.098
+  },
+  {
+    "word": "'Chapter",
+    "start": 8.767
+  },
+  {
+    "word": "1:",
+    "start": 9.199
+  },
+  {
+    "word": "Bill",
+    "start": 9.631
+  },
+  {
+    "word": "Gets",
+    "start": 10.064
+  },
+  {
+    "word": "Started'\u2014Bill",
+    "start": 10.496
+  },
+  {
+    "word": "from",
+    "start": 10.928
+  },
+  {
+    "word": "accounting",
+    "start": 11.36
+  },
+  {
+    "word": "creates",
+    "start": 11.793
+  },
+  {
+    "word": "a",
+    "start": 12.225
+  },
+  {
+    "word": "user",
+    "start": 12.657
+  },
+  {
+    "word": "account,",
+    "start": 13.089
+  },
+  {
+    "word": "maps",
+    "start": 13.522
+  },
+  {
+    "word": "his",
+    "start": 13.954
+  },
+  {
+    "word": "office",
+    "start": 14.386
+  },
+  {
+    "word": "floor,",
+    "start": 14.819
+  },
+  {
+    "word": "tracks",
+    "start": 15.251
+  },
+  {
+    "word": "his",
+    "start": 15.683
+  },
+  {
+    "word": "first",
+    "start": 16.115
+  },
+  {
+    "word": "assets.",
+    "start": 16.548
+  },
+  {
+    "word": "'Chapter",
+    "start": 17.28
+  },
+  {
+    "word": "2:",
+    "start": 17.755
+  },
+  {
+    "word": "Bill",
+    "start": 18.23
+  },
+  {
+    "word": "invites",
+    "start": 18.705
+  },
+  {
+    "word": "Wes'\u2014Wes",
+    "start": 19.181
+  },
+  {
+    "word": "joins",
+    "start": 19.656
+  },
+  {
+    "word": "the",
+    "start": 20.131
+  },
+  {
+    "word": "team,",
+    "start": 20.606
+  },
+  {
+    "word": "explores",
+    "start": 21.081
+  },
+  {
+    "word": "the",
+    "start": 21.556
+  },
+  {
+    "word": "platform.",
+    "start": 22.032
+  },
+  {
+    "word": "'Chapter",
+    "start": 22.807
+  },
+  {
+    "word": "3:",
+    "start": 23.402
+  },
+  {
+    "word": "Patty",
+    "start": 23.997
+  },
+  {
+    "word": "discovers",
+    "start": 24.592
+  },
+  {
+    "word": "proposals'\u2014the",
+    "start": 25.187
+  },
+  {
+    "word": "CFO",
+    "start": 25.783
+  },
+  {
+    "word": "evaluates",
+    "start": 26.378
+  },
+  {
+    "word": "solar",
+    "start": 26.973
+  },
+  {
+    "word": "panel",
+    "start": 27.568
+  },
+  {
+    "word": "ROI.",
+    "start": 28.163
+  },
+  {
+    "word": "Each",
+    "start": 29.059
+  },
+  {
+    "word": "test",
+    "start": 29.781
+  },
+  {
+    "word": "file",
+    "start": 30.503
+  },
+  {
+    "word": "walks",
+    "start": 31.225
+  },
+  {
+    "word": "through",
+    "start": 31.947
+  },
+  {
+    "word": "real",
+    "start": 32.669
+  },
+  {
+    "word": "user",
+    "start": 33.391
+  },
+  {
+    "word": "journeys,",
+    "start": 34.114
+  },
+  {
+    "word": "asserting",
+    "start": 34.836
+  },
+  {
+    "word": "on",
+    "start": 35.558
+  },
+  {
+    "word": "Nomos",
+    "start": 36.28
+  },
+  {
+    "word": "state:",
+    "start": 37.002
+  },
+  {
+    "word": "'const",
+    "start": 37.724
+  },
+  {
+    "word": "user",
+    "start": 38.446
+  },
+  {
+    "word": "=",
+    "start": 39.169
+  },
+  {
+    "word": "state[AggregateId('bill-accounting')]",
+    "start": 39.891
+  },
+  {
+    "word": "as",
+    "start": 40.613
+  },
+  {
+    "word": "UserAggregate;",
+    "start": 41.335
+  },
+  {
+    "word": "expect(user.userId.value,",
+    "start": 42.057
+  },
+  {
+    "word": "equals('bill-accounting'))'.",
+    "start": 42.779
+  },
+  {
+    "word": "The",
+    "start": 43.801
+  },
+  {
+    "word": "super_story_test.md",
+    "start": 44.511
+  },
+  {
+    "word": "describes",
+    "start": 45.221
+  },
+  {
+    "word": "the",
+    "start": 45.931
+  },
+  {
+    "word": "arc:",
+    "start": 46.641
+  },
+  {
+    "word": "847",
+    "start": 47.351
+  },
+  {
+    "word": "retail",
+    "start": 48.061
+  },
+  {
+    "word": "stores,",
+    "start": 48.771
+  },
+  {
+    "word": "12",
+    "start": 49.481
+  },
+  {
+    "word": "manufacturing",
+    "start": 50.191
+  },
+  {
+    "word": "plants,",
+    "start": 50.901
+  },
+  {
+    "word": "predictive",
+    "start": 51.611
+  },
+  {
+    "word": "analytics",
+    "start": 52.32
+  },
+  {
+    "word": "preventing",
+    "start": 53.03
+  },
+  {
+    "word": "$2.3M",
+    "start": 53.74
+  },
+  {
+    "word": "in",
+    "start": 54.45
+  },
+  {
+    "word": "equipment",
+    "start": 55.16
+  },
+  {
+    "word": "failures.",
+    "start": 55.87
+  },
+  {
+    "word": "The",
+    "start": 56.88
+  },
+  {
+    "word": "tests",
+    "start": 57.458
+  },
+  {
+    "word": "demonstrate",
+    "start": 58.035
+  },
+  {
+    "word": "emergent",
+    "start": 58.613
+  },
+  {
+    "word": "behaviour:",
+    "start": 59.19
+  },
+  {
+    "word": "Bill's",
+    "start": 59.768
+  },
+  {
+    "word": "simple",
+    "start": 60.345
+  },
+  {
+    "word": "asset",
+    "start": 60.923
+  },
+  {
+    "word": "tracking",
+    "start": 61.5
+  },
+  {
+    "word": "scales",
+    "start": 62.078
+  },
+  {
+    "word": "to",
+    "start": 62.655
+  },
+  {
+    "word": "enterprise-wide",
+    "start": 63.233
+  },
+  {
+    "word": "facilities",
+    "start": 63.81
+  },
+  {
+    "word": "management.",
+    "start": 64.388
+  },
+  {
+    "word": "It's",
+    "start": 65.265
+  },
+  {
+    "word": "BDD",
+    "start": 65.96
+  },
+  {
+    "word": "taken",
+    "start": 66.655
+  },
+  {
+    "word": "seriously\u2014specs",
+    "start": 67.35
+  },
+  {
+    "word": "as",
+    "start": 68.045
+  },
+  {
+    "word": "executable",
+    "start": 68.74
+  },
+  {
+    "word": "documentation.",
+    "start": 69.434
+  },
+  {
+    "word": "It's",
+    "start": 70.429
+  },
+  {
+    "word": "also",
+    "start": 70.95
+  },
+  {
+    "word": "fragile:",
+    "start": 71.47
+  },
+  {
+    "word": "breaking",
+    "start": 71.991
+  },
+  {
+    "word": "changes",
+    "start": 72.511
+  },
+  {
+    "word": "ripple",
+    "start": 73.032
+  },
+  {
+    "word": "through",
+    "start": 73.553
+  },
+  {
+    "word": "67+",
+    "start": 74.073
+  },
+  {
+    "word": "test",
+    "start": 74.594
+  },
+  {
+    "word": "files.",
+    "start": 75.114
+  }
+]

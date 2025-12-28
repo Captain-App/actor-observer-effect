@@ -1,0 +1,358 @@
+[
+  {
+    "word": "Technical",
+    "start": 0
+  },
+  {
+    "word": "Deep",
+    "start": 0.472
+  },
+  {
+    "word": "Dive:",
+    "start": 0.945
+  },
+  {
+    "word": "Code",
+    "start": 1.417
+  },
+  {
+    "word": "Generation",
+    "start": 1.89
+  },
+  {
+    "word": "and",
+    "start": 2.362
+  },
+  {
+    "word": "Geo",
+    "start": 2.834
+  },
+  {
+    "word": "Reducing",
+    "start": 3.807
+  },
+  {
+    "word": "boilerplate,",
+    "start": 4.481
+  },
+  {
+    "word": "adding",
+    "start": 5.155
+  },
+  {
+    "word": "spatial",
+    "start": 5.829
+  },
+  {
+    "word": "intelligence",
+    "start": 6.503
+  },
+  {
+    "word": "nomos_codegen",
+    "start": 7.677
+  },
+  {
+    "word": "provides",
+    "start": 8.748
+  },
+  {
+    "word": "build_runner",
+    "start": 9.818
+  },
+  {
+    "word": "generators",
+    "start": 10.888
+  },
+  {
+    "word": "and",
+    "start": 11.958
+  },
+  {
+    "word": "NomosIntentOpenApiBuilder.",
+    "start": 13.028
+  },
+  {
+    "word": "buildDocument(IntentRegistrySnapshot)",
+    "start": 14.399
+  },
+  {
+    "word": "produces",
+    "start": 15.397
+  },
+  {
+    "word": "OpenAPI",
+    "start": 16.396
+  },
+  {
+    "word": "3.1.0",
+    "start": 17.394
+  },
+  {
+    "word": "with",
+    "start": 18.393
+  },
+  {
+    "word": "/intent",
+    "start": 19.391
+  },
+  {
+    "word": "POST",
+    "start": 20.39
+  },
+  {
+    "word": "endpoint,",
+    "start": 21.389
+  },
+  {
+    "word": "NomosIntentContext",
+    "start": 22.387
+  },
+  {
+    "word": "schema",
+    "start": 23.386
+  },
+  {
+    "word": "(workspaceId,",
+    "start": 24.384
+  },
+  {
+    "word": "timelineId,",
+    "start": 25.383
+  },
+  {
+    "word": "actorId,",
+    "start": 26.381
+  },
+  {
+    "word": "correlationId,",
+    "start": 27.38
+  },
+  {
+    "word": "causationId),",
+    "start": 28.379
+  },
+  {
+    "word": "NomosIntentPayload",
+    "start": 29.377
+  },
+  {
+    "word": "discriminated",
+    "start": 30.376
+  },
+  {
+    "word": "union",
+    "start": 31.374
+  },
+  {
+    "word": "with",
+    "start": 32.373
+  },
+  {
+    "word": "'type'",
+    "start": 33.371
+  },
+  {
+    "word": "property,",
+    "start": 34.37
+  },
+  {
+    "word": "NomosDirectiveOutcome,",
+    "start": 35.369
+  },
+  {
+    "word": "and",
+    "start": 36.367
+  },
+  {
+    "word": "NomosIntentLedgerEntry",
+    "start": 37.366
+  },
+  {
+    "word": "response",
+    "start": 38.364
+  },
+  {
+    "word": "schema.",
+    "start": 39.363
+  },
+  {
+    "word": "Security",
+    "start": 40.661
+  },
+  {
+    "word": "schemes",
+    "start": 41.589
+  },
+  {
+    "word": "include",
+    "start": 42.517
+  },
+  {
+    "word": "bearerAuth",
+    "start": 43.445
+  },
+  {
+    "word": "(Firebase/IAM",
+    "start": 44.373
+  },
+  {
+    "word": "JWT)",
+    "start": 45.301
+  },
+  {
+    "word": "and",
+    "start": 46.229
+  },
+  {
+    "word": "ApiKeyAuth.",
+    "start": 47.157
+  },
+  {
+    "word": "nomos_geo",
+    "start": 48.385
+  },
+  {
+    "word": "provides",
+    "start": 49.772
+  },
+  {
+    "word": "pure-Dart",
+    "start": 51.159
+  },
+  {
+    "word": "GeoJSON:",
+    "start": 52.545
+  },
+  {
+    "word": "GeoJSONPoint,",
+    "start": 53.932
+  },
+  {
+    "word": "GeoJSONPolygon,",
+    "start": 55.319
+  },
+  {
+    "word": "GeoJSONLineString,",
+    "start": 56.705
+  },
+  {
+    "word": "GeoJSONMultiPoint,",
+    "start": 58.092
+  },
+  {
+    "word": "GeoJSONMultiPolygon,",
+    "start": 59.479
+  },
+  {
+    "word": "GeoJSONMultiLineString,",
+    "start": 60.865
+  },
+  {
+    "word": "GeoJSONGeometryCollection,",
+    "start": 62.252
+  },
+  {
+    "word": "Feature,",
+    "start": 63.639
+  },
+  {
+    "word": "and",
+    "start": 65.025
+  },
+  {
+    "word": "FeatureCollection.",
+    "start": 66.412
+  },
+  {
+    "word": "SpatialQueryService.subscribeWithin()",
+    "start": 68.099
+  },
+  {
+    "word": "enables",
+    "start": 69.123
+  },
+  {
+    "word": "radius",
+    "start": 70.147
+  },
+  {
+    "word": "queries;",
+    "start": 71.171
+  },
+  {
+    "word": "FirestoreSpatialQueryService",
+    "start": 72.195
+  },
+  {
+    "word": "uses",
+    "start": 73.219
+  },
+  {
+    "word": "GeoFlutterFire",
+    "start": 74.243
+  },
+  {
+    "word": "for",
+    "start": 75.267
+  },
+  {
+    "word": "efficient",
+    "start": 76.291
+  },
+  {
+    "word": "geohash-based",
+    "start": 77.315
+  },
+  {
+    "word": "indexing.",
+    "start": 78.339
+  },
+  {
+    "word": "Together:",
+    "start": 79.663
+  },
+  {
+    "word": "typed",
+    "start": 80.256
+  },
+  {
+    "word": "API",
+    "start": 80.85
+  },
+  {
+    "word": "generation",
+    "start": 81.444
+  },
+  {
+    "word": "for",
+    "start": 82.038
+  },
+  {
+    "word": "AI",
+    "start": 82.632
+  },
+  {
+    "word": "tools,",
+    "start": 83.225
+  },
+  {
+    "word": "spatial",
+    "start": 83.819
+  },
+  {
+    "word": "intelligence",
+    "start": 84.413
+  },
+  {
+    "word": "for",
+    "start": 85.007
+  },
+  {
+    "word": "location-aware",
+    "start": 85.6
+  },
+  {
+    "word": "applications.",
+    "start": 86.194
+  }
+]

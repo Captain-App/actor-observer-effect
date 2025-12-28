@@ -1,0 +1,390 @@
+[
+  {
+    "word": "Technical",
+    "start": 0
+  },
+  {
+    "word": "Deep",
+    "start": 0.562
+  },
+  {
+    "word": "Dive:",
+    "start": 1.124
+  },
+  {
+    "word": "The",
+    "start": 1.685
+  },
+  {
+    "word": "NomosApp",
+    "start": 2.247
+  },
+  {
+    "word": "Orchestrator",
+    "start": 2.809
+  },
+  {
+    "word": "Wiring",
+    "start": 3.871
+  },
+  {
+    "word": "it",
+    "start": 4.244
+  },
+  {
+    "word": "all",
+    "start": 4.617
+  },
+  {
+    "word": "together",
+    "start": 4.991
+  },
+  {
+    "word": "NomosApp",
+    "start": 5.864
+  },
+  {
+    "word": "factory",
+    "start": 6.596
+  },
+  {
+    "word": "accepts",
+    "start": 7.327
+  },
+  {
+    "word": "NomosPersistence,",
+    "start": 8.059
+  },
+  {
+    "word": "PolicyModule",
+    "start": 8.791
+  },
+  {
+    "word": "(with",
+    "start": 9.523
+  },
+  {
+    "word": "router),",
+    "start": 10.254
+  },
+  {
+    "word": "plus",
+    "start": 10.986
+  },
+  {
+    "word": "optional",
+    "start": 11.718
+  },
+  {
+    "word": "ContractsModule,",
+    "start": 12.45
+  },
+  {
+    "word": "DomainModule,",
+    "start": 13.181
+  },
+  {
+    "word": "IntentsModule",
+    "start": 13.913
+  },
+  {
+    "word": "for",
+    "start": 14.645
+  },
+  {
+    "word": "type",
+    "start": 15.377
+  },
+  {
+    "word": "registration,",
+    "start": 16.108
+  },
+  {
+    "word": "NomosOptions",
+    "start": 16.84
+  },
+  {
+    "word": "for",
+    "start": 17.572
+  },
+  {
+    "word": "configuration,",
+    "start": 18.303
+  },
+  {
+    "word": "and",
+    "start": 19.035
+  },
+  {
+    "word": "BlobStorage.",
+    "start": 19.767
+  },
+  {
+    "word": "Core",
+    "start": 20.799
+  },
+  {
+    "word": "API:",
+    "start": 21.516
+  },
+  {
+    "word": "dispatch(Intent,",
+    "start": 22.234
+  },
+  {
+    "word": "ctx?)",
+    "start": 22.952
+  },
+  {
+    "word": "executes",
+    "start": 23.669
+  },
+  {
+    "word": "with",
+    "start": 24.387
+  },
+  {
+    "word": "auto-retry",
+    "start": 25.104
+  },
+  {
+    "word": "up",
+    "start": 25.822
+  },
+  {
+    "word": "to",
+    "start": 26.54
+  },
+  {
+    "word": "10",
+    "start": 27.257
+  },
+  {
+    "word": "times",
+    "start": 27.975
+  },
+  {
+    "word": "on",
+    "start": 28.692
+  },
+  {
+    "word": "LedgerWriteConflict;",
+    "start": 29.41
+  },
+  {
+    "word": "dispatchOptimistic()",
+    "start": 30.128
+  },
+  {
+    "word": "returns",
+    "start": 30.845
+  },
+  {
+    "word": "OptimisticIntentExecutionResult",
+    "start": 31.563
+  },
+  {
+    "word": "for",
+    "start": 32.281
+  },
+  {
+    "word": "UI",
+    "start": 32.998
+  },
+  {
+    "word": "preview;",
+    "start": 33.716
+  },
+  {
+    "word": "state(workspaceId,",
+    "start": 34.433
+  },
+  {
+    "word": "timelineId)",
+    "start": 35.151
+  },
+  {
+    "word": "reconstructs",
+    "start": 35.869
+  },
+  {
+    "word": "current",
+    "start": 36.586
+  },
+  {
+    "word": "aggregates;",
+    "start": 37.304
+  },
+  {
+    "word": "stateAtSequence()",
+    "start": 38.021
+  },
+  {
+    "word": "enables",
+    "start": 38.739
+  },
+  {
+    "word": "time-travel;",
+    "start": 39.457
+  },
+  {
+    "word": "watchQuery<T>()",
+    "start": 40.174
+  },
+  {
+    "word": "streams",
+    "start": 40.892
+  },
+  {
+    "word": "live",
+    "start": 41.61
+  },
+  {
+    "word": "aggregate",
+    "start": 42.327
+  },
+  {
+    "word": "lists",
+    "start": 43.045
+  },
+  {
+    "word": "with",
+    "start": 43.762
+  },
+  {
+    "word": "optimistic",
+    "start": 44.48
+  },
+  {
+    "word": "overlay",
+    "start": 45.198
+  },
+  {
+    "word": "merging;",
+    "start": 45.915
+  },
+  {
+    "word": "watch<T>()",
+    "start": 46.633
+  },
+  {
+    "word": "streams",
+    "start": 47.35
+  },
+  {
+    "word": "single",
+    "start": 48.068
+  },
+  {
+    "word": "aggregates;",
+    "start": 48.786
+  },
+  {
+    "word": "readLatest<T>(),",
+    "start": 49.503
+  },
+  {
+    "word": "read<T>(),",
+    "start": 50.221
+  },
+  {
+    "word": "readAtOrBefore<T>()",
+    "start": 50.939
+  },
+  {
+    "word": "provide",
+    "start": 51.656
+  },
+  {
+    "word": "typed",
+    "start": 52.374
+  },
+  {
+    "word": "snapshot",
+    "start": 53.091
+  },
+  {
+    "word": "access.",
+    "start": 53.809
+  },
+  {
+    "word": "undoLatest()",
+    "start": 54.827
+  },
+  {
+    "word": "and",
+    "start": 55.597
+  },
+  {
+    "word": "redoLatest()",
+    "start": 56.367
+  },
+  {
+    "word": "manage",
+    "start": 57.138
+  },
+  {
+    "word": "reversibility",
+    "start": 57.908
+  },
+  {
+    "word": "with",
+    "start": 58.679
+  },
+  {
+    "word": "automatic",
+    "start": 59.449
+  },
+  {
+    "word": "snapshot",
+    "start": 60.219
+  },
+  {
+    "word": "recomputation.",
+    "start": 60.99
+  },
+  {
+    "word": "setDefaultIntentContext()",
+    "start": 62.06
+  },
+  {
+    "word": "simplifies",
+    "start": 63.201
+  },
+  {
+    "word": "repeated",
+    "start": 64.343
+  },
+  {
+    "word": "dispatches.",
+    "start": 65.484
+  },
+  {
+    "word": "OptimisticIntentBuffer",
+    "start": 66.925
+  },
+  {
+    "word": "handles",
+    "start": 67.73
+  },
+  {
+    "word": "UI",
+    "start": 68.534
+  },
+  {
+    "word": "responsiveness",
+    "start": 69.339
+  },
+  {
+    "word": "during",
+    "start": 70.144
+  },
+  {
+    "word": "async",
+    "start": 70.948
+  },
+  {
+    "word": "persistence.",
+    "start": 71.753
+  }
+]

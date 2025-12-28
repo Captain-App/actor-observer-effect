@@ -9,11 +9,6 @@ const cookieStorage = {
   getItem: (key: string) => {
     if (typeof document === 'undefined') return null;
     
-    // On localhost, fallback to standard localStorage for easier development
-    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      return localStorage.getItem(key);
-    }
-
     const name = key + "=";
     const ca = document.cookie.split(';');
     for(let i = 0; i < ca.length; i++) {
@@ -22,29 +17,33 @@ const cookieStorage = {
         return decodeURIComponent(c.substring(name.length, c.length));
       }
     }
-    return null;
+    
+    // Fallback to localStorage
+    return localStorage.getItem(key);
   },
   setItem: (key: string, value: string) => {
     if (typeof document === 'undefined') return;
 
-    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      localStorage.setItem(key, value);
-      return;
-    }
-
     const encodedValue = encodeURIComponent(value);
     // Set cookie on the root domain so it's shared across all subdomains
-    document.cookie = `${key}=${encodedValue}; domain=.captainapp.co.uk; path=/; max-age=31536000; SameSite=Lax; Secure`;
+    const domain = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+      ? ''
+      : '; domain=.captainapp.co.uk';
+    document.cookie = `${key}=${encodedValue}${domain}; path=/; max-age=31536000; SameSite=Lax; Secure`;
+    
+    // Backup to localStorage for non-sensitive apps that don't support cookies well
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      localStorage.setItem(key, value);
+    }
   },
   removeItem: (key: string) => {
     if (typeof document === 'undefined') return;
 
-    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
-      localStorage.removeItem(key);
-      return;
-    }
-
-    document.cookie = `${key}=; domain=.captainapp.co.uk; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC; SameSite=Lax; Secure`;
+    const domain = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+      ? ''
+      : '; domain=.captainapp.co.uk';
+    document.cookie = `${key}=; ${domain}; path=/; expires=Thu, 01 Jan 1970 00:00:00 UTC; SameSite=Lax; Secure`;
+    localStorage.removeItem(key);
   }
 };
 

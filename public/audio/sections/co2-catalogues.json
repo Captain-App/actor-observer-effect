@@ -1,0 +1,522 @@
+[
+  {
+    "word": "Bounded",
+    "start": 0
+  },
+  {
+    "word": "Context:",
+    "start": 0.732
+  },
+  {
+    "word": "Catalogues",
+    "start": 1.465
+  },
+  {
+    "word": "Templates",
+    "start": 2.697
+  },
+  {
+    "word": "for",
+    "start": 3.145
+  },
+  {
+    "word": "assets",
+    "start": 3.593
+  },
+  {
+    "word": "catalogues_v1",
+    "start": 4.541
+  },
+  {
+    "word": "solves",
+    "start": 4.947
+  },
+  {
+    "word": "a",
+    "start": 5.352
+  },
+  {
+    "word": "common",
+    "start": 5.757
+  },
+  {
+    "word": "problem:",
+    "start": 6.163
+  },
+  {
+    "word": "you",
+    "start": 6.568
+  },
+  {
+    "word": "don't",
+    "start": 6.973
+  },
+  {
+    "word": "want",
+    "start": 7.379
+  },
+  {
+    "word": "to",
+    "start": 7.784
+  },
+  {
+    "word": "manually",
+    "start": 8.189
+  },
+  {
+    "word": "enter",
+    "start": 8.595
+  },
+  {
+    "word": "specs",
+    "start": 9.0
+  },
+  {
+    "word": "for",
+    "start": 9.405
+  },
+  {
+    "word": "every",
+    "start": 9.811
+  },
+  {
+    "word": "LED",
+    "start": 10.216
+  },
+  {
+    "word": "panel",
+    "start": 10.621
+  },
+  {
+    "word": "when",
+    "start": 11.027
+  },
+  {
+    "word": "you're",
+    "start": 11.432
+  },
+  {
+    "word": "installing",
+    "start": 11.837
+  },
+  {
+    "word": "500",
+    "start": 12.243
+  },
+  {
+    "word": "of",
+    "start": 12.648
+  },
+  {
+    "word": "the",
+    "start": 13.053
+  },
+  {
+    "word": "same",
+    "start": 13.459
+  },
+  {
+    "word": "model.",
+    "start": 13.864
+  },
+  {
+    "word": "A",
+    "start": 14.569
+  },
+  {
+    "word": "Catalogue",
+    "start": 15.058
+  },
+  {
+    "word": "is",
+    "start": 15.548
+  },
+  {
+    "word": "a",
+    "start": 16.037
+  },
+  {
+    "word": "collection",
+    "start": 16.526
+  },
+  {
+    "word": "of",
+    "start": 17.015
+  },
+  {
+    "word": "Listings\u2014template",
+    "start": 17.504
+  },
+  {
+    "word": "definitions",
+    "start": 17.993
+  },
+  {
+    "word": "with",
+    "start": 18.482
+  },
+  {
+    "word": "specs,",
+    "start": 18.972
+  },
+  {
+    "word": "pricing,",
+    "start": 19.461
+  },
+  {
+    "word": "and",
+    "start": 19.95
+  },
+  {
+    "word": "supplier",
+    "start": 20.439
+  },
+  {
+    "word": "information.",
+    "start": 20.928
+  },
+  {
+    "word": "TaxonomyAggregate",
+    "start": 21.717
+  },
+  {
+    "word": "provides",
+    "start": 22.263
+  },
+  {
+    "word": "hierarchical",
+    "start": 22.809
+  },
+  {
+    "word": "categorisation:",
+    "start": 23.355
+  },
+  {
+    "word": "HVAC",
+    "start": 23.9
+  },
+  {
+    "word": ">",
+    "start": 24.446
+  },
+  {
+    "word": "Air",
+    "start": 24.992
+  },
+  {
+    "word": "Conditioning",
+    "start": 25.538
+  },
+  {
+    "word": ">",
+    "start": 26.084
+  },
+  {
+    "word": "Split",
+    "start": 26.629
+  },
+  {
+    "word": "System,",
+    "start": 27.175
+  },
+  {
+    "word": "each",
+    "start": 27.721
+  },
+  {
+    "word": "level",
+    "start": 28.267
+  },
+  {
+    "word": "with",
+    "start": 28.812
+  },
+  {
+    "word": "its",
+    "start": 29.358
+  },
+  {
+    "word": "own",
+    "start": 29.904
+  },
+  {
+    "word": "custom",
+    "start": 30.45
+  },
+  {
+    "word": "field",
+    "start": 30.996
+  },
+  {
+    "word": "definitions",
+    "start": 31.541
+  },
+  {
+    "word": "(capacity,",
+    "start": 32.087
+  },
+  {
+    "word": "refrigerant",
+    "start": 32.633
+  },
+  {
+    "word": "type,",
+    "start": 33.179
+  },
+  {
+    "word": "noise",
+    "start": 33.724
+  },
+  {
+    "word": "level).",
+    "start": 34.27
+  },
+  {
+    "word": "ListingAggregate",
+    "start": 35.116
+  },
+  {
+    "word": "stores",
+    "start": 35.641
+  },
+  {
+    "word": "the",
+    "start": 36.167
+  },
+  {
+    "word": "template",
+    "start": 36.692
+  },
+  {
+    "word": "with",
+    "start": 37.217
+  },
+  {
+    "word": "a",
+    "start": 37.743
+  },
+  {
+    "word": "status",
+    "start": 38.268
+  },
+  {
+    "word": "lifecycle",
+    "start": 38.793
+  },
+  {
+    "word": "(draft",
+    "start": 39.319
+  },
+  {
+    "word": "\u2192",
+    "start": 39.844
+  },
+  {
+    "word": "submitted",
+    "start": 40.369
+  },
+  {
+    "word": "\u2192",
+    "start": 40.895
+  },
+  {
+    "word": "approved",
+    "start": 41.42
+  },
+  {
+    "word": "\u2192",
+    "start": 41.945
+  },
+  {
+    "word": "archived)",
+    "start": 42.471
+  },
+  {
+    "word": "and",
+    "start": 42.996
+  },
+  {
+    "word": "version",
+    "start": 43.521
+  },
+  {
+    "word": "publishing",
+    "start": 44.047
+  },
+  {
+    "word": "for",
+    "start": 44.572
+  },
+  {
+    "word": "draft",
+    "start": 45.097
+  },
+  {
+    "word": "editing",
+    "start": 45.623
+  },
+  {
+    "word": "of",
+    "start": 46.148
+  },
+  {
+    "word": "live",
+    "start": 46.673
+  },
+  {
+    "word": "listings.",
+    "start": 47.199
+  },
+  {
+    "word": "SupplierAggregate",
+    "start": 48.024
+  },
+  {
+    "word": "tracks",
+    "start": 48.719
+  },
+  {
+    "word": "manufacturers",
+    "start": 49.415
+  },
+  {
+    "word": "and",
+    "start": 50.11
+  },
+  {
+    "word": "vendors.",
+    "start": 50.806
+  },
+  {
+    "word": "CreateAssetFromListingIntent",
+    "start": 51.801
+  },
+  {
+    "word": "clones",
+    "start": 52.414
+  },
+  {
+    "word": "a",
+    "start": 53.027
+  },
+  {
+    "word": "listing",
+    "start": 53.64
+  },
+  {
+    "word": "into",
+    "start": 54.253
+  },
+  {
+    "word": "a",
+    "start": 54.866
+  },
+  {
+    "word": "TrackableAsset",
+    "start": 55.478
+  },
+  {
+    "word": "with",
+    "start": 56.091
+  },
+  {
+    "word": "all",
+    "start": 56.704
+  },
+  {
+    "word": "specs",
+    "start": 57.317
+  },
+  {
+    "word": "pre-populated.",
+    "start": 57.93
+  },
+  {
+    "word": "It's",
+    "start": 58.843
+  },
+  {
+    "word": "a",
+    "start": 59.383
+  },
+  {
+    "word": "clean",
+    "start": 59.923
+  },
+  {
+    "word": "domain\u2014catalogue",
+    "start": 60.463
+  },
+  {
+    "word": "management",
+    "start": 61.003
+  },
+  {
+    "word": "is",
+    "start": 61.543
+  },
+  {
+    "word": "well-understood\u2014but",
+    "start": 62.083
+  },
+  {
+    "word": "the",
+    "start": 62.624
+  },
+  {
+    "word": "complexity",
+    "start": 63.164
+  },
+  {
+    "word": "leaks",
+    "start": 63.704
+  },
+  {
+    "word": "through",
+    "start": 64.244
+  },
+  {
+    "word": "in",
+    "start": 64.784
+  },
+  {
+    "word": "20+",
+    "start": 65.324
+  },
+  {
+    "word": "events",
+    "start": 65.864
+  },
+  {
+    "word": "and",
+    "start": 66.404
+  },
+  {
+    "word": "15+",
+    "start": 66.944
+  },
+  {
+    "word": "directives",
+    "start": 67.485
+  },
+  {
+    "word": "for",
+    "start": 68.025
+  },
+  {
+    "word": "managing",
+    "start": 68.565
+  },
+  {
+    "word": "taxonomy",
+    "start": 69.105
+  },
+  {
+    "word": "custom",
+    "start": 69.645
+  },
+  {
+    "word": "fields.",
+    "start": 70.185
+  }
+]
