@@ -28,10 +28,10 @@ const HighlightableText: React.FC<HighlightableTextProps> = ({ text, currentWord
             key={i}
             id={isHighlighted ? 'current-reading-word' : undefined}
             onClick={() => onWordClick?.(currentIndex)}
-            className={`transition-all duration-200 cursor-pointer hover:text-primary/80 ${
+            className={`transition-all duration-300 cursor-pointer hover:text-primary/80 ${
               isHighlighted 
-                ? 'text-primary font-bold scale-110 inline-block' 
-                : ''
+                ? 'text-primary font-bold scale-110 inline-block px-1' 
+                : 'px-0'
             }`}
           >
             {part}
