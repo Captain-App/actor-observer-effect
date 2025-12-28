@@ -1,354 +1,354 @@
 [
   {
     "word": "Approaching",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "agents",
-    "start": 0.668
+    "start": 0.46
   },
   {
     "word": "differently",
-    "start": 1.337
+    "start": 1.06
   },
   {
     "word": "We\u2019re",
-    "start": 2.505
+    "start": 2.4
   },
   {
     "word": "not",
-    "start": 2.847
+    "start": 2.66
   },
   {
     "word": "building",
-    "start": 3.188
+    "start": 2.76
   },
   {
     "word": "a",
-    "start": 3.529
+    "start": 3.1
   },
   {
     "word": "chatbot",
-    "start": 3.871
+    "start": 3.28
   },
   {
     "word": "that",
-    "start": 4.212
+    "start": 3.8
   },
   {
     "word": "guesses.",
-    "start": 4.553
+    "start": 4.24
   },
   {
     "word": "We\u2019re",
-    "start": 5.195
+    "start": 5.18
   },
   {
     "word": "building",
-    "start": 5.584
+    "start": 5.34
   },
   {
     "word": "an",
-    "start": 5.973
+    "start": 5.7
   },
   {
     "word": "accountable",
-    "start": 6.362
+    "start": 5.92
   },
   {
     "word": "decision",
-    "start": 6.751
+    "start": 6.42
   },
   {
     "word": "layer\u2014an",
-    "start": 7.14
+    "start": 6.98
   },
   {
     "word": "agent",
-    "start": 7.529
+    "start": 7.9
   },
   {
     "word": "that",
-    "start": 7.918
+    "start": 8.28
   },
   {
     "word": "can",
-    "start": 8.307
+    "start": 8.56
   },
   {
     "word": "show",
-    "start": 8.696
+    "start": 8.72
   },
   {
     "word": "its",
-    "start": 9.085
+    "start": 8.96
   },
   {
     "word": "working,",
-    "start": 9.474
+    "start": 9.2
   },
   {
     "word": "and",
-    "start": 9.863
+    "start": 9.62
   },
   {
     "word": "rewind",
-    "start": 10.252
+    "start": 10.16
   },
   {
     "word": "its",
-    "start": 10.641
+    "start": 10.56
   },
   {
     "word": "own",
-    "start": 11.03
+    "start": 10.98
   },
   {
     "word": "history.",
-    "start": 11.419
+    "start": 11.2
   },
   {
     "word": "We\u2019ve",
-    "start": 12.108
+    "start": 12.08
   },
   {
     "word": "been",
-    "start": 12.484
+    "start": 12.26
   },
   {
     "word": "leaning",
-    "start": 12.86
+    "start": 12.38
   },
   {
     "word": "hard",
-    "start": 13.236
+    "start": 12.58
   },
   {
     "word": "into",
-    "start": 13.611
+    "start": 13.02
   },
   {
     "word": "event-sourced",
-    "start": 13.987
+    "start": 13.32
   },
   {
     "word": "thinking\u2014especially",
-    "start": 14.363
+    "start": 14.06
   },
   {
     "word": "the",
-    "start": 14.739
+    "start": 15.42
   },
   {
     "word": "idea",
-    "start": 15.115
+    "start": 15.62
   },
   {
     "word": "that",
-    "start": 15.491
+    "start": 16.04
   },
   {
     "word": "the",
-    "start": 15.867
+    "start": 16.6
   },
   {
     "word": "most",
-    "start": 16.243
+    "start": 16.7
   },
   {
     "word": "valuable",
-    "start": 16.618
+    "start": 16.98
   },
   {
     "word": "thing",
-    "start": 16.994
+    "start": 17.46
   },
   {
     "word": "you",
-    "start": 17.37
+    "start": 17.78
   },
   {
     "word": "can",
-    "start": 17.746
+    "start": 17.98
   },
   {
     "word": "store",
-    "start": 18.122
+    "start": 18.14
   },
   {
     "word": "isn\u2019t",
-    "start": 18.498
+    "start": 18.54
   },
   {
     "word": "the",
-    "start": 18.874
+    "start": 19.02
   },
   {
     "word": "current",
-    "start": 19.25
+    "start": 19.16
   },
   {
     "word": "state...",
-    "start": 19.625
+    "start": 19.46
   },
   {
     "word": "it\u2019s",
-    "start": 20.301
+    "start": 20.3
   },
   {
     "word": "how",
-    "start": 20.566
+    "start": 20.52
   },
   {
     "word": "you",
-    "start": 20.83
+    "start": 20.72
   },
   {
     "word": "got",
-    "start": 21.095
+    "start": 20.96
   },
   {
     "word": "there.",
-    "start": 21.359
+    "start": 21.14
   },
   {
     "word": "Internally,",
-    "start": 21.924
+    "start": 21.96
   },
   {
     "word": "we\u2019ve",
-    "start": 22.327
+    "start": 22.78
   },
   {
     "word": "discussed",
-    "start": 22.73
+    "start": 22.94
   },
   {
     "word": "building",
-    "start": 23.133
+    "start": 23.24
   },
   {
     "word": "systems",
-    "start": 23.536
+    "start": 23.66
   },
   {
     "word": "around",
-    "start": 23.938
+    "start": 24.2
   },
   {
     "word": "a",
-    "start": 24.341
+    "start": 24.54
   },
   {
     "word": "ledger",
-    "start": 24.744
+    "start": 24.72
   },
   {
     "word": "of",
-    "start": 25.147
+    "start": 25.08
   },
   {
     "word": "intents\u2014a",
-    "start": 25.55
+    "start": 26.34
   },
   {
     "word": "record",
-    "start": 25.953
+    "start": 26.46
   },
   {
     "word": "of",
-    "start": 26.356
+    "start": 26.84
   },
   {
     "word": "'what",
-    "start": 26.759
+    "start": 27.1
   },
   {
     "word": "the",
-    "start": 27.162
+    "start": 27.24
   },
   {
     "word": "user",
-    "start": 27.565
+    "start": 27.4
   },
   {
     "word": "meant",
-    "start": 27.967
+    "start": 27.66
   },
   {
     "word": "to",
-    "start": 28.37
+    "start": 27.96
   },
   {
     "word": "do'\u2014and",
-    "start": 28.773
+    "start": 28.14
   },
   {
     "word": "the",
-    "start": 29.176
+    "start": 29.02
   },
   {
     "word": "resulting",
-    "start": 29.579
+    "start": 29.12
   },
   {
     "word": "directives",
-    "start": 29.982
+    "start": 29.54
   },
   {
     "word": "and",
-    "start": 30.385
+    "start": 30.38
   },
   {
     "word": "events,",
-    "start": 30.788
+    "start": 30.52
   },
   {
     "word": "so",
-    "start": 31.191
+    "start": 31.24
   },
   {
     "word": "you",
-    "start": 31.593
+    "start": 31.48
   },
   {
     "word": "can",
-    "start": 31.996
+    "start": 31.62
   },
   {
     "word": "audit,",
-    "start": 32.399
+    "start": 31.78
   },
   {
     "word": "replay,",
-    "start": 32.802
+    "start": 32.66
   },
   {
     "word": "and",
-    "start": 33.205
+    "start": 33.42
   },
   {
     "word": "even",
-    "start": 33.608
+    "start": 33.52
   },
   {
     "word": "fast-forward",
-    "start": 34.011
+    "start": 33.76
   },
   {
     "word": "a",
-    "start": 34.414
+    "start": 34.14
   },
   {
     "word": "system",
-    "start": 34.817
+    "start": 34.8
   },
   {
     "word": "through",
-    "start": 35.22
+    "start": 35.14
   },
   {
     "word": "time.",
-    "start": 35.622
+    "start": 35.46
   }
 ]

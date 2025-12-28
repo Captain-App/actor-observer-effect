@@ -1,406 +1,406 @@
 [
   {
     "word": "What",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "the",
-    "start": 0.311
+    "start": 0.12
   },
   {
     "word": "platform",
-    "start": 0.623
+    "start": 0.26
   },
   {
     "word": "will",
-    "start": 0.934
+    "start": 0.76
   },
   {
     "word": "do",
-    "start": 1.246
+    "start": 1.08
   },
   {
     "word": "The",
-    "start": 2.057
+    "start": 1.94
   },
   {
     "word": "inward-facing",
-    "start": 2.447
+    "start": 2.18
   },
   {
     "word": "agent",
-    "start": 2.838
+    "start": 2.86
   },
   {
     "word": "gives",
-    "start": 3.228
+    "start": 3.32
   },
   {
     "word": "you",
-    "start": 3.618
+    "start": 3.9
   },
   {
     "word": "the",
-    "start": 4.008
+    "start": 4.12
   },
   {
     "word": "truth.",
-    "start": 4.398
+    "start": 4.24
   },
   {
     "word": "A",
-    "start": 5.088
+    "start": 5.0
   },
   {
     "word": "director",
-    "start": 5.479
+    "start": 5.18
   },
   {
     "word": "messages:",
-    "start": 5.871
+    "start": 5.52
   },
   {
     "word": "'Who",
-    "start": 6.262
+    "start": 6.56
   },
   {
     "word": "owes",
-    "start": 6.653
+    "start": 6.76
   },
   {
     "word": "us",
-    "start": 7.045
+    "start": 7.04
   },
   {
     "word": "money",
-    "start": 7.436
+    "start": 7.16
   },
   {
     "word": "right",
-    "start": 7.827
+    "start": 7.46
   },
   {
     "word": "now?'",
-    "start": 8.219
+    "start": 7.7
   },
   {
     "word": "The",
-    "start": 8.61
+    "start": 8.56
   },
   {
     "word": "agent",
-    "start": 9.001
+    "start": 8.88
   },
   {
     "word": "pulls",
-    "start": 9.392
+    "start": 9.24
   },
   {
     "word": "from",
-    "start": 9.784
+    "start": 9.54
   },
   {
     "word": "connected",
-    "start": 10.175
+    "start": 9.84
   },
   {
     "word": "systems",
-    "start": 10.566
+    "start": 10.16
   },
   {
     "word": "like",
-    "start": 10.958
+    "start": 10.78
   },
   {
     "word": "Xero",
-    "start": 11.349
+    "start": 10.78
   },
   {
     "word": "and",
-    "start": 11.74
+    "start": 11.56
   },
   {
     "word": "Stripe,",
-    "start": 12.132
+    "start": 11.84
   },
   {
     "word": "aggregates,",
-    "start": 12.523
+    "start": 12.7
   },
   {
     "word": "and",
-    "start": 12.914
+    "start": 13.6
   },
   {
     "word": "replies",
-    "start": 13.306
+    "start": 13.68
   },
   {
     "word": "with",
-    "start": 13.697
+    "start": 14.06
   },
   {
     "word": "a",
-    "start": 14.088
+    "start": 14.38
   },
   {
     "word": "short",
-    "start": 14.48
+    "start": 14.5
   },
   {
     "word": "answer,",
-    "start": 14.871
+    "start": 14.76
   },
   {
     "word": "a",
-    "start": 15.262
+    "start": 15.62
   },
   {
     "word": "breakdown,",
-    "start": 15.653
+    "start": 15.66
   },
   {
     "word": "and",
-    "start": 16.045
+    "start": 16.62
   },
   {
     "word": "a",
-    "start": 16.436
+    "start": 16.82
   },
   {
     "word": "link",
-    "start": 16.827
+    "start": 16.9
   },
   {
     "word": "to",
-    "start": 17.219
+    "start": 17.12
   },
   {
     "word": "a",
-    "start": 17.61
+    "start": 17.48
   },
   {
     "word": "visual",
-    "start": 18.001
+    "start": 17.6
   },
   {
     "word": "timeline.",
-    "start": 18.393
+    "start": 17.96
   },
   {
     "word": "The",
-    "start": 19.084
+    "start": 19.08
   },
   {
     "word": "outward-facing",
-    "start": 19.477
+    "start": 19.2
   },
   {
     "word": "agent",
-    "start": 19.87
+    "start": 19.96
   },
   {
     "word": "gets",
-    "start": 20.263
+    "start": 20.5
   },
   {
     "word": "the",
-    "start": 20.657
+    "start": 20.94
   },
   {
     "word": "money",
-    "start": 21.05
+    "start": 21.2
   },
   {
     "word": "in.",
-    "start": 21.443
+    "start": 21.46
   },
   {
     "word": "SMEs",
-    "start": 22.136
+    "start": 22.18
   },
   {
     "word": "often",
-    "start": 22.605
+    "start": 22.84
   },
   {
     "word": "don't",
-    "start": 23.075
+    "start": 23.36
   },
   {
     "word": "have",
-    "start": 23.544
+    "start": 23.7
   },
   {
     "word": "time",
-    "start": 24.013
+    "start": 23.8
   },
   {
     "word": "to",
-    "start": 24.483
+    "start": 24.12
   },
   {
     "word": "chase",
-    "start": 24.952
+    "start": 24.3
   },
   {
     "word": "debtors",
-    "start": 25.421
+    "start": 24.62
   },
   {
     "word": "consistently.",
-    "start": 25.891
+    "start": 25.16
   },
   {
     "word": "We\u2019ll",
-    "start": 26.66
+    "start": 26.43
   },
   {
     "word": "offer",
-    "start": 27.133
+    "start": 26.8
   },
   {
     "word": "outward-reaching",
-    "start": 27.605
+    "start": 27.0
   },
   {
     "word": "agents",
-    "start": 28.078
+    "start": 27.8
   },
   {
     "word": "that",
-    "start": 28.551
+    "start": 28.34
   },
   {
     "word": "can",
-    "start": 29.024
+    "start": 28.6
   },
   {
     "word": "send",
-    "start": 29.496
+    "start": 28.76
   },
   {
     "word": "debtor",
-    "start": 29.969
+    "start": 29.08
   },
   {
     "word": "reminders",
-    "start": 30.442
+    "start": 29.44
   },
   {
     "word": "carefully",
-    "start": 30.914
+    "start": 29.86
   },
   {
     "word": "and",
-    "start": 31.387
+    "start": 30.48
   },
   {
     "word": "compliantly:",
-    "start": 31.86
+    "start": 30.94
   },
   {
     "word": "'Invoice",
-    "start": 32.332
+    "start": 32.42
   },
   {
     "word": "#1042",
-    "start": 32.805
+    "start": 33.06
   },
   {
     "word": "is",
-    "start": 33.278
+    "start": 34.58
   },
   {
     "word": "now",
-    "start": 33.751
+    "start": 34.98
   },
   {
     "word": "overdue\u2014would",
-    "start": 34.223
+    "start": 35.18
   },
   {
     "word": "you",
-    "start": 34.696
+    "start": 36.54
   },
   {
     "word": "like",
-    "start": 35.169
+    "start": 36.64
   },
   {
     "word": "to",
-    "start": 35.641
+    "start": 36.78
   },
   {
     "word": "pay",
-    "start": 36.114
+    "start": 36.94
   },
   {
     "word": "by",
-    "start": 36.587
+    "start": 37.14
   },
   {
     "word": "card",
-    "start": 37.059
+    "start": 37.34
   },
   {
     "word": "or",
-    "start": 37.532
+    "start": 37.76
   },
   {
     "word": "bank",
-    "start": 38.005
+    "start": 38.0
   },
   {
     "word": "transfer?'",
-    "start": 38.478
+    "start": 38.28
   },
   {
     "word": "This",
-    "start": 38.95
+    "start": 39.44
   },
   {
     "word": "is",
-    "start": 39.423
+    "start": 39.62
   },
   {
     "word": "controlled,",
-    "start": 39.896
+    "start": 39.78
   },
   {
     "word": "reputable",
-    "start": 40.368
+    "start": 40.84
   },
   {
     "word": "comms\u2014more",
-    "start": 40.841
+    "start": 41.26
   },
   {
     "word": "like",
-    "start": 41.314
+    "start": 42.42
   },
   {
     "word": "an",
-    "start": 41.786
+    "start": 42.66
   },
   {
     "word": "assistant",
-    "start": 42.259
+    "start": 42.82
   },
   {
     "word": "than",
-    "start": 42.732
+    "start": 43.22
   },
   {
     "word": "a",
-    "start": 43.205
+    "start": 43.66
   },
   {
     "word": "debt",
-    "start": 43.677
+    "start": 43.76
   },
   {
     "word": "collector.",
-    "start": 44.15
+    "start": 43.98
   }
 ]

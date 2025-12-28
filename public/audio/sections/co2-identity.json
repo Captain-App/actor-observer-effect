@@ -1,474 +1,474 @@
 [
   {
     "word": "Bounded",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Context:",
-    "start": 0.725
+    "start": 0.32
   },
   {
     "word": "Identity",
-    "start": 1.451
+    "start": 1.4
   },
   {
     "word": "Users,",
-    "start": 2.676
+    "start": 2.42
   },
   {
     "word": "organisations,",
-    "start": 3.245
+    "start": 2.42
   },
   {
     "word": "and",
-    "start": 3.814
+    "start": 4.46
   },
   {
     "word": "the",
-    "start": 4.383
+    "start": 4.74
   },
   {
     "word": "invitation",
-    "start": 4.952
+    "start": 4.84
   },
   {
     "word": "dance",
-    "start": 5.52
+    "start": 5.44
   },
   {
     "word": "identity_v1",
-    "start": 6.589
+    "start": 6.62
   },
   {
     "word": "manages",
-    "start": 7.144
+    "start": 8.18
   },
   {
     "word": "who",
-    "start": 7.699
+    "start": 8.62
   },
   {
     "word": "can",
-    "start": 8.253
+    "start": 9.06
   },
   {
     "word": "do",
-    "start": 8.808
+    "start": 9.26
   },
   {
     "word": "what.",
-    "start": 9.363
+    "start": 9.42
   },
   {
     "word": "UserAggregate",
-    "start": 10.217
+    "start": 10.26
   },
   {
     "word": "stores",
-    "start": 10.828
+    "start": 10.92
   },
   {
     "word": "profile",
-    "start": 11.439
+    "start": 11.38
   },
   {
     "word": "data",
-    "start": 12.049
+    "start": 11.88
   },
   {
     "word": "(name,",
-    "start": 12.66
+    "start": 12.8
   },
   {
     "word": "email,",
-    "start": 13.271
+    "start": 13.54
   },
   {
     "word": "profile",
-    "start": 13.881
+    "start": 13.86
   },
   {
     "word": "picture).",
-    "start": 14.492
+    "start": 14.4
   },
   {
     "word": "OrganizationAggregate",
-    "start": 15.403
+    "start": 15.46
   },
   {
     "word": "groups",
-    "start": 16.119
+    "start": 17.06
   },
   {
     "word": "users",
-    "start": 16.836
+    "start": 17.44
   },
   {
     "word": "into",
-    "start": 17.553
+    "start": 17.92
   },
   {
     "word": "companies.",
-    "start": 18.27
+    "start": 18.3
   },
   {
     "word": "SiteUserAggregate",
-    "start": 19.287
+    "start": 19.36
   },
   {
     "word": "tracks",
-    "start": 19.78
+    "start": 20.28
   },
   {
     "word": "a",
-    "start": 20.274
+    "start": 20.76
   },
   {
     "word": "user's",
-    "start": 20.768
+    "start": 20.98
   },
   {
     "word": "relationship",
-    "start": 21.262
+    "start": 21.52
   },
   {
     "word": "to",
-    "start": 21.755
+    "start": 22.04
   },
   {
     "word": "a",
-    "start": 22.249
+    "start": 22.26
   },
   {
     "word": "specific",
-    "start": 22.743
+    "start": 22.34
   },
   {
     "word": "site,",
-    "start": 23.236
+    "start": 22.7
   },
   {
     "word": "including",
-    "start": 23.73
+    "start": 23.44
   },
   {
     "word": "role",
-    "start": 24.224
+    "start": 23.94
   },
   {
     "word": "(viewer,",
-    "start": 24.718
+    "start": 24.78
   },
   {
     "word": "editor,",
-    "start": 25.211
+    "start": 25.52
   },
   {
     "word": "admin)",
-    "start": 25.705
+    "start": 26.22
   },
   {
     "word": "and",
-    "start": 26.199
+    "start": 26.96
   },
   {
     "word": "granular",
-    "start": 26.692
+    "start": 27.02
   },
   {
     "word": "permissions",
-    "start": 27.186
+    "start": 27.48
   },
   {
     "word": "for",
-    "start": 27.68
+    "start": 27.92
   },
   {
     "word": "layers",
-    "start": 28.174
+    "start": 28.36
   },
   {
     "word": "and",
-    "start": 28.667
+    "start": 28.74
   },
   {
     "word": "features.",
-    "start": 29.161
+    "start": 29.02
   },
   {
     "word": "The",
-    "start": 29.955
+    "start": 29.98
   },
   {
     "word": "invitation",
-    "start": 30.654
+    "start": 30.06
   },
   {
     "word": "flow",
-    "start": 31.353
+    "start": 30.6
   },
   {
     "word": "is",
-    "start": 32.052
+    "start": 30.98
   },
   {
     "word": "a",
-    "start": 32.752
+    "start": 31.48
   },
   {
     "word": "good",
-    "start": 33.451
+    "start": 31.58
   },
   {
     "word": "example",
-    "start": 34.15
+    "start": 31.76
   },
   {
     "word": "of",
-    "start": 34.849
+    "start": 32.26
   },
   {
     "word": "intent-driven",
-    "start": 35.549
+    "start": 32.46
   },
   {
     "word": "design:",
-    "start": 36.248
+    "start": 33.16
   },
   {
     "word": "InviteUserToEstateIntent",
-    "start": 36.947
+    "start": 34.36
   },
   {
     "word": "creates",
-    "start": 37.647
+    "start": 35.36
   },
   {
     "word": "an",
-    "start": 38.346
+    "start": 36.98
   },
   {
     "word": "invitation",
-    "start": 39.045
+    "start": 37.26
   },
   {
     "word": "and",
-    "start": 39.744
+    "start": 37.9
   },
   {
     "word": "notification;",
-    "start": 40.444
+    "start": 38.16
   },
   {
     "word": "AcceptEstateInvitationIntent",
-    "start": 41.143
+    "start": 39.52
   },
   {
     "word": "flips",
-    "start": 41.842
+    "start": 41.64
   },
   {
     "word": "the",
-    "start": 42.541
+    "start": 42.3
   },
   {
     "word": "status",
-    "start": 43.241
+    "start": 42.58
   },
   {
     "word": "and",
-    "start": 43.94
+    "start": 43.02
   },
   {
     "word": "grants",
-    "start": 44.639
+    "start": 43.4
   },
   {
     "word": "permissions;",
-    "start": 45.338
+    "start": 43.8
   },
   {
     "word": "DeclineEstateInvitationIntent",
-    "start": 46.038
+    "start": 44.98
   },
   {
     "word": "records",
-    "start": 46.737
+    "start": 47.14
   },
   {
     "word": "the",
-    "start": 47.436
+    "start": 47.88
   },
   {
     "word": "refusal.",
-    "start": 48.135
+    "start": 48.2
   },
   {
     "word": "Each",
-    "start": 49.135
+    "start": 49.18
   },
   {
     "word": "step",
-    "start": 49.561
+    "start": 49.4
   },
   {
     "word": "is",
-    "start": 49.988
+    "start": 49.66
   },
   {
     "word": "auditable.",
-    "start": 50.415
+    "start": 50.08
   },
   {
     "word": "NotificationInboxAggregate",
-    "start": 51.141
+    "start": 51.18
   },
   {
     "word": "consolidates",
-    "start": 51.824
+    "start": 53.02
   },
   {
     "word": "all",
-    "start": 52.507
+    "start": 54.26
   },
   {
     "word": "a",
-    "start": 53.189
+    "start": 54.56
   },
   {
     "word": "user's",
-    "start": 53.872
+    "start": 54.68
   },
   {
     "word": "notifications",
-    "start": 54.555
+    "start": 55.14
   },
   {
     "word": "into",
-    "start": 55.237
+    "start": 56.0
   },
   {
     "word": "a",
-    "start": 55.92
+    "start": 56.44
   },
   {
     "word": "single",
-    "start": 56.603
+    "start": 56.62
   },
   {
     "word": "document\u2014a",
-    "start": 57.285
+    "start": 56.96
   },
   {
     "word": "conscious",
-    "start": 57.968
+    "start": 58.22
   },
   {
     "word": "denormalisation",
-    "start": 58.651
+    "start": 58.22
   },
   {
     "word": "for",
-    "start": 59.333
+    "start": 59.78
   },
   {
     "word": "efficient",
-    "start": 60.016
+    "start": 60.32
   },
   {
     "word": "mobile",
-    "start": 60.699
+    "start": 60.8
   },
   {
     "word": "syncing.",
-    "start": 61.381
+    "start": 61.32
   },
   {
     "word": "PublicUserEmailIndexAggregate",
-    "start": 62.364
+    "start": 62.4
   },
   {
     "word": "enables",
-    "start": 63.099
+    "start": 64.74
   },
   {
     "word": "fast",
-    "start": 63.834
+    "start": 65.38
   },
   {
     "word": "email",
-    "start": 64.568
+    "start": 65.8
   },
   {
     "word": "lookups",
-    "start": 65.303
+    "start": 66.28
   },
   {
     "word": "without",
-    "start": 66.038
+    "start": 66.82
   },
   {
     "word": "scanning",
-    "start": 66.773
+    "start": 67.38
   },
   {
     "word": "all",
-    "start": 67.508
+    "start": 67.92
   },
   {
     "word": "users.",
-    "start": 68.243
+    "start": 68.34
   },
   {
     "word": "These",
-    "start": 69.277
+    "start": 69.18
   },
   {
     "word": "are",
-    "start": 69.633
+    "start": 69.52
   },
   {
     "word": "the",
-    "start": 69.99
+    "start": 69.7
   },
   {
     "word": "kind",
-    "start": 70.346
+    "start": 69.8
   },
   {
     "word": "of",
-    "start": 70.702
+    "start": 70.0
   },
   {
     "word": "pragmatic",
-    "start": 71.058
+    "start": 70.16
   },
   {
     "word": "trade-offs",
-    "start": 71.414
+    "start": 70.64
   },
   {
     "word": "you",
-    "start": 71.77
+    "start": 71.26
   },
   {
     "word": "make",
-    "start": 72.126
+    "start": 71.54
   },
   {
     "word": "when",
-    "start": 72.482
+    "start": 71.78
   },
   {
     "word": "building",
-    "start": 72.838
+    "start": 72.34
   },
   {
     "word": "real",
-    "start": 73.194
+    "start": 72.74
   },
   {
     "word": "systems.",
-    "start": 73.551
+    "start": 73.18
   }
 ]

@@ -1,466 +1,466 @@
 [
   {
     "word": "App:",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Agent",
-    "start": 0.441
+    "start": 0.26
   },
   {
     "word": "Town",
-    "start": 0.882
+    "start": 0.72
   },
   {
     "word": "An",
-    "start": 1.823
+    "start": 1.58
   },
   {
     "word": "isometric",
-    "start": 2.342
+    "start": 1.98
   },
   {
     "word": "simulation",
-    "start": 2.861
+    "start": 2.52
   },
   {
     "word": "of",
-    "start": 3.38
+    "start": 3.28
   },
   {
     "word": "AI",
-    "start": 3.899
+    "start": 3.8
   },
   {
     "word": "agents",
-    "start": 4.418
+    "start": 4.14
   },
   {
     "word": "Agent",
-    "start": 5.437
+    "start": 5.32
   },
   {
     "word": "Town",
-    "start": 5.885
+    "start": 5.76
   },
   {
     "word": "is",
-    "start": 6.333
+    "start": 6.16
   },
   {
     "word": "perhaps",
-    "start": 6.781
+    "start": 6.66
   },
   {
     "word": "the",
-    "start": 7.229
+    "start": 7.0
   },
   {
     "word": "most",
-    "start": 7.677
+    "start": 7.28
   },
   {
     "word": "visually",
-    "start": 8.125
+    "start": 7.48
   },
   {
     "word": "striking",
-    "start": 8.573
+    "start": 8.02
   },
   {
     "word": "experiment.",
-    "start": 9.021
+    "start": 8.56
   },
   {
     "word": "It's",
-    "start": 9.769
+    "start": 9.7
   },
   {
     "word": "a",
-    "start": 10.312
+    "start": 9.94
   },
   {
     "word": "fully",
-    "start": 10.854
+    "start": 9.98
   },
   {
     "word": "interactive",
-    "start": 11.396
+    "start": 10.24
   },
   {
     "word": "isometric",
-    "start": 11.938
+    "start": 10.78
   },
   {
     "word": "world",
-    "start": 12.481
+    "start": 11.5
   },
   {
     "word": "where",
-    "start": 13.023
+    "start": 11.98
   },
   {
     "word": "AI",
-    "start": 13.565
+    "start": 12.2
   },
   {
     "word": "agents\u2014CEO,",
-    "start": 14.108
+    "start": 12.54
   },
   {
     "word": "CFO,",
-    "start": 14.65
+    "start": 14.7
   },
   {
     "word": "COO,",
-    "start": 15.192
+    "start": 15.64
   },
   {
     "word": "PM,",
-    "start": 15.734
+    "start": 16.16
   },
   {
     "word": "SRE,",
-    "start": 16.277
+    "start": 16.98
   },
   {
     "word": "and",
-    "start": 16.819
+    "start": 17.34
   },
   {
     "word": "others\u2014move",
-    "start": 17.361
+    "start": 17.64
   },
   {
     "word": "between",
-    "start": 17.904
+    "start": 18.7
   },
   {
     "word": "locations,",
-    "start": 18.446
+    "start": 19.1
   },
   {
     "word": "satisfy",
-    "start": 18.988
+    "start": 20.24
   },
   {
     "word": "needs",
-    "start": 19.53
+    "start": 20.42
   },
   {
     "word": "(coffee,",
-    "start": 20.073
+    "start": 21.48
   },
   {
     "word": "cigarettes,",
-    "start": 20.615
+    "start": 22.06
   },
   {
     "word": "focus",
-    "start": 21.157
+    "start": 22.66
   },
   {
     "word": "time),",
-    "start": 21.699
+    "start": 22.86
   },
   {
     "word": "and",
-    "start": 22.242
+    "start": 23.78
   },
   {
     "word": "process",
-    "start": 22.784
+    "start": 23.88
   },
   {
     "word": "real",
-    "start": 23.326
+    "start": 24.26
   },
   {
     "word": "tasks",
-    "start": 23.869
+    "start": 24.68
   },
   {
     "word": "from",
-    "start": 24.411
+    "start": 25.08
   },
   {
     "word": "Linear",
-    "start": 24.953
+    "start": 25.44
   },
   {
     "word": "and",
-    "start": 25.495
+    "start": 25.74
   },
   {
     "word": "GitHub.",
-    "start": 26.038
+    "start": 25.96
   },
   {
     "word": "You",
-    "start": 26.88
+    "start": 26.4
   },
   {
     "word": "can",
-    "start": 27.28
+    "start": 26.98
   },
   {
     "word": "pause",
-    "start": 27.681
+    "start": 27.14
   },
   {
     "word": "time,",
-    "start": 28.081
+    "start": 27.46
   },
   {
     "word": "fast-forward,",
-    "start": 28.481
+    "start": 28.34
   },
   {
     "word": "click",
-    "start": 28.881
+    "start": 29.44
   },
   {
     "word": "on",
-    "start": 29.282
+    "start": 29.6
   },
   {
     "word": "agents",
-    "start": 29.682
+    "start": 29.8
   },
   {
     "word": "to",
-    "start": 30.082
+    "start": 30.08
   },
   {
     "word": "see",
-    "start": 30.482
+    "start": 30.38
   },
   {
     "word": "their",
-    "start": 30.883
+    "start": 30.56
   },
   {
     "word": "current",
-    "start": 31.283
+    "start": 30.78
   },
   {
     "word": "plan,",
-    "start": 31.683
+    "start": 31.1
   },
   {
     "word": "and",
-    "start": 32.083
+    "start": 31.88
   },
   {
     "word": "even",
-    "start": 32.484
+    "start": 32.1
   },
   {
     "word": "build",
-    "start": 32.884
+    "start": 32.3
   },
   {
     "word": "structures",
-    "start": 33.284
+    "start": 32.58
   },
   {
     "word": "with",
-    "start": 33.684
+    "start": 33.08
   },
   {
     "word": "a",
-    "start": 34.085
+    "start": 33.32
   },
   {
     "word": "SimCity-style",
-    "start": 34.485
+    "start": 33.44
   },
   {
     "word": "editor.",
-    "start": 34.885
+    "start": 34.72
   },
   {
     "word": "The",
-    "start": 35.585
+    "start": 35.58
   },
   {
     "word": "simulation",
-    "start": 36.026
+    "start": 35.68
   },
   {
     "word": "runs",
-    "start": 36.466
+    "start": 36.1
   },
   {
     "word": "on",
-    "start": 36.907
+    "start": 36.58
   },
   {
     "word": "a",
-    "start": 37.347
+    "start": 36.86
   },
   {
     "word": "Supabase",
-    "start": 37.788
+    "start": 36.86
   },
   {
     "word": "cron,",
-    "start": 38.228
+    "start": 37.54
   },
   {
     "word": "with",
-    "start": 38.669
+    "start": 38.36
   },
   {
     "word": "each",
-    "start": 39.109
+    "start": 38.52
   },
   {
     "word": "tick",
-    "start": 39.55
+    "start": 38.84
   },
   {
     "word": "updating",
-    "start": 39.99
+    "start": 39.08
   },
   {
     "word": "agent",
-    "start": 40.431
+    "start": 39.66
   },
   {
     "word": "positions",
-    "start": 40.871
+    "start": 40.28
   },
   {
     "word": "and",
-    "start": 41.311
+    "start": 40.82
   },
   {
     "word": "triggering",
-    "start": 41.752
+    "start": 41.46
   },
   {
     "word": "task",
-    "start": 42.192
+    "start": 41.84
   },
   {
     "word": "processing.",
-    "start": 42.633
+    "start": 42.2
   },
   {
     "word": "It's",
-    "start": 43.373
+    "start": 43.26
   },
   {
     "word": "a",
-    "start": 43.861
+    "start": 43.56
   },
   {
     "word": "fascinating",
-    "start": 44.348
+    "start": 43.62
   },
   {
     "word": "visualisation",
-    "start": 44.835
+    "start": 43.62
   },
   {
     "word": "of",
-    "start": 45.323
+    "start": 44.9
   },
   {
     "word": "multi-agent",
-    "start": 45.81
+    "start": 45.8
   },
   {
     "word": "orchestration,",
-    "start": 46.298
+    "start": 46.72
   },
   {
     "word": "but",
-    "start": 46.785
+    "start": 47.92
   },
   {
     "word": "it's",
-    "start": 47.272
+    "start": 48.08
   },
   {
     "word": "more",
-    "start": 47.76
+    "start": 48.26
   },
   {
     "word": "toy",
-    "start": 48.247
+    "start": 48.4
   },
   {
     "word": "than",
-    "start": 48.735
+    "start": 48.84
   },
   {
     "word": "tool.",
-    "start": 49.222
+    "start": 49.12
   },
   {
     "word": "The",
-    "start": 50.009
+    "start": 50.02
   },
   {
     "word": "question",
-    "start": 50.355
+    "start": 50.1
   },
   {
     "word": "remains:",
-    "start": 50.7
+    "start": 50.56
   },
   {
     "word": "does",
-    "start": 51.045
+    "start": 51.62
   },
   {
     "word": "anyone",
-    "start": 51.391
+    "start": 51.72
   },
   {
     "word": "need",
-    "start": 51.736
+    "start": 52.04
   },
   {
     "word": "to",
-    "start": 52.081
+    "start": 52.32
   },
   {
     "word": "watch",
-    "start": 52.427
+    "start": 52.48
   },
   {
     "word": "their",
-    "start": 52.772
+    "start": 52.82
   },
   {
     "word": "AI",
-    "start": 53.117
+    "start": 53.1
   },
   {
     "word": "agents",
-    "start": 53.463
+    "start": 53.42
   },
   {
     "word": "walk",
-    "start": 53.808
+    "start": 54.04
   },
   {
     "word": "to",
-    "start": 54.153
+    "start": 54.28
   },
   {
     "word": "a",
-    "start": 54.499
+    "start": 54.5
   },
   {
     "word": "coffee",
-    "start": 54.844
+    "start": 54.6
   },
   {
     "word": "machine?",
-    "start": 55.189
+    "start": 54.86
   }
 ]

@@ -5,538 +5,538 @@
   },
   {
     "word": "as",
-    "start": 0.423
+    "start": 0.6
   },
   {
     "word": "the",
-    "start": 0.846
+    "start": 0.92
   },
   {
     "word": "Unit",
-    "start": 1.269
+    "start": 1.1
   },
   {
     "word": "of",
-    "start": 1.692
+    "start": 1.4
   },
   {
     "word": "Rollback",
-    "start": 2.116
+    "start": 1.82
   },
   {
     "word": "Transactional",
-    "start": 3.039
+    "start": 3.04
   },
   {
     "word": "boundaries",
-    "start": 3.687
+    "start": 3.8
   },
   {
     "word": "for",
-    "start": 4.336
+    "start": 4.32
   },
   {
     "word": "distributed",
-    "start": 4.984
+    "start": 4.88
   },
   {
     "word": "systems",
-    "start": 5.633
+    "start": 5.46
   },
   {
     "word": "In",
-    "start": 6.781
+    "start": 7.7
   },
   {
     "word": "NOMOS,",
-    "start": 7.238
+    "start": 7.7
   },
   {
     "word": "an",
-    "start": 7.695
+    "start": 9.66
   },
   {
     "word": "Intent",
-    "start": 8.152
+    "start": 12.96
   },
   {
     "word": "is",
-    "start": 8.609
+    "start": 12.96
   },
   {
     "word": "the",
-    "start": 9.066
+    "start": 12.96
   },
   {
     "word": "atomic",
-    "start": 9.523
+    "start": 12.96
   },
   {
     "word": "unit",
-    "start": 9.98
+    "start": 12.96
   },
   {
     "word": "of",
-    "start": 10.436
+    "start": 12.96
   },
   {
     "word": "change\u2014the",
-    "start": 10.893
+    "start": 12.96
   },
   {
     "word": "transactional",
-    "start": 11.35
+    "start": 12.96
   },
   {
     "word": "boundary.",
-    "start": 11.807
+    "start": 12.96
   },
   {
     "word": "A",
-    "start": 12.564
+    "start": 13.5
   },
   {
     "word": "single",
-    "start": 13.045
+    "start": 13.5
   },
   {
     "word": "intent",
-    "start": 13.526
+    "start": 13.5
   },
   {
     "word": "can",
-    "start": 14.007
+    "start": 13.5
   },
   {
     "word": "orchestrate",
-    "start": 14.488
+    "start": 13.9
   },
   {
     "word": "mutations",
-    "start": 14.969
+    "start": 14.44
   },
   {
     "word": "across",
-    "start": 15.45
+    "start": 15.04
   },
   {
     "word": "multiple",
-    "start": 15.931
+    "start": 15.48
   },
   {
     "word": "aggregates",
-    "start": 16.413
+    "start": 16.06
   },
   {
     "word": "and",
-    "start": 16.894
+    "start": 16.76
   },
   {
     "word": "bounded",
-    "start": 17.375
+    "start": 17.02
   },
   {
     "word": "contexts,",
-    "start": 17.856
+    "start": 17.4
   },
   {
     "word": "yet",
-    "start": 18.337
+    "start": 18.48
   },
   {
     "word": "it",
-    "start": 18.818
+    "start": 18.74
   },
   {
     "word": "either",
-    "start": 19.299
+    "start": 18.86
   },
   {
     "word": "succeeds",
-    "start": 19.78
+    "start": 19.16
   },
   {
     "word": "completely",
-    "start": 20.261
+    "start": 19.56
   },
   {
     "word": "or",
-    "start": 20.742
+    "start": 20.36
   },
   {
     "word": "fails",
-    "start": 21.223
+    "start": 20.84
   },
   {
     "word": "atomically.",
-    "start": 21.704
+    "start": 20.84
   },
   {
     "word": "This",
-    "start": 22.485
+    "start": 22.48
   },
   {
     "word": "is",
-    "start": 22.967
+    "start": 22.66
   },
   {
     "word": "achieved",
-    "start": 23.449
+    "start": 22.84
   },
   {
     "word": "through",
-    "start": 23.93
+    "start": 23.22
   },
   {
     "word": "the",
-    "start": 24.412
+    "start": 23.64
   },
   {
     "word": "strikeOutIntentIds",
-    "start": 24.894
+    "start": 23.78
   },
   {
     "word": "mechanism:",
-    "start": 25.375
+    "start": 25.58
   },
   {
     "word": "rather",
-    "start": 25.857
+    "start": 26.53
   },
   {
     "word": "than",
-    "start": 26.338
+    "start": 26.96
   },
   {
     "word": "deleting",
-    "start": 26.82
+    "start": 27.34
   },
   {
     "word": "data,",
-    "start": 27.302
+    "start": 27.68
   },
   {
     "word": "an",
-    "start": 27.783
+    "start": 28.68
   },
   {
     "word": "UndoIntent",
-    "start": 28.265
+    "start": 28.82
   },
   {
     "word": "simply",
-    "start": 28.747
+    "start": 29.62
   },
   {
     "word": "records",
-    "start": 29.228
+    "start": 30.36
   },
   {
     "word": "that",
-    "start": 29.71
+    "start": 30.8
   },
   {
     "word": "a",
-    "start": 30.192
+    "start": 31.12
   },
   {
     "word": "previous",
-    "start": 30.673
+    "start": 31.22
   },
   {
     "word": "intent",
-    "start": 31.155
+    "start": 31.58
   },
   {
     "word": "should",
-    "start": 31.637
+    "start": 32.08
   },
   {
     "word": "be",
-    "start": 32.118
+    "start": 32.64
   },
   {
     "word": "ignored",
-    "start": 32.6
+    "start": 32.78
   },
   {
     "word": "when",
-    "start": 33.081
+    "start": 33.22
   },
   {
     "word": "computing",
-    "start": 33.563
+    "start": 33.5
   },
   {
     "word": "current",
-    "start": 34.045
+    "start": 33.94
   },
   {
     "word": "state.",
-    "start": 34.526
+    "start": 34.44
   },
   {
     "word": "The",
-    "start": 35.308
+    "start": 35.3
   },
   {
     "word": "system",
-    "start": 35.939
+    "start": 35.4
   },
   {
     "word": "includes",
-    "start": 36.57
+    "start": 35.68
   },
   {
     "word": "built-in",
-    "start": 37.202
+    "start": 36.2
   },
   {
     "word": "GenesisIntent",
-    "start": 37.833
+    "start": 36.5
   },
   {
     "word": "(bootstrapping",
-    "start": 38.464
+    "start": 38.14
   },
   {
     "word": "timelines),",
-    "start": 39.095
+    "start": 38.58
   },
   {
     "word": "UndoIntent",
-    "start": 39.727
+    "start": 39.84
   },
   {
     "word": "(striking",
-    "start": 40.358
+    "start": 41.2
   },
   {
     "word": "out",
-    "start": 40.989
+    "start": 41.5
   },
   {
     "word": "previous",
-    "start": 41.62
+    "start": 41.74
   },
   {
     "word": "actions),",
-    "start": 42.251
+    "start": 42.18
   },
   {
     "word": "and",
-    "start": 42.883
+    "start": 43.08
   },
   {
     "word": "RedoIntent",
-    "start": 43.514
+    "start": 43.3
   },
   {
     "word": "(striking",
-    "start": 44.145
+    "start": 44.58
   },
   {
     "word": "out",
-    "start": 44.776
+    "start": 44.94
   },
   {
     "word": "undos).",
-    "start": 45.407
+    "start": 48.88
   },
   {
     "word": "Redo",
-    "start": 46.339
+    "start": 48.88
   },
   {
     "word": "becomes",
-    "start": 46.784
+    "start": 48.88
   },
   {
     "word": "trivial\u2014you",
-    "start": 47.229
+    "start": 48.88
   },
   {
     "word": "strike",
-    "start": 47.674
+    "start": 48.88
   },
   {
     "word": "out",
-    "start": 48.118
+    "start": 48.88
   },
   {
     "word": "the",
-    "start": 48.563
+    "start": 48.88
   },
   {
     "word": "undo.",
-    "start": 49.008
+    "start": 48.88
   },
   {
     "word": "Audit",
-    "start": 49.753
+    "start": 49.84
   },
   {
     "word": "trails",
-    "start": 50.316
+    "start": 49.98
   },
   {
     "word": "remain",
-    "start": 50.878
+    "start": 50.32
   },
   {
     "word": "pristine:",
-    "start": 51.441
+    "start": 50.76
   },
   {
     "word": "every",
-    "start": 52.003
+    "start": 52.06
   },
   {
     "word": "action,",
-    "start": 52.565
+    "start": 52.28
   },
   {
     "word": "including",
-    "start": 53.128
+    "start": 52.96
   },
   {
     "word": "corrections,",
-    "start": 53.69
+    "start": 53.32
   },
   {
     "word": "is",
-    "start": 54.253
+    "start": 54.32
   },
   {
     "word": "permanently",
-    "start": 54.815
+    "start": 54.46
   },
   {
     "word": "recorded.",
-    "start": 55.378
+    "start": 55.0
   },
   {
     "word": "NomosApp",
-    "start": 56.24
+    "start": 56.1
   },
   {
     "word": "exposes",
-    "start": 56.951
+    "start": 56.88
   },
   {
     "word": "undoLatest()",
-    "start": 57.661
+    "start": 57.58
   },
   {
     "word": "and",
-    "start": 58.372
+    "start": 58.42
   },
   {
     "word": "redoLatest()",
-    "start": 59.082
+    "start": 59.02
   },
   {
     "word": "APIs,",
-    "start": 59.793
+    "start": 60.26
   },
   {
     "word": "plus",
-    "start": 60.503
+    "start": 60.66
   },
   {
     "word": "canUndoLatest()",
-    "start": 61.214
+    "start": 61.24
   },
   {
     "word": "and",
-    "start": 61.925
+    "start": 62.28
   },
   {
     "word": "canRedoLatest()",
-    "start": 62.635
+    "start": 62.9
   },
   {
     "word": "for",
-    "start": 63.346
+    "start": 63.92
   },
   {
     "word": "UI",
-    "start": 64.056
+    "start": 64.54
   },
   {
     "word": "state.",
-    "start": 64.767
+    "start": 64.84
   },
   {
     "word": "This",
-    "start": 65.777
+    "start": 65.78
   },
   {
     "word": "makes",
-    "start": 66.216
+    "start": 65.9
   },
   {
     "word": "NOMOS",
-    "start": 66.654
+    "start": 66.12
   },
   {
     "word": "ideal",
-    "start": 67.093
+    "start": 66.68
   },
   {
     "word": "for",
-    "start": 67.531
+    "start": 67.1
   },
   {
     "word": "regulated",
-    "start": 67.97
+    "start": 67.42
   },
   {
     "word": "industries,",
-    "start": 68.408
+    "start": 67.86
   },
   {
     "word": "multi-party",
-    "start": 68.847
+    "start": 69.2
   },
   {
     "word": "collaboration,",
-    "start": 69.285
+    "start": 69.84
   },
   {
     "word": "and",
-    "start": 69.724
+    "start": 70.94
   },
   {
     "word": "any",
-    "start": 70.163
+    "start": 71.22
   },
   {
     "word": "system",
-    "start": 70.601
+    "start": 71.4
   },
   {
     "word": "where",
-    "start": 71.04
+    "start": 71.88
   },
   {
     "word": "'who",
-    "start": 71.478
+    "start": 72.2
   },
   {
     "word": "did",
-    "start": 71.917
+    "start": 72.46
   },
   {
     "word": "what",
-    "start": 72.355
+    "start": 72.62
   },
   {
     "word": "when'",
-    "start": 72.794
+    "start": 72.84
   },
   {
     "word": "matters.",
-    "start": 73.232
+    "start": 73.08
   }
 ]

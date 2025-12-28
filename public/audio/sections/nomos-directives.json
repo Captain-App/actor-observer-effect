@@ -1,382 +1,382 @@
 [
   {
     "word": "Technical",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Deep",
-    "start": 0.587
+    "start": 0.3
   },
   {
     "word": "Dive:",
-    "start": 1.173
+    "start": 0.7
   },
   {
     "word": "Directives",
-    "start": 1.76
+    "start": 1.48
   },
   {
     "word": "The",
-    "start": 2.847
+    "start": 2.44
   },
   {
     "word": "mutation",
-    "start": 3.28
+    "start": 2.94
   },
   {
     "word": "layer",
-    "start": 3.714
+    "start": 3.48
   },
   {
     "word": "Directive<TAgg,",
-    "start": 4.648
+    "start": 4.52
   },
   {
     "word": "TPayload>",
-    "start": 5.171
+    "start": 6.22
   },
   {
     "word": "is",
-    "start": 5.693
+    "start": 6.72
   },
   {
     "word": "generic",
-    "start": 6.216
+    "start": 6.98
   },
   {
     "word": "over",
-    "start": 6.739
+    "start": 7.34
   },
   {
     "word": "an",
-    "start": 7.261
+    "start": 7.74
   },
   {
     "word": "Aggregate",
-    "start": 7.784
+    "start": 7.9
   },
   {
     "word": "and",
-    "start": 8.307
+    "start": 8.32
   },
   {
     "word": "Payload",
-    "start": 8.829
+    "start": 8.84
   },
   {
     "word": "type.",
-    "start": 9.352
+    "start": 9.28
   },
   {
     "word": "The",
-    "start": 10.175
+    "start": 10.04
   },
   {
     "word": "constructor",
-    "start": 10.863
+    "start": 10.26
   },
   {
     "word": "assigns",
-    "start": 11.552
+    "start": 10.82
   },
   {
     "word": "a",
-    "start": 12.241
+    "start": 11.68
   },
   {
     "word": "UUIDv7",
-    "start": 12.93
+    "start": 14.42
   },
   {
     "word": "via",
-    "start": 13.618
+    "start": 14.42
   },
   {
     "word": "NomosDirectiveId.",
-    "start": 14.307
+    "start": 17.2
   },
   {
     "word": "Two-phase",
-    "start": 15.296
+    "start": 17.2
   },
   {
     "word": "execution:",
-    "start": 16.193
+    "start": 17.2
   },
   {
     "word": "plan(DirectiveCtx,",
-    "start": 17.09
+    "start": 17.82
   },
   {
     "word": "IntentBase,",
-    "start": 17.987
+    "start": 18.88
   },
   {
     "word": "SnapshotReader,",
-    "start": 18.884
+    "start": 19.48
   },
   {
     "word": "stagedUpdates)",
-    "start": 19.781
+    "start": 20.92
   },
   {
     "word": "is",
-    "start": 20.678
+    "start": 22.02
   },
   {
     "word": "impure\u2014reading",
-    "start": 21.575
+    "start": 22.12
   },
   {
     "word": "snapshots,",
-    "start": 22.472
+    "start": 23.22
   },
   {
     "word": "checking",
-    "start": 23.369
+    "start": 24.22
   },
   {
     "word": "permissions,",
-    "start": 24.266
+    "start": 24.4
   },
   {
     "word": "returning",
-    "start": 25.163
+    "start": 25.3
   },
   {
     "word": "List<ExecutionTarget>;",
-    "start": 26.06
+    "start": 25.58
   },
   {
     "word": "execute(TAgg",
-    "start": 26.957
+    "start": 27.52
   },
   {
     "word": "snapshot,",
-    "start": 27.854
+    "start": 28.64
   },
   {
     "word": "TPayload",
-    "start": 28.751
+    "start": 29.44
   },
   {
     "word": "payload)",
-    "start": 29.648
+    "start": 29.6
   },
   {
     "word": "is",
-    "start": 30.545
+    "start": 30.54
   },
   {
     "word": "pure\u2014returning",
-    "start": 31.442
+    "start": 31.02
   },
   {
     "word": "List<Event>",
-    "start": 32.339
+    "start": 32.32
   },
   {
     "word": "deterministically.",
-    "start": 33.236
+    "start": 32.9
   },
   {
     "word": "DirectiveCtx",
-    "start": 34.433
+    "start": 34.46
   },
   {
     "word": "provides",
-    "start": 35.261
+    "start": 35.54
   },
   {
     "word": "workspaceId,",
-    "start": 36.088
+    "start": 35.84
   },
   {
     "word": "timelineId,",
-    "start": 36.915
+    "start": 36.54
   },
   {
     "word": "intentSeq,",
-    "start": 37.742
+    "start": 38.88
   },
   {
     "word": "actorId,",
-    "start": 38.57
+    "start": 39.94
   },
   {
     "word": "correlationId,",
-    "start": 39.397
+    "start": 40.14
   },
   {
     "word": "causationId,",
-    "start": 40.224
+    "start": 41.24
   },
   {
     "word": "timestamp,",
-    "start": 41.051
+    "start": 43.72
   },
   {
     "word": "plus",
-    "start": 41.879
+    "start": 44.52
   },
   {
     "word": "query<T>()",
-    "start": 42.706
+    "start": 44.62
   },
   {
     "word": "for",
-    "start": 43.533
+    "start": 46.04
   },
   {
     "word": "projections",
-    "start": 44.36
+    "start": 46.26
   },
   {
     "word": "and",
-    "start": 45.188
+    "start": 46.7
   },
   {
     "word": "callIntent()",
-    "start": 46.015
+    "start": 47.08
   },
   {
     "word": "for",
-    "start": 46.842
+    "start": 48.28
   },
   {
     "word": "nested",
-    "start": 47.669
+    "start": 48.38
   },
   {
     "word": "intents.",
-    "start": 48.497
+    "start": 48.76
   },
   {
     "word": "The",
-    "start": 49.624
+    "start": 49.64
   },
   {
     "word": "contextVersion",
-    "start": 50.294
+    "start": 49.72
   },
   {
     "word": "property",
-    "start": 50.965
+    "start": 50.66
   },
   {
     "word": "enables",
-    "start": 51.635
+    "start": 51.24
   },
   {
     "word": "optimistic",
-    "start": 52.306
+    "start": 52.04
   },
   {
     "word": "concurrency",
-    "start": 52.976
+    "start": 52.92
   },
   {
     "word": "checks.",
-    "start": 53.647
+    "start": 53.68
   },
   {
     "word": "Implementing",
-    "start": 54.617
+    "start": 54.18
   },
   {
     "word": "ArchivesAtIntent",
-    "start": 55.55
+    "start": 55.1
   },
   {
     "word": "with",
-    "start": 56.483
+    "start": 56.36
   },
   {
     "word": "archiveAggregateIds",
-    "start": 57.416
+    "start": 56.7
   },
   {
     "word": "marks",
-    "start": 58.349
+    "start": 58.26
   },
   {
     "word": "aggregates",
-    "start": 59.282
+    "start": 59.24
   },
   {
     "word": "for",
-    "start": 60.214
+    "start": 59.7
   },
   {
     "word": "soft-deletion\u2014SnapshotWriter.archiveAtIntent()",
-    "start": 61.147
+    "start": 59.86
   },
   {
     "word": "writes",
-    "start": 62.08
+    "start": 63.86
   },
   {
     "word": "a",
-    "start": 63.013
+    "start": 64.04
   },
   {
     "word": "tombstone.",
-    "start": 63.946
+    "start": 64.24
   },
   {
     "word": "The",
-    "start": 65.179
+    "start": 65.22
   },
   {
     "word": "separation",
-    "start": 65.767
+    "start": 65.28
   },
   {
     "word": "ensures",
-    "start": 66.355
+    "start": 65.86
   },
   {
     "word": "plan()",
-    "start": 66.943
+    "start": 66.3
   },
   {
     "word": "handles",
-    "start": 67.531
+    "start": 67.58
   },
   {
     "word": "distributed",
-    "start": 68.12
+    "start": 67.86
   },
   {
     "word": "reality",
-    "start": 68.708
+    "start": 68.48
   },
   {
     "word": "while",
-    "start": 69.296
+    "start": 69.1
   },
   {
     "word": "execute()",
-    "start": 69.884
+    "start": 69.6
   },
   {
     "word": "remains",
-    "start": 70.472
+    "start": 70.68
   },
   {
     "word": "perfectly",
-    "start": 71.061
+    "start": 71.1
   },
   {
     "word": "reproducible",
-    "start": 71.649
+    "start": 71.84
   },
   {
     "word": "for",
-    "start": 72.237
+    "start": 72.62
   },
   {
     "word": "replay.",
-    "start": 72.825
+    "start": 72.82
   }
 ]

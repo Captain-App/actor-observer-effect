@@ -1,434 +1,434 @@
 [
   {
     "word": "The",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Policy",
-    "start": 0.469
+    "start": 0.1
   },
   {
     "word": "Router",
-    "start": 0.939
+    "start": 0.46
   },
   {
     "word": "Orchestrating",
-    "start": 1.908
+    "start": 1.78
   },
   {
     "word": "cross-context",
-    "start": 2.768
+    "start": 2.54
   },
   {
     "word": "workflows",
-    "start": 3.629
+    "start": 3.58
   },
   {
     "word": "policy_v1",
-    "start": 4.989
+    "start": 4.88
   },
   {
     "word": "is",
-    "start": 5.488
+    "start": 6.02
   },
   {
     "word": "the",
-    "start": 5.987
+    "start": 6.52
   },
   {
     "word": "orchestration",
-    "start": 6.486
+    "start": 6.68
   },
   {
     "word": "layer\u2014the",
-    "start": 6.985
+    "start": 7.38
   },
   {
     "word": "single",
-    "start": 7.484
+    "start": 8.4
   },
   {
     "word": "file",
-    "start": 7.983
+    "start": 8.7
   },
   {
     "word": "that",
-    "start": 8.482
+    "start": 9.16
   },
   {
     "word": "knows",
-    "start": 8.981
+    "start": 9.4
   },
   {
     "word": "about",
-    "start": 9.48
+    "start": 9.64
   },
   {
     "word": "all",
-    "start": 9.979
+    "start": 9.98
   },
   {
     "word": "bounded",
-    "start": 10.478
+    "start": 10.3
   },
   {
     "word": "contexts",
-    "start": 10.977
+    "start": 10.7
   },
   {
     "word": "and",
-    "start": 11.476
+    "start": 11.42
   },
   {
     "word": "routes",
-    "start": 11.975
+    "start": 11.8
   },
   {
     "word": "intents",
-    "start": 12.474
+    "start": 11.8
   },
   {
     "word": "to",
-    "start": 12.973
+    "start": 12.86
   },
   {
     "word": "directives.",
-    "start": 13.472
+    "start": 13.14
   },
   {
     "word": "Co2PolicyRouter",
-    "start": 14.271
+    "start": 14.22
   },
   {
     "word": "implements",
-    "start": 14.93
+    "start": 15.5
   },
   {
     "word": "PolicyRouter.route(),",
-    "start": 15.59
+    "start": 16.04
   },
   {
     "word": "receiving",
-    "start": 16.249
+    "start": 17.78
   },
   {
     "word": "an",
-    "start": 16.909
+    "start": 18.36
   },
   {
     "word": "intent",
-    "start": 17.568
+    "start": 18.52
   },
   {
     "word": "and",
-    "start": 18.228
+    "start": 18.98
   },
   {
     "word": "returning",
-    "start": 18.888
+    "start": 19.5
   },
   {
     "word": "directives",
-    "start": 19.547
+    "start": 19.94
   },
   {
     "word": "that",
-    "start": 20.207
+    "start": 20.72
   },
   {
     "word": "span",
-    "start": 20.866
+    "start": 20.88
   },
   {
     "word": "contexts.",
-    "start": 21.526
+    "start": 21.28
   },
   {
     "word": "When",
-    "start": 22.485
+    "start": 22.02
   },
   {
     "word": "AcceptEstateInvitationIntent",
-    "start": 23.441
+    "start": 22.58
   },
   {
     "word": "arrives,",
-    "start": 24.396
+    "start": 22.96
   },
   {
     "word": "the",
-    "start": 25.352
+    "start": 24.98
   },
   {
     "word": "router",
-    "start": 26.307
+    "start": 25.52
   },
   {
     "word": "might",
-    "start": 27.263
+    "start": 25.86
   },
   {
     "word": "return:",
-    "start": 28.218
+    "start": 26.1
   },
   {
     "word": "UpdateInvitationStatusDirective",
-    "start": 29.174
+    "start": 27.11
   },
   {
     "word": "(identity",
-    "start": 30.129
+    "start": 29.74
   },
   {
     "word": "context),",
-    "start": 31.085
+    "start": 30.36
   },
   {
     "word": "GrantEstatePermissionDirective",
-    "start": 32.04
+    "start": 31.8
   },
   {
     "word": "(permissions",
-    "start": 32.996
+    "start": 32.46
   },
   {
     "word": "context),",
-    "start": 33.951
+    "start": 34.26
   },
   {
     "word": "and",
-    "start": 34.907
+    "start": 35.230000000000004
   },
   {
     "word": "CreateNotificationDirective",
-    "start": 35.862
+    "start": 35.7
   },
   {
     "word": "(identity",
-    "start": 36.818
+    "start": 37.36
   },
   {
     "word": "context,",
-    "start": 37.773
+    "start": 38.26
   },
   {
     "word": "different",
-    "start": 38.729
+    "start": 39.14
   },
   {
     "word": "aggregate).",
-    "start": 39.684
+    "start": 39.76
   },
   {
     "word": "This",
-    "start": 40.94
+    "start": 40.68
   },
   {
     "word": "is",
-    "start": 41.363
+    "start": 41.14
   },
   {
     "word": "where",
-    "start": 41.786
+    "start": 41.32
   },
   {
     "word": "cross-cutting",
-    "start": 42.209
+    "start": 41.54
   },
   {
     "word": "concerns",
-    "start": 42.632
+    "start": 42.28
   },
   {
     "word": "live.",
-    "start": 43.056
+    "start": 42.7
   },
   {
     "word": "The",
-    "start": 43.779
+    "start": 43.74
   },
   {
     "word": "router",
-    "start": 44.212
+    "start": 43.9
   },
   {
     "word": "enforces",
-    "start": 44.645
+    "start": 44.18
   },
   {
     "word": "business",
-    "start": 45.079
+    "start": 44.88
   },
   {
     "word": "rules:",
-    "start": 45.512
+    "start": 45.28
   },
   {
     "word": "'Only",
-    "start": 45.946
+    "start": 46.34
   },
   {
     "word": "admins",
-    "start": 46.379
+    "start": 46.54
   },
   {
     "word": "can",
-    "start": 46.812
+    "start": 47.14
   },
   {
     "word": "grant",
-    "start": 47.246
+    "start": 47.3
   },
   {
     "word": "admin",
-    "start": 47.679
+    "start": 47.6
   },
   {
     "word": "permissions',",
-    "start": 48.113
+    "start": 48.14
   },
   {
     "word": "'Assets",
-    "start": 48.546
+    "start": 49.26
   },
   {
     "word": "can",
-    "start": 48.98
+    "start": 49.56
   },
   {
     "word": "only",
-    "start": 49.413
+    "start": 49.82
   },
   {
     "word": "be",
-    "start": 49.846
+    "start": 50.08
   },
   {
     "word": "placed",
-    "start": 50.28
+    "start": 50.26
   },
   {
     "word": "in",
-    "start": 50.713
+    "start": 50.56
   },
   {
     "word": "published",
-    "start": 51.147
+    "start": 50.8
   },
   {
     "word": "topology'.",
-    "start": 51.58
+    "start": 51.22
   },
   {
     "word": "It",
-    "start": 52.313
+    "start": 52.36
   },
   {
     "word": "validates",
-    "start": 53.204
+    "start": 52.44
   },
   {
     "word": "post-execution:",
-    "start": 54.095
+    "start": 53.04
   },
   {
     "word": "router.validateDirectiveExecution()",
-    "start": 54.985
+    "start": 53.38
   },
   {
     "word": "checks",
-    "start": 55.876
+    "start": 56.66
   },
   {
     "word": "invariants",
-    "start": 56.767
+    "start": 56.66
   },
   {
     "word": "after",
-    "start": 57.657
+    "start": 58.28
   },
   {
     "word": "mutations.",
-    "start": 58.548
+    "start": 58.6
   },
   {
     "word": "The",
-    "start": 59.739
+    "start": 59.52
   },
   {
     "word": "policy",
-    "start": 60.175
+    "start": 59.84
   },
   {
     "word": "layer",
-    "start": 60.611
+    "start": 60.24
   },
   {
     "word": "is",
-    "start": 61.047
+    "start": 60.6
   },
   {
     "word": "where",
-    "start": 61.484
+    "start": 60.98
   },
   {
     "word": "the",
-    "start": 61.92
+    "start": 61.18
   },
   {
     "word": "bounded",
-    "start": 62.356
+    "start": 61.34
   },
   {
     "word": "contexts",
-    "start": 62.793
+    "start": 61.74
   },
   {
     "word": "talk",
-    "start": 63.229
+    "start": 62.32
   },
   {
     "word": "to",
-    "start": 63.665
+    "start": 62.82
   },
   {
     "word": "each",
-    "start": 64.101
+    "start": 63.04
   },
   {
     "word": "other\u2014not",
-    "start": 64.538
+    "start": 63.24
   },
   {
     "word": "through",
-    "start": 64.974
+    "start": 64.1
   },
   {
     "word": "direct",
-    "start": 65.41
+    "start": 64.36
   },
   {
     "word": "dependencies,",
-    "start": 65.846
+    "start": 64.84
   },
   {
     "word": "but",
-    "start": 66.283
+    "start": 66.2
   },
   {
     "word": "through",
-    "start": 66.719
+    "start": 66.26
   },
   {
     "word": "orchestrated",
-    "start": 67.155
+    "start": 66.5
   },
   {
     "word": "intent",
-    "start": 67.591
+    "start": 67.32
   },
   {
     "word": "handling.",
-    "start": 68.028
+    "start": 67.72
   }
 ]

@@ -1,131 +1,131 @@
 [
   {
     "word": "The",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Immutable",
-    "start": 0.434
+    "start": 0.14
   },
   {
     "word": "Ledger",
-    "start": 0.868
+    "start": 0.64
   },
   {
     "word": "Write-only,",
-    "start": 1.801
+    "start": 2.06
   },
   {
     "word": "append-only",
-    "start": 2.562
+    "start": 2.78
   },
   {
     "word": "truth",
-    "start": 3.323
+    "start": 3.48
   },
   {
     "word": "At",
-    "start": 4.584
+    "start": 4.52
   },
   {
     "word": "the",
-    "start": 4.978
+    "start": 4.72
   },
   {
     "word": "heart",
-    "start": 5.371
+    "start": 4.8
   },
   {
     "word": "of",
-    "start": 5.765
+    "start": 5.0
   },
   {
     "word": "NOMOS",
-    "start": 6.158
+    "start": 5.26
   },
   {
     "word": "is",
-    "start": 6.552
+    "start": 5.58
   },
   {
     "word": "the",
-    "start": 6.946
+    "start": 5.96
   },
   {
     "word": "Intent",
-    "start": 7.339
+    "start": 6.14
   },
   {
     "word": "Ledger\u2014a",
-    "start": 7.733
+    "start": 6.52
   },
   {
     "word": "write-only,",
-    "start": 8.126
+    "start": 7.86
   },
   {
     "word": "append-only",
-    "start": 8.52
+    "start": 8.58
   },
   {
     "word": "log",
-    "start": 8.914
+    "start": 9.34
   },
   {
     "word": "that",
-    "start": 9.307
+    "start": 9.62
   },
   {
     "word": "serves",
-    "start": 9.701
+    "start": 10.2
   },
   {
     "word": "as",
-    "start": 10.094
+    "start": 10.62
   },
   {
     "word": "the",
-    "start": 10.488
+    "start": 10.84
   },
   {
     "word": "single",
-    "start": 10.882
+    "start": 11.0
   },
   {
     "word": "source",
-    "start": 11.275
+    "start": 11.34
   },
   {
     "word": "of",
-    "start": 11.669
+    "start": 11.7
   },
   {
     "word": "truth.",
-    "start": 12.062
+    "start": 11.94
   },
   {
     "word": "Nothing",
-    "start": 12.756
+    "start": 12.74
   },
   {
     "word": "is",
-    "start": 13.193
+    "start": 13.06
   },
   {
     "word": "ever",
-    "start": 13.631
+    "start": 13.36
   },
   {
     "word": "deleted",
-    "start": 14.068
+    "start": 13.62
   },
   {
     "word": "or",
-    "start": 14.505
+    "start": 14.04
   },
   {
     "word": "mutated.",
-    "start": 14.943
+    "start": 14.56
   },
   {
     "word": "Instead,",
@@ -133,362 +133,362 @@
   },
   {
     "word": "corrections",
-    "start": 16.099
+    "start": 16.46
   },
   {
     "word": "are",
-    "start": 16.518
+    "start": 16.8
   },
   {
     "word": "made",
-    "start": 16.936
+    "start": 16.98
   },
   {
     "word": "by",
-    "start": 17.355
+    "start": 17.18
   },
   {
     "word": "appending",
-    "start": 17.774
+    "start": 17.42
   },
   {
     "word": "new",
-    "start": 18.193
+    "start": 17.78
   },
   {
     "word": "intents",
-    "start": 18.612
+    "start": 18.1
   },
   {
     "word": "that",
-    "start": 19.03
+    "start": 18.66
   },
   {
     "word": "'strike",
-    "start": 19.449
+    "start": 19.1
   },
   {
     "word": "out'",
-    "start": 19.868
+    "start": 19.44
   },
   {
     "word": "previous",
-    "start": 20.287
+    "start": 19.7
   },
   {
     "word": "ones,",
-    "start": 20.706
+    "start": 20.14
   },
   {
     "word": "preserving",
-    "start": 21.124
+    "start": 21.06
   },
   {
     "word": "the",
-    "start": 21.543
+    "start": 21.5
   },
   {
     "word": "complete",
-    "start": 21.962
+    "start": 21.7
   },
   {
     "word": "history",
-    "start": 22.381
+    "start": 22.1
   },
   {
     "word": "of",
-    "start": 22.8
+    "start": 22.62
   },
   {
     "word": "decisions.",
-    "start": 23.219
+    "start": 22.9
   },
   {
     "word": "Every",
-    "start": 23.937
+    "start": 23.96
   },
   {
     "word": "IntentLedgerEntry",
-    "start": 24.626
+    "start": 24.16
   },
   {
     "word": "captures",
-    "start": 25.314
+    "start": 25.34
   },
   {
     "word": "rich",
-    "start": 26.003
+    "start": 25.82
   },
   {
     "word": "context:",
-    "start": 26.691
+    "start": 26.1
   },
   {
     "word": "NomosActorId",
-    "start": 27.38
+    "start": 27.32
   },
   {
     "word": "(who",
-    "start": 28.068
+    "start": 28.82
   },
   {
     "word": "initiated",
-    "start": 28.757
+    "start": 28.9
   },
   {
     "word": "it),",
-    "start": 29.445
+    "start": 29.4
   },
   {
     "word": "NomosWorkspaceId",
-    "start": 30.134
+    "start": 30.14
   },
   {
     "word": "(the",
-    "start": 30.822
+    "start": 31.92
   },
   {
     "word": "tenant",
-    "start": 31.511
+    "start": 32.0
   },
   {
     "word": "boundary),",
-    "start": 32.199
+    "start": 32.2
   },
   {
     "word": "NomosTimelineId",
-    "start": 32.888
+    "start": 33.26
   },
   {
     "word": "(enabling",
-    "start": 33.576
+    "start": 35.34
   },
   {
     "word": "branching",
-    "start": 34.265
+    "start": 35.64
   },
   {
     "word": "for",
-    "start": 34.953
+    "start": 36.28
   },
   {
     "word": "what-if",
-    "start": 35.642
+    "start": 36.44
   },
   {
     "word": "scenarios),",
-    "start": 36.33
+    "start": 36.72
   },
   {
     "word": "NomosCorrelationId",
-    "start": 37.019
+    "start": 37.9
   },
   {
     "word": "and",
-    "start": 37.707
+    "start": 39.72
   },
   {
     "word": "NomosCausationId",
-    "start": 38.396
+    "start": 39.78
   },
   {
     "word": "(for",
-    "start": 39.084
+    "start": 41.68
   },
   {
     "word": "distributed",
-    "start": 39.772
+    "start": 41.88
   },
   {
     "word": "tracing),",
-    "start": 40.461
+    "start": 42.42
   },
   {
     "word": "plus",
-    "start": 41.149
+    "start": 43.44
   },
   {
     "word": "the",
-    "start": 41.838
+    "start": 43.68
   },
   {
     "word": "full",
-    "start": 42.526
+    "start": 43.88
   },
   {
     "word": "chain",
-    "start": 43.215
+    "start": 44.16
   },
   {
     "word": "of",
-    "start": 43.903
+    "start": 44.54
   },
   {
     "word": "DirectiveOutcomes",
-    "start": 44.592
+    "start": 44.78
   },
   {
     "word": "and",
-    "start": 45.28
+    "start": 45.8
   },
   {
     "word": "Events.",
-    "start": 45.969
+    "start": 46.12
   },
   {
     "word": "Sequence",
-    "start": 46.957
+    "start": 47.02
   },
   {
     "word": "numbers",
-    "start": 47.756
+    "start": 47.36
   },
   {
     "word": "track",
-    "start": 48.554
+    "start": 47.78
   },
   {
     "word": "ordering:",
-    "start": 49.352
+    "start": 48.16
   },
   {
     "word": "workspaceIntentSequence",
-    "start": 50.15
+    "start": 49.32
   },
   {
     "word": "for",
-    "start": 50.948
+    "start": 50.66
   },
   {
     "word": "intents,",
-    "start": 51.747
+    "start": 50.92
   },
   {
     "word": "startWorkspaceEventSequence",
-    "start": 52.545
+    "start": 51.7
   },
   {
     "word": "and",
-    "start": 53.343
+    "start": 53.5
   },
   {
     "word": "endWorkspaceEventSequence",
-    "start": 54.141
+    "start": 54.06
   },
   {
     "word": "for",
-    "start": 54.94
+    "start": 55.68
   },
   {
     "word": "events.",
-    "start": 55.738
+    "start": 55.98
   },
   {
     "word": "This",
-    "start": 56.836
+    "start": 56.72
   },
   {
     "word": "structure",
-    "start": 57.23
+    "start": 56.92
   },
   {
     "word": "enables",
-    "start": 57.625
+    "start": 57.4
   },
   {
     "word": "something",
-    "start": 58.019
+    "start": 57.8
   },
   {
     "word": "remarkable:",
-    "start": 58.413
+    "start": 58.32
   },
   {
     "word": "you",
-    "start": 58.807
+    "start": 59.42
   },
   {
     "word": "can",
-    "start": 59.202
+    "start": 59.62
   },
   {
     "word": "replay",
-    "start": 59.596
+    "start": 59.78
   },
   {
     "word": "the",
-    "start": 59.99
+    "start": 60.14
   },
   {
     "word": "entire",
-    "start": 60.384
+    "start": 60.38
   },
   {
     "word": "history",
-    "start": 60.779
+    "start": 60.84
   },
   {
     "word": "of",
-    "start": 61.173
+    "start": 61.28
   },
   {
     "word": "a",
-    "start": 61.567
+    "start": 61.46
   },
   {
     "word": "system,",
-    "start": 61.962
+    "start": 61.54
   },
   {
     "word": "skip",
-    "start": 62.356
+    "start": 62.48
   },
   {
     "word": "struck-out",
-    "start": 62.75
+    "start": 62.64
   },
   {
     "word": "intents,",
-    "start": 63.144
+    "start": 63.36
   },
   {
     "word": "and",
-    "start": 63.539
+    "start": 64.28
   },
   {
     "word": "arrive",
-    "start": 63.933
+    "start": 64.36
   },
   {
     "word": "at",
-    "start": 64.327
+    "start": 64.74
   },
   {
     "word": "any",
-    "start": 64.721
+    "start": 64.94
   },
   {
     "word": "point",
-    "start": 65.116
+    "start": 65.1
   },
   {
     "word": "in",
-    "start": 65.51
+    "start": 65.42
   },
   {
     "word": "time",
-    "start": 65.904
+    "start": 65.66
   },
   {
     "word": "with",
-    "start": 66.299
+    "start": 66.02
   },
   {
     "word": "perfect",
-    "start": 66.693
+    "start": 66.26
   },
   {
     "word": "fidelity.",
-    "start": 67.087
+    "start": 66.68
   }
 ]

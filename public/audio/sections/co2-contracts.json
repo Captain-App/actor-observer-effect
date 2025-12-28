@@ -1,494 +1,494 @@
 [
   {
     "word": "Shared",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Language:",
-    "start": 0.811
+    "start": 0.38
   },
   {
     "word": "contracts_v1",
-    "start": 1.621
+    "start": 0.74
   },
   {
     "word": "The",
-    "start": 2.932
+    "start": 2.74
   },
   {
     "word": "vocabulary",
-    "start": 3.453
+    "start": 3.02
   },
   {
     "word": "that",
-    "start": 3.973
+    "start": 3.64
   },
   {
     "word": "crosses",
-    "start": 4.494
+    "start": 4.22
   },
   {
     "word": "boundaries",
-    "start": 5.014
+    "start": 4.6
   },
   {
     "word": "The",
-    "start": 6.035
+    "start": 5.82
   },
   {
     "word": "contracts_v1",
-    "start": 6.554
+    "start": 6.14
   },
   {
     "word": "package",
-    "start": 7.073
+    "start": 7.22
   },
   {
     "word": "is",
-    "start": 7.592
+    "start": 7.66
   },
   {
     "word": "the",
-    "start": 8.111
+    "start": 8.24
   },
   {
     "word": "published",
-    "start": 8.63
+    "start": 8.36
   },
   {
     "word": "language\u2014the",
-    "start": 9.149
+    "start": 8.7
   },
   {
     "word": "shared",
-    "start": 9.668
+    "start": 9.96
   },
   {
     "word": "vocabulary",
-    "start": 10.188
+    "start": 10.3
   },
   {
     "word": "that",
-    "start": 10.707
+    "start": 11.06
   },
   {
     "word": "all",
-    "start": 11.226
+    "start": 11.62
   },
   {
     "word": "bounded",
-    "start": 11.745
+    "start": 11.9
   },
   {
     "word": "contexts",
-    "start": 12.264
+    "start": 12.38
   },
   {
     "word": "agree",
-    "start": 12.783
+    "start": 13.08
   },
   {
     "word": "on.",
-    "start": 13.302
+    "start": 13.42
   },
   {
     "word": "It",
-    "start": 14.121
+    "start": 14.06
   },
   {
     "word": "exports",
-    "start": 14.857
+    "start": 14.22
   },
   {
     "word": "value",
-    "start": 15.593
+    "start": 14.52
   },
   {
     "word": "objects:",
-    "start": 16.329
+    "start": 15.06
   },
   {
     "word": "UserId,",
-    "start": 17.065
+    "start": 16.1
   },
   {
     "word": "EstateId,",
-    "start": 17.801
+    "start": 16.36
   },
   {
     "word": "SiteId,",
-    "start": 18.537
+    "start": 17.46
   },
   {
     "word": "TrackableAssetId,",
-    "start": 19.273
+    "start": 18.56
   },
   {
     "word": "ListingId,",
-    "start": 20.009
+    "start": 20.1
   },
   {
     "word": "and",
-    "start": 20.745
+    "start": 21.86
   },
   {
     "word": "dozens",
-    "start": 21.481
+    "start": 22.1
   },
   {
     "word": "more.",
-    "start": 22.217
+    "start": 22.34
   },
   {
     "word": "These",
-    "start": 23.253
+    "start": 23.3
   },
   {
     "word": "aren't",
-    "start": 23.688
+    "start": 23.44
   },
   {
     "word": "strings;",
-    "start": 24.123
+    "start": 23.74
   },
   {
     "word": "they're",
-    "start": 24.557
+    "start": 24.72
   },
   {
     "word": "typed",
-    "start": 24.992
+    "start": 24.84
   },
   {
     "word": "wrappers",
-    "start": 25.427
+    "start": 25.18
   },
   {
     "word": "with",
-    "start": 25.861
+    "start": 25.66
   },
   {
     "word": "validation.",
-    "start": 26.296
+    "start": 25.92
   },
   {
     "word": "PostalAddress",
-    "start": 27.031
+    "start": 26.36
   },
   {
     "word": "validates",
-    "start": 27.74
+    "start": 28.14
   },
   {
     "word": "country",
-    "start": 28.449
+    "start": 28.82
   },
   {
     "word": "codes.",
-    "start": 29.159
+    "start": 29.16
   },
   {
     "word": "Money",
-    "start": 30.168
+    "start": 30.26
   },
   {
     "word": "stores",
-    "start": 30.639
+    "start": 30.42
   },
   {
     "word": "amounts",
-    "start": 31.111
+    "start": 31.28
   },
   {
     "word": "as",
-    "start": 31.582
+    "start": 31.54
   },
   {
     "word": "integer",
-    "start": 32.053
+    "start": 31.92
   },
   {
     "word": "minor",
-    "start": 32.524
+    "start": 32.22
   },
   {
     "word": "units",
-    "start": 32.996
+    "start": 32.62
   },
   {
     "word": "to",
-    "start": 33.467
+    "start": 33.0
   },
   {
     "word": "avoid",
-    "start": 33.938
+    "start": 33.46
   },
   {
     "word": "floating-point",
-    "start": 34.409
+    "start": 33.88
   },
   {
     "word": "errors.",
-    "start": 34.881
+    "start": 34.74
   },
   {
     "word": "CurrencyCode",
-    "start": 35.652
+    "start": 35.7
   },
   {
     "word": "validates",
-    "start": 36.535
+    "start": 37.02
   },
   {
     "word": "ISO",
-    "start": 37.418
+    "start": 37.56
   },
   {
     "word": "4217",
-    "start": 38.302
+    "start": 38.02
   },
   {
     "word": "codes.",
-    "start": 39.185
+    "start": 39.32
   },
   {
     "word": "The",
-    "start": 40.368
+    "start": 40.38
   },
   {
     "word": "package",
-    "start": 41.119
+    "start": 40.46
   },
   {
     "word": "also",
-    "start": 41.87
+    "start": 40.76
   },
   {
     "word": "exports",
-    "start": 42.621
+    "start": 41.24
   },
   {
     "word": "cross-domain",
-    "start": 43.373
+    "start": 41.74
   },
   {
     "word": "payloads:",
-    "start": 44.124
+    "start": 42.44
   },
   {
     "word": "LocationPayload",
-    "start": 44.875
+    "start": 43.62
   },
   {
     "word": "for",
-    "start": 45.626
+    "start": 44.54
   },
   {
     "word": "passing",
-    "start": 46.377
+    "start": 44.78
   },
   {
     "word": "site/floor/room",
-    "start": 47.128
+    "start": 45.1
   },
   {
     "word": "coordinates,",
-    "start": 47.88
+    "start": 46.98
   },
   {
     "word": "FileAttachmentPayload",
-    "start": 48.631
+    "start": 48.16
   },
   {
     "word": "for",
-    "start": 49.382
+    "start": 49.58
   },
   {
     "word": "file",
-    "start": 50.133
+    "start": 49.82
   },
   {
     "word": "metadata,",
-    "start": 50.884
+    "start": 50.16
   },
   {
     "word": "TrackableAssetReplacementSet",
-    "start": 51.635
+    "start": 51.32
   },
   {
     "word": "for",
-    "start": 52.387
+    "start": 53.24
   },
   {
     "word": "bulk",
-    "start": 53.138
+    "start": 53.46
   },
   {
     "word": "operations.",
-    "start": 53.889
+    "start": 53.74
   },
   {
     "word": "When",
-    "start": 54.94
+    "start": 54.42
   },
   {
     "word": "estate_structures_v1",
-    "start": 55.464
+    "start": 55.02
   },
   {
     "word": "needs",
-    "start": 55.989
+    "start": 56.52
   },
   {
     "word": "to",
-    "start": 56.513
+    "start": 57.12
   },
   {
     "word": "reference",
-    "start": 57.038
+    "start": 57.38
   },
   {
     "word": "a",
-    "start": 57.562
+    "start": 57.72
   },
   {
     "word": "user,",
-    "start": 58.087
+    "start": 57.98
   },
   {
     "word": "it",
-    "start": 58.611
+    "start": 58.74
   },
   {
     "word": "uses",
-    "start": 59.136
+    "start": 58.98
   },
   {
     "word": "UserId",
-    "start": 59.66
+    "start": 59.26
   },
   {
     "word": "from",
-    "start": 60.184
+    "start": 60.0
   },
   {
     "word": "contracts.",
-    "start": 60.709
+    "start": 60.44
   },
   {
     "word": "When",
-    "start": 61.533
+    "start": 61.34
   },
   {
     "word": "identity_v1",
-    "start": 62.011
+    "start": 61.66
   },
   {
     "word": "needs",
-    "start": 62.489
+    "start": 62.78
   },
   {
     "word": "to",
-    "start": 62.967
+    "start": 63.2
   },
   {
     "word": "mention",
-    "start": 63.445
+    "start": 63.44
   },
   {
     "word": "a",
-    "start": 63.923
+    "start": 63.74
   },
   {
     "word": "site,",
-    "start": 64.401
+    "start": 63.92
   },
   {
     "word": "it",
-    "start": 64.878
+    "start": 64.68
   },
   {
     "word": "uses",
-    "start": 65.356
+    "start": 64.78
   },
   {
     "word": "SiteId.",
-    "start": 65.834
+    "start": 65.04
   },
   {
     "word": "The",
-    "start": 66.612
+    "start": 66.52
   },
   {
     "word": "contracts",
-    "start": 67.066
+    "start": 66.72
   },
   {
     "word": "package",
-    "start": 67.519
+    "start": 67.3
   },
   {
     "word": "grows",
-    "start": 67.973
+    "start": 67.6
   },
   {
     "word": "organically",
-    "start": 68.426
+    "start": 68.18
   },
   {
     "word": "as",
-    "start": 68.88
+    "start": 69.08
   },
   {
     "word": "domains",
-    "start": 69.334
+    "start": 69.54
   },
   {
     "word": "discover",
-    "start": 69.787
+    "start": 69.84
   },
   {
     "word": "they",
-    "start": 70.241
+    "start": 70.46
   },
   {
     "word": "need",
-    "start": 70.695
+    "start": 70.78
   },
   {
     "word": "to",
-    "start": 71.148
+    "start": 71.0
   },
   {
     "word": "communicate\u2014which",
-    "start": 71.602
+    "start": 71.22
   },
   {
     "word": "is",
-    "start": 72.055
+    "start": 72.62
   },
   {
     "word": "both",
-    "start": 72.509
+    "start": 72.74
   },
   {
     "word": "its",
-    "start": 72.963
+    "start": 72.98
   },
   {
     "word": "strength",
-    "start": 73.416
+    "start": 73.24
   },
   {
     "word": "and",
-    "start": 73.87
+    "start": 73.58
   },
   {
     "word": "its",
-    "start": 74.323
+    "start": 74.28
   },
   {
     "word": "weakness.",
-    "start": 74.777
+    "start": 74.64
   }
 ]

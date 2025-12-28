@@ -1,358 +1,358 @@
 [
   {
     "word": "App:",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Specialised",
-    "start": 0.565
+    "start": 0.0
   },
   {
     "word": "AI",
-    "start": 1.131
+    "start": 1.08
   },
   {
     "word": "Agents",
-    "start": 1.696
+    "start": 1.44
   },
   {
     "word": "Ten",
-    "start": 2.761
+    "start": 1.44
   },
   {
     "word": "personas",
-    "start": 3.252
+    "start": 3.02
   },
   {
     "word": "with",
-    "start": 3.743
+    "start": 3.6
   },
   {
     "word": "distinct",
-    "start": 4.233
+    "start": 4.04
   },
   {
     "word": "system",
-    "start": 4.724
+    "start": 4.46
   },
   {
     "word": "prompts",
-    "start": 5.215
+    "start": 5.08
   },
   {
     "word": "Beyond",
-    "start": 6.205
+    "start": 6.18
   },
   {
     "word": "Agent",
-    "start": 6.767
+    "start": 6.4
   },
   {
     "word": "Town's",
-    "start": 7.329
+    "start": 6.78
   },
   {
     "word": "simulation,",
-    "start": 7.891
+    "start": 7.1
   },
   {
     "word": "there",
-    "start": 8.452
+    "start": 8.28
   },
   {
     "word": "are",
-    "start": 9.014
+    "start": 8.38
   },
   {
     "word": "standalone",
-    "start": 9.576
+    "start": 8.5
   },
   {
     "word": "agent",
-    "start": 10.138
+    "start": 8.94
   },
   {
     "word": "chat",
-    "start": 10.7
+    "start": 9.5
   },
   {
     "word": "interfaces:",
-    "start": 11.261
+    "start": 9.8
   },
   {
     "word": "CEO",
-    "start": 11.823
+    "start": 11.18
   },
   {
     "word": "Agent",
-    "start": 12.385
+    "start": 11.4
   },
   {
     "word": "(strategic",
-    "start": 12.947
+    "start": 12.0
   },
   {
     "word": "decisions,",
-    "start": 13.508
+    "start": 12.68
   },
   {
     "word": "WhatsApp",
-    "start": 14.07
+    "start": 13.54
   },
   {
     "word": "escalation),",
-    "start": 14.632
+    "start": 13.78
   },
   {
     "word": "CFO",
-    "start": 15.194
+    "start": 15.0
   },
   {
     "word": "Agent",
-    "start": 15.756
+    "start": 15.32
   },
   {
     "word": "(financial",
-    "start": 16.317
+    "start": 16.1
   },
   {
     "word": "queries),",
-    "start": 16.879
+    "start": 16.34
   },
   {
     "word": "COO",
-    "start": 17.441
+    "start": 17.54
   },
   {
     "word": "Agent",
-    "start": 18.003
+    "start": 17.92
   },
   {
     "word": "(operations",
-    "start": 18.564
+    "start": 18.34
   },
   {
     "word": "and",
-    "start": 19.126
+    "start": 18.94
   },
   {
     "word": "notifications),",
-    "start": 19.688
+    "start": 19.16
   },
   {
     "word": "SRE",
-    "start": 20.25
+    "start": 20.58
   },
   {
     "word": "Agent",
-    "start": 20.812
+    "start": 21.04
   },
   {
     "word": "(infrastructure",
-    "start": 21.373
+    "start": 21.52
   },
   {
     "word": "monitoring),",
-    "start": 21.935
+    "start": 22.08
   },
   {
     "word": "PM",
-    "start": 22.497
+    "start": 23.2
   },
   {
     "word": "Agent",
-    "start": 23.059
+    "start": 23.48
   },
   {
     "word": "(project",
-    "start": 23.62
+    "start": 23.96
   },
   {
     "word": "management),",
-    "start": 24.182
+    "start": 24.4
   },
   {
     "word": "DevOps",
-    "start": 24.744
+    "start": 25.56
   },
   {
     "word": "Agent,",
-    "start": 25.306
+    "start": 25.86
   },
   {
     "word": "HR",
-    "start": 25.868
+    "start": 26.72
   },
   {
     "word": "Agent,",
-    "start": 26.429
+    "start": 27.0
   },
   {
     "word": "Legal",
-    "start": 26.991
+    "start": 27.56
   },
   {
     "word": "Agent,",
-    "start": 27.553
+    "start": 28.04
   },
   {
     "word": "Sales",
-    "start": 28.115
+    "start": 28.86
   },
   {
     "word": "Agent,",
-    "start": 28.676
+    "start": 29.02
   },
   {
     "word": "and",
-    "start": 29.238
+    "start": 29.52
   },
   {
     "word": "Business",
-    "start": 29.8
+    "start": 29.98
   },
   {
     "word": "Development",
-    "start": 30.362
+    "start": 30.28
   },
   {
     "word": "Agent.",
-    "start": 30.924
+    "start": 30.88
   },
   {
     "word": "Each",
-    "start": 31.785
+    "start": 31.72
   },
   {
     "word": "has",
-    "start": 32.226
+    "start": 32.06
   },
   {
     "word": "a",
-    "start": 32.667
+    "start": 32.24
   },
   {
     "word": "dedicated",
-    "start": 33.108
+    "start": 32.38
   },
   {
     "word": "edge",
-    "start": 33.549
+    "start": 32.9
   },
   {
     "word": "function,",
-    "start": 33.99
+    "start": 33.24
   },
   {
     "word": "custom",
-    "start": 34.431
+    "start": 34.2
   },
   {
     "word": "system",
-    "start": 34.872
+    "start": 34.48
   },
   {
     "word": "prompt,",
-    "start": 35.312
+    "start": 34.84
   },
   {
     "word": "and",
-    "start": 35.753
+    "start": 35.22
   },
   {
     "word": "conversation",
-    "start": 36.194
+    "start": 35.76
   },
   {
     "word": "history.",
-    "start": 36.635
+    "start": 36.22
   },
   {
     "word": "They're",
-    "start": 37.376
+    "start": 37.28
   },
   {
     "word": "functional\u2014you",
-    "start": 37.794
+    "start": 37.58
   },
   {
     "word": "can",
-    "start": 38.212
+    "start": 38.72
   },
   {
     "word": "chat",
-    "start": 38.63
+    "start": 38.88
   },
   {
     "word": "with",
-    "start": 39.049
+    "start": 39.2
   },
   {
     "word": "the",
-    "start": 39.467
+    "start": 39.44
   },
   {
     "word": "CFO",
-    "start": 39.885
+    "start": 39.6
   },
   {
     "word": "about",
-    "start": 40.303
+    "start": 40.12
   },
   {
     "word": "cash",
-    "start": 40.721
+    "start": 40.46
   },
   {
     "word": "flow\u2014but",
-    "start": 41.139
+    "start": 40.86
   },
   {
     "word": "there's",
-    "start": 41.557
+    "start": 41.84
   },
   {
     "word": "no",
-    "start": 41.975
+    "start": 42.04
   },
   {
     "word": "unified",
-    "start": 42.394
+    "start": 42.2
   },
   {
     "word": "entry",
-    "start": 42.812
+    "start": 42.76
   },
   {
     "word": "point.",
-    "start": 43.23
+    "start": 43.14
   },
   {
     "word": "It's",
-    "start": 43.948
+    "start": 43.88
   },
   {
     "word": "ten",
-    "start": 44.433
+    "start": 43.88
   },
   {
     "word": "chatbots,",
-    "start": 44.917
+    "start": 44.4
   },
   {
     "word": "not",
-    "start": 45.402
+    "start": 45.38
   },
   {
     "word": "one",
-    "start": 45.886
+    "start": 45.62
   },
   {
     "word": "intelligent",
-    "start": 46.371
+    "start": 45.9
   },
   {
     "word": "assistant.",
-    "start": 46.855
+    "start": 46.54
   }
 ]

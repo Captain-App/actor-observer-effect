@@ -1,366 +1,366 @@
 [
   {
     "word": "WhatsApp",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "first,",
-    "start": 0.491
+    "start": 0.32
   },
   {
     "word": "but",
-    "start": 0.981
+    "start": 1.08
   },
   {
     "word": "not",
-    "start": 1.472
+    "start": 1.26
   },
   {
     "word": "WhatsApp-only",
-    "start": 1.963
+    "start": 1.4
   },
   {
     "word": "WhatsApp",
-    "start": 2.953
+    "start": 2.84
   },
   {
     "word": "is",
-    "start": 3.308
+    "start": 3.26
   },
   {
     "word": "our",
-    "start": 3.663
+    "start": 3.62
   },
   {
     "word": "primary",
-    "start": 4.018
+    "start": 3.74
   },
   {
     "word": "front",
-    "start": 4.373
+    "start": 4.2
   },
   {
     "word": "door,",
-    "start": 4.728
+    "start": 4.54
   },
   {
     "word": "but",
-    "start": 5.083
+    "start": 5.3
   },
   {
     "word": "the",
-    "start": 5.438
+    "start": 5.4
   },
   {
     "word": "rules",
-    "start": 5.793
+    "start": 5.54
   },
   {
     "word": "can",
-    "start": 6.148
+    "start": 5.84
   },
   {
     "word": "change.",
-    "start": 6.502
+    "start": 6.16
   },
   {
     "word": "Meta's",
-    "start": 7.157
+    "start": 7.24
   },
   {
     "word": "updated",
-    "start": 7.846
+    "start": 7.5
   },
   {
     "word": "terms",
-    "start": 8.534
+    "start": 8.12
   },
   {
     "word": "effective",
-    "start": 9.223
+    "start": 8.56
   },
   {
     "word": "January",
-    "start": 9.911
+    "start": 9.28
   },
   {
     "word": "2026",
-    "start": 10.6
+    "start": 10.04
   },
   {
     "word": "require",
-    "start": 11.288
+    "start": 11.659999999999998
   },
   {
     "word": "specific",
-    "start": 11.977
+    "start": 12.04
   },
   {
     "word": "customer",
-    "start": 12.665
+    "start": 12.9
   },
   {
     "word": "service",
-    "start": 13.354
+    "start": 13.42
   },
   {
     "word": "automation.",
-    "start": 14.042
+    "start": 13.88
   },
   {
     "word": "Our",
-    "start": 15.031
+    "start": 15.04
   },
   {
     "word": "strategy",
-    "start": 15.401
+    "start": 15.16
   },
   {
     "word": "is",
-    "start": 15.771
+    "start": 15.64
   },
   {
     "word": "WhatsApp",
-    "start": 16.142
+    "start": 15.92
   },
   {
     "word": "for",
-    "start": 16.512
+    "start": 16.3
   },
   {
     "word": "adoption,",
-    "start": 16.882
+    "start": 16.54
   },
   {
     "word": "but",
-    "start": 17.252
+    "start": 17.46
   },
   {
     "word": "a",
-    "start": 17.623
+    "start": 17.56
   },
   {
     "word": "CaptainApp",
-    "start": 17.993
+    "start": 17.66
   },
   {
     "word": "portal",
-    "start": 18.363
+    "start": 18.28
   },
   {
     "word": "as",
-    "start": 18.734
+    "start": 18.28
   },
   {
     "word": "the",
-    "start": 19.104
+    "start": 19.16
   },
   {
     "word": "control",
-    "start": 19.474
+    "start": 19.28
   },
   {
     "word": "plane.",
-    "start": 19.844
+    "start": 19.68
   },
   {
     "word": "The",
-    "start": 20.515
+    "start": 20.54
   },
   {
     "word": "portal",
-    "start": 20.955
+    "start": 20.62
   },
   {
     "word": "is",
-    "start": 21.396
+    "start": 20.9
   },
   {
     "word": "where",
-    "start": 21.836
+    "start": 21.18
   },
   {
     "word": "you",
-    "start": 22.277
+    "start": 21.36
   },
   {
     "word": "connect",
-    "start": 22.717
+    "start": 21.52
   },
   {
     "word": "integrations,",
-    "start": 23.157
+    "start": 21.8
   },
   {
     "word": "control",
-    "start": 23.598
+    "start": 23.16
   },
   {
     "word": "permissions,",
-    "start": 24.038
+    "start": 23.5
   },
   {
     "word": "manage",
-    "start": 24.479
+    "start": 24.52
   },
   {
     "word": "billing,",
-    "start": 24.919
+    "start": 24.76
   },
   {
     "word": "and",
-    "start": 25.36
+    "start": 25.62
   },
   {
     "word": "review",
-    "start": 25.8
+    "start": 25.72
   },
   {
     "word": "the",
-    "start": 26.241
+    "start": 26.0
   },
   {
     "word": "agent's",
-    "start": 26.681
+    "start": 26.2
   },
   {
     "word": "story-like",
-    "start": 27.122
+    "start": 26.74
   },
   {
     "word": "history.",
-    "start": 27.562
+    "start": 27.34
   },
   {
     "word": "A",
-    "start": 28.303
+    "start": 27.84
   },
   {
     "word": "normal",
-    "start": 28.662
+    "start": 28.4
   },
   {
     "word": "audit",
-    "start": 29.021
+    "start": 28.7
   },
   {
     "word": "log",
-    "start": 29.38
+    "start": 29.12
   },
   {
     "word": "is",
-    "start": 29.739
+    "start": 29.38
   },
   {
     "word": "a",
-    "start": 30.098
+    "start": 29.9
   },
   {
     "word": "crime",
-    "start": 30.457
+    "start": 30.02
   },
   {
     "word": "against",
-    "start": 30.816
+    "start": 30.42
   },
   {
     "word": "the",
-    "start": 31.176
+    "start": 31.0
   },
   {
     "word": "human",
-    "start": 31.535
+    "start": 31.18
   },
   {
     "word": "attention",
-    "start": 31.894
+    "start": 31.48
   },
   {
     "word": "span.",
-    "start": 32.253
+    "start": 31.92
   },
   {
     "word": "Ours",
-    "start": 32.912
+    "start": 33.02
   },
   {
     "word": "reads",
-    "start": 33.336
+    "start": 33.16
   },
   {
     "word": "like",
-    "start": 33.761
+    "start": 33.48
   },
   {
     "word": "a",
-    "start": 34.185
+    "start": 33.78
   },
   {
     "word": "story:",
-    "start": 34.609
+    "start": 33.88
   },
   {
     "word": "'Jack",
-    "start": 35.033
+    "start": 34.26
   },
   {
     "word": "asked:",
-    "start": 35.458
+    "start": 34.86
   },
   {
     "word": "What\u2019s",
-    "start": 35.882
+    "start": 35.74
   },
   {
     "word": "overdue?",
-    "start": 36.306
+    "start": 36.1
   },
   {
     "word": "Agent",
-    "start": 37.031
+    "start": 37.1
   },
   {
     "word": "pulled",
-    "start": 37.479
+    "start": 37.36
   },
   {
     "word": "invoices",
-    "start": 37.927
+    "start": 37.74
   },
   {
     "word": "from",
-    "start": 38.375
+    "start": 38.4
   },
   {
     "word": "Xero.",
-    "start": 38.823
+    "start": 38.4
   },
   {
     "word": "Agent",
-    "start": 39.571
+    "start": 39.64
   },
   {
     "word": "drafted",
-    "start": 40.253
+    "start": 39.98
   },
   {
     "word": "reminders.",
-    "start": 40.936
+    "start": 40.62
   },
   {
     "word": "Admin",
-    "start": 41.919
+    "start": 42.0
   },
   {
     "word": "approved.",
-    "start": 42.505
+    "start": 42.28
   },
   {
     "word": "Messages",
-    "start": 43.392
+    "start": 43.46
   },
   {
     "word": "sent.'",
-    "start": 44.043
+    "start": 43.88
   }
 ]

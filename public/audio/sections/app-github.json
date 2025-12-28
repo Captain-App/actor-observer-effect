@@ -1,318 +1,318 @@
 [
   {
     "word": "App:",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "GitHub",
-    "start": 0.64
+    "start": 0.28
   },
   {
     "word": "Intelligence",
-    "start": 1.28
+    "start": 0.76
   },
   {
     "word": "Commits,",
-    "start": 2.42
+    "start": 1.58
   },
   {
     "word": "PRs,",
-    "start": 2.879
+    "start": 2.62
   },
   {
     "word": "workflows,",
-    "start": 3.337
+    "start": 3.6
   },
   {
     "word": "and",
-    "start": 3.796
+    "start": 4.06
   },
   {
     "word": "line",
-    "start": 4.255
+    "start": 4.38
   },
   {
     "word": "counts",
-    "start": 4.713
+    "start": 4.6
   },
   {
     "word": "GitHub",
-    "start": 5.672
+    "start": 5.46
   },
   {
     "word": "sync",
-    "start": 6.198
+    "start": 5.94
   },
   {
     "word": "captures",
-    "start": 6.723
+    "start": 6.36
   },
   {
     "word": "commits,",
-    "start": 7.249
+    "start": 6.84
   },
   {
     "word": "pull",
-    "start": 7.774
+    "start": 7.8
   },
   {
     "word": "requests,",
-    "start": 8.3
+    "start": 7.94
   },
   {
     "word": "workflow",
-    "start": 8.825
+    "start": 8.92
   },
   {
     "word": "runs,",
-    "start": 9.351
+    "start": 9.28
   },
   {
     "word": "and",
-    "start": 9.877
+    "start": 10.0
   },
   {
     "word": "repository",
-    "start": 10.402
+    "start": 10.06
   },
   {
     "word": "statistics.",
-    "start": 10.928
+    "start": 10.48
   },
   {
     "word": "There's",
-    "start": 11.753
+    "start": 11.64
   },
   {
     "word": "a",
-    "start": 12.167
+    "start": 11.94
   },
   {
     "word": "backfill",
-    "start": 12.58
+    "start": 11.94
   },
   {
     "word": "system",
-    "start": 12.993
+    "start": 12.44
   },
   {
     "word": "for",
-    "start": 13.406
+    "start": 12.82
   },
   {
     "word": "historical",
-    "start": 13.819
+    "start": 13.08
   },
   {
     "word": "data,",
-    "start": 14.232
+    "start": 13.54
   },
   {
     "word": "rate",
-    "start": 14.646
+    "start": 14.62
   },
   {
     "word": "limiting",
-    "start": 15.059
+    "start": 14.78
   },
   {
     "word": "to",
-    "start": 15.472
+    "start": 15.14
   },
   {
     "word": "stay",
-    "start": 15.885
+    "start": 15.48
   },
   {
     "word": "within",
-    "start": 16.298
+    "start": 15.68
   },
   {
     "word": "API",
-    "start": 16.712
+    "start": 15.98
   },
   {
     "word": "quotas,",
-    "start": 17.125
+    "start": 16.54
   },
   {
     "word": "and",
-    "start": 17.538
+    "start": 17.64
   },
   {
     "word": "daily",
-    "start": 17.951
+    "start": 17.68
   },
   {
     "word": "line",
-    "start": 18.364
+    "start": 17.92
   },
   {
     "word": "count",
-    "start": 18.778
+    "start": 18.32
   },
   {
     "word": "refresh.",
-    "start": 19.191
+    "start": 18.88
   },
   {
     "word": "The",
-    "start": 19.904
+    "start": 19.86
   },
   {
     "word": "admin",
-    "start": 20.385
+    "start": 20.02
   },
   {
     "word": "UI",
-    "start": 20.866
+    "start": 20.32
   },
   {
     "word": "shows",
-    "start": 21.347
+    "start": 20.72
   },
   {
     "word": "commit",
-    "start": 21.828
+    "start": 21.14
   },
   {
     "word": "timelines,",
-    "start": 22.309
+    "start": 21.52
   },
   {
     "word": "author",
-    "start": 22.79
+    "start": 22.72
   },
   {
     "word": "activity,",
-    "start": 23.271
+    "start": 22.94
   },
   {
     "word": "and",
-    "start": 23.752
+    "start": 24.0
   },
   {
     "word": "repository",
-    "start": 24.233
+    "start": 24.12
   },
   {
     "word": "health.",
-    "start": 24.714
+    "start": 24.56
   },
   {
     "word": "PR",
-    "start": 25.495
+    "start": 25.52
   },
   {
     "word": "webhooks",
-    "start": 26.097
+    "start": 25.8
   },
   {
     "word": "trigger",
-    "start": 26.7
+    "start": 26.5
   },
   {
     "word": "notifications.",
-    "start": 27.303
+    "start": 26.8
   },
   {
     "word": "Workflow",
-    "start": 28.205
+    "start": 27.64
   },
   {
     "word": "failures",
-    "start": 28.63
+    "start": 28.62
   },
   {
     "word": "can",
-    "start": 29.055
+    "start": 29.12
   },
   {
     "word": "be",
-    "start": 29.48
+    "start": 29.56
   },
   {
     "word": "printed",
-    "start": 29.905
+    "start": 29.68
   },
   {
     "word": "to",
-    "start": 30.33
+    "start": 29.96
   },
   {
     "word": "a",
-    "start": 30.755
+    "start": 30.16
   },
   {
     "word": "physical",
-    "start": 31.18
+    "start": 30.26
   },
   {
     "word": "thermal",
-    "start": 31.604
+    "start": 30.62
   },
   {
     "word": "printer",
-    "start": 32.029
+    "start": 31.06
   },
   {
     "word": "(yes,",
-    "start": 32.454
+    "start": 31.94
   },
   {
     "word": "really).",
-    "start": 32.879
+    "start": 32.8
   },
   {
     "word": "This",
-    "start": 33.604
+    "start": 33.62
   },
   {
     "word": "powers",
-    "start": 34.034
+    "start": 33.78
   },
   {
     "word": "the",
-    "start": 34.464
+    "start": 34.22
   },
   {
     "word": "'what",
-    "start": 34.894
+    "start": 34.42
   },
   {
     "word": "did",
-    "start": 35.324
+    "start": 34.58
   },
   {
     "word": "we",
-    "start": 35.754
+    "start": 34.76
   },
   {
     "word": "ship?'",
-    "start": 36.184
+    "start": 34.88
   },
   {
     "word": "question,",
-    "start": 36.614
+    "start": 35.7
   },
   {
     "word": "but",
-    "start": 37.044
+    "start": 36.34
   },
   {
     "word": "it's",
-    "start": 37.474
+    "start": 36.5
   },
   {
     "word": "developer-facing,",
-    "start": 37.903
+    "start": 36.7
   },
   {
     "word": "not",
-    "start": 38.333
+    "start": 37.9
   },
   {
     "word": "customer-facing.",
-    "start": 38.763
+    "start": 38.04
   }
 ]

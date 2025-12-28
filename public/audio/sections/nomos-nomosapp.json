@@ -1,390 +1,390 @@
 [
   {
     "word": "Technical",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Deep",
-    "start": 0.562
+    "start": 0.3
   },
   {
     "word": "Dive:",
-    "start": 1.124
+    "start": 0.68
   },
   {
     "word": "The",
-    "start": 1.685
+    "start": 1.44
   },
   {
     "word": "NomosApp",
-    "start": 2.247
+    "start": 1.62
   },
   {
     "word": "Orchestrator",
-    "start": 2.809
+    "start": 2.34
   },
   {
     "word": "Wiring",
-    "start": 3.871
+    "start": 3.7
   },
   {
     "word": "it",
-    "start": 4.244
+    "start": 4.24
   },
   {
     "word": "all",
-    "start": 4.617
+    "start": 4.5
   },
   {
     "word": "together",
-    "start": 4.991
+    "start": 4.74
   },
   {
     "word": "NomosApp",
-    "start": 5.864
+    "start": 5.92
   },
   {
     "word": "factory",
-    "start": 6.596
+    "start": 6.56
   },
   {
     "word": "accepts",
-    "start": 7.327
+    "start": 7.02
   },
   {
     "word": "NomosPersistence,",
-    "start": 8.059
+    "start": 7.42
   },
   {
     "word": "PolicyModule",
-    "start": 8.791
+    "start": 9.16
   },
   {
     "word": "(with",
-    "start": 9.523
+    "start": 10.3
   },
   {
     "word": "router),",
-    "start": 10.254
+    "start": 10.46
   },
   {
     "word": "plus",
-    "start": 10.986
+    "start": 11.36
   },
   {
     "word": "optional",
-    "start": 11.718
+    "start": 11.62
   },
   {
     "word": "ContractsModule,",
-    "start": 12.45
+    "start": 12.04
   },
   {
     "word": "DomainModule,",
-    "start": 13.181
+    "start": 12.54
   },
   {
     "word": "IntentsModule",
-    "start": 13.913
+    "start": 13.7
   },
   {
     "word": "for",
-    "start": 14.645
+    "start": 15.44
   },
   {
     "word": "type",
-    "start": 15.377
+    "start": 15.66
   },
   {
     "word": "registration,",
-    "start": 16.108
+    "start": 15.9
   },
   {
     "word": "NomosOptions",
-    "start": 16.84
+    "start": 17.3
   },
   {
     "word": "for",
-    "start": 17.572
+    "start": 17.98
   },
   {
     "word": "configuration,",
-    "start": 18.303
+    "start": 18.26
   },
   {
     "word": "and",
-    "start": 19.035
+    "start": 18.8
   },
   {
     "word": "BlobStorage.",
-    "start": 19.767
+    "start": 19.48
   },
   {
     "word": "Core",
-    "start": 20.799
+    "start": 20.7
   },
   {
     "word": "API:",
-    "start": 21.516
+    "start": 21.04
   },
   {
     "word": "dispatch(Intent,",
-    "start": 22.234
+    "start": 22.06
   },
   {
     "word": "ctx?)",
-    "start": 22.952
+    "start": 23.36
   },
   {
     "word": "executes",
-    "start": 23.669
+    "start": 24.6
   },
   {
     "word": "with",
-    "start": 24.387
+    "start": 25.02
   },
   {
     "word": "auto-retry",
-    "start": 25.104
+    "start": 25.22
   },
   {
     "word": "up",
-    "start": 25.822
+    "start": 25.8
   },
   {
     "word": "to",
-    "start": 26.54
+    "start": 26.0
   },
   {
     "word": "10",
-    "start": 27.257
+    "start": 26.1
   },
   {
     "word": "times",
-    "start": 27.975
+    "start": 26.32
   },
   {
     "word": "on",
-    "start": 28.692
+    "start": 26.7
   },
   {
     "word": "LedgerWriteConflict;",
-    "start": 29.41
+    "start": 27.42
   },
   {
     "word": "dispatchOptimistic()",
-    "start": 30.128
+    "start": 28.4
   },
   {
     "word": "returns",
-    "start": 30.845
+    "start": 29.799999999999997
   },
   {
     "word": "OptimisticIntentExecutionResult",
-    "start": 31.563
+    "start": 30.18
   },
   {
     "word": "for",
-    "start": 32.281
+    "start": 32.24
   },
   {
     "word": "UI",
-    "start": 32.998
+    "start": 32.52
   },
   {
     "word": "preview;",
-    "start": 33.716
+    "start": 32.8
   },
   {
     "word": "state(workspaceId,",
-    "start": 34.433
+    "start": 33.76
   },
   {
     "word": "timelineId)",
-    "start": 35.151
+    "start": 34.42
   },
   {
     "word": "reconstructs",
-    "start": 35.869
+    "start": 36.42
   },
   {
     "word": "current",
-    "start": 36.586
+    "start": 36.78
   },
   {
     "word": "aggregates;",
-    "start": 37.304
+    "start": 37.3
   },
   {
     "word": "stateAtSequence()",
-    "start": 38.021
+    "start": 38.34
   },
   {
     "word": "enables",
-    "start": 38.739
+    "start": 39.52
   },
   {
     "word": "time-travel;",
-    "start": 39.457
+    "start": 39.88
   },
   {
     "word": "watchQuery<T>()",
-    "start": 40.174
+    "start": 40.9
   },
   {
     "word": "streams",
-    "start": 40.892
+    "start": 41.6
   },
   {
     "word": "live",
-    "start": 41.61
+    "start": 42.84
   },
   {
     "word": "aggregate",
-    "start": 42.327
+    "start": 43.06
   },
   {
     "word": "lists",
-    "start": 43.045
+    "start": 43.56
   },
   {
     "word": "with",
-    "start": 43.762
+    "start": 43.92
   },
   {
     "word": "optimistic",
-    "start": 44.48
+    "start": 44.2
   },
   {
     "word": "overlay",
-    "start": 45.198
+    "start": 44.76
   },
   {
     "word": "merging;",
-    "start": 45.915
+    "start": 45.22
   },
   {
     "word": "watch<T>()",
-    "start": 46.633
+    "start": 46.3
   },
   {
     "word": "streams",
-    "start": 47.35
+    "start": 46.52
   },
   {
     "word": "single",
-    "start": 48.068
+    "start": 47.68
   },
   {
     "word": "aggregates;",
-    "start": 48.786
+    "start": 48.06
   },
   {
     "word": "readLatest<T>(),",
-    "start": 49.503
+    "start": 48.92
   },
   {
     "word": "read<T>(),",
-    "start": 50.221
+    "start": 49.4
   },
   {
     "word": "readAtOrBefore<T>()",
-    "start": 50.939
+    "start": 50.2
   },
   {
     "word": "provide",
-    "start": 51.656
+    "start": 52.76
   },
   {
     "word": "typed",
-    "start": 52.374
+    "start": 52.88
   },
   {
     "word": "snapshot",
-    "start": 53.091
+    "start": 53.38
   },
   {
     "word": "access.",
-    "start": 53.809
+    "start": 53.86
   },
   {
     "word": "undoLatest()",
-    "start": 54.827
+    "start": 54.88
   },
   {
     "word": "and",
-    "start": 55.597
+    "start": 55.62
   },
   {
     "word": "redoLatest()",
-    "start": 56.367
+    "start": 56.3
   },
   {
     "word": "manage",
-    "start": 57.138
+    "start": 57.78
   },
   {
     "word": "reversibility",
-    "start": 57.908
+    "start": 58.08
   },
   {
     "word": "with",
-    "start": 58.679
+    "start": 59.04
   },
   {
     "word": "automatic",
-    "start": 59.449
+    "start": 59.34
   },
   {
     "word": "snapshot",
-    "start": 60.219
+    "start": 59.9
   },
   {
     "word": "recomputation.",
-    "start": 60.99
+    "start": 60.54
   },
   {
     "word": "setDefaultIntentContext()",
-    "start": 62.06
+    "start": 62.16
   },
   {
     "word": "simplifies",
-    "start": 63.201
+    "start": 64.48
   },
   {
     "word": "repeated",
-    "start": 64.343
+    "start": 65.12
   },
   {
     "word": "dispatches.",
-    "start": 65.484
+    "start": 65.74
   },
   {
     "word": "OptimisticIntentBuffer",
-    "start": 66.925
+    "start": 66.96
   },
   {
     "word": "handles",
-    "start": 67.73
+    "start": 68.54
   },
   {
     "word": "UI",
-    "start": 68.534
+    "start": 69.32
   },
   {
     "word": "responsiveness",
-    "start": 69.339
+    "start": 69.74
   },
   {
     "word": "during",
-    "start": 70.144
+    "start": 70.64
   },
   {
     "word": "async",
-    "start": 70.948
+    "start": 71.26
   },
   {
     "word": "persistence.",
-    "start": 71.753
+    "start": 71.78
   }
 ]

@@ -1,526 +1,526 @@
 [
   {
     "word": "Where",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "CO2",
-    "start": 0.418
+    "start": 0.2
   },
   {
     "word": "Could",
-    "start": 0.836
+    "start": 0.96
   },
   {
     "word": "Be",
-    "start": 1.254
+    "start": 1.4
   },
   {
     "word": "Better",
-    "start": 1.673
+    "start": 1.56
   },
   {
     "word": "An",
-    "start": 2.591
+    "start": 2.42
   },
   {
     "word": "honest",
-    "start": 3.117
+    "start": 2.74
   },
   {
     "word": "assessment",
-    "start": 3.643
+    "start": 3.16
   },
   {
     "word": "CO2",
-    "start": 4.669
+    "start": 4.7
   },
   {
     "word": "demonstrates",
-    "start": 5.132
+    "start": 5.44
   },
   {
     "word": "NOMOS,",
-    "start": 5.595
+    "start": 6.32
   },
   {
     "word": "but",
-    "start": 6.058
+    "start": 7.44
   },
   {
     "word": "it's",
-    "start": 6.521
+    "start": 7.54
   },
   {
     "word": "not",
-    "start": 6.984
+    "start": 7.68
   },
   {
     "word": "a",
-    "start": 7.447
+    "start": 7.8
   },
   {
     "word": "showcase",
-    "start": 7.91
+    "start": 7.96
   },
   {
     "word": "of",
-    "start": 8.373
+    "start": 8.36
   },
   {
     "word": "perfection.",
-    "start": 8.836
+    "start": 8.62
   },
   {
     "word": "The",
-    "start": 9.599
+    "start": 9.64
   },
   {
     "word": "VO_REPLACEMENT_OPPORTUNITIES.md",
-    "start": 10.162
+    "start": 9.7
   },
   {
     "word": "file",
-    "start": 10.725
+    "start": 11.96
   },
   {
     "word": "lists",
-    "start": 11.288
+    "start": 12.5
   },
   {
     "word": "21",
-    "start": 11.851
+    "start": 12.8
   },
   {
     "word": "domains",
-    "start": 12.415
+    "start": 13.34
   },
   {
     "word": "where",
-    "start": 12.978
+    "start": 13.78
   },
   {
     "word": "strings",
-    "start": 13.541
+    "start": 14.14
   },
   {
     "word": "should",
-    "start": 14.104
+    "start": 14.58
   },
   {
     "word": "be",
-    "start": 14.667
+    "start": 14.84
   },
   {
     "word": "value",
-    "start": 15.231
+    "start": 14.98
   },
   {
     "word": "objects",
-    "start": 15.794
+    "start": 15.3
   },
   {
     "word": "but",
-    "start": 16.357
+    "start": 16.26
   },
   {
     "word": "aren't",
-    "start": 16.92
+    "start": 16.4
   },
   {
     "word": "yet\u2014email",
-    "start": 17.483
+    "start": 16.62
   },
   {
     "word": "addresses,",
-    "start": 18.047
+    "start": 17.78
   },
   {
     "word": "website",
-    "start": 18.61
+    "start": 18.88
   },
   {
     "word": "URLs,",
-    "start": 19.173
+    "start": 19.16
   },
   {
     "word": "phone",
-    "start": 19.736
+    "start": 20.0
   },
   {
     "word": "numbers.",
-    "start": 20.299
+    "start": 20.2
   },
   {
     "word": "Some",
-    "start": 21.163
+    "start": 21.2
   },
   {
     "word": "intents",
-    "start": 21.71
+    "start": 21.2
   },
   {
     "word": "are",
-    "start": 22.258
+    "start": 21.76
   },
   {
     "word": "too",
-    "start": 22.805
+    "start": 21.76
   },
   {
     "word": "granular",
-    "start": 23.353
+    "start": 22.26
   },
   {
     "word": "(separate",
-    "start": 23.9
+    "start": 23.14
   },
   {
     "word": "intents",
-    "start": 24.448
+    "start": 23.14
   },
   {
     "word": "for",
-    "start": 24.996
+    "start": 23.94
   },
   {
     "word": "adding",
-    "start": 25.543
+    "start": 24.48
   },
   {
     "word": "vs",
-    "start": 26.091
+    "start": 24.74
   },
   {
     "word": "updating",
-    "start": 26.638
+    "start": 25.14
   },
   {
     "word": "taxonomy",
-    "start": 27.186
+    "start": 25.78
   },
   {
     "word": "custom",
-    "start": 27.733
+    "start": 26.52
   },
   {
     "word": "fields)",
-    "start": 28.281
+    "start": 26.96
   },
   {
     "word": "while",
-    "start": 28.828
+    "start": 27.5
   },
   {
     "word": "others",
-    "start": 29.376
+    "start": 28.18
   },
   {
     "word": "are",
-    "start": 29.924
+    "start": 28.5
   },
   {
     "word": "too",
-    "start": 30.471
+    "start": 28.7
   },
   {
     "word": "coarse",
-    "start": 31.019
+    "start": 28.7
   },
   {
     "word": "(UpdateListingAggregateIntent",
-    "start": 31.566
+    "start": 29.76
   },
   {
     "word": "accepts",
-    "start": 32.114
+    "start": 31.48
   },
   {
     "word": "15",
-    "start": 32.661
+    "start": 32.32
   },
   {
     "word": "optional",
-    "start": 33.209
+    "start": 32.94
   },
   {
     "word": "parameters).",
-    "start": 33.756
+    "start": 33.54
   },
   {
     "word": "The",
-    "start": 34.604
+    "start": 34.5
   },
   {
     "word": "40+",
-    "start": 35.132
+    "start": 34.7
   },
   {
     "word": "topology",
-    "start": 35.659
+    "start": 35.36
   },
   {
     "word": "intents",
-    "start": 36.187
+    "start": 35.36
   },
   {
     "word": "reflect",
-    "start": 36.714
+    "start": 36.82
   },
   {
     "word": "organic",
-    "start": 37.242
+    "start": 37.28
   },
   {
     "word": "growth",
-    "start": 37.769
+    "start": 37.82
   },
   {
     "word": "rather",
-    "start": 38.297
+    "start": 38.38
   },
   {
     "word": "than",
-    "start": 38.824
+    "start": 39.06
   },
   {
     "word": "careful",
-    "start": 39.352
+    "start": 39.28
   },
   {
     "word": "design.",
-    "start": 39.879
+    "start": 39.6
   },
   {
     "word": "Test",
-    "start": 40.707
+    "start": 40.72
   },
   {
     "word": "coverage",
-    "start": 41.224
+    "start": 40.9
   },
   {
     "word": "is",
-    "start": 41.741
+    "start": 41.28
   },
   {
     "word": "narrative-heavy",
-    "start": 42.259
+    "start": 41.68
   },
   {
     "word": "but",
-    "start": 42.776
+    "start": 42.86
   },
   {
     "word": "assertion-light",
-    "start": 43.293
+    "start": 43.04
   },
   {
     "word": "in",
-    "start": 43.811
+    "start": 43.84
   },
   {
     "word": "places.",
-    "start": 44.328
+    "start": 44.2
   },
   {
     "word": "The",
-    "start": 45.145
+    "start": 45.12
   },
   {
     "word": "contracts_v1",
-    "start": 45.724
+    "start": 45.24
   },
   {
     "word": "package",
-    "start": 46.303
+    "start": 46.28
   },
   {
     "word": "has",
-    "start": 46.882
+    "start": 46.76
   },
   {
     "word": "grown",
-    "start": 47.462
+    "start": 47.32
   },
   {
     "word": "to",
-    "start": 48.041
+    "start": 47.58
   },
   {
     "word": "126",
-    "start": 48.62
+    "start": 47.8
   },
   {
     "word": "exports\u2014it",
-    "start": 49.199
+    "start": 49.02
   },
   {
     "word": "risks",
-    "start": 49.778
+    "start": 50.32
   },
   {
     "word": "becoming",
-    "start": 50.357
+    "start": 50.7
   },
   {
     "word": "a",
-    "start": 50.936
+    "start": 51.12
   },
   {
     "word": "'shared",
-    "start": 51.515
+    "start": 51.42
   },
   {
     "word": "kernel'",
-    "start": 52.094
+    "start": 51.82
   },
   {
     "word": "anti-pattern.",
-    "start": 52.673
+    "start": 52.3
   },
   {
     "word": "Some",
-    "start": 53.552
+    "start": 53.5
   },
   {
     "word": "domains",
-    "start": 54.177
+    "start": 53.8
   },
   {
     "word": "(licensing,",
-    "start": 54.802
+    "start": 54.72
   },
   {
     "word": "funding)",
-    "start": 55.426
+    "start": 55.5
   },
   {
     "word": "have",
-    "start": 56.051
+    "start": 56.2
   },
   {
     "word": "minimal",
-    "start": 56.676
+    "start": 56.4
   },
   {
     "word": "implementation.",
-    "start": 57.301
+    "start": 56.74
   },
   {
     "word": "The",
-    "start": 58.225
+    "start": 58.24
   },
   {
     "word": "integration",
-    "start": 58.663
+    "start": 58.34
   },
   {
     "word": "with",
-    "start": 59.101
+    "start": 58.96
   },
   {
     "word": "the",
-    "start": 59.539
+    "start": 59.2
   },
   {
     "word": "Flutter",
-    "start": 59.977
+    "start": 59.34
   },
   {
     "word": "UI",
-    "start": 60.415
+    "start": 59.64
   },
   {
     "word": "isn't",
-    "start": 60.853
+    "start": 60.04
   },
   {
     "word": "shown",
-    "start": 61.291
+    "start": 60.76
   },
   {
     "word": "here\u2014there's",
-    "start": 61.729
+    "start": 61.12
   },
   {
     "word": "a",
-    "start": 62.167
+    "start": 62.26
   },
   {
     "word": "separate",
-    "start": 62.605
+    "start": 62.34
   },
   {
     "word": "complexity",
-    "start": 63.043
+    "start": 62.68
   },
   {
     "word": "in",
-    "start": 63.481
+    "start": 63.3
   },
   {
     "word": "binding",
-    "start": 63.919
+    "start": 63.54
   },
   {
     "word": "aggregates",
-    "start": 64.357
+    "start": 63.94
   },
   {
     "word": "to",
-    "start": 64.795
+    "start": 64.94
   },
   {
     "word": "widgets.",
-    "start": 65.233
+    "start": 65.1
   },
   {
     "word": "These",
-    "start": 65.971
+    "start": 65.96
   },
   {
     "word": "are",
-    "start": 66.465
+    "start": 66.14
   },
   {
     "word": "real-world",
-    "start": 66.959
+    "start": 66.3
   },
   {
     "word": "trade-offs:",
-    "start": 67.453
+    "start": 67.1
   },
   {
     "word": "the",
-    "start": 67.948
+    "start": 68.22
   },
   {
     "word": "team",
-    "start": 68.442
+    "start": 68.34
   },
   {
     "word": "shipped",
-    "start": 68.936
+    "start": 68.56
   },
   {
     "word": "features",
-    "start": 69.43
+    "start": 68.94
   },
   {
     "word": "rather",
-    "start": 69.924
+    "start": 69.4
   },
   {
     "word": "than",
-    "start": 70.419
+    "start": 70.04
   },
   {
     "word": "refactoring",
-    "start": 70.913
+    "start": 70.3
   },
   {
     "word": "foundations.",
-    "start": 71.407
+    "start": 70.92
   }
 ]

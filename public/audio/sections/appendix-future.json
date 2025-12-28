@@ -1,562 +1,562 @@
 [
   {
     "word": "Additional",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Context",
-    "start": 0.576
+    "start": 0.46
   },
   {
     "word": "And...",
-    "start": 1.152
+    "start": 1.0
   },
   {
     "word": "Thoughts",
-    "start": 2.028
+    "start": 1.58
   },
   {
     "word": "about",
-    "start": 2.428
+    "start": 2.3
   },
   {
     "word": "the",
-    "start": 2.828
+    "start": 2.82
   },
   {
     "word": "future?",
-    "start": 3.228
+    "start": 3.0
   },
   {
     "word": "Just",
-    "start": 4.128
+    "start": 4.02
   },
   {
     "word": "some",
-    "start": 4.457
+    "start": 4.3
   },
   {
     "word": "opinions",
-    "start": 4.787
+    "start": 4.54
   },
   {
     "word": "about",
-    "start": 5.116
+    "start": 5.0
   },
   {
     "word": "where",
-    "start": 5.446
+    "start": 5.6
   },
   {
     "word": "this",
-    "start": 5.775
+    "start": 5.84
   },
   {
     "word": "is",
-    "start": 6.105
+    "start": 6.06
   },
   {
     "word": "all",
-    "start": 6.434
+    "start": 6.32
   },
   {
     "word": "going.",
-    "start": 6.764
+    "start": 6.52
   },
   {
     "word": "Agent",
-    "start": 7.593
+    "start": 7.62
   },
   {
     "word": "harnesses",
-    "start": 8.019
+    "start": 7.94
   },
   {
     "word": "like",
-    "start": 8.444
+    "start": 8.54
   },
   {
     "word": "Claude",
-    "start": 8.87
+    "start": 8.76
   },
   {
     "word": "Code,",
-    "start": 9.295
+    "start": 9.22
   },
   {
     "word": "when",
-    "start": 9.72
+    "start": 10.0
   },
   {
     "word": "combined",
-    "start": 10.146
+    "start": 10.18
   },
   {
     "word": "with",
-    "start": 10.571
+    "start": 10.58
   },
   {
     "word": "a",
-    "start": 10.997
+    "start": 10.96
   },
   {
     "word": "Unix-based",
-    "start": 11.422
+    "start": 14.6
   },
   {
     "word": "operating",
-    "start": 11.847
+    "start": 14.6
   },
   {
     "word": "system",
-    "start": 12.273
+    "start": 14.6
   },
   {
     "word": "that",
-    "start": 12.698
+    "start": 14.6
   },
   {
     "word": "has",
-    "start": 13.124
+    "start": 15.6
   },
   {
     "word": "an",
-    "start": 13.549
+    "start": 15.6
   },
   {
     "word": "enormous",
-    "start": 13.975
+    "start": 16.22
   },
   {
     "word": "user",
-    "start": 14.4
+    "start": 16.22
   },
   {
     "word": "base\u2014such",
-    "start": 14.825
+    "start": 16.22
   },
   {
     "word": "as",
-    "start": 15.251
+    "start": 16.22
   },
   {
     "word": "Ubuntu",
-    "start": 15.676
+    "start": 16.22
   },
   {
     "word": "or",
-    "start": 16.102
+    "start": 16.22
   },
   {
     "word": "macOS\u2014seem",
-    "start": 16.527
+    "start": 16.62
   },
   {
     "word": "to",
-    "start": 16.952
+    "start": 18.3
   },
   {
     "word": "be",
-    "start": 17.378
+    "start": 18.48
   },
   {
     "word": "the",
-    "start": 17.803
+    "start": 18.58
   },
   {
     "word": "environment",
-    "start": 18.229
+    "start": 18.72
   },
   {
     "word": "in",
-    "start": 18.654
+    "start": 19.24
   },
   {
     "word": "which",
-    "start": 19.079
+    "start": 19.56
   },
   {
     "word": "these",
-    "start": 19.505
+    "start": 19.7
   },
   {
     "word": "agents",
-    "start": 19.93
+    "start": 20.06
   },
   {
     "word": "are",
-    "start": 20.356
+    "start": 20.42
   },
   {
     "word": "now",
-    "start": 20.781
+    "start": 20.72
   },
   {
     "word": "most",
-    "start": 21.207
+    "start": 20.92
   },
   {
     "word": "performant.",
-    "start": 21.632
+    "start": 21.28
   },
   {
     "word": "It",
-    "start": 22.357
+    "start": 22.28
   },
   {
     "word": "is",
-    "start": 22.736
+    "start": 22.46
   },
   {
     "word": "becoming",
-    "start": 23.115
+    "start": 22.58
   },
   {
     "word": "the",
-    "start": 23.493
+    "start": 22.96
   },
   {
     "word": "environment",
-    "start": 23.872
+    "start": 23.24
   },
   {
     "word": "in",
-    "start": 24.251
+    "start": 24.02
   },
   {
     "word": "which",
-    "start": 24.629
+    "start": 24.38
   },
   {
     "word": "the",
-    "start": 25.008
+    "start": 24.56
   },
   {
     "word": "foundation",
-    "start": 25.387
+    "start": 24.72
   },
   {
     "word": "models",
-    "start": 25.765
+    "start": 25.22
   },
   {
     "word": "are",
-    "start": 26.144
+    "start": 25.74
   },
   {
     "word": "actually",
-    "start": 26.523
+    "start": 26.2
   },
   {
     "word": "left",
-    "start": 26.901
+    "start": 26.64
   },
   {
     "word": "to",
-    "start": 27.28
+    "start": 26.94
   },
   {
     "word": "explore",
-    "start": 27.659
+    "start": 27.16
   },
   {
     "word": "and",
-    "start": 28.037
+    "start": 27.66
   },
   {
     "word": "become",
-    "start": 28.416
+    "start": 28.26
   },
   {
     "word": "even",
-    "start": 28.795
+    "start": 28.52
   },
   {
     "word": "more",
-    "start": 29.173
+    "start": 28.94
   },
   {
     "word": "performant.",
-    "start": 29.552
+    "start": 29.18
   },
   {
     "word": "The",
-    "start": 30.231
+    "start": 30.28
   },
   {
     "word": "trouble",
-    "start": 30.544
+    "start": 30.34
   },
   {
     "word": "is,",
-    "start": 30.858
+    "start": 30.64
   },
   {
     "word": "not",
-    "start": 31.171
+    "start": 31.3
   },
   {
     "word": "every",
-    "start": 31.485
+    "start": 31.48
   },
   {
     "word": "user",
-    "start": 31.799
+    "start": 31.86
   },
   {
     "word": "has",
-    "start": 32.112
+    "start": 32.24
   },
   {
     "word": "one",
-    "start": 32.426
+    "start": 32.5
   },
   {
     "word": "of",
-    "start": 32.739
+    "start": 32.68
   },
   {
     "word": "those.",
-    "start": 33.053
+    "start": 32.8
   },
   {
     "word": "And",
-    "start": 33.667
+    "start": 33.58
   },
   {
     "word": "even",
-    "start": 33.968
+    "start": 33.78
   },
   {
     "word": "if",
-    "start": 34.269
+    "start": 34.0
   },
   {
     "word": "they",
-    "start": 34.57
+    "start": 34.18
   },
   {
     "word": "do,",
-    "start": 34.871
+    "start": 34.34
   },
   {
     "word": "there's",
-    "start": 35.172
+    "start": 35.08
   },
   {
     "word": "a",
-    "start": 35.473
+    "start": 35.26
   },
   {
     "word": "setup",
-    "start": 35.774
+    "start": 35.36
   },
   {
     "word": "cost.",
-    "start": 36.075
+    "start": 35.68
   },
   {
     "word": "There's",
-    "start": 36.676
+    "start": 36.66
   },
   {
     "word": "also",
-    "start": 37.049
+    "start": 36.88
   },
   {
     "word": "the",
-    "start": 37.421
+    "start": 37.2
   },
   {
     "word": "risk",
-    "start": 37.794
+    "start": 37.36
   },
   {
     "word": "of",
-    "start": 38.166
+    "start": 37.68
   },
   {
     "word": "granting",
-    "start": 38.539
+    "start": 37.9
   },
   {
     "word": "a",
-    "start": 38.912
+    "start": 38.26
   },
   {
     "word": "foundation",
-    "start": 39.284
+    "start": 38.5
   },
   {
     "word": "model",
-    "start": 39.657
+    "start": 39.1
   },
   {
     "word": "access",
-    "start": 40.03
+    "start": 39.74
   },
   {
     "word": "to",
-    "start": 40.402
+    "start": 40.26
   },
   {
     "word": "your",
-    "start": 40.775
+    "start": 40.82
   },
   {
     "word": "whole",
-    "start": 41.147
+    "start": 40.98
   },
   {
     "word": "file",
-    "start": 41.52
+    "start": 41.3
   },
   {
     "word": "system.",
-    "start": 41.893
+    "start": 41.68
   },
   {
     "word": "So",
-    "start": 42.565
+    "start": 42.48
   },
   {
     "word": "the",
-    "start": 42.913
+    "start": 42.7
   },
   {
     "word": "goal",
-    "start": 43.26
+    "start": 42.82
   },
   {
     "word": "should",
-    "start": 43.607
+    "start": 43.06
   },
   {
     "word": "be",
-    "start": 43.954
+    "start": 43.3
   },
   {
     "word": "to",
-    "start": 44.302
+    "start": 43.46
   },
   {
     "word": "provide",
-    "start": 44.649
+    "start": 43.6
   },
   {
     "word": "the",
-    "start": 44.996
+    "start": 43.88
   },
   {
     "word": "user",
-    "start": 45.343
+    "start": 44.14
   },
   {
     "word": "with",
-    "start": 45.691
+    "start": 44.52
   },
   {
     "word": "a",
-    "start": 46.038
+    "start": 44.76
   },
   {
     "word": "persistent,",
-    "start": 46.385
+    "start": 44.86
   },
   {
     "word": "always-on",
-    "start": 46.732
+    "start": 45.8
   },
   {
     "word": "Cloud-based",
-    "start": 47.08
+    "start": 46.58
   },
   {
     "word": "Box",
-    "start": 47.427
+    "start": 47.32
   },
   {
     "word": "that",
-    "start": 47.774
+    "start": 47.84
   },
   {
     "word": "is",
-    "start": 48.121
+    "start": 48.34
   },
   {
     "word": "as",
-    "start": 48.469
+    "start": 48.42
   },
   {
     "word": "close",
-    "start": 48.816
+    "start": 48.6
   },
   {
     "word": "as",
-    "start": 49.163
+    "start": 48.82
   },
   {
     "word": "possible",
-    "start": 49.511
+    "start": 49.08
   },
   {
     "word": "to",
-    "start": 49.858
+    "start": 49.52
   },
   {
     "word": "the",
-    "start": 50.205
+    "start": 49.72
   },
   {
     "word": "environment",
-    "start": 50.552
+    "start": 49.82
   },
   {
     "word": "in",
-    "start": 50.9
+    "start": 50.38
   },
   {
     "word": "which",
-    "start": 51.247
+    "start": 51.0
   },
   {
     "word": "the",
-    "start": 51.594
+    "start": 51.16
   },
   {
     "word": "foundation",
-    "start": 51.941
+    "start": 51.34
   },
   {
     "word": "models",
-    "start": 52.289
+    "start": 51.9
   },
   {
     "word": "are",
-    "start": 52.636
+    "start": 52.34
   },
   {
     "word": "trained",
-    "start": 52.983
+    "start": 52.58
   },
   {
     "word": "to",
-    "start": 53.33
+    "start": 53.06
   },
   {
     "word": "have",
-    "start": 53.678
+    "start": 53.44
   },
   {
     "word": "the",
-    "start": 54.025
+    "start": 53.6
   },
   {
     "word": "most",
-    "start": 54.372
+    "start": 53.8
   },
   {
     "word": "capability.",
-    "start": 54.719
+    "start": 54.12
   }
 ]

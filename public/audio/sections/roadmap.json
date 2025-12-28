@@ -1,302 +1,302 @@
 [
   {
     "word": "The",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Roadmap",
-    "start": 0.48
+    "start": 0.12
   },
   {
     "word": "Stage",
-    "start": 1.46
+    "start": 0.76
   },
   {
     "word": "1",
-    "start": 1.925
+    "start": 1.74
   },
   {
     "word": "is",
-    "start": 2.39
+    "start": 2.1
   },
   {
     "word": "the",
-    "start": 2.855
+    "start": 2.5
   },
   {
     "word": "Foundation:",
-    "start": 3.32
+    "start": 2.64
   },
   {
     "word": "defining",
-    "start": 3.785
+    "start": 3.7
   },
   {
     "word": "the",
-    "start": 4.25
+    "start": 4.36
   },
   {
     "word": "intent",
-    "start": 4.715
+    "start": 4.62
   },
   {
     "word": "protocol",
-    "start": 5.181
+    "start": 5.0
   },
   {
     "word": "and",
-    "start": 5.646
+    "start": 5.6
   },
   {
     "word": "implementing",
-    "start": 6.111
+    "start": 6.14
   },
   {
     "word": "the",
-    "start": 6.576
+    "start": 6.58
   },
   {
     "word": "audit",
-    "start": 7.041
+    "start": 6.92
   },
   {
     "word": "timeline",
-    "start": 7.506
+    "start": 7.16
   },
   {
     "word": "early.",
-    "start": 7.971
+    "start": 7.68
   },
   {
     "word": "Stage",
-    "start": 8.736
+    "start": 8.84
   },
   {
     "word": "2",
-    "start": 9.227
+    "start": 8.98
   },
   {
     "word": "is",
-    "start": 9.717
+    "start": 9.36
   },
   {
     "word": "Integrations:",
-    "start": 10.208
+    "start": 9.7
   },
   {
     "word": "starting",
-    "start": 10.699
+    "start": 10.84
   },
   {
     "word": "with",
-    "start": 11.189
+    "start": 11.28
   },
   {
     "word": "Xero",
-    "start": 11.68
+    "start": 11.28
   },
   {
     "word": "and",
-    "start": 12.171
+    "start": 11.84
   },
   {
     "word": "Stripe",
-    "start": 12.661
+    "start": 12.36
   },
   {
     "word": "OAuth",
-    "start": 13.152
+    "start": 13.02
   },
   {
     "word": "workflows.",
-    "start": 13.643
+    "start": 13.36
   },
   {
     "word": "Stage",
-    "start": 14.433
+    "start": 14.52
   },
   {
     "word": "3",
-    "start": 14.932
+    "start": 14.72
   },
   {
     "word": "is",
-    "start": 15.43
+    "start": 15.12
   },
   {
     "word": "the",
-    "start": 15.929
+    "start": 15.54
   },
   {
     "word": "Channel:",
-    "start": 16.427
+    "start": 15.68
   },
   {
     "word": "WhatsApp",
-    "start": 16.925
+    "start": 16.7
   },
   {
     "word": "via",
-    "start": 17.424
+    "start": 17.08
   },
   {
     "word": "Twilio",
-    "start": 17.922
+    "start": 17.4
   },
   {
     "word": "with",
-    "start": 18.421
+    "start": 17.9
   },
   {
     "word": "human-in-the-loop",
-    "start": 18.919
+    "start": 18.34
   },
   {
     "word": "approvals.",
-    "start": 19.418
+    "start": 18.34
   },
   {
     "word": "Stage",
-    "start": 20.216
+    "start": 20.3
   },
   {
     "word": "4",
-    "start": 20.681
+    "start": 20.52
   },
   {
     "word": "is",
-    "start": 21.146
+    "start": 20.84
   },
   {
     "word": "the",
-    "start": 21.611
+    "start": 21.12
   },
   {
     "word": "Portal:",
-    "start": 22.076
+    "start": 21.24
   },
   {
     "word": "onboarding,",
-    "start": 22.541
+    "start": 21.24
   },
   {
     "word": "roles,",
-    "start": 23.006
+    "start": 23.04
   },
   {
     "word": "and",
-    "start": 23.471
+    "start": 23.2
   },
   {
     "word": "Stripe-based",
-    "start": 23.937
+    "start": 23.66
   },
   {
     "word": "billing.",
-    "start": 24.402
+    "start": 24.4
   },
   {
     "word": "Stage",
-    "start": 25.167
+    "start": 24.94
   },
   {
     "word": "5",
-    "start": 25.721
+    "start": 25.44
   },
   {
     "word": "is",
-    "start": 26.276
+    "start": 25.9
   },
   {
     "word": "Hosted",
-    "start": 26.831
+    "start": 26.36
   },
   {
     "word": "Execution:",
-    "start": 27.385
+    "start": 26.88
   },
   {
     "word": "deploying",
-    "start": 27.94
+    "start": 28.16
   },
   {
     "word": "tenant",
-    "start": 28.495
+    "start": 28.7
   },
   {
     "word": "agents",
-    "start": 29.049
+    "start": 28.96
   },
   {
     "word": "onto",
-    "start": 29.604
+    "start": 29.4
   },
   {
     "word": "Cloudflare",
-    "start": 30.159
+    "start": 29.8
   },
   {
     "word": "isolates.",
-    "start": 30.713
+    "start": 30.48
   },
   {
     "word": "Finally,",
-    "start": 31.568
+    "start": 31.64
   },
   {
     "word": "Stage",
-    "start": 32.096
+    "start": 32.32
   },
   {
     "word": "6",
-    "start": 32.623
+    "start": 32.56
   },
   {
     "word": "is",
-    "start": 33.151
+    "start": 32.78
   },
   {
     "word": "Solutions:",
-    "start": 33.679
+    "start": 33.1
   },
   {
     "word": "providing",
-    "start": 34.206
+    "start": 34.14
   },
   {
     "word": "packaged",
-    "start": 34.734
+    "start": 34.66
   },
   {
     "word": "outcomes",
-    "start": 35.262
+    "start": 35.22
   },
   {
     "word": "like",
-    "start": 35.789
+    "start": 35.76
   },
   {
     "word": "reduced",
-    "start": 36.317
+    "start": 36.22
   },
   {
     "word": "aged",
-    "start": 36.844
+    "start": 36.74
   },
   {
     "word": "receivables",
-    "start": 37.372
+    "start": 37.32
   },
   {
     "word": "and",
-    "start": 37.9
+    "start": 37.84
   },
   {
     "word": "faster",
-    "start": 38.427
+    "start": 38.26
   },
   {
     "word": "reporting.",
-    "start": 38.955
+    "start": 38.76
   }
 ]

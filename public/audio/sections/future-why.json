@@ -1,446 +1,446 @@
 [
   {
     "word": "Why",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "aren't",
-    "start": 0.354
+    "start": 0.2
   },
   {
     "word": "Cloudflare",
-    "start": 0.708
+    "start": 0.5
   },
   {
     "word": "doing",
-    "start": 1.062
+    "start": 1.06
   },
   {
     "word": "this?",
-    "start": 1.417
+    "start": 1.34
   },
   {
     "word": "The",
-    "start": 2.271
+    "start": 2.08
   },
   {
     "word": "first",
-    "start": 2.627
+    "start": 2.36
   },
   {
     "word": "question",
-    "start": 2.983
+    "start": 2.6
   },
   {
     "word": "one",
-    "start": 3.339
+    "start": 3.1
   },
   {
     "word": "might",
-    "start": 3.695
+    "start": 3.32
   },
   {
     "word": "ask",
-    "start": 4.051
+    "start": 3.6
   },
   {
     "word": "is:",
-    "start": 4.407
+    "start": 4.0
   },
   {
     "word": "well,",
-    "start": 4.763
+    "start": 4.78
   },
   {
     "word": "why",
-    "start": 5.119
+    "start": 5.3
   },
   {
     "word": "aren't",
-    "start": 5.476
+    "start": 5.42
   },
   {
     "word": "Cloudflare",
-    "start": 5.832
+    "start": 5.66
   },
   {
     "word": "doing",
-    "start": 6.188
+    "start": 6.18
   },
   {
     "word": "this?",
-    "start": 6.544
+    "start": 6.44
   },
   {
     "word": "The",
-    "start": 7.2
+    "start": 7.12
   },
   {
     "word": "answer",
-    "start": 7.489
+    "start": 7.32
   },
   {
     "word": "is",
-    "start": 7.778
+    "start": 7.68
   },
   {
     "word": "because",
-    "start": 8.068
+    "start": 8.08
   },
   {
     "word": "it's",
-    "start": 8.357
+    "start": 8.36
   },
   {
     "word": "small",
-    "start": 8.646
+    "start": 8.7
   },
   {
     "word": "fish",
-    "start": 8.935
+    "start": 8.98
   },
   {
     "word": "to",
-    "start": 9.224
+    "start": 9.32
   },
   {
     "word": "them.",
-    "start": 9.513
+    "start": 9.52
   },
   {
     "word": "They",
-    "start": 10.103
+    "start": 10.1
   },
   {
     "word": "already",
-    "start": 10.533
+    "start": 10.2
   },
   {
     "word": "run",
-    "start": 10.964
+    "start": 10.46
   },
   {
     "word": "iCloud,",
-    "start": 11.394
+    "start": 10.76
   },
   {
     "word": "two-thirds",
-    "start": 11.824
+    "start": 12.12
   },
   {
     "word": "of",
-    "start": 12.255
+    "start": 12.52
   },
   {
     "word": "the",
-    "start": 12.685
+    "start": 12.7
   },
   {
     "word": "world's",
-    "start": 13.116
+    "start": 12.82
   },
   {
     "word": "DNS,",
-    "start": 13.546
+    "start": 13.3
   },
   {
     "word": "and",
-    "start": 13.977
+    "start": 14.24
   },
   {
     "word": "over",
-    "start": 14.407
+    "start": 14.36
   },
   {
     "word": "a",
-    "start": 14.837
+    "start": 14.54
   },
   {
     "word": "dozen",
-    "start": 15.268
+    "start": 14.66
   },
   {
     "word": "other",
-    "start": 15.698
+    "start": 14.98
   },
   {
     "word": "absolutely",
-    "start": 16.129
+    "start": 15.3
   },
   {
     "word": "enormous",
-    "start": 16.559
+    "start": 16.06
   },
   {
     "word": "platforms.",
-    "start": 16.99
+    "start": 16.5
   },
   {
     "word": "They",
-    "start": 17.72
+    "start": 17.62
   },
   {
     "word": "are",
-    "start": 18.095
+    "start": 17.84
   },
   {
     "word": "not",
-    "start": 18.471
+    "start": 17.94
   },
   {
     "word": "interested",
-    "start": 18.846
+    "start": 18.08
   },
   {
     "word": "in",
-    "start": 19.222
+    "start": 18.68
   },
   {
     "word": "having",
-    "start": 19.597
+    "start": 19.2
   },
   {
     "word": "their",
-    "start": 19.973
+    "start": 19.44
   },
   {
     "word": "own",
-    "start": 20.348
+    "start": 19.68
   },
   {
     "word": "consumer",
-    "start": 20.724
+    "start": 20.12
   },
   {
     "word": "platform.",
-    "start": 21.099
+    "start": 20.7
   },
   {
     "word": "Fundamentally,",
-    "start": 21.775
+    "start": 21.86
   },
   {
     "word": "they",
-    "start": 22.221
+    "start": 22.84
   },
   {
     "word": "provide",
-    "start": 22.668
+    "start": 22.94
   },
   {
     "word": "the",
-    "start": 23.115
+    "start": 23.24
   },
   {
     "word": "cloud",
-    "start": 23.561
+    "start": 23.48
   },
   {
     "word": "primitives",
-    "start": 24.008
+    "start": 23.8
   },
   {
     "word": "for",
-    "start": 24.455
+    "start": 24.34
   },
   {
     "word": "Fortune",
-    "start": 24.901
+    "start": 24.62
   },
   {
     "word": "500",
-    "start": 25.348
+    "start": 25.06
   },
   {
     "word": "companies",
-    "start": 25.795
+    "start": 25.84
   },
   {
     "word": "to",
-    "start": 26.241
+    "start": 26.42
   },
   {
     "word": "suit",
-    "start": 26.688
+    "start": 26.98
   },
   {
     "word": "their",
-    "start": 27.135
+    "start": 27.3
   },
   {
     "word": "edge",
-    "start": 27.581
+    "start": 27.5
   },
   {
     "word": "network",
-    "start": 28.028
+    "start": 27.9
   },
   {
     "word": "needs.",
-    "start": 28.475
+    "start": 28.24
   },
   {
     "word": "We",
-    "start": 29.221
+    "start": 28.74
   },
   {
     "word": "provide",
-    "start": 29.523
+    "start": 29.3
   },
   {
     "word": "the",
-    "start": 29.825
+    "start": 29.64
   },
   {
     "word": "bridge",
-    "start": 30.126
+    "start": 29.92
   },
   {
     "word": "to",
-    "start": 30.428
+    "start": 30.24
   },
   {
     "word": "the",
-    "start": 30.73
+    "start": 30.68
   },
   {
     "word": "user.",
-    "start": 31.032
+    "start": 30.8
   },
   {
     "word": "[Audio",
-    "start": 31.633
+    "start": 31.66
   },
   {
     "word": "Description:",
-    "start": 32.089
+    "start": 31.96
   },
   {
     "word": "A",
-    "start": 32.546
+    "start": 33.24
   },
   {
     "word": "diagram",
-    "start": 33.002
+    "start": 33.34
   },
   {
     "word": "showing",
-    "start": 33.458
+    "start": 33.76
   },
   {
     "word": "multiple",
-    "start": 33.914
+    "start": 34.22
   },
   {
     "word": "users",
-    "start": 34.37
+    "start": 34.64
   },
   {
     "word": "sharing",
-    "start": 34.826
+    "start": 35.1
   },
   {
     "word": "a",
-    "start": 35.283
+    "start": 35.72
   },
   {
     "word": "pool",
-    "start": 35.739
+    "start": 35.96
   },
   {
     "word": "of",
-    "start": 36.195
+    "start": 36.22
   },
   {
     "word": "serverless",
-    "start": 36.651
+    "start": 36.44
   },
   {
     "word": "Cloudflare",
-    "start": 37.107
+    "start": 37.02
   },
   {
     "word": "Workers,",
-    "start": 37.563
+    "start": 37.62
   },
   {
     "word": "each",
-    "start": 38.02
+    "start": 38.46
   },
   {
     "word": "with",
-    "start": 38.476
+    "start": 38.84
   },
   {
     "word": "its",
-    "start": 38.932
+    "start": 38.98
   },
   {
     "word": "own",
-    "start": 39.388
+    "start": 39.2
   },
   {
     "word": "isolated",
-    "start": 39.844
+    "start": 39.5
   },
   {
     "word": "SQLite-backed",
-    "start": 40.3
+    "start": 40.18
   },
   {
     "word": "file",
-    "start": 40.756
+    "start": 41.42
   },
   {
     "word": "system,",
-    "start": 41.213
+    "start": 41.7
   },
   {
     "word": "illustrating",
-    "start": 41.669
+    "start": 42.64
   },
   {
     "word": "how",
-    "start": 42.125
+    "start": 43.14
   },
   {
     "word": "compute",
-    "start": 42.581
+    "start": 43.4
   },
   {
     "word": "scales",
-    "start": 43.037
+    "start": 43.76
   },
   {
     "word": "to",
-    "start": 43.493
+    "start": 44.16
   },
   {
     "word": "zero",
-    "start": 43.95
+    "start": 44.46
   },
   {
     "word": "and",
-    "start": 44.406
+    "start": 44.8
   },
   {
     "word": "isolates",
-    "start": 44.862
+    "start": 45.4
   },
   {
     "word": "data",
-    "start": 45.318
+    "start": 46.02
   },
   {
     "word": "at",
-    "start": 45.774
+    "start": 46.3
   },
   {
     "word": "the",
-    "start": 46.23
+    "start": 46.58
   },
   {
     "word": "edge.]",
-    "start": 46.687
+    "start": 46.7
   }
 ]

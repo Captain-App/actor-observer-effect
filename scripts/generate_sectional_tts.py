@@ -4,6 +4,10 @@ import re
 import numpy as np
 import soundfile as sf
 import subprocess
+import librosa
+import argparse
+import time
+from tqdm import tqdm
 from kokoro_onnx import Kokoro
 
 def extract_sections():
@@ -43,11 +47,48 @@ def extract_sections():
     return sections
 
 def split_into_words(text):
-    """Matches the logic in src/lib/utils.ts: text.trim().split(/\s+/).filter(Boolean)"""
     return [w for w in text.strip().split() if w]
 
-def generate_sectional_audio():
-    # Paths
+def calculate_precise_timings(kokoro, natural_samples, words, sr):
+    """
+    Distributes the total natural sentence duration across words based on 
+    their measured isolated durations (trimmed).
+    """
+    if not words:
+        return []
+
+    iso_lengths = []
+    for word in words:
+        try:
+            # Generate isolated word
+            iso_samples, _ = kokoro.create(word, voice="bm_lewis", speed=1.0, lang="en-gb")
+            # Trim silence to get the actual "content" length of the word
+            trimmed, _ = librosa.effects.trim(iso_samples, top_db=25)
+            iso_lengths.append(max(len(trimmed), 1)) # Ensure at least 1 sample
+        except:
+            # Fallback to character length if word generation fails
+            iso_lengths.append(len(word) * 1000)
+
+    total_iso_len = sum(iso_lengths)
+    total_nat_dur = len(natural_samples) / sr
+    
+    word_timings = []
+    current_offset = 0
+    
+    for i, word in enumerate(words):
+        # Calculate weight of this word relative to total content
+        weight = iso_lengths[i] / total_iso_len
+        word_nat_dur = weight * total_nat_dur
+        
+        word_timings.append({
+            "word": word,
+            "start": round(current_offset, 3)
+        })
+        current_offset += word_nat_dur
+        
+    return word_timings
+
+def generate_sectional_audio(target_id=None):
     script_dir = os.path.dirname(os.path.abspath(__file__))
     model_path = os.path.join(script_dir, "kokoro.onnx")
     voices_path = os.path.join(script_dir, "voices.bin")
@@ -57,110 +98,101 @@ def generate_sectional_audio():
         print(f"Error: Model files not found in {script_dir}.")
         return
 
-    # Initialize Kokoro
+    print("Initializing Kokoro engine...")
     kokoro = Kokoro(model_path, voices_path)
     
-    sections = extract_sections()
-    if not sections:
-        print("Error: No sections found in sections.ts")
-        return
+    all_sections = extract_sections()
+    if target_id:
+        sections = [s for s in all_sections if s['id'] == target_id]
+    else:
+        sections = all_sections
 
-    print(f"Extracted {len(sections)} sections.")
+    print(f"Processing {len(sections)} sections...")
     os.makedirs(output_dir, exist_ok=True)
     
-    sample_rate = 24000 # Kokoro default
+    sample_rate = 24000
     
     for i, section in enumerate(sections):
-        print(f"--- Processing section {i+1}/{len(sections)}: {section['id']} ({section['title']}) ---")
+        start_time = time.time()
+        print(f"\n[{i+1}/{len(sections)}] Section: {section['id']} ({section['title']})")
         
         section_samples = []
         timing = []
         current_time_offset = 0
         
-        # Build list of segments to read (title, optional subtitle, content)
         segments = [section['title']]
         if section['subtitle']:
             segments.append(section['subtitle'])
         segments.append(section['content'])
         
-        for segment in segments:
-            # Split segment into sentences for TTS processing
-            # We want to maintain word order across sentences
-            sentences = re.split(r'(?<=[.!?])\s+', segment.strip())
-            
-            for sentence in sentences:
-                sentence = sentence.strip()
-                if not sentence:
-                    continue
-                    
-                print(f"  Sentence: {sentence[:60]}...")
-                try:
-                    samples, sr = kokoro.create(
-                        sentence, 
-                        voice="bm_lewis", 
-                        speed=1.0, 
-                        lang="en-gb"
-                    )
-                    sample_rate = sr
-                    section_samples.append(samples)
-                    
-                    # Calculate timing for words in this sentence
-                    words = split_into_words(sentence)
-                    duration = len(samples) / sr
-                    avg_word_dur = duration / len(words) if words else 0
-                    
-                    for word in words:
-                        timing.append({
-                            "word": word,
-                            "start": round(current_time_offset, 3)
-                        })
-                        current_time_offset += avg_word_dur
+        total_sentences = 0
+        for seg in segments:
+            total_sentences += len(re.split(r'(?<=[.!?])\s+', seg.strip()))
+
+        with tqdm(total=total_sentences, desc="  Timing", unit="sent", leave=False) as pbar:
+            for segment in segments:
+                sentences = re.split(r'(?<=[.!?])\s+', segment.strip())
+                
+                for sentence in sentences:
+                    sentence = sentence.strip()
+                    if not sentence:
+                        pbar.update(1)
+                        continue
                         
-                    # Add a small silence between sentences
-                    silence_dur = 0.3
-                    silence = np.zeros(int(sr * silence_dur)) 
-                    section_samples.append(silence)
-                    current_time_offset += silence_dur
-                except Exception as e:
-                    print(f"  Error processing sentence: {e}")
-                    continue
-            
-            # Add a bit more silence between title/subtitle/content segments
-            segment_silence_dur = 0.2
-            segment_silence = np.zeros(int(sample_rate * segment_silence_dur))
-            section_samples.append(segment_silence)
-            current_time_offset += segment_silence_dur
+                    try:
+                        # 1. Generate natural audio for sentence
+                        samples, sr = kokoro.create(sentence, voice="bm_lewis", speed=1.0, lang="en-gb")
+                        sample_rate = sr
+                        
+                        # 2. Calculate proportional timings based on isolated measurements
+                        words = split_into_words(sentence)
+                        sentence_timing = calculate_precise_timings(kokoro, samples, words, sr)
+                        
+                        for t in sentence_timing:
+                            t["start"] = round(t["start"] + current_time_offset, 3)
+                            timing.append(t)
+                        
+                        section_samples.append(samples)
+                        current_time_offset += len(samples) / sr
+                            
+                        # Add small silence
+                        silence_dur = 0.3
+                        silence = np.zeros(int(sr * silence_dur)) 
+                        section_samples.append(silence)
+                        current_time_offset += silence_dur
+                    except Exception as e:
+                        print(f"\n  Error in '{sentence[:30]}...': {e}")
+                    
+                    pbar.update(1)
+                
+                # Inter-segment silence
+                segment_silence_dur = 0.2
+                segment_silence = np.zeros(int(sample_rate * segment_silence_dur))
+                section_samples.append(segment_silence)
+                current_time_offset += segment_silence_dur
 
         if not section_samples:
-            print(f"Error: No audio generated for section {section['id']}")
             continue
 
-        # Concatenate and save wav
         final_samples = np.concatenate(section_samples)
         wav_path = os.path.join(output_dir, f"{section['id']}.wav")
         sf.write(wav_path, final_samples, sample_rate)
         
-        # Convert to high-quality MP3
         mp3_path = os.path.join(output_dir, f"{section['id']}.mp3")
-        print(f"  Converting to MP3: {mp3_path}")
-        subprocess.run([
-            "ffmpeg", "-y", "-i", wav_path, 
-            "-codec:a", "libmp3lame", "-qscale:a", "2", # High quality (approx 190kbps)
-            mp3_path
-        ], capture_output=True)
-        
-        # Remove wav to save space (keep only mp3)
+        subprocess.run(["ffmpeg", "-y", "-i", wav_path, "-codec:a", "libmp3lame", "-qscale:a", "2", mp3_path], capture_output=True)
         os.remove(wav_path)
 
-        # Save timing
         json_path = os.path.join(output_dir, f"{section['id']}.json")
         with open(json_path, "w") as f:
             json.dump(timing, f, indent=2)
         
-        print(f"  Completed {section['id']}.mp3 and {section['id']}.json")
+        elapsed = time.time() - start_time
+        print(f"  Done in {elapsed:.1f}s -> {section['id']}.mp3")
 
-    print("\nAll sections processed successfully.")
+    print("\nAll tasks completed.")
 
 if __name__ == "__main__":
-    generate_sectional_audio()
-
+    parser = argparse.ArgumentParser(description="Generate high-precision sectional TTS.")
+    parser.add_argument("--section", type=str, help="ID of a specific section to generate (for testing)")
+    args = parser.parse_args()
+    generate_sectional_audio(args.section)

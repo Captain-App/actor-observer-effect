@@ -9,13 +9,12 @@ import { splitIntoWords } from './lib/utils';
 
 const SCROLL_SPEED = 1;
 const AUTO_SCROLL_DELAY = 5000; // 5 seconds pause after manual scroll
+const SYNC_LOOKAHEAD = 0.15; // 150ms lookahead to compensate for UI transitions
 
 interface TimingWord {
   word: string;
   start: number;
 }
-
-const SUPABASE_STORAGE_URL = "https://kjbcjkihxskuwwfdqklt.supabase.co/storage/v1/object/public/the-plan/audio/sections";
 
 function App() {
   const [progress, setProgress] = useState(0);
@@ -30,8 +29,10 @@ function App() {
   
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const requestRef = useRef<number>();
+  const syncRequestRef = useRef<number>();
   const lastManualScrollTime = useRef<number>(0);
   const isAutoScrolling = useRef<boolean>(false);
+  const lastWordIdxRef = useRef<number>(-1);
 
   // Pre-calculate section metadata for global indexing and progress
   const sectionMetadata = useMemo(() => {
@@ -61,7 +62,7 @@ function App() {
   const loadSectionTiming = useCallback(async (sectionId: string) => {
     if (timingData[sectionId]) return;
     try {
-      const res = await fetch(`${SUPABASE_STORAGE_URL}/${sectionId}.json`);
+      const res = await fetch(`/audio/sections/${sectionId}.json`);
       if (res.ok) {
         const data = await res.json();
         setTimingData(prev => ({ ...prev, [sectionId]: data }));
@@ -81,7 +82,7 @@ function App() {
       // Background load the rest
       sections.slice(1).forEach(section => {
         loadSectionTiming(section.id);
-        const audio = new Audio(`${SUPABASE_STORAGE_URL}/${section.id}.mp3`);
+        const audio = new Audio(`/audio/sections/${section.id}.mp3`);
         audio.preload = "auto";
       });
     };
@@ -92,11 +93,12 @@ function App() {
     const sectionIdx = sections.findIndex(s => s.id === sectionId);
     if (sectionIdx !== -1) {
       setCurrentSectionIndex(sectionIdx);
+      lastWordIdxRef.current = -1; // Reset for new section
       const metadata = sectionMetadata.sections[sectionIdx];
       setCurrentWordIndex(metadata.startIndex);
       
       if (audioRef.current) {
-        audioRef.current.src = `${SUPABASE_STORAGE_URL}/${sectionId}.mp3`;
+        audioRef.current.src = `/audio/sections/${sectionId}.mp3`;
         audioRef.current.currentTime = 0;
         if (isPlaying) audioRef.current.play();
       }
@@ -158,23 +160,45 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isAuthCallback]);
 
-  // Audio Sync Logic
+  // Audio Sync Logic (High Precision with Lookahead)
   useEffect(() => {
     const audio = audioRef.current;
     if (!audio || !isReaderMode || isAuthCallback) return;
 
-    const handleTimeUpdate = () => {
+    const syncWord = () => {
       const sectionId = sections[currentSectionIndex].id;
       const sectionTiming = timingData[sectionId];
-      if (!sectionTiming) return;
+      if (!sectionTiming) {
+        syncRequestRef.current = requestAnimationFrame(syncWord);
+        return;
+      }
       
-      const currentTime = audio.currentTime;
-      const sectionWordIdx = sectionTiming.findIndex((t, i) => {
+      const currentTime = audio.currentTime + SYNC_LOOKAHEAD;
+      
+      // Optimization: Start searching from the last found index
+      let sectionWordIdx = -1;
+      const startSearchIdx = Math.max(0, lastWordIdxRef.current);
+      
+      // Look forward first
+      for (let i = startSearchIdx; i < sectionTiming.length; i++) {
+        const t = sectionTiming[i];
         const nextStart = sectionTiming[i + 1]?.start ?? Infinity;
-        return currentTime >= t.start && currentTime < nextStart;
-      });
+        if (currentTime >= t.start && currentTime < nextStart) {
+          sectionWordIdx = i;
+          break;
+        }
+      }
+
+      // If not found (e.g. jumped back), search the whole array
+      if (sectionWordIdx === -1) {
+        sectionWordIdx = sectionTiming.findIndex((t, i) => {
+          const nextStart = sectionTiming[i + 1]?.start ?? Infinity;
+          return currentTime >= t.start && currentTime < nextStart;
+        });
+      }
 
       if (sectionWordIdx !== -1) {
+        lastWordIdxRef.current = sectionWordIdx;
         const metadata = sectionMetadata.sections[currentSectionIndex];
         const globalWordIdx = metadata.startIndex + sectionWordIdx;
         
@@ -197,26 +221,32 @@ function App() {
           }
         }
       }
+
+      syncRequestRef.current = requestAnimationFrame(syncWord);
     };
 
     const handleEnded = () => {
       if (currentSectionIndex < sections.length - 1) {
         const nextIdx = currentSectionIndex + 1;
         setCurrentSectionIndex(nextIdx);
-        audio.src = `${SUPABASE_STORAGE_URL}/${sections[nextIdx].id}.mp3`;
+        lastWordIdxRef.current = -1; // Reset for next section
+        audio.src = `/audio/sections/${sections[nextIdx].id}.mp3`;
         audio.play();
       } else {
         setIsPlaying(false);
       }
     };
 
-    audio.addEventListener('timeupdate', handleTimeUpdate);
+    if (isPlaying) {
+      syncRequestRef.current = requestAnimationFrame(syncWord);
+    }
+
     audio.addEventListener('ended', handleEnded);
     return () => {
-      audio.removeEventListener('timeupdate', handleTimeUpdate);
+      if (syncRequestRef.current) cancelAnimationFrame(syncRequestRef.current);
       audio.removeEventListener('ended', handleEnded);
     };
-  }, [isReaderMode, timingData, currentWordIndex, currentSectionIndex, sectionMetadata, isAuthCallback]);
+  }, [isPlaying, isReaderMode, timingData, currentWordIndex, currentSectionIndex, sectionMetadata, isAuthCallback]);
 
   // Play/Pause Control
   useEffect(() => {
@@ -270,8 +300,9 @@ function App() {
 
   const handleReset = () => {
     setCurrentSectionIndex(0);
+    lastWordIdxRef.current = -1; // Reset for reset
     if (audioRef.current) {
-      audioRef.current.src = `${SUPABASE_STORAGE_URL}/${sections[0].id}.mp3`;
+      audioRef.current.src = `/audio/sections/${sections[0].id}.mp3`;
       audioRef.current.currentTime = 0;
       audioRef.current.pause();
     }
@@ -285,6 +316,7 @@ function App() {
     const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
     const newScrollY = (newProgress / 100) * scrollHeight;
     
+    lastWordIdxRef.current = -1; // Force search from beginning after jump
     isAutoScrolling.current = true;
     window.scrollTo({ top: newScrollY, behavior: 'auto' });
     setTimeout(() => { isAutoScrolling.current = false; }, 100);
@@ -299,7 +331,7 @@ function App() {
       <div className="min-h-screen bg-background text-foreground transition-colors duration-500 pb-24 relative overflow-x-hidden">
         <audio 
           ref={audioRef} 
-          src={`${SUPABASE_STORAGE_URL}/${sections[currentSectionIndex].id}.mp3`} 
+          src={`/audio/sections/${sections[currentSectionIndex].id}.mp3`} 
           preload="auto" 
         />
         

@@ -1,554 +1,554 @@
 [
   {
     "word": "Bounded",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Context:",
-    "start": 0.651
+    "start": 0.34
   },
   {
     "word": "Estate",
-    "start": 1.301
+    "start": 1.44
   },
   {
     "word": "Structures",
-    "start": 1.952
+    "start": 1.68
   },
   {
     "word": "The",
-    "start": 3.103
+    "start": 2.74
   },
   {
     "word": "spatial",
-    "start": 3.629
+    "start": 3.22
   },
   {
     "word": "hierarchy",
-    "start": 4.155
+    "start": 3.72
   },
   {
     "word": "estate_structures_v1",
-    "start": 5.181
+    "start": 5.0
   },
   {
     "word": "models",
-    "start": 5.758
+    "start": 6.72
   },
   {
     "word": "the",
-    "start": 6.335
+    "start": 7.12
   },
   {
     "word": "physical",
-    "start": 6.912
+    "start": 7.4
   },
   {
     "word": "world:",
-    "start": 7.489
+    "start": 7.72
   },
   {
     "word": "an",
-    "start": 8.066
+    "start": 8.6
   },
   {
     "word": "Estate",
-    "start": 8.643
+    "start": 8.76
   },
   {
     "word": "(a",
-    "start": 9.22
+    "start": 9.7
   },
   {
     "word": "company's",
-    "start": 9.796
+    "start": 9.8
   },
   {
     "word": "entire",
-    "start": 10.373
+    "start": 10.4
   },
   {
     "word": "property",
-    "start": 10.95
+    "start": 10.76
   },
   {
     "word": "portfolio)",
-    "start": 11.527
+    "start": 11.3
   },
   {
     "word": "contains",
-    "start": 12.104
+    "start": 11.96
   },
   {
     "word": "Sites",
-    "start": 12.681
+    "start": 12.72
   },
   {
     "word": "(individual",
-    "start": 13.258
+    "start": 13.8
   },
   {
     "word": "buildings",
-    "start": 13.835
+    "start": 14.06
   },
   {
     "word": "or",
-    "start": 14.412
+    "start": 14.7
   },
   {
     "word": "facilities),",
-    "start": 14.988
+    "start": 15.04
   },
   {
     "word": "which",
-    "start": 15.565
+    "start": 16.16
   },
   {
     "word": "contain",
-    "start": 16.142
+    "start": 16.38
   },
   {
     "word": "Buildings,",
-    "start": 16.719
+    "start": 16.76
   },
   {
     "word": "which",
-    "start": 17.296
+    "start": 17.68
   },
   {
     "word": "contain",
-    "start": 17.873
+    "start": 17.82
   },
   {
     "word": "Rooms.",
-    "start": 18.45
+    "start": 18.3
   },
   {
     "word": "But",
-    "start": 19.327
+    "start": 19.24
   },
   {
     "word": "it",
-    "start": 19.647
+    "start": 19.4
   },
   {
     "word": "goes",
-    "start": 19.967
+    "start": 19.54
   },
   {
     "word": "deeper.",
-    "start": 20.287
+    "start": 19.82
   },
   {
     "word": "SiteTopologyAggregate",
-    "start": 20.907
+    "start": 21.02
   },
   {
     "word": "manages",
-    "start": 21.602
+    "start": 22.16
   },
   {
     "word": "spatial",
-    "start": 22.297
+    "start": 22.84
   },
   {
     "word": "geometry:",
-    "start": 22.992
+    "start": 23.42
   },
   {
     "word": "site",
-    "start": 23.688
+    "start": 24.82
   },
   {
     "word": "boundaries",
-    "start": 24.383
+    "start": 25.02
   },
   {
     "word": "as",
-    "start": 25.078
+    "start": 25.5
   },
   {
     "word": "GeoJSON",
-    "start": 25.773
+    "start": 26.0
   },
   {
     "word": "polygons,",
-    "start": 26.468
+    "start": 26.92
   },
   {
     "word": "building",
-    "start": 27.164
+    "start": 27.6
   },
   {
     "word": "footprints,",
-    "start": 27.859
+    "start": 28.2
   },
   {
     "word": "floor",
-    "start": 28.554
+    "start": 29.04
   },
   {
     "word": "plans",
-    "start": 29.249
+    "start": 29.48
   },
   {
     "word": "calibrated",
-    "start": 29.944
+    "start": 30.0
   },
   {
     "word": "to",
-    "start": 30.64
+    "start": 30.86
   },
   {
     "word": "real-world",
-    "start": 31.335
+    "start": 31.04
   },
   {
     "word": "coordinates.",
-    "start": 32.03
+    "start": 31.84
   },
   {
     "word": "MapTile",
-    "start": 33.025
+    "start": 33.1
   },
   {
     "word": "value",
-    "start": 33.575
+    "start": 33.54
   },
   {
     "word": "objects",
-    "start": 34.125
+    "start": 34.0
   },
   {
     "word": "represent",
-    "start": 34.675
+    "start": 34.52
   },
   {
     "word": "floor",
-    "start": 35.224
+    "start": 35.26
   },
   {
     "word": "plan",
-    "start": 35.774
+    "start": 35.68
   },
   {
     "word": "images",
-    "start": 36.324
+    "start": 36.02
   },
   {
     "word": "with",
-    "start": 36.874
+    "start": 36.42
   },
   {
     "word": "rotation,",
-    "start": 37.423
+    "start": 36.9
   },
   {
     "word": "scale,",
-    "start": 37.973
+    "start": 38.0
   },
   {
     "word": "and",
-    "start": 38.523
+    "start": 38.3
   },
   {
     "word": "position",
-    "start": 39.073
+    "start": 38.72
   },
   {
     "word": "transforms.",
-    "start": 39.622
+    "start": 39.16
   },
   {
     "word": "The",
-    "start": 40.472
+    "start": 40.5
   },
   {
     "word": "TopologyIndex",
-    "start": 41.028
+    "start": 40.58
   },
   {
     "word": "provides",
-    "start": 41.585
+    "start": 41.36
   },
   {
     "word": "spatial",
-    "start": 42.141
+    "start": 41.76
   },
   {
     "word": "queries:",
-    "start": 42.698
+    "start": 42.38
   },
   {
     "word": "'Which",
-    "start": 43.254
+    "start": 43.28
   },
   {
     "word": "rooms",
-    "start": 43.81
+    "start": 43.52
   },
   {
     "word": "contain",
-    "start": 44.367
+    "start": 43.9
   },
   {
     "word": "this",
-    "start": 44.923
+    "start": 44.34
   },
   {
     "word": "point?',",
-    "start": 45.48
+    "start": 44.64
   },
   {
     "word": "'What's",
-    "start": 46.036
+    "start": 45.46
   },
   {
     "word": "at",
-    "start": 46.592
+    "start": 45.62
   },
   {
     "word": "building",
-    "start": 47.149
+    "start": 45.68
   },
   {
     "word": "Main,",
-    "start": 47.705
+    "start": 46.0
   },
   {
     "word": "level",
-    "start": 48.262
+    "start": 46.34
   },
   {
     "word": "2?'",
-    "start": 48.818
+    "start": 46.34
   },
   {
     "word": "There's",
-    "start": 49.374
+    "start": 47.64
   },
   {
     "word": "a",
-    "start": 49.931
+    "start": 47.9
   },
   {
     "word": "full",
-    "start": 50.487
+    "start": 47.98
   },
   {
     "word": "draft/publish",
-    "start": 51.044
+    "start": 48.2
   },
   {
     "word": "workflow\u2014topology",
-    "start": 51.6
+    "start": 49.52
   },
   {
     "word": "changes",
-    "start": 52.156
+    "start": 50.98
   },
   {
     "word": "are",
-    "start": 52.713
+    "start": 51.52
   },
   {
     "word": "staged,",
-    "start": 53.269
+    "start": 51.76
   },
   {
     "word": "validated",
-    "start": 53.826
+    "start": 52.82
   },
   {
     "word": "for",
-    "start": 54.382
+    "start": 53.24
   },
   {
     "word": "geometric",
-    "start": 54.938
+    "start": 53.6
   },
   {
     "word": "correctness",
-    "start": 55.495
+    "start": 54.08
   },
   {
     "word": "(no",
-    "start": 56.051
+    "start": 54.92
   },
   {
     "word": "self-intersecting",
-    "start": 56.607
+    "start": 55.56
   },
   {
     "word": "polygons,",
-    "start": 57.164
+    "start": 56.58
   },
   {
     "word": "buildings",
-    "start": 57.72
+    "start": 57.46
   },
   {
     "word": "inside",
-    "start": 58.277
+    "start": 57.72
   },
   {
     "word": "boundaries),",
-    "start": 58.833
+    "start": 58.28
   },
   {
     "word": "then",
-    "start": 59.389
+    "start": 59.44
   },
   {
     "word": "published",
-    "start": 59.946
+    "start": 59.72
   },
   {
     "word": "atomically.",
-    "start": 60.502
+    "start": 59.72
   },
   {
     "word": "It's",
-    "start": 61.359
+    "start": 61.38
   },
   {
     "word": "genuinely",
-    "start": 61.952
+    "start": 61.56
   },
   {
     "word": "sophisticated",
-    "start": 62.545
+    "start": 62.0
   },
   {
     "word": "spatial",
-    "start": 63.138
+    "start": 62.8
   },
   {
     "word": "modelling.",
-    "start": 63.731
+    "start": 62.8
   },
   {
     "word": "It's",
-    "start": 64.624
+    "start": 64.6
   },
   {
     "word": "also",
-    "start": 65.152
+    "start": 64.8
   },
   {
     "word": "where",
-    "start": 65.68
+    "start": 65.08
   },
   {
     "word": "the",
-    "start": 66.207
+    "start": 65.34
   },
   {
     "word": "codebase",
-    "start": 66.735
+    "start": 65.5
   },
   {
     "word": "shows",
-    "start": 67.263
+    "start": 65.92
   },
   {
     "word": "its",
-    "start": 67.791
+    "start": 66.24
   },
   {
     "word": "archaeology:",
-    "start": 68.319
+    "start": 66.52
   },
   {
     "word": "there",
-    "start": 68.847
+    "start": 67.74
   },
   {
     "word": "are",
-    "start": 69.374
+    "start": 67.98
   },
   {
     "word": "legacy",
-    "start": 69.902
+    "start": 68.14
   },
   {
     "word": "GeoJSON",
-    "start": 70.43
+    "start": 68.56
   },
   {
     "word": "storage",
-    "start": 70.958
+    "start": 69.62
   },
   {
     "word": "formats,",
-    "start": 71.486
+    "start": 70.16
   },
   {
     "word": "deprecated",
-    "start": 72.014
+    "start": 71.2
   },
   {
     "word": "feature",
-    "start": 72.541
+    "start": 71.72
   },
   {
     "word": "types,",
-    "start": 73.069
+    "start": 72.06
   },
   {
     "word": "and",
-    "start": 73.597
+    "start": 72.84
   },
   {
     "word": "a",
-    "start": 74.125
+    "start": 73.0
   },
   {
     "word": "500-line",
-    "start": 74.653
+    "start": 73.08
   },
   {
     "word": "glossary",
-    "start": 75.181
+    "start": 74.06
   },
   {
     "word": "entry",
-    "start": 75.708
+    "start": 74.64
   },
   {
     "word": "trying",
-    "start": 76.236
+    "start": 75.04
   },
   {
     "word": "to",
-    "start": 76.764
+    "start": 75.54
   },
   {
     "word": "explain",
-    "start": 77.292
+    "start": 75.72
   },
   {
     "word": "the",
-    "start": 77.82
+    "start": 76.12
   },
   {
     "word": "difference",
-    "start": 78.348
+    "start": 76.32
   },
   {
     "word": "between",
-    "start": 78.875
+    "start": 76.62
   },
   {
     "word": "unplacedBuildingMapTile",
-    "start": 79.403
+    "start": 77.02
   },
   {
     "word": "and",
-    "start": 79.931
+    "start": 78.68
   },
   {
     "word": "unplacedSiteMapTile.",
-    "start": 80.459
+    "start": 79.24
   }
 ]

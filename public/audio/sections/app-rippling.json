@@ -1,326 +1,326 @@
 [
   {
     "word": "App:",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Rippling",
-    "start": 0.432
+    "start": 0.5
   },
   {
     "word": "HR",
-    "start": 0.864
+    "start": 0.74
   },
   {
     "word": "Sync",
-    "start": 1.296
+    "start": 1.06
   },
   {
     "word": "Employee",
-    "start": 2.228
+    "start": 1.98
   },
   {
     "word": "data,",
-    "start": 2.708
+    "start": 2.66
   },
   {
     "word": "time",
-    "start": 3.188
+    "start": 3.5
   },
   {
     "word": "tracking,",
-    "start": 3.668
+    "start": 3.72
   },
   {
     "word": "and",
-    "start": 4.148
+    "start": 4.08
   },
   {
     "word": "payroll",
-    "start": 4.628
+    "start": 4.48
   },
   {
     "word": "The",
-    "start": 5.608
+    "start": 5.64
   },
   {
     "word": "Rippling",
-    "start": 6.193
+    "start": 5.72
   },
   {
     "word": "integration",
-    "start": 6.778
+    "start": 6.06
   },
   {
     "word": "is",
-    "start": 7.362
+    "start": 6.64
   },
   {
     "word": "comprehensive:",
-    "start": 7.947
+    "start": 6.92
   },
   {
     "word": "employees,",
-    "start": 8.532
+    "start": 8.28
   },
   {
     "word": "departments,",
-    "start": 9.117
+    "start": 9.18
   },
   {
     "word": "locations,",
-    "start": 9.701
+    "start": 10.14
   },
   {
     "word": "compensation,",
-    "start": 10.286
+    "start": 11.12
   },
   {
     "word": "leave",
-    "start": 10.871
+    "start": 12.14
   },
   {
     "word": "requests,",
-    "start": 11.456
+    "start": 12.24
   },
   {
     "word": "time",
-    "start": 12.041
+    "start": 13.26
   },
   {
     "word": "cards,",
-    "start": 12.625
+    "start": 13.44
   },
   {
     "word": "shift",
-    "start": 13.21
+    "start": 14.22
   },
   {
     "word": "inputs,",
-    "start": 13.795
+    "start": 14.32
   },
   {
     "word": "and",
-    "start": 14.38
+    "start": 14.7
   },
   {
     "word": "payroll.",
-    "start": 14.965
+    "start": 14.96
   },
   {
     "word": "There's",
-    "start": 15.849
+    "start": 15.92
   },
   {
     "word": "session",
-    "start": 16.286
+    "start": 16.06
   },
   {
     "word": "linking",
-    "start": 16.723
+    "start": 16.36
   },
   {
     "word": "that",
-    "start": 17.16
+    "start": 16.74
   },
   {
     "word": "matches",
-    "start": 17.597
+    "start": 17.04
   },
   {
     "word": "employee",
-    "start": 18.034
+    "start": 17.42
   },
   {
     "word": "work",
-    "start": 18.471
+    "start": 17.94
   },
   {
     "word": "sessions",
-    "start": 18.908
+    "start": 18.32
   },
   {
     "word": "to",
-    "start": 19.345
+    "start": 18.74
   },
   {
     "word": "Supabase",
-    "start": 19.782
+    "start": 18.74
   },
   {
     "word": "presence",
-    "start": 20.219
+    "start": 19.8
   },
   {
     "word": "data\u2014an",
-    "start": 20.656
+    "start": 20.2
   },
   {
     "word": "attempt",
-    "start": 21.093
+    "start": 21.3
   },
   {
     "word": "to",
-    "start": 21.53
+    "start": 21.58
   },
   {
     "word": "answer",
-    "start": 21.967
+    "start": 21.78
   },
   {
     "word": "'Who",
-    "start": 22.404
+    "start": 22.12
   },
   {
     "word": "was",
-    "start": 22.841
+    "start": 22.42
   },
   {
     "word": "working",
-    "start": 23.278
+    "start": 22.54
   },
   {
     "word": "on",
-    "start": 23.715
+    "start": 22.92
   },
   {
     "word": "what,",
-    "start": 24.152
+    "start": 23.14
   },
   {
     "word": "when?'",
-    "start": 24.589
+    "start": 23.4
   },
   {
     "word": "The",
-    "start": 25.026
+    "start": 24.64
   },
   {
     "word": "time",
-    "start": 25.463
+    "start": 24.82
   },
   {
     "word": "tracking",
-    "start": 25.9
+    "start": 25.1
   },
   {
     "word": "Gantt",
-    "start": 26.337
+    "start": 25.48
   },
   {
     "word": "chart",
-    "start": 26.773
+    "start": 26.02
   },
   {
     "word": "visualises",
-    "start": 27.21
+    "start": 26.02
   },
   {
     "word": "employee",
-    "start": 27.647
+    "start": 27.18
   },
   {
     "word": "hours.",
-    "start": 28.084
+    "start": 27.68
   },
   {
     "word": "The",
-    "start": 28.821
+    "start": 28.84
   },
   {
     "word": "recruiting",
-    "start": 29.333
+    "start": 28.92
   },
   {
     "word": "sync",
-    "start": 29.845
+    "start": 29.28
   },
   {
     "word": "pulls",
-    "start": 30.357
+    "start": 29.62
   },
   {
     "word": "candidate",
-    "start": 30.869
+    "start": 30.28
   },
   {
     "word": "pipelines.",
-    "start": 31.381
+    "start": 30.84
   },
   {
     "word": "It's",
-    "start": 32.193
+    "start": 32.04
   },
   {
     "word": "impressive",
-    "start": 32.657
+    "start": 32.4
   },
   {
     "word": "engineering,",
-    "start": 33.121
+    "start": 33.0
   },
   {
     "word": "but",
-    "start": 33.584
+    "start": 34.1
   },
   {
     "word": "it",
-    "start": 34.048
+    "start": 34.26
   },
   {
     "word": "solves",
-    "start": 34.512
+    "start": 34.38
   },
   {
     "word": "an",
-    "start": 34.976
+    "start": 34.76
   },
   {
     "word": "internal",
-    "start": 35.439
+    "start": 34.98
   },
   {
     "word": "problem",
-    "start": 35.903
+    "start": 35.5
   },
   {
     "word": "(correlating",
-    "start": 36.367
+    "start": 36.52
   },
   {
     "word": "contractor",
-    "start": 36.831
+    "start": 37.02
   },
   {
     "word": "hours",
-    "start": 37.294
+    "start": 37.42
   },
   {
     "word": "with",
-    "start": 37.758
+    "start": 37.98
   },
   {
     "word": "activity)",
-    "start": 38.222
+    "start": 38.18
   },
   {
     "word": "rather",
-    "start": 38.685
+    "start": 38.78
   },
   {
     "word": "than",
-    "start": 39.149
+    "start": 39.66
   },
   {
     "word": "a",
-    "start": 39.613
+    "start": 39.92
   },
   {
     "word": "customer",
-    "start": 40.077
+    "start": 40.0
   },
   {
     "word": "problem.",
-    "start": 40.54
+    "start": 40.42
   }
 ]

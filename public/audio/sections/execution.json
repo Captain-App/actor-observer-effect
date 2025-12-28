@@ -1,254 +1,254 @@
 [
   {
     "word": "Execution:",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "OpenCode",
-    "start": 0.683
+    "start": 0.98
   },
   {
     "word": "and",
-    "start": 1.365
+    "start": 2.02
   },
   {
     "word": "Cloudflare",
-    "start": 2.048
+    "start": 2.02
   },
   {
     "word": "If",
-    "start": 3.231
+    "start": 3.06
   },
   {
     "word": "you",
-    "start": 3.551
+    "start": 3.38
   },
   {
     "word": "want",
-    "start": 3.871
+    "start": 3.44
   },
   {
     "word": "agents",
-    "start": 4.191
+    "start": 3.64
   },
   {
     "word": "that",
-    "start": 4.511
+    "start": 4.06
   },
   {
     "word": "are",
-    "start": 4.831
+    "start": 4.36
   },
   {
     "word": "safe",
-    "start": 5.151
+    "start": 4.46
   },
   {
     "word": "and",
-    "start": 5.471
+    "start": 4.78
   },
   {
     "word": "scalable,",
-    "start": 5.791
+    "start": 5.04
   },
   {
     "word": "you",
-    "start": 6.111
+    "start": 6.0
   },
   {
     "word": "need",
-    "start": 6.431
+    "start": 6.18
   },
   {
     "word": "a",
-    "start": 6.751
+    "start": 6.36
   },
   {
     "word": "strong",
-    "start": 7.071
+    "start": 6.46
   },
   {
     "word": "execution",
-    "start": 7.391
+    "start": 6.8
   },
   {
     "word": "model.",
-    "start": 7.711
+    "start": 7.46
   },
   {
     "word": "Cloudflare",
-    "start": 8.331
+    "start": 8.38
   },
   {
     "word": "Workers",
-    "start": 9.048
+    "start": 8.86
   },
   {
     "word": "give",
-    "start": 9.765
+    "start": 9.2
   },
   {
     "word": "us",
-    "start": 10.483
+    "start": 9.48
   },
   {
     "word": "isolates\u2014lightweight,",
-    "start": 11.2
+    "start": 9.7
   },
   {
     "word": "fast-starting",
-    "start": 11.917
+    "start": 11.7
   },
   {
     "word": "sandboxed",
-    "start": 12.635
+    "start": 12.4
   },
   {
     "word": "environments.",
-    "start": 13.352
+    "start": 13.24
   },
   {
     "word": "Every",
-    "start": 14.369
+    "start": 14.4
   },
   {
     "word": "SME",
-    "start": 14.895
+    "start": 14.66
   },
   {
     "word": "gets",
-    "start": 15.42
+    "start": 15.44
   },
   {
     "word": "a",
-    "start": 15.945
+    "start": 16.0
   },
   {
     "word": "logically",
-    "start": 16.471
+    "start": 16.18
   },
   {
     "word": "isolated",
-    "start": 16.996
+    "start": 16.64
   },
   {
     "word": "agent",
-    "start": 17.521
+    "start": 17.3
   },
   {
     "word": "runtime.",
-    "start": 18.047
+    "start": 17.78
   },
   {
     "word": "OpenCode",
-    "start": 18.872
+    "start": 18.9
   },
   {
     "word": "becomes",
-    "start": 19.377
+    "start": 19.62
   },
   {
     "word": "the",
-    "start": 19.881
+    "start": 20.04
   },
   {
     "word": "agent",
-    "start": 20.386
+    "start": 20.36
   },
   {
     "word": "framework",
-    "start": 20.89
+    "start": 20.7
   },
   {
     "word": "we",
-    "start": 21.395
+    "start": 21.24
   },
   {
     "word": "build",
-    "start": 21.899
+    "start": 21.72
   },
   {
     "word": "on",
-    "start": 22.404
+    "start": 22.04
   },
   {
     "word": "top\u2014our",
-    "start": 22.908
+    "start": 22.24
   },
   {
     "word": "orchestration",
-    "start": 23.413
+    "start": 23.22
   },
   {
     "word": "layer",
-    "start": 23.917
+    "start": 23.9
   },
   {
     "word": "and",
-    "start": 24.422
+    "start": 24.22
   },
   {
     "word": "tool",
-    "start": 24.926
+    "start": 24.58
   },
   {
     "word": "system\u2014while",
-    "start": 25.431
+    "start": 24.84
   },
   {
     "word": "Cloudflare",
-    "start": 25.935
+    "start": 25.86
   },
   {
     "word": "provides",
-    "start": 26.44
+    "start": 26.52
   },
   {
     "word": "the",
-    "start": 26.945
+    "start": 26.96
   },
   {
     "word": "sandbox",
-    "start": 27.449
+    "start": 27.18
   },
   {
     "word": "and",
-    "start": 27.954
+    "start": 27.58
   },
   {
     "word": "distribution.",
-    "start": 28.458
+    "start": 28.08
   },
   {
     "word": "Compute",
-    "start": 29.263
+    "start": 28.72
   },
   {
     "word": "scales",
-    "start": 29.916
+    "start": 29.54
   },
   {
     "word": "elastically\u2014without",
-    "start": 30.569
+    "start": 30.1
   },
   {
     "word": "forcing",
-    "start": 31.223
+    "start": 31.56
   },
   {
     "word": "customers",
-    "start": 31.876
+    "start": 32.04
   },
   {
     "word": "into",
-    "start": 32.529
+    "start": 32.66
   },
   {
     "word": "'Kubernetes",
-    "start": 33.183
+    "start": 33.14
   },
   {
     "word": "brain'.",
-    "start": 33.836
+    "start": 33.68
   }
 ]

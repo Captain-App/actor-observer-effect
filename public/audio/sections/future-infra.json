@@ -1,590 +1,590 @@
 [
   {
     "word": "The",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "VM",
-    "start": 0.544
+    "start": 0.12
   },
   {
     "word": "Problem:",
-    "start": 1.088
+    "start": 0.52
   },
   {
     "word": "AWS",
-    "start": 1.632
+    "start": 1.54
   },
   {
     "word": "EC2",
-    "start": 2.176
+    "start": 2.0
   },
   {
     "word": "and",
-    "start": 2.72
+    "start": 3.0
   },
   {
     "word": "its",
-    "start": 3.264
+    "start": 3.46
   },
   {
     "word": "Pitfalls",
-    "start": 3.808
+    "start": 3.62
   },
   {
     "word": "One",
-    "start": 4.852
+    "start": 4.58
   },
   {
     "word": "possible",
-    "start": 5.303
+    "start": 5.06
   },
   {
     "word": "solution",
-    "start": 5.753
+    "start": 5.56
   },
   {
     "word": "is",
-    "start": 6.204
+    "start": 6.06
   },
   {
     "word": "just",
-    "start": 6.654
+    "start": 6.44
   },
   {
     "word": "spinning",
-    "start": 7.105
+    "start": 6.62
   },
   {
     "word": "up",
-    "start": 7.555
+    "start": 6.98
   },
   {
     "word": "an",
-    "start": 8.006
+    "start": 7.18
   },
   {
     "word": "AWS",
-    "start": 8.456
+    "start": 7.32
   },
   {
     "word": "EC2",
-    "start": 8.907
+    "start": 7.84
   },
   {
     "word": "container,",
-    "start": 9.357
+    "start": 9.02
   },
   {
     "word": "giving",
-    "start": 9.808
+    "start": 9.98
   },
   {
     "word": "every",
-    "start": 10.258
+    "start": 10.2
   },
   {
     "word": "user",
-    "start": 10.709
+    "start": 10.58
   },
   {
     "word": "a",
-    "start": 11.159
+    "start": 10.98
   },
   {
     "word": "Ubuntu",
-    "start": 11.61
+    "start": 11.46
   },
   {
     "word": "instance.",
-    "start": 12.06
+    "start": 11.86
   },
   {
     "word": "However,",
-    "start": 12.811
+    "start": 12.84
   },
   {
     "word": "there",
-    "start": 13.12
+    "start": 13.42
   },
   {
     "word": "are",
-    "start": 13.429
+    "start": 13.58
   },
   {
     "word": "two",
-    "start": 13.739
+    "start": 13.7
   },
   {
     "word": "key",
-    "start": 14.048
+    "start": 13.9
   },
   {
     "word": "problems",
-    "start": 14.357
+    "start": 14.16
   },
   {
     "word": "with",
-    "start": 14.667
+    "start": 14.56
   },
   {
     "word": "this.",
-    "start": 14.976
+    "start": 14.88
   },
   {
     "word": "Firstly,",
-    "start": 15.585
+    "start": 15.6
   },
   {
     "word": "the",
-    "start": 15.962
+    "start": 16.2
   },
   {
     "word": "security",
-    "start": 16.338
+    "start": 16.28
   },
   {
     "word": "risk:",
-    "start": 16.714
+    "start": 16.74
   },
   {
     "word": "managing",
-    "start": 17.091
+    "start": 17.62
   },
   {
     "word": "hundreds",
-    "start": 17.467
+    "start": 18.14
   },
   {
     "word": "of",
-    "start": 17.843
+    "start": 18.58
   },
   {
     "word": "VMs",
-    "start": 18.219
+    "start": 18.82
   },
   {
     "word": "(one",
-    "start": 18.596
+    "start": 19.78
   },
   {
     "word": "per",
-    "start": 18.972
+    "start": 19.98
   },
   {
     "word": "client)",
-    "start": 19.348
+    "start": 20.2
   },
   {
     "word": "and",
-    "start": 19.725
+    "start": 21.18
   },
   {
     "word": "keeping",
-    "start": 20.101
+    "start": 21.28
   },
   {
     "word": "them",
-    "start": 20.477
+    "start": 21.54
   },
   {
     "word": "isolated",
-    "start": 20.853
+    "start": 21.78
   },
   {
     "word": "from",
-    "start": 21.23
+    "start": 22.28
   },
   {
     "word": "each",
-    "start": 21.606
+    "start": 22.6
   },
   {
     "word": "other",
-    "start": 21.982
+    "start": 22.82
   },
   {
     "word": "and",
-    "start": 22.359
+    "start": 23.06
   },
   {
     "word": "the",
-    "start": 22.735
+    "start": 23.28
   },
   {
     "word": "rest",
-    "start": 23.111
+    "start": 23.4
   },
   {
     "word": "of",
-    "start": 23.488
+    "start": 23.56
   },
   {
     "word": "our",
-    "start": 23.864
+    "start": 23.72
   },
   {
     "word": "cloud,",
-    "start": 24.24
+    "start": 23.88
   },
   {
     "word": "while",
-    "start": 24.616
+    "start": 24.3
   },
   {
     "word": "enabling",
-    "start": 24.993
+    "start": 24.88
   },
   {
     "word": "them",
-    "start": 25.369
+    "start": 25.3
   },
   {
     "word": "access",
-    "start": 25.745
+    "start": 25.48
   },
   {
     "word": "to",
-    "start": 26.122
+    "start": 25.82
   },
   {
     "word": "the",
-    "start": 26.498
+    "start": 26.12
   },
   {
     "word": "wider",
-    "start": 26.874
+    "start": 26.24
   },
   {
     "word": "web,",
-    "start": 27.251
+    "start": 26.54
   },
   {
     "word": "is",
-    "start": 27.627
+    "start": 26.86
   },
   {
     "word": "doable",
-    "start": 28.003
+    "start": 27.4
   },
   {
     "word": "but",
-    "start": 28.379
+    "start": 27.78
   },
   {
     "word": "complicated.",
-    "start": 28.756
+    "start": 28.16
   },
   {
     "word": "The",
-    "start": 29.432
+    "start": 29.22
   },
   {
     "word": "second",
-    "start": 29.781
+    "start": 29.54
   },
   {
     "word": "and",
-    "start": 30.131
+    "start": 29.86
   },
   {
     "word": "more",
-    "start": 30.48
+    "start": 30.32
   },
   {
     "word": "prohibitive",
-    "start": 30.829
+    "start": 30.5
   },
   {
     "word": "issue",
-    "start": 31.179
+    "start": 31.02
   },
   {
     "word": "is",
-    "start": 31.528
+    "start": 31.38
   },
   {
     "word": "cost.",
-    "start": 31.877
+    "start": 31.66
   },
   {
     "word": "Persuading",
-    "start": 32.527
+    "start": 32.54
   },
   {
     "word": "users",
-    "start": 32.889
+    "start": 32.98
   },
   {
     "word": "to",
-    "start": 33.252
+    "start": 33.36
   },
   {
     "word": "pay",
-    "start": 33.615
+    "start": 33.62
   },
   {
     "word": "a",
-    "start": 33.977
+    "start": 33.8
   },
   {
     "word": "subscription",
-    "start": 34.34
+    "start": 33.94
   },
   {
     "word": "is",
-    "start": 34.703
+    "start": 34.52
   },
   {
     "word": "one",
-    "start": 35.065
+    "start": 35.04
   },
   {
     "word": "thing,",
-    "start": 35.428
+    "start": 35.32
   },
   {
     "word": "but",
-    "start": 35.791
+    "start": 36.12
   },
   {
     "word": "an",
-    "start": 36.153
+    "start": 36.32
   },
   {
     "word": "always-on",
-    "start": 36.516
+    "start": 36.46
   },
   {
     "word": "container",
-    "start": 36.879
+    "start": 36.8
   },
   {
     "word": "that",
-    "start": 37.241
+    "start": 37.6
   },
   {
     "word": "they",
-    "start": 37.604
+    "start": 37.96
   },
   {
     "word": "don't",
-    "start": 37.967
+    "start": 38.12
   },
   {
     "word": "use",
-    "start": 38.329
+    "start": 38.44
   },
   {
     "word": "most",
-    "start": 38.692
+    "start": 38.66
   },
   {
     "word": "of",
-    "start": 39.055
+    "start": 38.98
   },
   {
     "word": "the",
-    "start": 39.417
+    "start": 39.14
   },
   {
     "word": "time",
-    "start": 39.78
+    "start": 39.26
   },
   {
     "word": "just",
-    "start": 40.143
+    "start": 39.58
   },
   {
     "word": "eats",
-    "start": 40.505
+    "start": 40.12
   },
   {
     "word": "into",
-    "start": 40.868
+    "start": 40.46
   },
   {
     "word": "margins.",
-    "start": 41.231
+    "start": 40.82
   },
   {
     "word": "If",
-    "start": 41.893
+    "start": 41.84
   },
   {
     "word": "it",
-    "start": 42.221
+    "start": 42.06
   },
   {
     "word": "did",
-    "start": 42.548
+    "start": 42.22
   },
   {
     "word": "make",
-    "start": 42.876
+    "start": 42.38
   },
   {
     "word": "sense,",
-    "start": 43.203
+    "start": 42.62
   },
   {
     "word": "I",
-    "start": 43.531
+    "start": 43.54
   },
   {
     "word": "suspect",
-    "start": 43.859
+    "start": 43.62
   },
   {
     "word": "others",
-    "start": 44.186
+    "start": 43.98
   },
   {
     "word": "would",
-    "start": 44.514
+    "start": 44.36
   },
   {
     "word": "already",
-    "start": 44.841
+    "start": 44.6
   },
   {
     "word": "be",
-    "start": 45.169
+    "start": 44.88
   },
   {
     "word": "doing",
-    "start": 45.496
+    "start": 45.08
   },
   {
     "word": "it\u2014and",
-    "start": 45.824
+    "start": 45.4
   },
   {
     "word": "I",
-    "start": 46.151
+    "start": 46.14
   },
   {
     "word": "notice",
-    "start": 46.479
+    "start": 46.24
   },
   {
     "word": "they're",
-    "start": 46.806
+    "start": 46.6
   },
   {
     "word": "not.",
-    "start": 47.134
+    "start": 47.02
   },
   {
     "word": "[Audio",
-    "start": 47.761
+    "start": 47.78
   },
   {
     "word": "Description:",
-    "start": 48.21
+    "start": 48.1
   },
   {
     "word": "A",
-    "start": 48.659
+    "start": 49.36
   },
   {
     "word": "diagram",
-    "start": 49.108
+    "start": 49.5
   },
   {
     "word": "showing",
-    "start": 49.556
+    "start": 49.92
   },
   {
     "word": "a",
-    "start": 50.005
+    "start": 50.5
   },
   {
     "word": "one-to-one",
-    "start": 50.454
+    "start": 50.68
   },
   {
     "word": "mapping",
-    "start": 50.903
+    "start": 51.2
   },
   {
     "word": "of",
-    "start": 51.351
+    "start": 51.48
   },
   {
     "word": "users",
-    "start": 51.8
+    "start": 51.78
   },
   {
     "word": "to",
-    "start": 52.249
+    "start": 52.08
   },
   {
     "word": "heavy",
-    "start": 52.698
+    "start": 52.62
   },
   {
     "word": "EC2",
-    "start": 53.146
+    "start": 52.88
   },
   {
     "word": "virtual",
-    "start": 53.595
+    "start": 53.82
   },
   {
     "word": "machines,",
-    "start": 54.044
+    "start": 54.34
   },
   {
     "word": "illustrating",
-    "start": 54.493
+    "start": 54.9
   },
   {
     "word": "the",
-    "start": 54.942
+    "start": 55.92
   },
   {
     "word": "management",
-    "start": 55.39
+    "start": 56.1
   },
   {
     "word": "overhead",
-    "start": 55.839
+    "start": 56.52
   },
   {
     "word": "and",
-    "start": 56.288
+    "start": 57.08
   },
   {
     "word": "the",
-    "start": 56.737
+    "start": 57.6
   },
   {
     "word": "high",
-    "start": 57.185
+    "start": 57.72
   },
   {
     "word": "idle",
-    "start": 57.634
+    "start": 58.02
   },
   {
     "word": "costs",
-    "start": 58.083
+    "start": 58.36
   },
   {
     "word": "that",
-    "start": 58.532
+    "start": 58.78
   },
   {
     "word": "eat",
-    "start": 58.98
+    "start": 59.14
   },
   {
     "word": "into",
-    "start": 59.429
+    "start": 59.36
   },
   {
     "word": "margins.]",
-    "start": 59.878
+    "start": 59.6
   }
 ]

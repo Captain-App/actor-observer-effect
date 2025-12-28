@@ -1,294 +1,294 @@
 [
   {
     "word": "App:",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Linear",
-    "start": 0.421
+    "start": 0.24
   },
   {
     "word": "Project",
-    "start": 0.843
+    "start": 0.58
   },
   {
     "word": "Sync",
-    "start": 1.264
+    "start": 1.06
   },
   {
     "word": "Issues,",
-    "start": 2.185
+    "start": 1.78
   },
   {
     "word": "cycles,",
-    "start": 2.74
+    "start": 2.92
   },
   {
     "word": "and",
-    "start": 3.295
+    "start": 3.22
   },
   {
     "word": "velocity",
-    "start": 3.849
+    "start": 3.78
   },
   {
     "word": "tracking",
-    "start": 4.404
+    "start": 4.18
   },
   {
     "word": "Linear",
-    "start": 5.459
+    "start": 5.32
   },
   {
     "word": "sync",
-    "start": 5.909
+    "start": 5.8
   },
   {
     "word": "pulls",
-    "start": 6.36
+    "start": 6.02
   },
   {
     "word": "teams,",
-    "start": 6.811
+    "start": 6.38
   },
   {
     "word": "projects,",
-    "start": 7.261
+    "start": 7.24
   },
   {
     "word": "issues,",
-    "start": 7.712
+    "start": 7.94
   },
   {
     "word": "and",
-    "start": 8.163
+    "start": 8.22
   },
   {
     "word": "cycles.",
-    "start": 8.613
+    "start": 8.44
   },
   {
     "word": "Requirements",
-    "start": 9.364
+    "start": 9.44
   },
   {
     "word": "from",
-    "start": 9.754
+    "start": 10.02
   },
   {
     "word": "CaptainApp",
-    "start": 10.145
+    "start": 10.18
   },
   {
     "word": "can",
-    "start": 10.535
+    "start": 10.82
   },
   {
     "word": "be",
-    "start": 10.926
+    "start": 11.34
   },
   {
     "word": "pushed",
-    "start": 11.316
+    "start": 11.46
   },
   {
     "word": "to",
-    "start": 11.706
+    "start": 11.78
   },
   {
     "word": "Linear",
-    "start": 12.097
+    "start": 11.96
   },
   {
     "word": "as",
-    "start": 12.487
+    "start": 12.26
   },
   {
     "word": "issues.",
-    "start": 12.878
+    "start": 12.66
   },
   {
     "word": "Cycle",
-    "start": 13.568
+    "start": 13.6
   },
   {
     "word": "time",
-    "start": 14.108
+    "start": 13.94
   },
   {
     "word": "analytics",
-    "start": 14.649
+    "start": 14.72
   },
   {
     "word": "measure",
-    "start": 15.189
+    "start": 15.04
   },
   {
     "word": "team",
-    "start": 15.73
+    "start": 15.54
   },
   {
     "word": "velocity.",
-    "start": 16.27
+    "start": 15.94
   },
   {
     "word": "Sprint",
-    "start": 17.111
+    "start": 17.3
   },
   {
     "word": "summaries",
-    "start": 17.735
+    "start": 17.42
   },
   {
     "word": "aggregate",
-    "start": 18.359
+    "start": 18.46
   },
   {
     "word": "progress.",
-    "start": 18.983
+    "start": 18.72
   },
   {
     "word": "The",
-    "start": 19.907
+    "start": 19.86
   },
   {
     "word": "integration",
-    "start": 20.403
+    "start": 20.02
   },
   {
     "word": "works,",
-    "start": 20.9
+    "start": 20.62
   },
   {
     "word": "but",
-    "start": 21.396
+    "start": 21.5
   },
   {
     "word": "it",
-    "start": 21.893
+    "start": 21.58
   },
   {
     "word": "duplicates",
-    "start": 22.389
+    "start": 21.68
   },
   {
     "word": "functionality",
-    "start": 22.886
+    "start": 22.28
   },
   {
     "word": "that",
-    "start": 23.382
+    "start": 22.98
   },
   {
     "word": "Linear",
-    "start": 23.879
+    "start": 23.66
   },
   {
     "word": "already",
-    "start": 24.375
+    "start": 24.0
   },
   {
     "word": "provides.",
-    "start": 24.872
+    "start": 24.52
   },
   {
     "word": "The",
-    "start": 25.668
+    "start": 25.06
   },
   {
     "word": "value",
-    "start": 26.06
+    "start": 25.76
   },
   {
     "word": "would",
-    "start": 26.451
+    "start": 26.1
   },
   {
     "word": "be",
-    "start": 26.843
+    "start": 26.3
   },
   {
     "word": "in",
-    "start": 27.235
+    "start": 26.42
   },
   {
     "word": "cross-referencing",
-    "start": 27.626
+    "start": 26.56
   },
   {
     "word": "Linear",
-    "start": 28.018
+    "start": 27.34
   },
   {
     "word": "data",
-    "start": 28.41
+    "start": 27.7
   },
   {
     "word": "with",
-    "start": 28.801
+    "start": 28.12
   },
   {
     "word": "financial",
-    "start": 29.193
+    "start": 28.62
   },
   {
     "word": "or",
-    "start": 29.585
+    "start": 29.24
   },
   {
     "word": "HR",
-    "start": 29.976
+    "start": 29.62
   },
   {
     "word": "data\u2014which",
-    "start": 30.368
+    "start": 30.02
   },
   {
     "word": "the",
-    "start": 30.76
+    "start": 31.26
   },
   {
     "word": "Graphable",
-    "start": 31.152
+    "start": 31.42
   },
   {
     "word": "notebook",
-    "start": 31.543
+    "start": 31.86
   },
   {
     "word": "can",
-    "start": 31.935
+    "start": 32.22
   },
   {
     "word": "do,",
-    "start": 32.327
+    "start": 32.58
   },
   {
     "word": "but",
-    "start": 32.718
+    "start": 33.26
   },
   {
     "word": "nobody",
-    "start": 33.11
+    "start": 33.4
   },
   {
     "word": "has",
-    "start": 33.502
+    "start": 33.82
   },
   {
     "word": "built",
-    "start": 33.893
+    "start": 34.02
   },
   {
     "word": "that",
-    "start": 34.285
+    "start": 34.28
   },
   {
     "word": "playbook",
-    "start": 34.677
+    "start": 34.52
   },
   {
     "word": "yet.",
-    "start": 35.068
+    "start": 35.0
   }
 ]

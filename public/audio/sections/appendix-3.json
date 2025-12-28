@@ -1,406 +1,406 @@
 [
   {
     "word": "Appendix",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "3:",
-    "start": 0.64
+    "start": 0.54
   },
   {
     "word": "CO2",
-    "start": 1.28
+    "start": 0.84
   },
   {
     "word": "Domain",
-    "start": 1.92
+    "start": 1.94
   },
   {
     "word": "A",
-    "start": 3.06
+    "start": 2.74
   },
   {
     "word": "complex",
-    "start": 3.54
+    "start": 3.16
   },
   {
     "word": "application",
-    "start": 4.02
+    "start": 3.58
   },
   {
     "word": "built",
-    "start": 4.5
+    "start": 4.36
   },
   {
     "word": "with",
-    "start": 4.98
+    "start": 4.96
   },
   {
     "word": "NOMOS",
-    "start": 5.46
+    "start": 5.26
   },
   {
     "word": "Appendix",
-    "start": 6.44
+    "start": 6.3
   },
   {
     "word": "2",
-    "start": 6.918
+    "start": 6.98
   },
   {
     "word": "described",
-    "start": 7.397
+    "start": 7.24
   },
   {
     "word": "NOMOS",
-    "start": 7.875
+    "start": 8.04
   },
   {
     "word": "in",
-    "start": 8.354
+    "start": 8.78
   },
   {
     "word": "the",
-    "start": 8.832
+    "start": 8.9
   },
   {
     "word": "abstract.",
-    "start": 9.311
+    "start": 9.04
   },
   {
     "word": "Now",
-    "start": 10.089
+    "start": 10.06
   },
   {
     "word": "let's",
-    "start": 10.351
+    "start": 10.34
   },
   {
     "word": "see",
-    "start": 10.614
+    "start": 10.72
   },
   {
     "word": "what",
-    "start": 10.876
+    "start": 10.86
   },
   {
     "word": "it",
-    "start": 11.138
+    "start": 11.02
   },
   {
     "word": "looks",
-    "start": 11.4
+    "start": 11.14
   },
   {
     "word": "like",
-    "start": 11.662
+    "start": 11.3
   },
   {
     "word": "when",
-    "start": 11.924
+    "start": 11.6
   },
   {
     "word": "you",
-    "start": 12.186
+    "start": 12.0
   },
   {
     "word": "actually",
-    "start": 12.448
+    "start": 12.1
   },
   {
     "word": "build",
-    "start": 12.71
+    "start": 12.44
   },
   {
     "word": "something",
-    "start": 12.972
+    "start": 12.78
   },
   {
     "word": "with",
-    "start": 13.234
+    "start": 13.24
   },
   {
     "word": "it.",
-    "start": 13.497
+    "start": 13.48
   },
   {
     "word": "The",
-    "start": 14.059
+    "start": 14.08
   },
   {
     "word": "CO2",
-    "start": 14.561
+    "start": 14.16
   },
   {
     "word": "Asset",
-    "start": 15.063
+    "start": 14.86
   },
   {
     "word": "Management",
-    "start": 15.565
+    "start": 15.3
   },
   {
     "word": "Platform",
-    "start": 16.068
+    "start": 15.72
   },
   {
     "word": "is",
-    "start": 16.57
+    "start": 16.34
   },
   {
     "word": "a",
-    "start": 17.072
+    "start": 16.7
   },
   {
     "word": "client",
-    "start": 17.574
+    "start": 16.78
   },
   {
     "word": "project:",
-    "start": 18.077
+    "start": 17.1
   },
   {
     "word": "a",
-    "start": 18.579
+    "start": 18.12
   },
   {
     "word": "Flutter",
-    "start": 19.081
+    "start": 18.4
   },
   {
     "word": "application",
-    "start": 19.583
+    "start": 18.68
   },
   {
     "word": "for",
-    "start": 20.086
+    "start": 19.36
   },
   {
     "word": "managing",
-    "start": 20.588
+    "start": 19.58
   },
   {
     "word": "physical",
-    "start": 21.09
+    "start": 19.9
   },
   {
     "word": "assets",
-    "start": 21.592
+    "start": 20.42
   },
   {
     "word": "across",
-    "start": 22.095
+    "start": 20.8
   },
   {
     "word": "commercial",
-    "start": 22.597
+    "start": 21.2
   },
   {
     "word": "property",
-    "start": 23.099
+    "start": 21.68
   },
   {
     "word": "portfolios\u2014think",
-    "start": 23.601
+    "start": 22.24
   },
   {
     "word": "HVAC",
-    "start": 24.104
+    "start": 23.86
   },
   {
     "word": "units,",
-    "start": 24.606
+    "start": 24.44
   },
   {
     "word": "lighting",
-    "start": 25.108
+    "start": 25.32
   },
   {
     "word": "fixtures,",
-    "start": 25.61
+    "start": 25.56
   },
   {
     "word": "fire",
-    "start": 26.113
+    "start": 26.66
   },
   {
     "word": "extinguishers,",
-    "start": 26.615
+    "start": 26.88
   },
   {
     "word": "and",
-    "start": 27.117
+    "start": 28.02
   },
   {
     "word": "solar",
-    "start": 27.619
+    "start": 28.08
   },
   {
     "word": "panels",
-    "start": 28.122
+    "start": 28.4
   },
   {
     "word": "spread",
-    "start": 28.624
+    "start": 28.88
   },
   {
     "word": "across",
-    "start": 29.126
+    "start": 29.48
   },
   {
     "word": "multiple",
-    "start": 29.628
+    "start": 29.8
   },
   {
     "word": "buildings",
-    "start": 30.131
+    "start": 30.28
   },
   {
     "word": "and",
-    "start": 30.633
+    "start": 30.8
   },
   {
     "word": "sites.",
-    "start": 31.135
+    "start": 31.1
   },
   {
     "word": "It's",
-    "start": 31.937
+    "start": 31.92
   },
   {
     "word": "not",
-    "start": 32.287
+    "start": 32.14
   },
   {
     "word": "a",
-    "start": 32.637
+    "start": 32.28
   },
   {
     "word": "toy",
-    "start": 32.987
+    "start": 32.5
   },
   {
     "word": "example.",
-    "start": 33.337
+    "start": 32.86
   },
   {
     "word": "It's",
-    "start": 33.987
+    "start": 34.02
   },
   {
     "word": "500+",
-    "start": 34.614
+    "start": 34.2
   },
   {
     "word": "Dart",
-    "start": 35.242
+    "start": 35.06
   },
   {
     "word": "files",
-    "start": 35.869
+    "start": 36.04
   },
   {
     "word": "across",
-    "start": 36.497
+    "start": 36.28
   },
   {
     "word": "13",
-    "start": 37.124
+    "start": 36.56
   },
   {
     "word": "bounded",
-    "start": 37.752
+    "start": 37.16
   },
   {
     "word": "contexts",
-    "start": 38.38
+    "start": 37.62
   },
   {
     "word": "with",
-    "start": 39.007
+    "start": 38.2
   },
   {
     "word": "146",
-    "start": 39.635
+    "start": 38.84
   },
   {
     "word": "registered",
-    "start": 40.262
+    "start": 40.22
   },
   {
     "word": "intents.",
-    "start": 40.89
+    "start": 40.78
   },
   {
     "word": "And",
-    "start": 41.817
+    "start": 41.84
   },
   {
     "word": "it's",
-    "start": 42.124
+    "start": 41.92
   },
   {
     "word": "still",
-    "start": 42.431
+    "start": 42.08
   },
   {
     "word": "under",
-    "start": 42.738
+    "start": 42.28
   },
   {
     "word": "active",
-    "start": 43.045
+    "start": 42.54
   },
   {
     "word": "development,",
-    "start": 43.352
+    "start": 42.9
   },
   {
     "word": "which",
-    "start": 43.659
+    "start": 43.96
   },
   {
     "word": "means",
-    "start": 43.966
+    "start": 44.22
   },
   {
     "word": "we",
-    "start": 44.273
+    "start": 44.5
   },
   {
     "word": "can",
-    "start": 44.58
+    "start": 44.76
   },
   {
     "word": "be",
-    "start": 44.887
+    "start": 44.9
   },
   {
     "word": "honest",
-    "start": 45.194
+    "start": 44.98
   },
   {
     "word": "about",
-    "start": 45.501
+    "start": 45.28
   },
   {
     "word": "what",
-    "start": 45.808
+    "start": 45.64
   },
   {
     "word": "works",
-    "start": 46.115
+    "start": 45.88
   },
   {
     "word": "and",
-    "start": 46.422
+    "start": 46.24
   },
   {
     "word": "what",
-    "start": 46.729
+    "start": 46.64
   },
   {
     "word": "doesn't.",
-    "start": 47.036
+    "start": 46.82
   }
 ]

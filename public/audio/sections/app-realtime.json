@@ -1,51 +1,51 @@
 [
   {
     "word": "App:",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Realtime",
-    "start": 0.567
+    "start": 0.58
   },
   {
     "word": "Presence",
-    "start": 1.135
+    "start": 1.0
   },
   {
     "word": "&",
-    "start": 1.702
+    "start": 1.44
   },
   {
     "word": "Collaboration",
-    "start": 2.27
+    "start": 1.92
   },
   {
     "word": "Who's",
-    "start": 3.337
+    "start": 3.06
   },
   {
     "word": "online,",
-    "start": 3.853
+    "start": 3.48
   },
   {
     "word": "co-browsing,",
-    "start": 4.368
+    "start": 4.4
   },
   {
     "word": "and",
-    "start": 4.884
+    "start": 5.1
   },
   {
     "word": "activity",
-    "start": 5.4
+    "start": 5.3
   },
   {
     "word": "feeds",
-    "start": 5.915
+    "start": 5.62
   },
   {
     "word": "Supabase",
-    "start": 6.931
+    "start": 5.62
   },
   {
     "word": "Realtime",
@@ -53,234 +53,234 @@
   },
   {
     "word": "powers",
-    "start": 7.989
+    "start": 8.06
   },
   {
     "word": "presence",
-    "start": 8.518
+    "start": 8.52
   },
   {
     "word": "tracking:",
-    "start": 9.047
+    "start": 8.94
   },
   {
     "word": "who's",
-    "start": 9.576
+    "start": 9.92
   },
   {
     "word": "online,",
-    "start": 10.105
+    "start": 10.18
   },
   {
     "word": "what",
-    "start": 10.634
+    "start": 11.14
   },
   {
     "word": "page",
-    "start": 11.163
+    "start": 11.38
   },
   {
     "word": "they're",
-    "start": 11.692
+    "start": 11.7
   },
   {
     "word": "viewing,",
-    "start": 12.221
+    "start": 12.1
   },
   {
     "word": "cursor",
-    "start": 12.75
+    "start": 12.96
   },
   {
     "word": "positions",
-    "start": 13.279
+    "start": 13.14
   },
   {
     "word": "for",
-    "start": 13.809
+    "start": 13.66
   },
   {
     "word": "co-browsing.",
-    "start": 14.338
+    "start": 13.98
   },
   {
     "word": "The",
-    "start": 15.167
+    "start": 15.18
   },
   {
     "word": "activity",
-    "start": 15.648
+    "start": 15.26
   },
   {
     "word": "feed",
-    "start": 16.129
+    "start": 15.66
   },
   {
     "word": "logs",
-    "start": 16.61
+    "start": 16.14
   },
   {
     "word": "every",
-    "start": 17.091
+    "start": 16.86
   },
   {
     "word": "significant",
-    "start": 17.573
+    "start": 17.06
   },
   {
     "word": "action",
-    "start": 18.054
+    "start": 17.64
   },
   {
     "word": "with",
-    "start": 18.535
+    "start": 18.1
   },
   {
     "word": "timestamps.",
-    "start": 19.016
+    "start": 18.58
   },
   {
     "word": "Session",
-    "start": 19.797
+    "start": 19.84
   },
   {
     "word": "matching",
-    "start": 20.276
+    "start": 20.16
   },
   {
     "word": "links",
-    "start": 20.754
+    "start": 20.56
   },
   {
     "word": "presence",
-    "start": 21.233
+    "start": 21.32
   },
   {
     "word": "to",
-    "start": 21.711
+    "start": 21.52
   },
   {
     "word": "employee",
-    "start": 22.19
+    "start": 21.84
   },
   {
     "word": "records.",
-    "start": 22.668
+    "start": 22.34
   },
   {
     "word": "Notifications",
-    "start": 23.447
+    "start": 23.54
   },
   {
     "word": "push",
-    "start": 23.932
+    "start": 24.68
   },
   {
     "word": "via",
-    "start": 24.417
+    "start": 24.78
   },
   {
     "word": "web",
-    "start": 24.903
+    "start": 25.26
   },
   {
     "word": "push",
-    "start": 25.388
+    "start": 25.48
   },
   {
     "word": "and",
-    "start": 25.873
+    "start": 25.82
   },
   {
     "word": "Supabase",
-    "start": 26.359
+    "start": 25.82
   },
   {
     "word": "channels.",
-    "start": 26.844
+    "start": 26.7
   },
   {
     "word": "The",
-    "start": 27.629
+    "start": 27.64
   },
   {
     "word": "100+",
-    "start": 28.056
+    "start": 27.72
   },
   {
     "word": "custom",
-    "start": 28.483
+    "start": 28.54
   },
   {
     "word": "hooks",
-    "start": 28.909
+    "start": 29.08
   },
   {
     "word": "manage",
-    "start": 29.336
+    "start": 29.3
   },
   {
     "word": "this",
-    "start": 29.763
+    "start": 29.84
   },
   {
     "word": "state.",
-    "start": 30.189
+    "start": 30.16
   },
   {
     "word": "It's",
-    "start": 30.916
+    "start": 30.92
   },
   {
     "word": "impressive",
-    "start": 31.405
+    "start": 31.12
   },
   {
     "word": "plumbing\u2014you",
-    "start": 31.894
+    "start": 31.68
   },
   {
     "word": "can",
-    "start": 32.383
+    "start": 32.82
   },
   {
     "word": "watch",
-    "start": 32.873
+    "start": 33.0
   },
   {
     "word": "someone",
-    "start": 33.362
+    "start": 33.22
   },
   {
     "word": "navigate",
-    "start": 33.851
+    "start": 33.58
   },
   {
     "word": "in",
-    "start": 34.34
+    "start": 34.0
   },
   {
     "word": "real-time\u2014but",
-    "start": 34.829
+    "start": 34.4
   },
   {
     "word": "'watching",
-    "start": 35.318
+    "start": 35.72
   },
   {
     "word": "colleagues'",
-    "start": 35.807
+    "start": 36.08
   },
   {
     "word": "isn't",
-    "start": 36.297
+    "start": 36.58
   },
   {
     "word": "a",
-    "start": 36.786
+    "start": 37.06
   },
   {
     "word": "product.",
-    "start": 37.275
+    "start": 37.14
   }
 ]

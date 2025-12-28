@@ -1,410 +1,410 @@
 [
   {
     "word": "Technical",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Deep",
-    "start": 0.473
+    "start": 0.32
   },
   {
     "word": "Dive:",
-    "start": 0.946
+    "start": 0.74
   },
   {
     "word": "Defining",
-    "start": 1.419
+    "start": 1.5
   },
   {
     "word": "an",
-    "start": 1.892
+    "start": 1.96
   },
   {
     "word": "Intent",
-    "start": 2.364
+    "start": 2.16
   },
   {
     "word": "The",
-    "start": 3.337
+    "start": 3.22
   },
   {
     "word": "anatomy",
-    "start": 3.721
+    "start": 3.46
   },
   {
     "word": "of",
-    "start": 4.105
+    "start": 3.9
   },
   {
     "word": "a",
-    "start": 4.489
+    "start": 4.44
   },
   {
     "word": "decision",
-    "start": 4.873
+    "start": 4.56
   },
   {
     "word": "An",
-    "start": 5.757
+    "start": 5.66
   },
   {
     "word": "Intent",
-    "start": 6.531
+    "start": 5.88
   },
   {
     "word": "extends",
-    "start": 7.304
+    "start": 6.14
   },
   {
     "word": "the",
-    "start": 8.078
+    "start": 6.64
   },
   {
     "word": "Intent",
-    "start": 8.852
+    "start": 7.02
   },
   {
     "word": "base",
-    "start": 9.625
+    "start": 7.38
   },
   {
     "word": "class,",
-    "start": 10.399
+    "start": 7.62
   },
   {
     "word": "requiring:",
-    "start": 11.172
+    "start": 7.96
   },
   {
     "word": "toJson()",
-    "start": 11.946
+    "start": 8.88
   },
   {
     "word": "returning",
-    "start": 12.719
+    "start": 10.56
   },
   {
     "word": "Map",
-    "start": 13.493
+    "start": 10.9
   },
   {
     "word": "with",
-    "start": 14.267
+    "start": 11.18
   },
   {
     "word": "'id'",
-    "start": 15.04
+    "start": 11.48
   },
   {
     "word": "and",
-    "start": 15.814
+    "start": 11.74
   },
   {
     "word": "'serialisationTargetClassName',",
-    "start": 16.587
+    "start": 12.96
   },
   {
     "word": "a",
-    "start": 17.361
+    "start": 13.44
   },
   {
     "word": "static",
-    "start": 18.134
+    "start": 14.32
   },
   {
     "word": "fromJson(Map)",
-    "start": 18.908
+    "start": 14.88
   },
   {
     "word": "factory,",
-    "start": 19.682
+    "start": 16.76
   },
   {
     "word": "and",
-    "start": 20.455
+    "start": 17.44
   },
   {
     "word": "describe(NomosIntentDescribeCtx)",
-    "start": 21.229
+    "start": 17.54
   },
   {
     "word": "returning",
-    "start": 22.002
+    "start": 21.32
   },
   {
     "word": "NomosIntentDescription.",
-    "start": 22.776
+    "start": 21.72
   },
   {
     "word": "The",
-    "start": 23.849
+    "start": 23.36
   },
   {
     "word": "constructor",
-    "start": 24.462
+    "start": 23.94
   },
   {
     "word": "calls",
-    "start": 25.075
+    "start": 24.32
   },
   {
     "word": "super()",
-    "start": 25.688
+    "start": 24.76
   },
   {
     "word": "which",
-    "start": 26.301
+    "start": 25.6
   },
   {
     "word": "assigns",
-    "start": 26.914
+    "start": 25.84
   },
   {
     "word": "a",
-    "start": 27.527
+    "start": 26.28
   },
   {
     "word": "UUIDv7",
-    "start": 28.14
+    "start": 26.36
   },
   {
     "word": "via",
-    "start": 28.753
+    "start": 27.04
   },
   {
     "word": "Uuid().v7(),",
-    "start": 29.366
+    "start": 27.44
   },
   {
     "word": "ensuring",
-    "start": 29.979
+    "start": 29.9
   },
   {
     "word": "globally",
-    "start": 30.592
+    "start": 30.28
   },
   {
     "word": "unique,",
-    "start": 31.205
+    "start": 30.76
   },
   {
     "word": "time-sortable",
-    "start": 31.818
+    "start": 31.3
   },
   {
     "word": "IDs.",
-    "start": 32.431
+    "start": 32.36
   },
   {
     "word": "Key",
-    "start": 33.344
+    "start": 33.34
   },
   {
     "word": "properties:",
-    "start": 34.035
+    "start": 33.5
   },
   {
     "word": "id",
-    "start": 34.726
+    "start": 34.46
   },
   {
     "word": "(the",
-    "start": 35.417
+    "start": 35.08
   },
   {
     "word": "UUID),",
-    "start": 36.107
+    "start": 35.14
   },
   {
     "word": "workspaceIntentSequence",
-    "start": 36.798
+    "start": 36.26
   },
   {
     "word": "(assigned",
-    "start": 37.489
+    "start": 37.96
   },
   {
     "word": "by",
-    "start": 38.18
+    "start": 38.34
   },
   {
     "word": "framework),",
-    "start": 38.871
+    "start": 38.54
   },
   {
     "word": "kind",
-    "start": 39.562
+    "start": 39.58
   },
   {
     "word": "(runtime",
-    "start": 40.253
+    "start": 39.78
   },
   {
     "word": "type),",
-    "start": 40.944
+    "start": 40.3
   },
   {
     "word": "strikeOutIntentIds",
-    "start": 41.634
+    "start": 41.18
   },
   {
     "word": "(list",
-    "start": 42.325
+    "start": 43.14
   },
   {
     "word": "of",
-    "start": 43.016
+    "start": 43.36
   },
   {
     "word": "intents",
-    "start": 43.707
+    "start": 43.48
   },
   {
     "word": "to",
-    "start": 44.398
+    "start": 43.98
   },
   {
     "word": "undo),",
-    "start": 45.089
+    "start": 44.12
   },
   {
     "word": "newPolicyVersion",
-    "start": 45.78
+    "start": 44.48
   },
   {
     "word": "(for",
-    "start": 46.471
+    "start": 45.98
   },
   {
     "word": "migrations),",
-    "start": 47.161
+    "start": 46.42
   },
   {
     "word": "and",
-    "start": 47.852
+    "start": 46.98
   },
   {
     "word": "requiresServerExecution",
-    "start": 48.543
+    "start": 47.58
   },
   {
     "word": "(for",
-    "start": 49.234
+    "start": 49.16
   },
   {
     "word": "server-only",
-    "start": 49.925
+    "start": 49.68
   },
   {
     "word": "operations).",
-    "start": 50.616
+    "start": 50.38
   },
   {
     "word": "IntentBase.fromRegistry()",
-    "start": 51.607
+    "start": 51.66
   },
   {
     "word": "handles",
-    "start": 52.748
+    "start": 53.94
   },
   {
     "word": "deserialisation",
-    "start": 53.889
+    "start": 54.5
   },
   {
     "word": "via",
-    "start": 55.031
+    "start": 54.6
   },
   {
     "word": "IntentFactoryRegistry",
-    "start": 56.172
+    "start": 56.1
   },
   {
     "word": "lookup.",
-    "start": 57.313
+    "start": 57.84
   },
   {
     "word": "The",
-    "start": 58.755
+    "start": 58.76
   },
   {
     "word": "TypeRegistry",
-    "start": 59.228
+    "start": 58.86
   },
   {
     "word": "maps",
-    "start": 59.7
+    "start": 59.64
   },
   {
     "word": "string",
-    "start": 60.173
+    "start": 60.16
   },
   {
     "word": "type",
-    "start": 60.646
+    "start": 60.6
   },
   {
     "word": "names",
-    "start": 61.119
+    "start": 60.96
   },
   {
     "word": "to",
-    "start": 61.592
+    "start": 61.26
   },
   {
     "word": "Dart",
-    "start": 62.065
+    "start": 61.54
   },
   {
     "word": "Types",
-    "start": 62.538
+    "start": 61.76
   },
   {
     "word": "for",
-    "start": 63.011
+    "start": 62.2
   },
   {
     "word": "cross-platform",
-    "start": 63.484
+    "start": 62.56
   },
   {
     "word": "serialisation.",
-    "start": 63.956
+    "start": 62.56
   },
   {
     "word": "Intents",
-    "start": 64.729
+    "start": 64.76
   },
   {
     "word": "carry",
-    "start": 65.227
+    "start": 65.22
   },
   {
     "word": "the",
-    "start": 65.725
+    "start": 65.46
   },
   {
     "word": "'what'",
-    "start": 66.223
+    "start": 65.66
   },
   {
     "word": "without",
-    "start": 66.72
+    "start": 65.84
   },
   {
     "word": "the",
-    "start": 67.218
+    "start": 66.2
   },
   {
     "word": "'how'\u2014Directives",
-    "start": 67.716
+    "start": 66.44
   },
   {
     "word": "handle",
-    "start": 68.214
+    "start": 67.88
   },
   {
     "word": "execution.",
-    "start": 68.712
+    "start": 68.32
   }
 ]

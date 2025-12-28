@@ -1,410 +1,410 @@
 [
   {
     "word": "App:",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Graphable",
-    "start": 0.54
+    "start": 0.48
   },
   {
     "word": "Notebooks",
-    "start": 1.081
+    "start": 0.88
   },
   {
     "word": "A",
-    "start": 2.121
+    "start": 1.86
   },
   {
     "word": "computational",
-    "start": 2.605
+    "start": 2.22
   },
   {
     "word": "notebook",
-    "start": 3.088
+    "start": 2.98
   },
   {
     "word": "for",
-    "start": 3.572
+    "start": 3.48
   },
   {
     "word": "business",
-    "start": 4.056
+    "start": 4.0
   },
   {
     "word": "data",
-    "start": 4.539
+    "start": 4.36
   },
   {
     "word": "Graphable",
-    "start": 5.523
+    "start": 5.42
   },
   {
     "word": "is",
-    "start": 6.061
+    "start": 6.0
   },
   {
     "word": "an",
-    "start": 6.599
+    "start": 6.28
   },
   {
     "word": "ambitious",
-    "start": 7.137
+    "start": 6.4
   },
   {
     "word": "Jupyter-style",
-    "start": 7.675
+    "start": 7.64
   },
   {
     "word": "notebook",
-    "start": 8.213
+    "start": 7.98
   },
   {
     "word": "for",
-    "start": 8.751
+    "start": 8.4
   },
   {
     "word": "non-technical",
-    "start": 9.289
+    "start": 8.96
   },
   {
     "word": "users.",
-    "start": 9.827
+    "start": 9.8
   },
   {
     "word": "Cells",
-    "start": 10.665
+    "start": 10.82
   },
   {
     "word": "can",
-    "start": 11.17
+    "start": 10.96
   },
   {
     "word": "execute",
-    "start": 11.675
+    "start": 11.18
   },
   {
     "word": "SQL",
-    "start": 12.18
+    "start": 11.64
   },
   {
     "word": "against",
-    "start": 12.685
+    "start": 12.24
   },
   {
     "word": "connected",
-    "start": 13.19
+    "start": 12.66
   },
   {
     "word": "databases,",
-    "start": 13.695
+    "start": 13.12
   },
   {
     "word": "run",
-    "start": 14.2
+    "start": 14.32
   },
   {
     "word": "Python",
-    "start": 14.704
+    "start": 14.54
   },
   {
     "word": "in",
-    "start": 15.209
+    "start": 14.98
   },
   {
     "word": "sandboxes,",
-    "start": 15.714
+    "start": 15.2
   },
   {
     "word": "call",
-    "start": 16.219
+    "start": 16.32
   },
   {
     "word": "MCP",
-    "start": 16.724
+    "start": 16.56
   },
   {
     "word": "servers,",
-    "start": 17.229
+    "start": 17.34
   },
   {
     "word": "or",
-    "start": 17.734
+    "start": 18.14
   },
   {
     "word": "chat",
-    "start": 18.239
+    "start": 18.34
   },
   {
     "word": "with",
-    "start": 18.744
+    "start": 18.66
   },
   {
     "word": "AI.",
-    "start": 19.248
+    "start": 19.06
   },
   {
     "word": "Results",
-    "start": 20.053
+    "start": 20.1
   },
   {
     "word": "flow",
-    "start": 20.514
+    "start": 20.4
   },
   {
     "word": "between",
-    "start": 20.974
+    "start": 20.72
   },
   {
     "word": "cells",
-    "start": 21.434
+    "start": 21.06
   },
   {
     "word": "via",
-    "start": 21.894
+    "start": 21.5
   },
   {
     "word": "named",
-    "start": 22.354
+    "start": 22.08
   },
   {
     "word": "outputs.",
-    "start": 22.814
+    "start": 22.52
   },
   {
     "word": "There's",
-    "start": 23.575
+    "start": 23.46
   },
   {
     "word": "a",
-    "start": 24.025
+    "start": 23.76
   },
   {
     "word": "playbook",
-    "start": 24.475
+    "start": 23.82
   },
   {
     "word": "system",
-    "start": 24.925
+    "start": 24.24
   },
   {
     "word": "for",
-    "start": 25.376
+    "start": 24.6
   },
   {
     "word": "saving",
-    "start": 25.826
+    "start": 24.9
   },
   {
     "word": "and",
-    "start": 26.276
+    "start": 25.24
   },
   {
     "word": "replaying",
-    "start": 26.726
+    "start": 25.5
   },
   {
     "word": "workflows,",
-    "start": 27.177
+    "start": 26.06
   },
   {
     "word": "connection",
-    "start": 27.627
+    "start": 27.12
   },
   {
     "word": "management",
-    "start": 28.077
+    "start": 27.34
   },
   {
     "word": "for",
-    "start": 28.527
+    "start": 28.06
   },
   {
     "word": "external",
-    "start": 28.978
+    "start": 28.44
   },
   {
     "word": "databases,",
-    "start": 29.428
+    "start": 28.9
   },
   {
     "word": "and",
-    "start": 29.878
+    "start": 30.18
   },
   {
     "word": "webhook",
-    "start": 30.328
+    "start": 30.26
   },
   {
     "word": "triggers",
-    "start": 30.779
+    "start": 30.66
   },
   {
     "word": "for",
-    "start": 31.229
+    "start": 31.0
   },
   {
     "word": "automation.",
-    "start": 31.679
+    "start": 31.32
   },
   {
     "word": "The",
-    "start": 32.429
+    "start": 32.46
   },
   {
     "word": "graph",
-    "start": 33.062
+    "start": 32.52
   },
   {
     "word": "visualisation",
-    "start": 33.695
+    "start": 32.52
   },
   {
     "word": "renders",
-    "start": 34.328
+    "start": 33.54
   },
   {
     "word": "data",
-    "start": 34.961
+    "start": 34.66
   },
   {
     "word": "relationships.",
-    "start": 35.594
+    "start": 35.06
   },
   {
     "word": "It's",
-    "start": 36.527
+    "start": 36.42
   },
   {
     "word": "genuinely",
-    "start": 36.995
+    "start": 36.74
   },
   {
     "word": "powerful\u2014you",
-    "start": 37.463
+    "start": 37.12
   },
   {
     "word": "can",
-    "start": 37.931
+    "start": 38.36
   },
   {
     "word": "pipe",
-    "start": 38.4
+    "start": 38.52
   },
   {
     "word": "Xero",
-    "start": 38.868
+    "start": 38.52
   },
   {
     "word": "invoice",
-    "start": 39.336
+    "start": 39.24
   },
   {
     "word": "data",
-    "start": 39.805
+    "start": 39.62
   },
   {
     "word": "through",
-    "start": 40.273
+    "start": 40.14
   },
   {
     "word": "a",
-    "start": 40.741
+    "start": 40.58
   },
   {
     "word": "Python",
-    "start": 41.209
+    "start": 40.72
   },
   {
     "word": "aggregation",
-    "start": 41.678
+    "start": 41.02
   },
   {
     "word": "into",
-    "start": 42.146
+    "start": 41.8
   },
   {
     "word": "a",
-    "start": 42.614
+    "start": 42.24
   },
   {
     "word": "Neo4j",
-    "start": 43.082
+    "start": 42.4
   },
   {
     "word": "graph\u2014but",
-    "start": 43.551
+    "start": 43.38
   },
   {
     "word": "the",
-    "start": 44.019
+    "start": 44.52
   },
   {
     "word": "UX",
-    "start": 44.487
+    "start": 44.66
   },
   {
     "word": "is",
-    "start": 44.955
+    "start": 44.96
   },
   {
     "word": "rough.",
-    "start": 45.424
+    "start": 45.44
   },
   {
     "word": "Cell",
-    "start": 46.192
+    "start": 46.28
   },
   {
     "word": "execution",
-    "start": 46.567
+    "start": 46.38
   },
   {
     "word": "is",
-    "start": 46.942
+    "start": 46.82
   },
   {
     "word": "slow,",
-    "start": 47.317
+    "start": 47.2
   },
   {
     "word": "error",
-    "start": 47.691
+    "start": 48.14
   },
   {
     "word": "handling",
-    "start": 48.066
+    "start": 48.34
   },
   {
     "word": "is",
-    "start": 48.441
+    "start": 48.72
   },
   {
     "word": "cryptic,",
-    "start": 48.816
+    "start": 48.98
   },
   {
     "word": "and",
-    "start": 49.191
+    "start": 49.78
   },
   {
     "word": "the",
-    "start": 49.566
+    "start": 49.86
   },
   {
     "word": "learning",
-    "start": 49.941
+    "start": 49.98
   },
   {
     "word": "curve",
-    "start": 50.315
+    "start": 50.28
   },
   {
     "word": "is",
-    "start": 50.69
+    "start": 50.64
   },
   {
     "word": "steep.",
-    "start": 51.065
+    "start": 50.9
   }
 ]

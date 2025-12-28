@@ -1,398 +1,398 @@
 [
   {
     "word": "Technical",
-    "start": 0
+    "start": 0.0
   },
   {
     "word": "Deep",
-    "start": 0.508
+    "start": 0.3
   },
   {
     "word": "Dive:",
-    "start": 1.017
+    "start": 0.7
   },
   {
     "word": "The",
-    "start": 1.525
+    "start": 1.54
   },
   {
     "word": "Execution",
-    "start": 2.034
+    "start": 1.64
   },
   {
     "word": "Pipeline",
-    "start": 2.542
+    "start": 2.16
   },
   {
     "word": "From",
-    "start": 3.551
+    "start": 3.34
   },
   {
     "word": "intent",
-    "start": 3.982
+    "start": 3.72
   },
   {
     "word": "to",
-    "start": 4.413
+    "start": 4.12
   },
   {
     "word": "persisted",
-    "start": 4.843
+    "start": 4.62
   },
   {
     "word": "truth",
-    "start": 5.274
+    "start": 5.18
   },
   {
     "word": "IntentExecutor",
-    "start": 6.205
+    "start": 6.14
   },
   {
     "word": "orchestrates",
-    "start": 7.047
+    "start": 7.22
   },
   {
     "word": "execution",
-    "start": 7.889
+    "start": 7.76
   },
   {
     "word": "with",
-    "start": 8.73
+    "start": 8.46
   },
   {
     "word": "PolicyRouter,",
-    "start": 9.572
+    "start": 8.72
   },
   {
     "word": "SnapshotReader,",
-    "start": 10.414
+    "start": 10.24
   },
   {
     "word": "SnapshotWriter,",
-    "start": 11.256
+    "start": 11.54
   },
   {
     "word": "LedgerWriter,",
-    "start": 12.097
+    "start": 11.88
   },
   {
     "word": "and",
-    "start": 12.939
+    "start": 13.92
   },
   {
     "word": "optional",
-    "start": 13.781
+    "start": 14.04
   },
   {
     "word": "BlobStorage.",
-    "start": 14.622
+    "start": 14.48
   },
   {
     "word": "The",
-    "start": 15.764
+    "start": 15.68
   },
   {
     "word": "execute(IntentBase)",
-    "start": 16.493
+    "start": 15.88
   },
   {
     "word": "method:",
-    "start": 17.223
+    "start": 17.32
   },
   {
     "word": "calculates",
-    "start": 17.952
+    "start": 17.86
   },
   {
     "word": "nextSeq",
-    "start": 18.681
+    "start": 18.8
   },
   {
     "word": "=",
-    "start": 19.41
+    "start": 18.98
   },
   {
     "word": "previousIntent.workspaceIntentSequence",
-    "start": 20.14
+    "start": 19.68
   },
   {
     "word": "+",
-    "start": 20.869
+    "start": 20.16
   },
   {
     "word": "1;",
-    "start": 21.598
+    "start": 20.16
   },
   {
     "word": "routes",
-    "start": 22.327
+    "start": 23.2
   },
   {
     "word": "via",
-    "start": 23.057
+    "start": 23.4
   },
   {
     "word": "router.route()",
-    "start": 23.786
+    "start": 23.74
   },
   {
     "word": "to",
-    "start": 24.515
+    "start": 24.42
   },
   {
     "word": "get",
-    "start": 25.244
+    "start": 24.84
   },
   {
     "word": "Directives;",
-    "start": 25.974
+    "start": 24.98
   },
   {
     "word": "for",
-    "start": 26.703
+    "start": 25.96
   },
   {
     "word": "each",
-    "start": 27.432
+    "start": 26.18
   },
   {
     "word": "Directive",
-    "start": 28.161
+    "start": 26.42
   },
   {
     "word": "calls",
-    "start": 28.891
+    "start": 26.8
   },
   {
     "word": "performPlan()",
-    "start": 29.62
+    "start": 27.3
   },
   {
     "word": "then",
-    "start": 30.349
+    "start": 28.34
   },
   {
     "word": "performExecute();",
-    "start": 31.078
+    "start": 28.98
   },
   {
     "word": "assigns",
-    "start": 31.808
+    "start": 30.06
   },
   {
     "word": "event",
-    "start": 32.537
+    "start": 31.06
   },
   {
     "word": "sequence",
-    "start": 33.266
+    "start": 31.28
   },
   {
     "word": "numbers;",
-    "start": 33.995
+    "start": 31.74
   },
   {
     "word": "validates",
-    "start": 34.725
+    "start": 32.54
   },
   {
     "word": "via",
-    "start": 35.454
+    "start": 33.3
   },
   {
     "word": "router.validateDirectiveExecution();",
-    "start": 36.183
+    "start": 33.52
   },
   {
     "word": "constructs",
-    "start": 36.912
+    "start": 36.38
   },
   {
     "word": "IntentLedgerEntry",
-    "start": 37.642
+    "start": 36.92
   },
   {
     "word": "with",
-    "start": 38.371
+    "start": 38.2
   },
   {
     "word": "appliedDirectives",
-    "start": 39.1
+    "start": 38.48
   },
   {
     "word": "as",
-    "start": 39.829
+    "start": 39.7
   },
   {
     "word": "DirectiveOutcome",
-    "start": 40.559
+    "start": 40.06
   },
   {
     "word": "list;",
-    "start": 41.288
+    "start": 41.02
   },
   {
     "word": "persists",
-    "start": 42.017
+    "start": 41.56
   },
   {
     "word": "via",
-    "start": 42.746
+    "start": 41.86
   },
   {
     "word": "ledger.writeIntent()",
-    "start": 43.476
+    "start": 42.24
   },
   {
     "word": "(throws",
-    "start": 44.205
+    "start": 43.88
   },
   {
     "word": "LedgerWriteConflict",
-    "start": 44.934
+    "start": 44.28
   },
   {
     "word": "if",
-    "start": 45.663
+    "start": 45.5
   },
   {
     "word": "sequence",
-    "start": 46.393
+    "start": 46.0
   },
   {
     "word": "exists);",
-    "start": 47.122
+    "start": 46.42
   },
   {
     "word": "then",
-    "start": 47.851
+    "start": 47.58
   },
   {
     "word": "saves",
-    "start": 48.58
+    "start": 47.86
   },
   {
     "word": "snapshots",
-    "start": 49.31
+    "start": 48.28
   },
   {
     "word": "via",
-    "start": 50.039
+    "start": 49.04
   },
   {
     "word": "snapshotWriter.saveAtIntent().",
-    "start": 50.768
+    "start": 49.28
   },
   {
     "word": "Optional",
-    "start": 51.797
+    "start": 51.82
   },
   {
     "word": "blob",
-    "start": 52.421
+    "start": 52.18
   },
   {
     "word": "offload:",
-    "start": 53.045
+    "start": 52.48
   },
   {
     "word": "strings",
-    "start": 53.669
+    "start": 53.74
   },
   {
     "word": "exceeding",
-    "start": 54.293
+    "start": 54.1
   },
   {
     "word": "blobOffloadThresholdBytes",
-    "start": 54.917
+    "start": 54.82
   },
   {
     "word": "are",
-    "start": 55.541
+    "start": 56.5
   },
   {
     "word": "uploaded",
-    "start": 56.165
+    "start": 56.8
   },
   {
     "word": "to",
-    "start": 56.789
+    "start": 57.28
   },
   {
     "word": "BlobStorage",
-    "start": 57.413
+    "start": 57.5
   },
   {
     "word": "with",
-    "start": 58.037
+    "start": 58.18
   },
   {
     "word": "SHA256",
-    "start": 58.661
+    "start": 58.72
   },
   {
     "word": "content",
-    "start": 59.285
+    "start": 60.72
   },
   {
     "word": "hash,",
-    "start": 59.909
+    "start": 61.26
   },
   {
     "word": "replaced",
-    "start": 60.533
+    "start": 62.12
   },
   {
     "word": "by",
-    "start": 61.157
+    "start": 62.4
   },
   {
     "word": "BlobRef",
-    "start": 61.781
+    "start": 62.72
   },
   {
     "word": "in",
-    "start": 62.405
+    "start": 63.28
   },
   {
     "word": "the",
-    "start": 63.029
+    "start": 63.6
   },
   {
     "word": "entry.",
-    "start": 63.653
+    "start": 63.74
   },
   {
     "word": "executeOptimistically()",
-    "start": 64.577
+    "start": 64.6
   },
   {
     "word": "returns",
-    "start": 65.545
+    "start": 66.72
   },
   {
     "word": "OptimisticIntentExecutionResult",
-    "start": 66.513
+    "start": 67.14
   },
   {
     "word": "for",
-    "start": 67.481
+    "start": 69.78
   },
   {
     "word": "UI",
-    "start": 68.449
+    "start": 70.12
   },
   {
     "word": "preview",
-    "start": 69.417
+    "start": 70.44
   },
   {
     "word": "without",
-    "start": 70.385
+    "start": 70.94
   },
   {
     "word": "persisting.",
-    "start": 71.353
+    "start": 71.5
   }
 ]
