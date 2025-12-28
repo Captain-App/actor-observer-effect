@@ -13,6 +13,7 @@ export class XAIRealtimeClient {
   private localStream: MediaStream | null = null;
   private isConnected: boolean = false;
   private nextPlayTime: number = 0;
+  private didAutoHello: boolean = false;
 
   constructor(
     private onMessage: (event: XAIEvent) => void,
@@ -47,7 +48,27 @@ export class XAIRealtimeClient {
       this.ws = new WebSocket(wsUrl);
 
       this.ws.onopen = () => {
-        console.log('%c[xAI] Proxy Socket Open. Waiting for worker logs...', 'color: #10b981; font-weight: bold');
+        console.log('%c[xAI] Proxy Socket Open. Sending session.update...', 'color: #10b981; font-weight: bold');
+
+        // Configure session immediately (xAI won't send session.updated until we do)
+        this.sendEvent({
+          type: 'session.update',
+          session: {
+            modalities: ['text', 'audio'],
+            instructions,
+            voice: 'Leo',
+            audio: {
+              input: { format: { type: 'audio/pcm', rate: 24000 } },
+              output: { format: { type: 'audio/pcm', rate: 24000 } },
+            },
+            turn_detection: {
+              type: 'server_vad',
+              threshold: 0.5,
+              prefix_padding_ms: 300,
+              silence_duration_ms: 800,
+            },
+          },
+        });
       };
 
       this.ws.onmessage = (e) => {
@@ -62,22 +83,32 @@ export class XAIRealtimeClient {
 
           console.log('%c[xAI] Event:', 'color: #8b5cf6', event.type, event);
           
+          // Keepalive
+          if (event.type === 'ping') {
+            this.sendEvent({ type: 'pong' } as any);
+            this.onMessage(event);
+            return;
+          }
+
           if (event.type === 'session.created' || event.type === 'session.updated') {
             console.log('%c[xAI] Session Active!', 'color: #10b981; font-weight: bold');
             this.isConnected = true;
-            
-            // Send initial config after session is created
-            this.sendEvent({
-              type: 'session.update',
-              session: {
-                modalities: ['text', 'audio'],
-                instructions: instructions,
-                voice: 'Leo',
-                input_audio_format: 'pcm16',
-                output_audio_format: 'pcm16',
-                turn_detection: { type: 'server_vad' }
-              },
-            });
+
+            // Force an audible response once, to validate the end-to-end pipeline.
+            // This unblocks late-night debugging: you should hear Grok respond even
+            // before you start speaking.
+            if (!this.didAutoHello) {
+              this.didAutoHello = true;
+              this.sendEvent({
+                type: 'conversation.item.create',
+                item: {
+                  type: 'message',
+                  role: 'user',
+                  content: [{ type: 'input_text', text: 'Hello' }],
+                },
+              } as any);
+              this.sendEvent({ type: 'response.create' } as any);
+            }
           }
 
           if (event.type === 'error') {
