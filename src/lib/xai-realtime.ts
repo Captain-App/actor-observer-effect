@@ -13,7 +13,6 @@ export class XAIRealtimeClient {
   private localStream: MediaStream | null = null;
   private isConnected: boolean = false;
   private nextPlayTime: number = 0;
-  private didAutoHello: boolean = false;
 
   constructor(
     private onMessage: (event: XAIEvent) => void,
@@ -69,6 +68,10 @@ export class XAIRealtimeClient {
             },
           },
         });
+
+        // IMPORTANT: Trigger the assistant to greet the user immediately, without hardcoding any user message.
+        // The system prompt (instructions) explicitly says: "Greet the user warmly."
+        this.sendEvent({ type: 'response.create' } as any);
       };
 
       this.ws.onmessage = (e) => {
@@ -90,25 +93,14 @@ export class XAIRealtimeClient {
             return;
           }
 
+          // Consider the connection "live" once we have a conversation/session on the server.
+          if (event.type === 'conversation.created') {
+            this.isConnected = true;
+          }
+
           if (event.type === 'session.created' || event.type === 'session.updated') {
             console.log('%c[xAI] Session Active!', 'color: #10b981; font-weight: bold');
             this.isConnected = true;
-
-            // Force an audible response once, to validate the end-to-end pipeline.
-            // This unblocks late-night debugging: you should hear Grok respond even
-            // before you start speaking.
-            if (!this.didAutoHello) {
-              this.didAutoHello = true;
-              this.sendEvent({
-                type: 'conversation.item.create',
-                item: {
-                  type: 'message',
-                  role: 'user',
-                  content: [{ type: 'input_text', text: 'Hello' }],
-                },
-              } as any);
-              this.sendEvent({ type: 'response.create' } as any);
-            }
           }
 
           if (event.type === 'error') {
