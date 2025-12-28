@@ -9,7 +9,7 @@ import { splitIntoWords } from './lib/utils';
 
 const SCROLL_SPEED = 1;
 const AUTO_SCROLL_DELAY = 5000; // 5 seconds pause after manual scroll
-const SYNC_LOOKAHEAD = 0.15; // 150ms lookahead to compensate for UI transitions
+const SYNC_LOOKAHEAD = 0.045; // Reduced by 70% from 0.15 to be more immediate
 
 interface TimingWord {
   word: string;
