@@ -155,52 +155,56 @@ const Article: React.FC<ArticleProps> = ({ currentWordIndex, onWordClick, onNavi
               </p>
             </div>
             
-            {section.id === 'execution' && (
+            {section.id === 'mechanism' && (
               <div className="relative mt-8 sm:mt-12 p-6 sm:p-10 rounded-2xl sm:rounded-3xl bg-slate-900/50 border border-slate-800/50 font-mono text-xs sm:text-sm overflow-x-auto shadow-inner group/diagram">
-                <div className="absolute top-4 right-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">Architecture Diagram</div>
+                <div className="absolute top-4 right-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">The Perceptual Asymmetry</div>
                 <pre className="text-slate-300 leading-relaxed">
-{`[Decision Maker] <-> [WhatsApp / Portal]
-                         |
-                         v
-              [CaptainApp Control Plane]
-                         |
-              +----------+----------+
-              |                     |
-     [OpenCode Agent]      [Intent Ledger]
-              |                     |
-     +--------+--------+      [Audit Timeline]
-     |        |        |
-   [Xero] [Stripe] [Twilio]`}
+{`ACTOR'S VIEW                    OBSERVER'S VIEW
+                                
+     [Situation]                     [Person]
+    /    |    \\                        ▲
+   /     |     \\                       |
+  v      v      v                  [Situation]
+                                   (background)
+"I see constraints"            "I see character"`}
                 </pre>
               </div>
             )}
 
-            {section.id === 'future-infra' && (
+            {section.id === 'confusion' && (
               <div className="relative mt-8 sm:mt-12 p-6 sm:p-10 rounded-2xl sm:rounded-3xl bg-slate-900/50 border border-slate-800/50 font-mono text-xs sm:text-sm overflow-x-auto shadow-inner group/diagram">
-                <div className="absolute top-4 right-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">The VM Problem</div>
+                <div className="absolute top-4 right-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">Three Distinct Biases</div>
                 <pre className="text-slate-300 leading-relaxed">
-{`[User A] -> [VM A (Ubuntu)] -- $$$ Idle
-[User B] -> [VM B (Ubuntu)] -- $$$ Idle
-[User C] -> [VM C (Ubuntu)] -- $$$ Idle
-    |           |
-    +-----------+---- [Management Overhead]
-                      [Security Isolation Risk]`}
+{`┌─────────────────────────────────────────────────┐
+│  FUNDAMENTAL ATTRIBUTION ERROR                   │
+│  Observers → over-attribute to disposition       │
+│  (Even when situation is obvious)                │
+├─────────────────────────────────────────────────┤
+│  ACTOR–OBSERVER ASYMMETRY                        │
+│  Actors → situation  |  Observers → disposition  │
+│  (Different perspectives, same behaviour)        │
+├─────────────────────────────────────────────────┤
+│  SELF-SERVING BIAS                               │
+│  Success → "I did it"  |  Failure → "It happened"│
+│  (Depends on outcome valence)                    │
+└─────────────────────────────────────────────────┘`}
                 </pre>
               </div>
             )}
 
-            {section.id === 'future-cloudflare' && (
+            {section.id === 'storms' && (
               <div className="relative mt-8 sm:mt-12 p-6 sm:p-10 rounded-2xl sm:rounded-3xl bg-slate-900/50 border border-slate-800/50 font-mono text-xs sm:text-sm overflow-x-auto shadow-inner group/diagram">
-                <div className="absolute top-4 right-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">Serverless Edge Box</div>
+                <div className="absolute top-4 right-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">Storms (1973) Experiment</div>
                 <pre className="text-slate-300 leading-relaxed">
-{`[Users] -> [Cloudflare Edge]
-               |
-      +--------+--------+
-      |                 |
- [Worker A]        [Worker B]  <-- Scale to Zero
-      |                 |
- [SQLite FS]       [SQLite FS] <-- Isolated Data
- (D1 / Durable)    (D1 / Durable)`}
+{`CONDITION A: Actor's perspective        CONDITION B: Observer's perspective
+                                        
+    [Camera] ──────> [Other]                [Camera]
+        ▲                                       │
+        │                                       ▼
+    [Actor]                                 [Actor]
+                                        
+Result: Situational attributions        Result: Dispositional attributions
+        about own behaviour                     about own behaviour`}
                 </pre>
               </div>
             )}
