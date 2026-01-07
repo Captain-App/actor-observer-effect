@@ -113,8 +113,15 @@ function App() {
   }, [isAuthCallback]);
 
   // Auto-scroll animation when playing
-  const animate = useCallback(() => {
-    if (isPlaying) {
+  useEffect(() => {
+    if (!isPlaying || isAuthCallback) {
+      if (requestRef.current) {
+        cancelAnimationFrame(requestRef.current);
+      }
+      return;
+    }
+
+    const animate = () => {
       window.scrollBy(0, SCROLL_SPEED);
       
       // Update progress directly since scroll events may be throttled
@@ -124,19 +131,16 @@ function App() {
       setProgress(Math.min(100, Math.max(0, percentage)));
       
       requestRef.current = requestAnimationFrame(animate);
-    }
-  }, [isPlaying]);
-
-  useEffect(() => {
-    if (isPlaying && !isAuthCallback) {
-      requestRef.current = requestAnimationFrame(animate);
-    } else if (requestRef.current) {
-      cancelAnimationFrame(requestRef.current);
-    }
-    return () => {
-      if (requestRef.current) cancelAnimationFrame(requestRef.current);
     };
-  }, [isPlaying, animate, isAuthCallback]);
+
+    requestRef.current = requestAnimationFrame(animate);
+
+    return () => {
+      if (requestRef.current) {
+        cancelAnimationFrame(requestRef.current);
+      }
+    };
+  }, [isPlaying, isAuthCallback]);
 
   // Keyboard controls
   useEffect(() => {
