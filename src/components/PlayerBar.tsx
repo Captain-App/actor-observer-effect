@@ -58,7 +58,7 @@ const PlayerBar: React.FC<PlayerBarProps> = ({
             <div className="absolute inset-0 bg-white/5 rounded-full overflow-hidden">
               {/* Scroll Progress */}
               <div 
-                className="h-full bg-primary transition-all duration-150 ease-out shadow-[0_0_15px_rgba(59,130,246,0.6)] relative z-10"
+                className="h-full bg-primary shadow-[0_0_15px_rgba(59,130,246,0.6)] relative z-10"
                 style={{ width: `${progress}%` }}
               />
             </div>
