@@ -116,6 +116,13 @@ function App() {
   const animate = useCallback(() => {
     if (isPlaying) {
       window.scrollBy(0, SCROLL_SPEED);
+      
+      // Update progress directly since scroll events may be throttled
+      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const currentScroll = window.scrollY;
+      const percentage = (currentScroll / scrollHeight) * 100;
+      setProgress(Math.min(100, Math.max(0, percentage)));
+      
       requestRef.current = requestAnimationFrame(animate);
     }
   }, [isPlaying]);
