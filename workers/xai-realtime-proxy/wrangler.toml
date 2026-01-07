@@ -1,0 +1,6 @@
+name = "actor-observer-xai-proxy"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+
+[vars]
+XAI_REALTIME_URL = "wss://api.x.ai/v1/realtime"

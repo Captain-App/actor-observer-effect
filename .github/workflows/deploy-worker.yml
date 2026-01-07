@@ -1,15 +1,17 @@
-name: Deploy Actor Observer Effect (Cloudflare Pages)
+name: Deploy Actor Observer xAI Proxy Worker
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'workers/xai-realtime-proxy/**'
   workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Build and Deploy to Cloudflare Pages
+    name: Deploy to Cloudflare Workers
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
@@ -21,14 +23,20 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          cd workers/xai-realtime-proxy
+          npm install
 
-      - name: Build project
-        run: npm run build
+      - name: Typecheck
+        run: |
+          cd workers/xai-realtime-proxy
+          npm run typecheck
 
-      - name: Deploy to Cloudflare Pages
+      - name: Deploy to Cloudflare Workers
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy dist --project-name actor-observer-effect
+          workingDirectory: 'workers/xai-realtime-proxy'
+          command: deploy
+

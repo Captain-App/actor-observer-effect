@@ -60,7 +60,7 @@ export class XAIRealtimeClient {
       }
 
       // 3) Establish WebSocket connection via Proxy
-      const proxyUrl = 'wss://xai-realtime-proxy.captainapp.workers.dev';
+      const proxyUrl = 'wss://actor-observer-xai-proxy.captainapp.workers.dev';
       const wsUrl = `${proxyUrl}/?token=${token}&model=grok-beta`;
       console.log(`[xAI] Connecting to: ${wsUrl}`);
       
