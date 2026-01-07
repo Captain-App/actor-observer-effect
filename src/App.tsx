@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef, useCallback, useMemo } from 'react';
+import React, { useState, useEffect, useRef, useCallback } from 'react';
 import Article from './components/Article';
 import PlayerBar from './components/PlayerBar';
 import Sidebar from './components/Sidebar';
@@ -7,15 +7,13 @@ import AuthGuard from './components/AuthGuard';
 import AuthCallback from './pages/AuthCallback';
 import { supabase } from './lib/supabase';
 import { sections } from './data/sections';
-import { splitIntoWords } from './lib/utils';
 
 const SCROLL_SPEED = 1;
 
 function App() {
-  // Nuclear logout shortcut: Just 'l'
+  // Nuclear logout shortcut: Shift+Q
   useEffect(() => {
     const handleNuclearLogout = async (e: KeyboardEvent) => {
-      // Ignore if user is typing in an input or textarea
       const target = e.target as HTMLElement;
       if (target.tagName === 'INPUT' || target.tagName === 'TEXTAREA' || target.isContentEditable) {
         return;
@@ -23,14 +21,9 @@ function App() {
 
       if (e.key.toLowerCase() === 'q' && e.shiftKey && !e.metaKey && !e.ctrlKey && !e.altKey) {
         console.log('☢️ Nuclear Logout initiated...');
-        
-        // 1. Clear Supabase session
         await supabase.auth.signOut();
-        
-        // 2. Clear localStorage
         localStorage.clear();
         
-        // 3. Clear cookies
         const domain = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
           ? ''
           : '; domain=.captainapp.co.uk';
@@ -55,7 +48,6 @@ function App() {
 
   const [progress, setProgress] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isReaderMode, setIsReaderMode] = useState(true);
 
   const [agentStatus, setAgentStatus] = useState({
     isActive: false,
@@ -65,32 +57,7 @@ function App() {
   const [activeSectionId, setActiveSectionId] = useState<string | null>(null);
   
   const requestRef = useRef<number>();
-  const lastManualScrollTime = useRef<number>(0);
   const isAutoScrolling = useRef<boolean>(false);
-
-  // Pre-calculate section metadata for global indexing and progress
-  const sectionMetadata = useMemo(() => {
-    let currentWordCount = 0;
-    const metadata = sections.map(section => {
-      const titleWords = splitIntoWords(section.title).length;
-      const subtitleWords = section.subtitle ? splitIntoWords(section.subtitle).length : 0;
-      const contentWords = splitIntoWords(section.content).length;
-      const totalWords = titleWords + subtitleWords + contentWords;
-      
-      const data = {
-        id: section.id,
-        startIndex: currentWordCount,
-        wordCount: totalWords,
-      };
-      currentWordCount += totalWords;
-      return data;
-    });
-
-    return {
-      sections: metadata,
-      totalWords: currentWordCount
-    };
-  }, []);
 
   const handleNavigateToSection = useCallback((sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -130,15 +97,11 @@ function App() {
     return () => observer.disconnect();
   }, [isAuthCallback]);
 
-  // Handle scroll logic
+  // Handle scroll progress tracking
   useEffect(() => {
     if (isAuthCallback) return;
 
     const handleScroll = () => {
-      if (!isAutoScrolling.current) {
-        lastManualScrollTime.current = Date.now();
-      }
-      
       const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
       const currentScroll = window.scrollY;
       const percentage = (currentScroll / scrollHeight) * 100;
@@ -149,16 +112,16 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isAuthCallback]);
 
-  // Constant scroll logic (when reader mode is off)
+  // Auto-scroll animation when playing
   const animate = useCallback(() => {
-    if (isPlaying && !isReaderMode) {
+    if (isPlaying) {
       window.scrollBy(0, SCROLL_SPEED);
       requestRef.current = requestAnimationFrame(animate);
     }
-  }, [isPlaying, isReaderMode]);
+  }, [isPlaying]);
 
   useEffect(() => {
-    if (isPlaying && !isReaderMode && !isAuthCallback) {
+    if (isPlaying && !isAuthCallback) {
       requestRef.current = requestAnimationFrame(animate);
     } else if (requestRef.current) {
       cancelAnimationFrame(requestRef.current);
@@ -166,7 +129,7 @@ function App() {
     return () => {
       if (requestRef.current) cancelAnimationFrame(requestRef.current);
     };
-  }, [isPlaying, isReaderMode, animate, isAuthCallback]);
+  }, [isPlaying, animate, isAuthCallback]);
 
   // Keyboard controls
   useEffect(() => {
@@ -226,14 +189,10 @@ function App() {
 
         <PlayerBar 
           progress={progress} 
-          audioProgress={0}
           isPlaying={isPlaying} 
-          isReaderMode={isReaderMode}
-          isLoading={false}
           agentStatus={agentStatus}
           onTogglePlay={() => setIsPlaying(!isPlaying)}
           onReset={handleReset}
-          onToggleReaderMode={() => setIsReaderMode(!isReaderMode)}
           onProgressChange={handleProgressChange}
         />
         <GrokVoiceAgent onStatusChange={setAgentStatus} />
